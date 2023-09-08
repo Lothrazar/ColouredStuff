@@ -1,3 +1,9 @@
 {
-	"itemGroup.colouredstuff":"Colourable Stuff"
+	"itemGroup.colouredstuff":"Colourable Stuff",
+	"block.colouredstuff.planks":"Colourable Wooden Planks",
+	"block.colouredstuff.planks.tooltip":"Hold dye in offhand or dye after placing",
+	"block.colouredstuff.bricks":"Colourable Stonebricks",
+	"block.colouredstuff.bricks.tooltip":"Hold dye in offhand or dye after placing",
+	"block.colouredstuff.sandstone":"Colourable Sandstone ",
+	"block.colouredstuff.sandstone.tooltip":"Hold dye in offhand or dye after placing "
 }
