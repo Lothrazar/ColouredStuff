@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "colouredstuff:block/bricks_black",
+		"particle": "colouredstuff:block/bricks_black"
+	}
+}
