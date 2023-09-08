@@ -1,4 +1,4 @@
-package com.lothrazar.colouredstuff;
+package com.lothrazar.colouredstuff.block;
 
 import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.core.Direction;
@@ -6,14 +6,13 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.DyeItem;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 
 public class BlockColour extends BlockFlib {
 
   public BlockColour(Properties p, BlockFlib.Settings s) {
-    super(p.noOcclusion().strength(0.4F).sound(SoundType.GLASS), s);
+    super(p, s.rotateColour(true));
   }
 
   @Override
