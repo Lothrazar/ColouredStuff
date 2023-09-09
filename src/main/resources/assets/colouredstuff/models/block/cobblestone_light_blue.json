@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "colouredstuff:block/cobblestone_light_blue",
+		"particle": "colouredstuff:block/cobblestone_light_blue"
+	}
+}

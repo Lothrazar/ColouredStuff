@@ -32,6 +32,8 @@ public class ModRegistry {
   public static final RegistryObject<Block> BRICKS_BLOCK = BLOCKS.register("bricks", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS).strength(1.5F, 6.0F), new BlockFlib.Settings()));
   public static final RegistryObject<Block> SANDSTONE_BLOCK = BLOCKS.register("sandstone", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE).strength(0.8F), new BlockFlib.Settings()));
   public static final RegistryObject<Block> DIRT_BLOCK = BLOCKS.register("dirt", () -> new BlockColour(Block.Properties.copy(Blocks.DIRT), new BlockFlib.Settings()));
+  public static final RegistryObject<Block> STONE_BLOCK = BLOCKS.register("stone", () -> new BlockColour(Block.Properties.copy(Blocks.STONE), new BlockFlib.Settings()));
+  public static final RegistryObject<Block> COBBLESTONE_BLOCK = BLOCKS.register("cobblestone", () -> new BlockColour(Block.Properties.copy(Blocks.COBBLESTONE), new BlockFlib.Settings()));
   public static final RegistryObject<Block> LOG_BLOCK = BLOCKS.register("log", () -> new BlockColourStrippable(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
   public static final RegistryObject<Block> LOG_STR_BLOCK = BLOCKS.register("log_stripped", () -> new BlockColourPillar(Block.Properties.copy(Blocks.STRIPPED_ACACIA_LOG), new BlockFlib.Settings()));
   public static final RegistryObject<Block> LEAVES_BLOCK = BLOCKS.register("leaves", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LEAVES), new BlockFlib.Settings())); // .noOcclusion()
@@ -44,7 +46,9 @@ public class ModRegistry {
   public static final RegistryObject<Item> LOG_STR_ITEM = ITEMS.register("log_stripped", () -> new BlockItemFlib(LOG_STR_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> LEAVES_ITEM = ITEMS.register("leaves", () -> new BlockItemFlib(LEAVES_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> SANDSTONE_CH_ITEM = ITEMS.register("chiseled_sandstone", () -> new BlockItem(SANDSTONE_CH_BLOCK.get(), new Item.Properties()));
-  public static final RegistryObject<Item> SAPLING = ITEMS.register("sapling", () -> new ItemFlib(new Item.Properties()));
+  public static final RegistryObject<Item> STONE_ITEM = ITEMS.register("stone", () -> new BlockItemFlib(STONE_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> COBBLE_ITEM = ITEMS.register("cobblestone", () -> new BlockItemFlib(COBBLESTONE_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  //  public static final RegistryObject<Item> SAPLING = ITEMS.register("sapling", () -> new ItemFlib(new Item.Properties()));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModMain.MODID, "tab"));
 
   @SubscribeEvent
