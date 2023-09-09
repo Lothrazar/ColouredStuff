@@ -1,0 +1,192 @@
+{
+  "multipart": [    
+        {   "when": { "color": "black" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_black",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "black" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_black"  }
+        },
+        {   "when": { "color": "black" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_black",      "x": 90  }
+        },
+
+
+        {   "when": { "color": "blue" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_blue",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "blue" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_blue"  }
+        },
+        {   "when": { "color": "blue" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_blue",      "x": 90  }
+        },
+
+
+
+
+        {   "when": { "color": "brown" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_brown",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "brown" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_brown"  }
+        },
+        {   "when": { "color": "brown" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_brown",      "x": 90  }
+        },
+
+
+
+        {   "when": { "color": "cyan" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_cyan",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "cyan" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_cyan"  }
+        },
+        {   "when": { "color": "cyan" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_cyan",      "x": 90  }
+        },
+
+        {   "when": { "color": "gray" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_gray",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "gray" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_gray"  }
+        },
+        {   "when": { "color": "gray" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_gray",      "x": 90  }
+        },
+
+
+        {   "when": { "color": "green" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_green",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "green" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_green"  }
+        },
+        {   "when": { "color": "green" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_green",      "x": 90  }
+        },
+
+
+
+
+        {   "when": { "color": "light_blue" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_light_blue",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "light_blue" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_light_blue"  }
+        },
+        {   "when": { "color": "light_blue" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_light_blue",      "x": 90  }
+        },
+
+
+        {   "when": { "color": "light_gray" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_light_gray",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "light_gray" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_light_gray"  }
+        },
+        {   "when": { "color": "light_gray" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_light_gray",      "x": 90  }
+        },
+
+
+
+        {   "when": { "color": "lime" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_lime",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "lime" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_lime"  }
+        },
+        {   "when": { "color": "lime" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_lime",      "x": 90  }
+        },
+
+
+        {   "when": { "color": "magenta" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_magenta",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "magenta" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_magenta"  }
+        },
+        {   "when": { "color": "magenta" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_magenta",      "x": 90  }
+        },
+        
+
+
+
+        {   "when": { "color": "orange" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_orange",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "orange" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_orange"  }
+        },
+        {   "when": { "color": "orange" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_orange",      "x": 90  }
+        },
+
+        
+        {   "when": { "color": "pink" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_pink",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "pink" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_pink"  }
+        },
+        {   "when": { "color": "pink" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_pink",      "x": 90  }
+        },
+        
+        
+        
+
+        {   "when": { "color": "purple" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_purple",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "purple" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_purple"  }
+        },
+        {   "when": { "color": "purple" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_purple",      "x": 90  }
+        },
+        
+        
+
+        {   "when": { "color": "red" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_red",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "red" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_red"  }
+        },
+        {   "when": { "color": "red" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_red",      "x": 90  }
+        },
+        
+
+
+        {   "when": { "color": "white" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_white",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "white" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_white"  }
+        },
+        {   "when": { "color": "white" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_white",      "x": 90  }
+        },
+        
+        
+
+
+        {   "when": { "color": "yellow" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_yellow",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "yellow" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_yellow"  }
+        },
+        {   "when": { "color": "yellow" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_yellow",      "x": 90  }
+        }
+
+    ]
+}

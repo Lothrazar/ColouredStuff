@@ -5,5 +5,9 @@
 	"block.colouredstuff.bricks":"Colourable Stonebricks",
 	"block.colouredstuff.bricks.tooltip":"Hold dye in offhand or dye after placing",
 	"block.colouredstuff.sandstone":"Colourable Sandstone ",
-	"block.colouredstuff.sandstone.tooltip":"Hold dye in offhand or dye after placing "
+	"block.colouredstuff.sandstone.tooltip":"Hold dye in offhand or dye after placing",
+	"block.colouredstuff.dirt":"Colourable Dirt",
+	"block.colouredstuff.dirt.tooltip":"Hold dye in offhand or dye after placing",
+	"block.colouredstuff.logs":"Colourable Logs",
+	"block.colouredstuff.logs.tooltip":"Hold dye in offhand or dye after placing"
 }

@@ -14,10 +14,10 @@
         {   "when": { "color": "blue" , "axis":"x"  },
             "apply": { "model": "colouredstuff:block/log_horizontal_blue",      "x": 90,      "y": 90 }
         },
-        {   "when": { "color": "black" , "axis":"y"  },
+        {   "when": { "color": "blue" , "axis":"y"  },
             "apply": { "model": "colouredstuff:block/log_blue"  }
         },
-        {   "when": { "color": "black" , "axis":"z"  },
+        {   "when": { "color": "blue" , "axis":"z"  },
             "apply": { "model": "colouredstuff:block/log_horizontal_blue",      "x": 90  }
         },
 
