@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/leaves",
+  "render_type": "cutout",
+	"textures": {
+		"all": "colouredstuff:block/leaves_pink",
+		"particle": "colouredstuff:block/leaves_pink"
+	}
+}

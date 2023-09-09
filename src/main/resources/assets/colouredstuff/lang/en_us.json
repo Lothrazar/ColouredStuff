@@ -6,8 +6,14 @@
 	"block.colouredstuff.bricks.tooltip":"Hold dye in offhand or dye after placing",
 	"block.colouredstuff.sandstone":"Colourable Sandstone ",
 	"block.colouredstuff.sandstone.tooltip":"Hold dye in offhand or dye after placing",
+	"block.colouredstuff.chiseled_sandstone":"Colourable Chiseled Sandstone ",
+	"block.colouredstuff.chiseled_sandstone.tooltip":"Hold dye in offhand or dye after placing",
 	"block.colouredstuff.dirt":"Colourable Dirt",
 	"block.colouredstuff.dirt.tooltip":"Hold dye in offhand or dye after placing",
-	"block.colouredstuff.logs":"Colourable Logs",
-	"block.colouredstuff.logs.tooltip":"Hold dye in offhand or dye after placing"
+	"block.colouredstuff.log":"Colourable Logs",
+	"block.colouredstuff.log.tooltip":"Hold dye in offhand or dye after placing",
+	"block.colouredstuff.log_stripped":"Colourable Stripped Logs",
+	"block.colouredstuff.log_stripped.tooltip":"Hold dye in offhand or dye after placing",
+	"block.colouredstuff.leaves":"Colourable Leaves",
+	"block.colouredstuff.leaves.tooltip":"Hold dye in offhand or dye after placing"
 }

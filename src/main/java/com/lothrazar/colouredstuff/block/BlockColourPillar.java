@@ -11,11 +11,11 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 
-public class BlockColourLog extends BlockColour {
+public class BlockColourPillar extends BlockColour {
 
   public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
-  public BlockColourLog(Properties p, BlockFlib.Settings s) {
+  public BlockColourPillar(Properties p, BlockFlib.Settings s) {
     super(p, s);
   }
 

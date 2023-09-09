@@ -4,6 +4,7 @@
      "minecraft:cut_sandstone",
      "minecraft:chiseled_sandstone",
      "minecraft:sandstone",
-     "colouredstuff:sandstone"
+     "colouredstuff:sandstone",
+     "colouredstuff:chiseled_sandstone"
   ]
 }

@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "colouredstuff:planks",
-    "colouredstuff:log"
+    "colouredstuff:log",
+    "colouredstuff:log_stripped"
   ]
 }

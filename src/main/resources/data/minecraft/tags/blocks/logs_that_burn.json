@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "colouredstuff:log"
+    "colouredstuff:log",
+    "colouredstuff:log_stripped"
   ]
 }
