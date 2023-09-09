@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "colouredstuff:sandstone"
+          "name": "colouredstuff:dirt"
         }
       ],
       "conditions": [
