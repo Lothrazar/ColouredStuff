@@ -2,6 +2,7 @@ package com.lothrazar.colouredstuff;
 
 import com.lothrazar.colouredstuff.block.BlockColour;
 import com.lothrazar.colouredstuff.block.BlockColourPillar;
+import com.lothrazar.colouredstuff.block.BlockColourStrippable;
 import com.lothrazar.library.block.BlockFlib;
 import com.lothrazar.library.item.BlockItemFlib;
 import com.lothrazar.library.item.ItemFlib;
@@ -31,7 +32,7 @@ public class ModRegistry {
   public static final RegistryObject<Block> BRICKS_BLOCK = BLOCKS.register("bricks", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS).strength(1.5F, 6.0F), new BlockFlib.Settings()));
   public static final RegistryObject<Block> SANDSTONE_BLOCK = BLOCKS.register("sandstone", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE).strength(0.8F), new BlockFlib.Settings()));
   public static final RegistryObject<Block> DIRT_BLOCK = BLOCKS.register("dirt", () -> new BlockColour(Block.Properties.copy(Blocks.DIRT), new BlockFlib.Settings()));
-  public static final RegistryObject<Block> LOG_BLOCK = BLOCKS.register("log", () -> new BlockColourPillar(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<Block> LOG_BLOCK = BLOCKS.register("log", () -> new BlockColourStrippable(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
   public static final RegistryObject<Block> LOG_STR_BLOCK = BLOCKS.register("log_stripped", () -> new BlockColourPillar(Block.Properties.copy(Blocks.STRIPPED_ACACIA_LOG), new BlockFlib.Settings()));
   public static final RegistryObject<Block> LEAVES_BLOCK = BLOCKS.register("leaves", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LEAVES), new BlockFlib.Settings())); // .noOcclusion()
   public static final RegistryObject<Block> SANDSTONE_CH_BLOCK = BLOCKS.register("chiseled_sandstone", () -> new BlockColour(Block.Properties.copy(Blocks.CHISELED_RED_SANDSTONE), new BlockFlib.Settings()));
