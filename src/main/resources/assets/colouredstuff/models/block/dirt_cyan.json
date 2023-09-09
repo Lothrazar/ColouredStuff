@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "colouredstuff:block/dirt_cyan",
+		"particle": "colouredstuff:block/dirt_cyan"
+	}
+}
