@@ -1,5 +1,16 @@
 {
   "multipart": [    
+        {   "when": { "color": "none" , "axis":"x"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_none",      "x": 90,      "y": 90 }
+        },
+        {   "when": { "color": "none" , "axis":"y"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_none"  }
+        },
+        {   "when": { "color": "none" , "axis":"z"  },
+            "apply": { "model": "colouredstuff:block/log_stripped_horizontal_none",      "x": 90  }
+        },
+
+  
         {   "when": { "color": "black" , "axis":"x"  },
             "apply": { "model": "colouredstuff:block/log_stripped_horizontal_black",      "x": 90,      "y": 90 }
         },

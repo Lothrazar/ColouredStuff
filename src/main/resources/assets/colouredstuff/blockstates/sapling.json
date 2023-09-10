@@ -1,5 +1,8 @@
 {
   "multipart": [    
+        {   "when": { "color": "none"   },
+            "apply": { "model": "colouredstuff:block/sapling_none", "uvlock": true }
+        },
         {   "when": { "color": "black"   },
             "apply": { "model": "colouredstuff:block/sapling_black", "uvlock": true }
         },

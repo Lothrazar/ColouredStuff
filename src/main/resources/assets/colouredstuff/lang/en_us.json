@@ -1,4 +1,6 @@
 {
+	"item.minecraft.none_dye":"None Dye",
+
 	"itemGroup.colouredstuff":"Colourable Stuff",
 	"block.colouredstuff.planks":"Colourable Wooden Planks",
 	"block.colouredstuff.planks.tooltip":"Hold dye in offhand or dye after placing",

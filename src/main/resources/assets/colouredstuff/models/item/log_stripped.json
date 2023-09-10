@@ -17,6 +17,7 @@
  	 { "predicate": {  "colouredstuff:dye": 12 }, "model":  "colouredstuff:block/log_stripped_brown"},
  	 { "predicate": {  "colouredstuff:dye": 13 }, "model":  "colouredstuff:block/log_stripped_green"},
  	 { "predicate": {  "colouredstuff:dye": 14 }, "model":  "colouredstuff:block/log_stripped_red"},
- 	 { "predicate": {  "colouredstuff:dye": 15 }, "model":  "colouredstuff:block/log_stripped_black"}
+ 	 { "predicate": {  "colouredstuff:dye": 15 }, "model":  "colouredstuff:block/log_stripped_black"},
+ 	 { "predicate": {  "colouredstuff:dye": 16 }, "model":  "colouredstuff:block/log_stripped_none"}
   ]
 }

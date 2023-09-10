@@ -1,6 +1,8 @@
 package com.lothrazar.colouredstuff.block;
 
-import com.lothrazar.colouredstuff.item.DyeColorless;
+import com.lothrazar.colouredstuff.ColourableRegistry;
+import com.lothrazar.colouredstuff.ModColourable;
+import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.library.block.BlockFlib;
 import com.lothrazar.library.util.ItemStackUtil;
 import net.minecraft.core.BlockPos;
@@ -9,13 +11,13 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeItem;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock;
 
 public class BlockColour extends BlockFlib {
@@ -36,10 +38,21 @@ public class BlockColour extends BlockFlib {
   @Override
   public BlockState getStateForPlacement(BlockPlaceContext ctx) {
     BlockState state = this.defaultBlockState();
-    if (ctx.getHand() == InteractionHand.MAIN_HAND && ctx.getPlayer() != null && ctx.getPlayer().getItemInHand(InteractionHand.OFF_HAND).getItem() instanceof DyeItem dye) {
-      //if we already have a colour, dont worry about -none
-      //TODO: unless we want to check for a tagged 'soap' item?
-      state = state.setValue(BlockColour.COLOR, DyeColorless.toColorless(dye.getDyeColor()));
+    if (ctx.getHand() == InteractionHand.MAIN_HAND && ctx.getPlayer() != null) {
+      //now attempt
+      ItemStack itemInHand = ctx.getPlayer().getItemInHand(InteractionHand.OFF_HAND);
+      if (itemInHand.getItem() instanceof DyeItem dye) {
+        //if we already have a colour, dont worry about -none
+        //TODO: unless we want to check for a tagged 'soap' item?
+        state = state.setValue(BlockColour.COLOR, DyeColorless.toColorless(dye.getDyeColor()));
+      }
+      else if (itemInHand.is(ColourableRegistry.DYES_NONE)) {
+        //is dyes none 
+        state = state.setValue(BlockColour.COLOR, DyeColorless.NONE);
+      }
+      else if (itemInHand.is(Tags.Items.DYES)) {
+        ModColourable.LOGGER.error("TODO: this is tagged as a dye item but its not a vanilla dye , we should fix this");
+      }
     }
     return state;
   }
@@ -52,13 +65,20 @@ public class BlockColour extends BlockFlib {
 
   @Override // TODO port
   public void onRightClickBlock(RightClickBlock event, BlockState state) {
+    final ItemStack itemInHand = event.getItemStack();
+    boolean doConnected = event.getEntity().isCrouching();
+    ModColourable.LOGGER.error("itemInHand " + itemInHand);
     if ( // me.rotateColour &&
-    event.getItemStack().getItem() instanceof DyeItem newColor) {
-      boolean doConnected = event.getEntity().isCrouching();
-      rotateDye(state, event.getLevel(), event.getPos(), event.getEntity(), event.getItemStack(), DyeColorless.toColorless(newColor.getDyeColor()), doConnected);
+    itemInHand.getItem() instanceof DyeItem newColor) {
+      rotateDye(state, event.getLevel(), event.getPos(), event.getEntity(), itemInHand, DyeColorless.toColorless(newColor.getDyeColor()), doConnected);
     }
-    else if (event.getItemStack().getItem() == Items.SNOWBALL) { // TODO: tagit
-      //
+    else if (itemInHand.is(ColourableRegistry.DYES_NONE)) {
+      //is dyes none 
+      ModColourable.LOGGER.error("DYES_NONEDYES_NONEis");
+      rotateDye(state, event.getLevel(), event.getPos(), event.getEntity(), itemInHand, DyeColorless.NONE, doConnected);
+    }
+    else if (itemInHand.is(Tags.Items.DYES)) {
+      ModColourable.LOGGER.error("TODO: this is tagged as a dye item but its not a vanilla dye , we should fix this");
     }
   }
 

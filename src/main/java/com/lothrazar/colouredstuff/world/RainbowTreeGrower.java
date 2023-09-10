@@ -2,8 +2,9 @@ package com.lothrazar.colouredstuff.world;
 
 import java.util.HashMap;
 import java.util.Map;
-import com.lothrazar.colouredstuff.ModMain;
+import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.block.BlockColour;
+import com.lothrazar.colouredstuff.color.DyeColorless;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
@@ -11,7 +12,6 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.chunk.ChunkGenerator;
@@ -36,31 +36,32 @@ public class RainbowTreeGrower extends AbstractTreeGrower {
   //  public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE = FeatureUtils.createKey(ModMain.MODID + ":tree_white");
   //  public static final ResourceKey<ConfiguredFeature<?, ?>> YELLOW = FeatureUtils.createKey(ModMain.MODID + ":tree_yellow");
   //
-  public static final Map<DyeColor, ResourceKey> RAINBOW_OF_TREES = new HashMap<>() {
+  public static final Map<DyeColorless, ResourceKey> RAINBOW_OF_TREES = new HashMap<>() {
 
     {
-      put(DyeColor.BLACK, FeatureUtils.createKey(ModMain.MODID + ":tree_black"));
-      put(DyeColor.BLUE, FeatureUtils.createKey(ModMain.MODID + ":tree_blue"));
-      put(DyeColor.BROWN, FeatureUtils.createKey(ModMain.MODID + ":tree_brown"));
-      put(DyeColor.CYAN, FeatureUtils.createKey(ModMain.MODID + ":tree_cyan"));
-      put(DyeColor.GRAY, FeatureUtils.createKey(ModMain.MODID + ":tree_gray"));
-      put(DyeColor.GREEN, FeatureUtils.createKey(ModMain.MODID + ":tree_green"));
-      put(DyeColor.LIGHT_BLUE, FeatureUtils.createKey(ModMain.MODID + ":tree_light_blue"));
-      put(DyeColor.LIGHT_GRAY, FeatureUtils.createKey(ModMain.MODID + ":tree_light_gray"));
-      put(DyeColor.LIME, FeatureUtils.createKey(ModMain.MODID + ":tree_lime"));
-      put(DyeColor.MAGENTA, FeatureUtils.createKey(ModMain.MODID + ":tree_magenta"));
-      put(DyeColor.ORANGE, FeatureUtils.createKey(ModMain.MODID + ":tree_orange"));
-      put(DyeColor.PINK, FeatureUtils.createKey(ModMain.MODID + ":tree_pink"));
-      put(DyeColor.PURPLE, FeatureUtils.createKey(ModMain.MODID + ":tree_purple"));
-      put(DyeColor.RED, FeatureUtils.createKey(ModMain.MODID + ":tree_red"));
-      put(DyeColor.WHITE, FeatureUtils.createKey(ModMain.MODID + ":tree_white"));
-      put(DyeColor.YELLOW, FeatureUtils.createKey(ModMain.MODID + ":tree_yellow"));
+      put(DyeColorless.BLACK, FeatureUtils.createKey(ModColourable.MODID + ":tree_black"));
+      put(DyeColorless.BLUE, FeatureUtils.createKey(ModColourable.MODID + ":tree_blue"));
+      put(DyeColorless.BROWN, FeatureUtils.createKey(ModColourable.MODID + ":tree_brown"));
+      put(DyeColorless.CYAN, FeatureUtils.createKey(ModColourable.MODID + ":tree_cyan"));
+      put(DyeColorless.GRAY, FeatureUtils.createKey(ModColourable.MODID + ":tree_gray"));
+      put(DyeColorless.GREEN, FeatureUtils.createKey(ModColourable.MODID + ":tree_green"));
+      put(DyeColorless.LIGHT_BLUE, FeatureUtils.createKey(ModColourable.MODID + ":tree_light_blue"));
+      put(DyeColorless.LIGHT_GRAY, FeatureUtils.createKey(ModColourable.MODID + ":tree_light_gray"));
+      put(DyeColorless.LIME, FeatureUtils.createKey(ModColourable.MODID + ":tree_lime"));
+      put(DyeColorless.MAGENTA, FeatureUtils.createKey(ModColourable.MODID + ":tree_magenta"));
+      put(DyeColorless.ORANGE, FeatureUtils.createKey(ModColourable.MODID + ":tree_orange"));
+      put(DyeColorless.PINK, FeatureUtils.createKey(ModColourable.MODID + ":tree_pink"));
+      put(DyeColorless.PURPLE, FeatureUtils.createKey(ModColourable.MODID + ":tree_purple"));
+      put(DyeColorless.RED, FeatureUtils.createKey(ModColourable.MODID + ":tree_red"));
+      put(DyeColorless.WHITE, FeatureUtils.createKey(ModColourable.MODID + ":tree_white"));
+      put(DyeColorless.YELLOW, FeatureUtils.createKey(ModColourable.MODID + ":tree_yellow"));
+      put(DyeColorless.NONE, FeatureUtils.createKey(ModColourable.MODID + ":tree_none"));
     }
   };
 
   @Override
   protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource rand, boolean hasFlowers) {
-    return RAINBOW_OF_TREES.get(DyeColor.WHITE); // default
+    return RAINBOW_OF_TREES.get(DyeColorless.NONE); // default
   }
 
   @Override
@@ -73,7 +74,7 @@ public class RainbowTreeGrower extends AbstractTreeGrower {
     final boolean hasFlowers = false;
     var resourcekey = this.getConfiguredFeature(rand, hasFlowers); //default 
     if (saplingState.hasProperty(BlockColour.COLOR)) {
-      var color = saplingState.getValue(BlockColour.COLOR);
+      DyeColorless color = saplingState.getValue(BlockColour.COLOR);
       resourcekey = RAINBOW_OF_TREES.get(color);
     }
     if (resourcekey == null) {

@@ -26,14 +26,14 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.common.IPlantable;
 
 @SuppressWarnings("deprecation")
-public class Saplin extends BlockColour implements IPlantable, BonemealableBlock {
+public class BlockColourSaplin extends BlockColour implements IPlantable, BonemealableBlock {
 
   public static final IntegerProperty STAGE = BlockStateProperties.STAGE;
   protected static final float AABB_OFFSET = 6.0F; // SaplingBlock.AABB_OFFSET;
   protected static final VoxelShape SHAPE = Block.box(2.0D, 0.0D, 2.0D, 14.0D, 12.0D, 14.0D); // SaplingBlock.SHAPE;
   private final AbstractTreeGrower treeGrower;
 
-  public Saplin(AbstractTreeGrower g, Properties p, Settings s) {
+  public BlockColourSaplin(AbstractTreeGrower g, Properties p, Settings s) {
     super(p.mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY), s.tooltip());
     this.treeGrower = g;
     this.registerDefaultState(this.stateDefinition.any().setValue(STAGE, Integer.valueOf(0)));

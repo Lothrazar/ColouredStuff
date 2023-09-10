@@ -1,4 +1,4 @@
-package com.lothrazar.colouredstuff.item;
+package com.lothrazar.colouredstuff.color;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,6 +1,7 @@
 package com.lothrazar.colouredstuff.item;
 
 import java.util.List;
+import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.library.item.BlockItemFlib;
 import com.lothrazar.library.item.ItemFlib;
 import com.lothrazar.library.util.ChatUtil;
