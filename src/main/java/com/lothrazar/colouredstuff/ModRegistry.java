@@ -41,7 +41,7 @@ public class ModRegistry {
   public static final RegistryObject<Item> PLANKS_ITEM = ITEMS.register("planks", () -> new BlockItemFlib(PLANKS_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> BRICKS_ITEM = ITEMS.register("bricks", () -> new BlockItemFlib(BRICKS_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> SANDSTONE_ITEM = ITEMS.register("sandstone", () -> new BlockItemFlib(SANDSTONE_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> DIRT_ITEM = ITEMS.register("dirt", () -> new BlockItemFlib(DIRT_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> DIRT_ITEM = ITEMS.register("dirt", () -> new ItemColour(DIRT_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> LOG_ITEM = ITEMS.register("log", () -> new BlockItemFlib(LOG_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> LOG_STR_ITEM = ITEMS.register("log_stripped", () -> new BlockItemFlib(LOG_STR_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> LEAVES_ITEM = ITEMS.register("leaves", () -> new BlockItemFlib(LEAVES_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));

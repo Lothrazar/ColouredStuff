@@ -7,6 +7,15 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "functions": [
+            {
+              "block": "colouredstuff:chiseled_sandstone",
+              "function": "minecraft:copy_state",
+              "properties": [
+                "color"
+              ]
+            }
+          ],
           "name": "colouredstuff:chiseled_sandstone"
         }
       ],

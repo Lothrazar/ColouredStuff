@@ -7,6 +7,15 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "functions": [
+            {
+              "block": "colouredstuff:leaves",
+              "function": "minecraft:copy_state",
+              "properties": [
+                "color"
+              ]
+            }
+          ],
           "name": "colouredstuff:leaves"
         }
       ],

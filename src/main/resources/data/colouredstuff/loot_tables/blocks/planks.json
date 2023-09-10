@@ -7,6 +7,15 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "functions": [
+            {
+              "block": "colouredstuff:planks",
+              "function": "minecraft:copy_state",
+              "properties": [
+                "color"
+              ]
+            }
+          ],
           "name": "colouredstuff:planks"
         }
       ],
