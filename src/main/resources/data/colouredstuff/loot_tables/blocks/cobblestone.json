@@ -9,14 +9,14 @@
           "type": "minecraft:item",
           "functions": [
             {
-              "block": "colouredstuff:sandstone",
+              "block": "colouredstuff:cobblestone",
               "function": "minecraft:copy_state",
               "properties": [
                 "color"
               ]
             }
           ],
-          "name": "colouredstuff:sandstone"
+          "name": "colouredstuff:cobblestone"
         }
       ],
       "conditions": [
