@@ -16,7 +16,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.grower.SpruceTreeGrower;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
@@ -39,7 +38,7 @@ public class ModRegistry {
   public static final RegistryObject<Block> LOG_STR_BLOCK = BLOCKS.register("log_stripped", () -> new BlockColourPillar(Block.Properties.copy(Blocks.STRIPPED_ACACIA_LOG), new BlockFlib.Settings()));
   public static final RegistryObject<Block> LEAVES_BLOCK = BLOCKS.register("leaves", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LEAVES), new BlockFlib.Settings())); // .noOcclusion()
   public static final RegistryObject<Block> SANDSTONE_CH_BLOCK = BLOCKS.register("chiseled_sandstone", () -> new BlockColour(Block.Properties.copy(Blocks.CHISELED_RED_SANDSTONE), new BlockFlib.Settings()));
-  public static final RegistryObject<Block> SAPLIN_BLOCK = BLOCKS.register("sapling", () -> new Saplin(new SpruceTreeGrower(), Block.Properties.copy(Blocks.OAK_SAPLING), new BlockFlib.Settings()));
+  public static final RegistryObject<Block> SAPLIN_BLOCK = BLOCKS.register("sapling", () -> new Saplin(new TreeGrow(), Block.Properties.copy(Blocks.OAK_SAPLING), new BlockFlib.Settings()));
   public static final RegistryObject<Item> PLANKS_ITEM = ITEMS.register("planks", () -> new ItemColour(PLANKS_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> BRICKS_ITEM = ITEMS.register("bricks", () -> new ItemColour(BRICKS_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> SANDSTONE_ITEM = ITEMS.register("sandstone", () -> new ItemColour(SANDSTONE_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
