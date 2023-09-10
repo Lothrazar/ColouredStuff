@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "colouredstuff:stone",
+    "colouredstuff:cobblestone",
     "colouredstuff:sandstone",
     "colouredstuff:chiseled_sandstone",
     "colouredstuff:bricks"

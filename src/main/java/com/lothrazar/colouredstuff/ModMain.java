@@ -2,6 +2,7 @@ package com.lothrazar.colouredstuff;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import com.lothrazar.colouredstuff.item.ItemColour;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.client.renderer.item.ItemPropertyFunction;
 import net.minecraft.resources.ResourceLocation;
@@ -24,19 +25,28 @@ public class ModMain {
     FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setupClient);
   }
 
+  @SuppressWarnings("deprecation")
   private void setupClient(final FMLClientSetupEvent event) {
     //for client side only setup
-    @SuppressWarnings("deprecation")
-    ItemPropertyFunction predicate = (stack, world, living, id) -> {
-      System.out.println("check it " + stack.getTag());
-      if (stack.hasTag() && stack.getTag().contains("BlockStateTag")) {
-        String color = stack.getTag().getCompound("BlockStateTag").getString("color");
+    final ResourceLocation dyeId = new ResourceLocation(ModMain.MODID, "dye");
+    final ItemPropertyFunction predicate = (stack, world, living, id) -> {
+      if (stack.hasTag()) {
+        String color = ItemColour.getColorStringFromNbt(stack);
         return DyeColor.valueOf(color.toUpperCase()).ordinal();
       }
       return DyeColor.WHITE.ordinal();
     };
     event.enqueueWork(() -> {
-      ItemProperties.register(ModRegistry.DIRT_ITEM.get(), new ResourceLocation(ModMain.MODID, "dye"), predicate);
+      ItemProperties.register(ModRegistry.BRICKS_ITEM.get(), dyeId, predicate);
+      ItemProperties.register(ModRegistry.SANDSTONE_CH_ITEM.get(), dyeId, predicate);
+      ItemProperties.register(ModRegistry.COBBLE_ITEM.get(), dyeId, predicate);
+      ItemProperties.register(ModRegistry.DIRT_ITEM.get(), dyeId, predicate);
+      ItemProperties.register(ModRegistry.LEAVES_ITEM.get(), dyeId, predicate);
+      ItemProperties.register(ModRegistry.LOG_STR_ITEM.get(), dyeId, predicate);
+      ItemProperties.register(ModRegistry.LOG_ITEM.get(), dyeId, predicate);
+      ItemProperties.register(ModRegistry.PLANKS_ITEM.get(), dyeId, predicate);
+      ItemProperties.register(ModRegistry.SANDSTONE_ITEM.get(), dyeId, predicate);
+      ItemProperties.register(ModRegistry.STONE_ITEM.get(), dyeId, predicate);
     });
   }
 }

@@ -5,24 +5,59 @@
       "name": "pool1",
       "rolls": 1,
       "entries": [
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "block": "colouredstuff:sandstone",
-              "function": "minecraft:copy_state",
-              "properties": [
-                "color"
-              ]
-            }
-          ],
-          "name": "colouredstuff:sandstone"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:survives_explosion"
-        }
+      
+      
+	        {
+	          "type": "minecraft:alternatives",
+	          "children": [
+	            {
+	              "type": "minecraft:item",
+	              "conditions": [
+	                {
+	                  "condition": "minecraft:match_tool",
+	                  "predicate": {
+	                    "enchantments": [
+	                      {
+	                        "enchantment": "minecraft:silk_touch",
+	                        "levels": {
+	                          "min": 1
+	                        }
+	                      }
+	                    ]
+	                  }
+	                }
+	              ],
+		          "functions": [
+		            {
+		              "block": "colouredstuff:stone",
+		              "function": "minecraft:copy_state",
+		              "properties": [
+		                "color"
+		              ]
+		            }
+		          ],
+	              "name": "colouredstuff:stone"
+	            },
+	            {
+	              "type": "minecraft:item",
+	              "conditions": [
+	                {
+	                  "condition": "minecraft:survives_explosion"
+	                }
+	              ],
+		          "functions": [
+		            {
+		              "block": "colouredstuff:cobblestone",
+		              "function": "minecraft:copy_state",
+		              "properties": [
+		                "color"
+		              ]
+		            }
+          		  ],
+	              "name": "colouredstuff:cobblestone"
+	            }
+	         ]
+	      }
       ]
     }
   ]
