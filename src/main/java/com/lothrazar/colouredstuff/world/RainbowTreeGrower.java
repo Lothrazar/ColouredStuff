@@ -1,8 +1,9 @@
-package com.lothrazar.colouredstuff;
+package com.lothrazar.colouredstuff.world;
 
 import java.util.HashMap;
 import java.util.Map;
-import com.lothrazar.library.block.BlockFlib;
+import com.lothrazar.colouredstuff.ModMain;
+import com.lothrazar.colouredstuff.block.BlockColour;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
@@ -71,8 +72,8 @@ public class RainbowTreeGrower extends AbstractTreeGrower {
     System.out.println("growTree " + saplingState);
     final boolean hasFlowers = false;
     var resourcekey = this.getConfiguredFeature(rand, hasFlowers); //default 
-    if (saplingState.hasProperty(BlockFlib.COLOUR)) {
-      var color = saplingState.getValue(BlockFlib.COLOUR);
+    if (saplingState.hasProperty(BlockColour.COLOR)) {
+      var color = saplingState.getValue(BlockColour.COLOR);
       resourcekey = RAINBOW_OF_TREES.get(color);
     }
     if (resourcekey == null) {

@@ -15,9 +15,9 @@ public class BlockColourStrippable extends BlockColourPillar {
 
   @Override
   public BlockState getToolModifiedState(BlockState logState, UseOnContext context, ToolAction toolAction, boolean simulate) {
-    if (toolAction == ToolActions.AXE_STRIP && logState.hasProperty(COLOUR)) {
+    if (toolAction == ToolActions.AXE_STRIP && logState.hasProperty(COLOR)) {
       var block = ModRegistry.LOG_STR_BLOCK.get();
-      return block.defaultBlockState().setValue(AXIS, logState.getValue(AXIS)).setValue(COLOUR, logState.getValue(COLOUR));
+      return block.defaultBlockState().setValue(AXIS, logState.getValue(AXIS)).setValue(COLOR, logState.getValue(COLOR));
     }
     return super.getToolModifiedState(logState, context, toolAction, simulate);
   }

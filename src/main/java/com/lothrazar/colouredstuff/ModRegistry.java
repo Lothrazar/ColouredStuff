@@ -5,6 +5,7 @@ import com.lothrazar.colouredstuff.block.BlockColourPillar;
 import com.lothrazar.colouredstuff.block.BlockColourStrippable;
 import com.lothrazar.colouredstuff.block.Saplin;
 import com.lothrazar.colouredstuff.item.ItemColour;
+import com.lothrazar.colouredstuff.world.RainbowTreeGrower;
 import com.lothrazar.library.block.BlockFlib;
 import com.lothrazar.library.item.ItemFlib;
 import net.minecraft.core.registries.Registries;

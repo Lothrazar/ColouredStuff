@@ -35,6 +35,6 @@ public class ItemColour extends BlockItemFlib {
       String color = stack.getTag().getCompound("BlockStateTag").getString("color");
       return color;
     }
-    return "white";
+    return DyeColorless.NONE.getSerializedName(); // default
   }
 }

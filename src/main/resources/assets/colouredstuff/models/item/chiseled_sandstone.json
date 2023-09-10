@@ -1,5 +1,5 @@
 {
-  "parent": "colouredstuff:block/chiseled_sandstone_white",
+  "parent": "colouredstuff:block/chiseled_sandstone_none",
   
   "overrides": [
  	 { "predicate": {  "colouredstuff:dye": 0  }, "model":  "colouredstuff:block/chiseled_sandstone_white"},
@@ -17,6 +17,7 @@
  	 { "predicate": {  "colouredstuff:dye": 12 }, "model":  "colouredstuff:block/chiseled_sandstone_brown"},
  	 { "predicate": {  "colouredstuff:dye": 13 }, "model":  "colouredstuff:block/chiseled_sandstone_green"},
  	 { "predicate": {  "colouredstuff:dye": 14 }, "model":  "colouredstuff:block/chiseled_sandstone_red"},
- 	 { "predicate": {  "colouredstuff:dye": 15 }, "model":  "colouredstuff:block/chiseled_sandstone_black"}
+ 	 { "predicate": {  "colouredstuff:dye": 15 }, "model":  "colouredstuff:block/chiseled_sandstone_black"},
+ 	 { "predicate": {  "colouredstuff:dye": 16 }, "model":  "colouredstuff:block/chiseled_sandstone_none"}
   ]
 }
