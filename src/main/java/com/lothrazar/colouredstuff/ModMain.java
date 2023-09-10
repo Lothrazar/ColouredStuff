@@ -47,6 +47,7 @@ public class ModMain {
       ItemProperties.register(ModRegistry.PLANKS_ITEM.get(), dyeId, predicate);
       ItemProperties.register(ModRegistry.SANDSTONE_ITEM.get(), dyeId, predicate);
       ItemProperties.register(ModRegistry.STONE_ITEM.get(), dyeId, predicate);
+      ItemProperties.register(ModRegistry.SAPLIN.get(), dyeId, predicate);
     });
   }
 }

@@ -1,0 +1,52 @@
+{
+  "multipart": [    
+        {   "when": { "color": "black"   },
+            "apply": { "model": "colouredstuff:block/sapling_black", "uvlock": true }
+        },
+        {   "when": { "color": "blue"   },
+            "apply": { "model": "colouredstuff:block/sapling_blue", "uvlock": true }
+        },
+        {   "when": { "color": "brown"   },
+            "apply": { "model": "colouredstuff:block/sapling_brown", "uvlock": true }
+        },
+        {   "when": { "color": "cyan"   },
+            "apply": { "model": "colouredstuff:block/sapling_cyan", "uvlock": true }
+        },
+        {   "when": { "color": "gray"   },
+            "apply": { "model": "colouredstuff:block/sapling_gray", "uvlock": true }
+        },
+        {   "when": { "color": "green"},
+            "apply": { "model": "colouredstuff:block/sapling_green", "uvlock": true }
+        },
+        {   "when": { "color": "light_blue"  },
+            "apply": { "model": "colouredstuff:block/sapling_light_blue", "uvlock": true }
+        },
+        {   "when": { "color": "light_gray" },
+            "apply": { "model": "colouredstuff:block/sapling_light_gray", "uvlock": true }
+        },
+        {   "when": { "color": "lime"  },
+            "apply": { "model": "colouredstuff:block/sapling_lime", "uvlock": true }
+        },
+        {   "when": { "color": "magenta"   },
+            "apply": { "model": "colouredstuff:block/sapling_magenta", "uvlock": true }
+        },
+        {   "when": { "color": "orange"   },
+            "apply": { "model": "colouredstuff:block/sapling_orange", "uvlock": true }
+        },        
+        {   "when": { "color": "pink"  },
+            "apply": { "model": "colouredstuff:block/sapling_pink", "uvlock": true }
+        },        
+        {   "when": { "color": "purple" },
+            "apply": { "model": "colouredstuff:block/sapling_purple", "uvlock": true }
+        },        
+        {   "when": { "color": "red"  },
+            "apply": { "model": "colouredstuff:block/sapling_red", "uvlock": true }
+        },        
+        {   "when": { "color": "white"   },
+            "apply": { "model": "colouredstuff:block/sapling_white", "uvlock": true }
+        },        
+        {   "when": { "color": "yellow"  },
+            "apply": { "model": "colouredstuff:block/sapling_yellow", "uvlock": true }
+        }         
+    ]
+}
