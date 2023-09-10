@@ -10,7 +10,7 @@
       "tag": "forge:sandstone"
     },
     "-": {
-      "tag": "forge:dyes/white"
+      "item": "minecraft:snowball"
     }
   },
   "result": {

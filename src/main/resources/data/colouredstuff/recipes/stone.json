@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:stone_bricks"
+      "item": "minecraft:stone"
     },
     "-": {
       "item": "minecraft:snowball"
     }
   },
   "result": {
-    "item": "colouredstuff:bricks",
+    "item": "colouredstuff:stone",
     "count": 6
   }
 }

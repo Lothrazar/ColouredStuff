@@ -10,7 +10,7 @@
       "tag": "minecraft:dirt"
     },
     "-": {
-      "tag": "forge:dyes/white"
+      "item": "minecraft:snowball"
     }
   },
   "result": {

@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:stone_bricks"
+      "tag": "minecraft:saplings"
     },
     "-": {
       "item": "minecraft:snowball"
     }
   },
   "result": {
-    "item": "colouredstuff:bricks",
+    "item": "colouredstuff:sapling",
     "count": 6
   }
 }
