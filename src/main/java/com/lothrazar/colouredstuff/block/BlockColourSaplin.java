@@ -34,7 +34,7 @@ public class BlockColourSaplin extends BlockColour implements IPlantable, Boneme
   private final AbstractTreeGrower treeGrower;
 
   public BlockColourSaplin(AbstractTreeGrower g, Properties p, Settings s) {
-    super(p.mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY), s.tooltip());
+    super(p.mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY), s);
     this.treeGrower = g;
     this.registerDefaultState(this.stateDefinition.any().setValue(STAGE, Integer.valueOf(0)));
   }

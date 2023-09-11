@@ -34,6 +34,8 @@ public class ColourableClient {
       ItemProperties.register(ColourableRegistry.SANDSTONE_ITEM.get(), dyeId, predicate);
       ItemProperties.register(ColourableRegistry.STONE_ITEM.get(), dyeId, predicate);
       ItemProperties.register(ColourableRegistry.SAPLIN.get(), dyeId, predicate);
+      ItemProperties.register(ColourableRegistry.PATH_ITEM.get(), dyeId, predicate);
+      ItemProperties.register(ColourableRegistry.FARM_ITEM.get(), dyeId, predicate);
     });
   }
 }

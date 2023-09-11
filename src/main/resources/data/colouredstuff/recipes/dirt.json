@@ -10,7 +10,7 @@
       "tag": "minecraft:dirt"
     },
     "-": {
-      "item": "minecraft:snowball"
+      "tag": "forge:dyes/none"
     }
   },
   "result": {

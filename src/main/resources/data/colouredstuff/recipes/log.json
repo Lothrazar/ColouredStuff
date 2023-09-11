@@ -10,7 +10,7 @@
       "tag": "minecraft:logs"
     },
     "-": {
-      "item": "minecraft:snowball"
+      "tag": "forge:dyes/none"
     }
   },
   "result": {

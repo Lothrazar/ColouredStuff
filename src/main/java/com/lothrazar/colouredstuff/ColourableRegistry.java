@@ -1,9 +1,11 @@
 package com.lothrazar.colouredstuff;
 
 import com.lothrazar.colouredstuff.block.BlockColour;
+import com.lothrazar.colouredstuff.block.BlockColourDirt;
+import com.lothrazar.colouredstuff.block.BlockColourPathy;
 import com.lothrazar.colouredstuff.block.BlockColourPillar;
-import com.lothrazar.colouredstuff.block.BlockColourStrippable;
 import com.lothrazar.colouredstuff.block.BlockColourSaplin;
+import com.lothrazar.colouredstuff.block.BlockColourStrippable;
 import com.lothrazar.colouredstuff.item.ItemColour;
 import com.lothrazar.colouredstuff.world.RainbowTreeGrower;
 import com.lothrazar.library.block.BlockFlib;
@@ -31,10 +33,12 @@ public class ColourableRegistry {
 
   public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ModColourable.MODID);
   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ModColourable.MODID);
-  public static final RegistryObject<Block> PLANKS_BLOCK = BLOCKS.register("planks", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_PLANKS).strength(2.0F, 3.0F), new BlockFlib.Settings()));
+  public static final RegistryObject<Block> PLANKS_BLOCK = BLOCKS.register("planks", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_PLANKS), new BlockFlib.Settings())); // .strength(2.0F, 3.0F)
   public static final RegistryObject<Block> BRICKS_BLOCK = BLOCKS.register("bricks", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS).strength(1.5F, 6.0F), new BlockFlib.Settings()));
   public static final RegistryObject<Block> SANDSTONE_BLOCK = BLOCKS.register("sandstone", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE).strength(0.8F), new BlockFlib.Settings()));
-  public static final RegistryObject<Block> DIRT_BLOCK = BLOCKS.register("dirt", () -> new BlockColour(Block.Properties.copy(Blocks.DIRT), new BlockFlib.Settings()));
+  public static final RegistryObject<Block> DIRT_BLOCK = BLOCKS.register("dirt", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), new BlockFlib.Settings()));
+  public static final RegistryObject<Block> PATH_BLOCK = BLOCKS.register("path", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), new BlockFlib.Settings()));
+  public static final RegistryObject<Block> FARM_BLOCK = BLOCKS.register("farmland", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), new BlockFlib.Settings()));
   public static final RegistryObject<Block> STONE_BLOCK = BLOCKS.register("stone", () -> new BlockColour(Block.Properties.copy(Blocks.STONE), new BlockFlib.Settings()));
   public static final RegistryObject<Block> COBBLESTONE_BLOCK = BLOCKS.register("cobblestone", () -> new BlockColour(Block.Properties.copy(Blocks.COBBLESTONE), new BlockFlib.Settings()));
   public static final RegistryObject<Block> LOG_BLOCK = BLOCKS.register("log", () -> new BlockColourStrippable(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
@@ -45,7 +49,6 @@ public class ColourableRegistry {
   public static final RegistryObject<Item> PLANKS_ITEM = ITEMS.register("planks", () -> new ItemColour(PLANKS_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> BRICKS_ITEM = ITEMS.register("bricks", () -> new ItemColour(BRICKS_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> SANDSTONE_ITEM = ITEMS.register("sandstone", () -> new ItemColour(SANDSTONE_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> DIRT_ITEM = ITEMS.register("dirt", () -> new ItemColour(DIRT_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> LOG_ITEM = ITEMS.register("log", () -> new ItemColour(LOG_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> LOG_STR_ITEM = ITEMS.register("log_stripped", () -> new ItemColour(LOG_STR_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> LEAVES_ITEM = ITEMS.register("leaves", () -> new ItemColour(LEAVES_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
@@ -53,6 +56,9 @@ public class ColourableRegistry {
   public static final RegistryObject<Item> STONE_ITEM = ITEMS.register("stone", () -> new ItemColour(STONE_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> COBBLE_ITEM = ITEMS.register("cobblestone", () -> new ItemColour(COBBLESTONE_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> SAPLIN = ITEMS.register("sapling", () -> new ItemColour(SAPLIN_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> DIRT_ITEM = ITEMS.register("dirt", () -> new ItemColour(DIRT_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PATH_ITEM = ITEMS.register("path", () -> new ItemColour(PATH_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> FARM_ITEM = ITEMS.register("farmland", () -> new ItemColour(FARM_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final TagKey<Item> DYES_NONE = ItemTags.create(new ResourceLocation("forge:dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));
 

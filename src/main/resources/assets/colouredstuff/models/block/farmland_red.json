@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_farmland",
+  "textures": {
+    "dirt": "colouredstuff:block/dirt_red",
+    "top": "minecraft:block/farmland"
+  }
+}

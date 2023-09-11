@@ -1,0 +1,5 @@
+{   "parent": "colouredstuff:block/path",   
+    "textures": {
+        "side": "colouredstuff:block/dirt_light_gray"
+    }
+}
