@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#-#"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:sapling"
+    },
+    "-": {
+      "tag": "forge:dyes/brown"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:sapling",
+    "count": 2,
+    "nbt": {
+	    "BlockStateTag": { "color": "brown" }
+    }
+  }
+}

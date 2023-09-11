@@ -32,10 +32,14 @@ public enum DyeColorless implements StringRepresentable {
     }
   };
 
-  public DyeColor toDyeColor() {
-    return TOCOLOR.get(this);
-  }
-
+  /**
+   * Will be null for color NONE
+   * 
+   */
+  //  @Nullable
+  //  public DyeColor toDyeColor() {
+  //    return TOCOLOR.get(this);
+  //  }
   public static DyeColorless toColorless(DyeColor color) {
     for (Map.Entry<DyeColorless, DyeColor> entry : TOCOLOR.entrySet()) {
       if (entry.getValue() == color) {

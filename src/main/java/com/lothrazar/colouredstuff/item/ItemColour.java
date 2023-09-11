@@ -5,6 +5,7 @@ import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.library.item.BlockItemFlib;
 import com.lothrazar.library.item.ItemFlib;
 import com.lothrazar.library.util.ChatUtil;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -37,5 +38,12 @@ public class ItemColour extends BlockItemFlib {
       return color;
     }
     return DyeColorless.NONE.getSerializedName(); // default
+  }
+
+  public static void writeColorStringNbt(ItemStack stack, String color) {
+    //TODO: validate color
+    CompoundTag state = new CompoundTag();
+    state.putString("color", color);
+    stack.getOrCreateTag().put("BlockStateTag", state);
   }
 }
