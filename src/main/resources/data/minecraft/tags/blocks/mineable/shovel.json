@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "colouredstuff:dirt"
+    "colouredstuff:dirt",
+    "colouredstuff:farmland",
+    "colouredstuff:path"
   ]
 }

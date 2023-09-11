@@ -6,6 +6,7 @@ import com.lothrazar.colouredstuff.block.BlockColourPathy;
 import com.lothrazar.colouredstuff.block.BlockColourPillar;
 import com.lothrazar.colouredstuff.block.BlockColourSaplin;
 import com.lothrazar.colouredstuff.block.BlockColourStrippable;
+import com.lothrazar.colouredstuff.block.FarmlandColour;
 import com.lothrazar.colouredstuff.item.ItemColour;
 import com.lothrazar.colouredstuff.world.RainbowTreeGrower;
 import com.lothrazar.library.block.BlockFlib;
@@ -38,7 +39,7 @@ public class ColourableRegistry {
   public static final RegistryObject<Block> SANDSTONE_BLOCK = BLOCKS.register("sandstone", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE).strength(0.8F), new BlockFlib.Settings()));
   public static final RegistryObject<Block> DIRT_BLOCK = BLOCKS.register("dirt", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), new BlockFlib.Settings()));
   public static final RegistryObject<Block> PATH_BLOCK = BLOCKS.register("path", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), new BlockFlib.Settings()));
-  public static final RegistryObject<Block> FARM_BLOCK = BLOCKS.register("farmland", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), new BlockFlib.Settings()));
+  public static final RegistryObject<Block> FARM_BLOCK = BLOCKS.register("farmland", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), new BlockFlib.Settings()));
   public static final RegistryObject<Block> STONE_BLOCK = BLOCKS.register("stone", () -> new BlockColour(Block.Properties.copy(Blocks.STONE), new BlockFlib.Settings()));
   public static final RegistryObject<Block> COBBLESTONE_BLOCK = BLOCKS.register("cobblestone", () -> new BlockColour(Block.Properties.copy(Blocks.COBBLESTONE), new BlockFlib.Settings()));
   public static final RegistryObject<Block> LOG_BLOCK = BLOCKS.register("log", () -> new BlockColourStrippable(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));

@@ -23,5 +23,9 @@
 	"block.colouredstuff.stone":"Colourable Stone",
 	"block.colouredstuff.stone.tooltip":"Hold dye in offhand or dye after placing",
 	"block.colouredstuff.cobblestone":"Colourable Cobblestone",
-	"block.colouredstuff.cobblestone.tooltip":"Hold dye in offhand or dye after placing"
+	"block.colouredstuff.cobblestone.tooltip":"Hold dye in offhand or dye after placing",
+	"block.colouredstuff.path":"Colourable Dirt Path",
+	"block.colouredstuff.path.tooltip":"Hold dye in offhand or dye after placing",
+	"block.colouredstuff.farmland":"Colourable Farmland",
+	"block.colouredstuff.farmland.tooltip":"Hold dye in offhand or dye after placing"
 }

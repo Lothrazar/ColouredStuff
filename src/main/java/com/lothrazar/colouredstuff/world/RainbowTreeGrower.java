@@ -66,11 +66,6 @@ public class RainbowTreeGrower extends AbstractTreeGrower {
 
   @Override
   public boolean growTree(ServerLevel level, ChunkGenerator cgen, BlockPos pos, BlockState saplingState, RandomSource rand) {
-    System.out.println("growTree " + saplingState);
-    System.out.println("growTree " + saplingState);
-    System.out.println("growTree " + saplingState);
-    System.out.println("growTree " + saplingState);
-    System.out.println("growTree " + saplingState);
     final boolean hasFlowers = false;
     var resourcekey = this.getConfiguredFeature(rand, hasFlowers); //default 
     if (saplingState.hasProperty(BlockColour.COLOR)) {

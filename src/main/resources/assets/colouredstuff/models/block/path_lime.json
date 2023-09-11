@@ -1,4 +1,4 @@
-{   "parent": "colouredstuff:block/path",   
+{   "parent": "colouredstuff:block/tmpl_path",   
     "textures": {
         "side": "colouredstuff:block/dirt_lime"
     }

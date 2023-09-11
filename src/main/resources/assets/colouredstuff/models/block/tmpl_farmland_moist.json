@@ -1,0 +1,14 @@
+{
+    "textures": {
+        "particle": "#dirt",
+        "top": "minecraft:block/farmland_moist"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 15, 16 ],
+            "faces": {
+                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#top" }
+            }
+        }
+    ]
+}

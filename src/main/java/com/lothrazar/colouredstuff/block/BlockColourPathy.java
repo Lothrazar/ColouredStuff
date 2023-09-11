@@ -15,7 +15,7 @@ public class BlockColourPathy extends BlockColour {
   protected static final VoxelShape SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 15.0D, 16.0D);
 
   public BlockColourPathy(Properties p, Settings s) {
-    super(p.noOcclusion(), s);
+    super(p, s);
   }
 
   @Override
