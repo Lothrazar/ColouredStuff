@@ -1,10 +1,8 @@
 package com.lothrazar.colouredstuff.block;
 
-import com.lothrazar.colouredstuff.ColourableRegistry;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
-import net.minecraftforge.common.ToolActions;
 
 public class BlockColourDirt extends BlockColour {
 
@@ -14,14 +12,14 @@ public class BlockColourDirt extends BlockColour {
 
   @Override
   public BlockState getToolModifiedState(BlockState dirtState, UseOnContext context, ToolAction toolAction, boolean simulate) {
-    if (toolAction == ToolActions.HOE_TILL && dirtState.hasProperty(BlockColour.COLOR)) {
-      var block = ColourableRegistry.FARM_BLOCK.get();
-      return block.defaultBlockState().setValue(BlockColour.COLOR, dirtState.getValue(BlockColour.COLOR));
-    }
-    if (toolAction == ToolActions.SHOVEL_FLATTEN && dirtState.hasProperty(BlockColour.COLOR)) {
-      var block = ColourableRegistry.PATH_BLOCK.get();
-      return block.defaultBlockState().setValue(BlockColour.COLOR, dirtState.getValue(BlockColour.COLOR));
-    }
+    //    if (toolAction == ToolActions.HOE_TILL && dirtState.hasProperty(BlockColour.COLOR)) {
+    //      var block = ColourableRegistry.FARM_BLOCK.get();
+    //      return block.defaultBlockState().setValue(BlockColour.COLOR, dirtState.getValue(BlockColour.COLOR));
+    //    }
+    //    if (toolAction == ToolActions.SHOVEL_FLATTEN && dirtState.hasProperty(BlockColour.COLOR)) {
+    //      var block = ColourableRegistry.PATH_BLOCK.get();
+    //      return block.defaultBlockState().setValue(BlockColour.COLOR, dirtState.getValue(BlockColour.COLOR));
+    //    }
     return super.getToolModifiedState(dirtState, context, toolAction, simulate);
   }
 }

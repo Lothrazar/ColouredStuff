@@ -1,10 +1,8 @@
 package com.lothrazar.colouredstuff.client;
 
-import com.lothrazar.colouredstuff.ColourableRegistry;
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.item.ItemColour;
-import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.client.renderer.item.ItemPropertyFunction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -23,19 +21,19 @@ public class ColourableClient {
       return DyeColorless.NONE.ordinal();
     };
     event.enqueueWork(() -> {
-      ItemProperties.register(ColourableRegistry.BRICKS_ITEM.get(), dyeId, predicate);
-      ItemProperties.register(ColourableRegistry.SANDSTONE_CH_ITEM.get(), dyeId, predicate);
-      ItemProperties.register(ColourableRegistry.COBBLE_ITEM.get(), dyeId, predicate);
-      ItemProperties.register(ColourableRegistry.DIRT_ITEM.get(), dyeId, predicate);
-      ItemProperties.register(ColourableRegistry.LEAVES_ITEM.get(), dyeId, predicate);
-      ItemProperties.register(ColourableRegistry.LOG_STR_ITEM.get(), dyeId, predicate);
-      ItemProperties.register(ColourableRegistry.LOG_ITEM.get(), dyeId, predicate);
-      ItemProperties.register(ColourableRegistry.PLANKS_ITEM.get(), dyeId, predicate);
-      ItemProperties.register(ColourableRegistry.SANDSTONE_ITEM.get(), dyeId, predicate);
-      ItemProperties.register(ColourableRegistry.STONE_ITEM.get(), dyeId, predicate);
-      ItemProperties.register(ColourableRegistry.SAPLIN.get(), dyeId, predicate);
-      ItemProperties.register(ColourableRegistry.PATH_ITEM.get(), dyeId, predicate);
-      ItemProperties.register(ColourableRegistry.FARM_ITEM.get(), dyeId, predicate);
+      //      ItemProperties.register(ColourableRegistry.BRICKS_ITEM.get(), dyeId, predicate);
+      //      ItemProperties.register(ColourableRegistry.SANDSTONE_CH_ITEM.get(), dyeId, predicate);
+      //      ItemProperties.register(ColourableRegistry.COBBLE_ITEM.get(), dyeId, predicate);
+      //      ItemProperties.register(ColourableRegistry.DIRT_ITEM.get(), dyeId, predicate);
+      //      ItemProperties.register(ColourableRegistry.LEAVES_ITEM.get(), dyeId, predicate);
+      //      ItemProperties.register(ColourableRegistry.LOG_STR_ITEM.get(), dyeId, predicate);
+      //      ItemProperties.register(ColourableRegistry.LOG_ITEM.get(), dyeId, predicate);
+      //      ItemProperties.register(ColourableRegistry.PLANKS_BLACK.get(), dyeId, predicate);
+      //      ItemProperties.register(ColourableRegistry.SANDSTONE_ITEM.get(), dyeId, predicate);
+      //      ItemProperties.register(ColourableRegistry.STONE_ITEM.get(), dyeId, predicate);
+      //      ItemProperties.register(ColourableRegistry.SAPLIN.get(), dyeId, predicate);
+      //      ItemProperties.register(ColourableRegistry.PATH_ITEM.get(), dyeId, predicate);
+      //      ItemProperties.register(ColourableRegistry.FARM_ITEM.get(), dyeId, predicate);
     });
   }
 }

@@ -1,6 +1,5 @@
 package com.lothrazar.colouredstuff.block;
 
-import com.lothrazar.colouredstuff.ColourableRegistry;
 import com.lothrazar.colouredstuff.ModColourable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -64,7 +63,7 @@ public class FarmlandColour extends BlockColourPathy {
 
   public static void turnToDirt(Entity p_270981_, BlockState farmlandState, Level p_270568_, BlockPos pos) {
     //    ModColourable.LOGGER.info("turn to dirt " + pos);
-    var dirt = ColourableRegistry.DIRT_BLOCK.get().defaultBlockState().setValue(COLOR, farmlandState.getValue(COLOR));
+    var dirt = Blocks.DIRT.defaultBlockState(); // TODO //ColourableRegistry.DIRT_BLOCK.get().defaultBlockState().setValue(COLOR, farmlandState.getValue(COLOR));
     BlockState modifiedDirt = pushEntitiesUp(farmlandState, dirt, p_270568_, pos);
     p_270568_.setBlockAndUpdate(pos, modifiedDirt);
     p_270568_.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(p_270981_, modifiedDirt));

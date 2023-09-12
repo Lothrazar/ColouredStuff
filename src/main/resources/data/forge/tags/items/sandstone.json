@@ -3,7 +3,6 @@
   "values": [
      "minecraft:cut_sandstone",
      "minecraft:chiseled_sandstone",
-     "minecraft:sandstone",
-     "colouredstuff:sandstone"
+     "minecraft:sandstone"
   ]
 }

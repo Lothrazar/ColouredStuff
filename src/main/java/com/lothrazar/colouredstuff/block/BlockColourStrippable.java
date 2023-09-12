@@ -1,11 +1,9 @@
 package com.lothrazar.colouredstuff.block;
 
-import com.lothrazar.colouredstuff.ColourableRegistry;
 import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
-import net.minecraftforge.common.ToolActions;
 
 public class BlockColourStrippable extends BlockColourPillar {
 
@@ -15,10 +13,10 @@ public class BlockColourStrippable extends BlockColourPillar {
 
   @Override
   public BlockState getToolModifiedState(BlockState logState, UseOnContext context, ToolAction toolAction, boolean simulate) {
-    if (toolAction == ToolActions.AXE_STRIP && logState.hasProperty(COLOR)) {
-      var block = ColourableRegistry.LOG_STR_BLOCK.get();
-      return block.defaultBlockState().setValue(AXIS, logState.getValue(AXIS)).setValue(COLOR, logState.getValue(COLOR));
-    }
+    //    if (toolAction == ToolActions.AXE_STRIP && logState.hasProperty(COLOR)) {
+    //      var block = ColourableRegistry.LOG_STR_BLOCK.get();
+    //      return block.defaultBlockState().setValue(AXIS, logState.getValue(AXIS)).setValue(COLOR, logState.getValue(COLOR));
+    //    }
     return super.getToolModifiedState(logState, context, toolAction, simulate);
   }
 }

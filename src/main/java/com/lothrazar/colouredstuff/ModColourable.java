@@ -15,8 +15,8 @@ public class ModColourable {
 
   public ModColourable() {
     IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
-    ColourableRegistry.BLOCKS.register(eventBus);
-    ColourableRegistry.ITEMS.register(eventBus);
+    ColourableBlockRegistry.BLOCKS.register(eventBus);
+    ColourableItemRegistry.ITEMS.register(eventBus);
     FMLJavaModLoadingContext.get().getModEventBus().addListener(ColourableClient::setupClient);
     //    MinecraftForge.EVENT_BUS.register(new RuneEvents());  
   }
