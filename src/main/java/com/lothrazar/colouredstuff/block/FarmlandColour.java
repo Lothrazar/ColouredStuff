@@ -1,5 +1,7 @@
 package com.lothrazar.colouredstuff.block;
 
+import java.util.HashMap;
+import java.util.Map;
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import net.minecraft.core.BlockPos;
@@ -22,8 +24,11 @@ import net.minecraftforge.common.PlantType;
 
 public class FarmlandColour extends BlockColourPathy {
 
+  public static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
+
   public FarmlandColour(Properties p, DyeColorless s) {
     super(p, s);
+    RAINBOW.put(s, this);
   }
 
   @Override

@@ -1,5 +1,24 @@
 {
 
+"block.colouredstuff.path_black" : "Black Path",
+"block.colouredstuff.path_blue" : "Blue Path",
+"block.colouredstuff.path_brown" : "Brown Path",
+"block.colouredstuff.path_cyan" : "Cyan Path",
+"block.colouredstuff.path_gray" : "Gray Path",
+"block.colouredstuff.path_green" : "Green Path",
+"block.colouredstuff.path_light_blue" : "Light Blue Path",
+"block.colouredstuff.path_light_gray" : "Light Gray Path",
+"block.colouredstuff.path_lime" : "Lime Path",
+"block.colouredstuff.path_magenta" : "Magenta Path",
+"block.colouredstuff.path_none" : "Colorless Path",
+"block.colouredstuff.path_orange" : "Orange Path",
+"block.colouredstuff.path_pink" : "Pink Path",
+"block.colouredstuff.path_purple" : "Purple Path",
+"block.colouredstuff.path_red" : "Red Path",
+"block.colouredstuff.path_white" : "White Path",
+"block.colouredstuff.path_yellow" : "Yellow Path",
+
+
 "block.colouredstuff.dirt_black" : "Black Dirt",
 "block.colouredstuff.dirt_blue" : "Blue Dirt",
 "block.colouredstuff.dirt_brown" : "Brown Dirt",

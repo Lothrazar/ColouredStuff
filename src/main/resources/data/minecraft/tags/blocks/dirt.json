@@ -2,6 +2,25 @@
   "replace": false,
   "values": [
    
+"colouredstuff:path_black",
+"colouredstuff:path_blue",
+"colouredstuff:path_brown",
+"colouredstuff:path_cyan",
+"colouredstuff:path_gray",
+"colouredstuff:path_green",
+"colouredstuff:path_light_blue",
+"colouredstuff:path_light_gray",
+"colouredstuff:path_lime",
+"colouredstuff:path_magenta",
+"colouredstuff:path_none",
+"colouredstuff:path_orange",
+"colouredstuff:path_pink",
+"colouredstuff:path_purple",
+"colouredstuff:path_red",
+"colouredstuff:path_white",
+"colouredstuff:path_yellow",
+   
+   
 "colouredstuff:dirt_black",
 "colouredstuff:dirt_blue",
 "colouredstuff:dirt_brown",

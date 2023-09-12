@@ -1,5 +1,7 @@
 package com.lothrazar.colouredstuff.block;
 
+import java.util.HashMap;
+import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
@@ -12,11 +14,13 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class BlockColourPathy extends BlockColour {
 
+  public static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
   //  protected static final VoxelShape SHAPE = FarmBlock.SHAPE;
   protected static final VoxelShape SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 15.0D, 16.0D);
 
   public BlockColourPathy(Properties p, DyeColorless s) {
     super(p, s);
+    RAINBOW.put(s, this);
   }
 
   @Override

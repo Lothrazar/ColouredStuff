@@ -2,6 +2,7 @@ package com.lothrazar.colouredstuff;
 
 import com.lothrazar.colouredstuff.block.BlockColour;
 import com.lothrazar.colouredstuff.block.BlockColourDirt;
+import com.lothrazar.colouredstuff.block.BlockColourPathy;
 import com.lothrazar.colouredstuff.block.BlockColourPillar;
 import com.lothrazar.colouredstuff.block.BlockColourSaplin;
 import com.lothrazar.colouredstuff.color.DyeColorless;
@@ -143,4 +144,23 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<BlockColour> dirt_red = BLOCKS.register("dirt_red", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.RED));
   public static final RegistryObject<BlockColour> dirt_white = BLOCKS.register("dirt_white", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.WHITE));
   public static final RegistryObject<BlockColour> dirt_yellow = BLOCKS.register("dirt_yellow", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.YELLOW));
+  //
+  public static final RegistryObject<BlockColour> path_none = BLOCKS.register("path_none", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.NONE));
+  public static final RegistryObject<BlockColour> path_black = BLOCKS.register("path_black", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.BLACK));
+  public static final RegistryObject<BlockColour> path_blue = BLOCKS.register("path_blue", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.BLUE));
+  public static final RegistryObject<BlockColour> path_brown = BLOCKS.register("path_brown", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.BROWN));
+  public static final RegistryObject<BlockColour> path_cyan = BLOCKS.register("path_cyan", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.CYAN));
+  public static final RegistryObject<BlockColour> path_gray = BLOCKS.register("path_gray", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.GRAY));
+  public static final RegistryObject<BlockColour> path_green = BLOCKS.register("path_green", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.GREEN));
+  public static final RegistryObject<BlockColour> path_light_blue = BLOCKS.register("path_light_blue", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<BlockColour> path_light_gray = BLOCKS.register("path_light_gray", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<BlockColour> path_lime = BLOCKS.register("path_lime", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.LIME));
+  public static final RegistryObject<BlockColour> path_magenta = BLOCKS.register("path_magenta", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.MAGENTA));
+  public static final RegistryObject<BlockColour> path_orange = BLOCKS.register("path_orange", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.ORANGE));
+  public static final RegistryObject<BlockColour> path_pink = BLOCKS.register("path_pink", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.PINK));
+  public static final RegistryObject<BlockColour> path_purple = BLOCKS.register("path_purple", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.PURPLE));
+  public static final RegistryObject<BlockColour> path_red = BLOCKS.register("path_red", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.RED));
+  public static final RegistryObject<BlockColour> path_white = BLOCKS.register("path_white", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.WHITE));
+  public static final RegistryObject<BlockColour> path_yellow = BLOCKS.register("path_yellow", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.YELLOW));
+  //
 }

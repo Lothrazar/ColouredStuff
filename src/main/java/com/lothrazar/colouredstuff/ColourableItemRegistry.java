@@ -148,6 +148,24 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> dirt_white = ITEMS.register("dirt_white", () -> new ItemColour(ColourableBlockRegistry.dirt_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> dirt_yellow = ITEMS.register("dirt_yellow", () -> new ItemColour(ColourableBlockRegistry.dirt_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
+  public static final RegistryObject<Item> path_none = ITEMS.register("path_none", () -> new ItemColour(ColourableBlockRegistry.path_none.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_BLACK = ITEMS.register("path_black", () -> new ItemColour(ColourableBlockRegistry.path_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_BLUE = ITEMS.register("path_blue", () -> new ItemColour(ColourableBlockRegistry.path_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_brown = ITEMS.register("path_brown", () -> new ItemColour(ColourableBlockRegistry.path_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_cyan = ITEMS.register("path_cyan", () -> new ItemColour(ColourableBlockRegistry.path_cyan.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_gray = ITEMS.register("path_gray", () -> new ItemColour(ColourableBlockRegistry.path_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_green = ITEMS.register("path_green", () -> new ItemColour(ColourableBlockRegistry.path_green.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_light_blue = ITEMS.register("path_light_blue", () -> new ItemColour(ColourableBlockRegistry.path_light_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_light_gray = ITEMS.register("path_light_gray", () -> new ItemColour(ColourableBlockRegistry.path_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_lime = ITEMS.register("path_lime", () -> new ItemColour(ColourableBlockRegistry.path_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_magenta = ITEMS.register("path_magenta", () -> new ItemColour(ColourableBlockRegistry.path_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_orange = ITEMS.register("path_orange", () -> new ItemColour(ColourableBlockRegistry.path_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_pink = ITEMS.register("path_pink", () -> new ItemColour(ColourableBlockRegistry.path_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_purple = ITEMS.register("path_purple", () -> new ItemColour(ColourableBlockRegistry.path_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_red = ITEMS.register("path_red", () -> new ItemColour(ColourableBlockRegistry.path_red.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_white = ITEMS.register("path_white", () -> new ItemColour(ColourableBlockRegistry.path_white.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> path_yellow = ITEMS.register("path_yellow", () -> new ItemColour(ColourableBlockRegistry.path_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
+  // 
   public static final TagKey<Item> DYES_NONE = ItemTags.create(new ResourceLocation("forge:dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));
 
