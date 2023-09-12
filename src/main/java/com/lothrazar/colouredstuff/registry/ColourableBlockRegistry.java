@@ -237,4 +237,23 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<BlockColour> sandstone_red = BLOCKS.register("sandstone_red", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.RED));
   public static final RegistryObject<BlockColour> sandstone_white = BLOCKS.register("sandstone_white", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.WHITE));
   public static final RegistryObject<BlockColour> sandstone_yellow = BLOCKS.register("sandstone_yellow", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.YELLOW));
+  //
+  public static final RegistryObject<BlockColour> chiseled_sandstone_none = BLOCKS.register("chiseled_sandstone_none", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.NONE));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_black = BLOCKS.register("chiseled_sandstone_black", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.BLACK));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_blue = BLOCKS.register("chiseled_sandstone_blue", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.BLUE));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_brown = BLOCKS.register("chiseled_sandstone_brown", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.BROWN));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_cyan = BLOCKS.register("chiseled_sandstone_cyan", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.CYAN));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_gray = BLOCKS.register("chiseled_sandstone_gray", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.GRAY));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_green = BLOCKS.register("chiseled_sandstone_green", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.GREEN));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_light_blue = BLOCKS.register("chiseled_sandstone_light_blue", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_light_gray = BLOCKS.register("chiseled_sandstone_light_gray", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_lime = BLOCKS.register("chiseled_sandstone_lime", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.LIME));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_magenta = BLOCKS.register("chiseled_sandstone_magenta", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.MAGENTA));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_orange = BLOCKS.register("chiseled_sandstone_orange", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.ORANGE));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_pink = BLOCKS.register("chiseled_sandstone_pink", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.PINK));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_purple = BLOCKS.register("chiseled_sandstone_purple", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.PURPLE));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_red = BLOCKS.register("chiseled_sandstone_red", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.RED));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_white = BLOCKS.register("chiseled_sandstone_white", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.WHITE));
+  public static final RegistryObject<BlockColour> chiseled_sandstone_yellow = BLOCKS.register("chiseled_sandstone_yellow", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.YELLOW));
+  //
 }

@@ -239,6 +239,24 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> sandstone_white = ITEMS.register("sandstone_white", () -> new ItemColour(ColourableBlockRegistry.sandstone_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> sandstone_yellow = ITEMS.register("sandstone_yellow", () -> new ItemColour(ColourableBlockRegistry.sandstone_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
+  public static final RegistryObject<Item> chiseled_sandstone_none = ITEMS.register("chiseled_sandstone_none", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_none.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_BLACK = ITEMS.register("chiseled_sandstone_black", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_BLUE = ITEMS.register("chiseled_sandstone_blue", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_brown = ITEMS.register("chiseled_sandstone_brown", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_cyan = ITEMS.register("chiseled_sandstone_cyan", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_cyan.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_gray = ITEMS.register("chiseled_sandstone_gray", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_green = ITEMS.register("chiseled_sandstone_green", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_green.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_light_blue = ITEMS.register("chiseled_sandstone_light_blue", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_light_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_light_gray = ITEMS.register("chiseled_sandstone_light_gray", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_lime = ITEMS.register("chiseled_sandstone_lime", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_magenta = ITEMS.register("chiseled_sandstone_magenta", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_orange = ITEMS.register("chiseled_sandstone_orange", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_pink = ITEMS.register("chiseled_sandstone_pink", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_purple = ITEMS.register("chiseled_sandstone_purple", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_red = ITEMS.register("chiseled_sandstone_red", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_red.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_white = ITEMS.register("chiseled_sandstone_white", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_white.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> chiseled_sandstone_yellow = ITEMS.register("chiseled_sandstone_yellow", () -> new ItemColour(ColourableBlockRegistry.chiseled_sandstone_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
+  //
   public static final TagKey<Item> DYES_NONE = ItemTags.create(new ResourceLocation("forge:dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));
 

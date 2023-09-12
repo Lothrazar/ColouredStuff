@@ -17,6 +17,24 @@
 "block.colouredstuff.sandstone_white" : "White Sandstone",
 "block.colouredstuff.sandstone_yellow" : "Yellow Sandstone",
 
+"block.colouredstuff.chiseled_sandstone_black" : "Black Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_blue" : "Blue Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_brown" : "Brown Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_cyan" : "Cyan Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_gray" : "Gray Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_green" : "Green Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_light_blue" : "Light Blue Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_light_gray" : "Light Gray Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_lime" : "Lime Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_magenta" : "Magenta Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_none" : "Colorless Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_orange" : "Orange Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_pink" : "Pink Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_purple" : "Purple Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_red" : "Red Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_white" : "White Chiseled Sandstone",
+"block.colouredstuff.chiseled_sandstone_yellow" : "Yellow Chiseled Sandstone",
+
 
 
 "block.colouredstuff.log_stripped_black" : "Black Stripped Log",
