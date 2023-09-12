@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.color.DyeColorless;
+import com.lothrazar.colouredstuff.color.IHasColor;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
@@ -68,6 +69,10 @@ public class RainbowTreeGrower extends AbstractTreeGrower {
     final boolean hasFlowers = false;
     var resourcekey = this.getConfiguredFeature(rand, hasFlowers); //default 
     // TODO: new method to get blcoks 
+    if (saplingState.getBlock() instanceof IHasColor block) {
+      DyeColorless color = block.getColor();
+      resourcekey = RAINBOW_OF_TREES.get(color);
+    }
     //    if (saplingState.hasProperty(BlockColour.COLOR)) {
     //      DyeColorless color = saplingState.getValue(BlockColour.COLOR);
     //      resourcekey = RAINBOW_OF_TREES.get(color);

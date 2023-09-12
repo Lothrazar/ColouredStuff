@@ -1,5 +1,6 @@
 package com.lothrazar.colouredstuff.block;
 
+import com.lothrazar.colouredstuff.color.DyeColorless;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -33,7 +34,7 @@ public class BlockColourSaplin extends BlockColour implements IPlantable, Boneme
   protected static final VoxelShape SHAPE = Block.box(2.0D, 0.0D, 2.0D, 14.0D, 12.0D, 14.0D); // SaplingBlock.SHAPE;
   private final AbstractTreeGrower treeGrower;
 
-  public BlockColourSaplin(AbstractTreeGrower g, Properties p, Settings s) {
+  public BlockColourSaplin(AbstractTreeGrower g, Properties p, DyeColorless s) {
     super(p.mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY), s);
     this.treeGrower = g;
     this.registerDefaultState(this.stateDefinition.any().setValue(STAGE, Integer.valueOf(0)));
@@ -81,7 +82,7 @@ public class BlockColourSaplin extends BlockColour implements IPlantable, Boneme
 
   @Override
   public boolean isBonemealSuccess(Level level, RandomSource rand, BlockPos pos, BlockState state) {
-    return (double) level.random.nextFloat() < 0.45D;
+    return level.random.nextFloat() < 0.45D;
   }
 
   @Override

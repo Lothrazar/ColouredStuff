@@ -1,6 +1,7 @@
 package com.lothrazar.colouredstuff.block;
 
 import com.lothrazar.colouredstuff.ModColourable;
+import com.lothrazar.colouredstuff.color.DyeColorless;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -21,7 +22,7 @@ import net.minecraftforge.common.PlantType;
 
 public class FarmlandColour extends BlockColourPathy {
 
-  public FarmlandColour(Properties p, Settings s) {
+  public FarmlandColour(Properties p, DyeColorless s) {
     super(p, s);
   }
 

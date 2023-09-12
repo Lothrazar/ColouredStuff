@@ -1,13 +1,13 @@
 package com.lothrazar.colouredstuff.block;
 
-import com.lothrazar.library.block.BlockFlib;
+import com.lothrazar.colouredstuff.color.DyeColorless;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
 
 public class BlockColourLog extends BlockColourPillar {
 
-  public BlockColourLog(Properties p, BlockFlib.Settings s) {
+  public BlockColourLog(Properties p, DyeColorless s) {
     super(p, s);
   }
 

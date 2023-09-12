@@ -1,12 +1,13 @@
 package com.lothrazar.colouredstuff.block;
 
+import com.lothrazar.colouredstuff.color.DyeColorless;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
 
 public class BlockColourDirt extends BlockColour {
 
-  public BlockColourDirt(Properties p, Settings s) {
+  public BlockColourDirt(Properties p, DyeColorless s) {
     super(p.noOcclusion(), s);
   }
 

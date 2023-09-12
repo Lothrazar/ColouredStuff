@@ -1,5 +1,23 @@
 {
 
+"block.colouredstuff.sapling_black" : "Black Sapling",
+"block.colouredstuff.sapling_blue" : "Blue Sapling",
+"block.colouredstuff.sapling_brown" : "Brown Sapling",
+"block.colouredstuff.sapling_cyan" : "Cyan Sapling",
+"block.colouredstuff.sapling_gray" : "Gray Sapling",
+"block.colouredstuff.sapling_green" : "Green Sapling",
+"block.colouredstuff.sapling_light_blue" : "Light Blue Sapling",
+"block.colouredstuff.sapling_light_gray" : "Light Gray Sapling",
+"block.colouredstuff.sapling_lime" : "Lime Sapling",
+"block.colouredstuff.sapling_magenta" : "Magenta Sapling",
+"block.colouredstuff.sapling_none" : "Colorless Sapling",
+"block.colouredstuff.sapling_orange" : "Orange Sapling",
+"block.colouredstuff.sapling_pink" : "Pink Sapling",
+"block.colouredstuff.sapling_purple" : "Purple Sapling",
+"block.colouredstuff.sapling_red" : "Red Sapling",
+"block.colouredstuff.sapling_white" : "White Sapling",
+"block.colouredstuff.sapling_yellow" : "Yellow Sapling",
+
 "block.colouredstuff.leaves_black" : "Black Leaves",
 "block.colouredstuff.leaves_blue" : "Blue Leaves",
 "block.colouredstuff.leaves_brown" : "Brown Leaves",

@@ -17,9 +17,8 @@
     "foliage_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "colouredstuff:leaves",
+        "Name": "colouredstuff:leaves_purple",
         "Properties": {
-        		"color":"purple",
           "distance": "7",
           "persistent": "false",
           "waterlogged": "false"
@@ -43,9 +42,8 @@
     "trunk_provider": {
       "type": "minecraft:simple_state_provider",
       "state": {
-        "Name": "colouredstuff:log",
+        "Name": "colouredstuff:log_purple",
         "Properties": {
-        		"color":"purple",
           "axis": "y"
         }
       }

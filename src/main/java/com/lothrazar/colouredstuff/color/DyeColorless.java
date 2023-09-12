@@ -9,6 +9,10 @@ public enum DyeColorless implements StringRepresentable {
 
   WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK, NONE;
 
+  public boolean isColorless() {
+    return this == NONE;
+  }
+
   public static final Map<DyeColorless, DyeColor> TOCOLOR = new HashMap<>() {
 
     {

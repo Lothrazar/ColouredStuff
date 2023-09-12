@@ -3,6 +3,7 @@ package com.lothrazar.colouredstuff.block;
 import com.lothrazar.colouredstuff.ColourableItemRegistry;
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.color.DyeColorless;
+import com.lothrazar.colouredstuff.color.IHasColor;
 import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -14,10 +15,18 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock;
 
-public class BlockColour extends BlockFlib {
+public class BlockColour extends BlockFlib implements IHasColor {
 
-  public BlockColour(Properties p, BlockFlib.Settings s) {
-    super(p, s);
+  private final DyeColorless color;
+
+  public BlockColour(Properties p, DyeColorless color) {
+    super(p, new BlockFlib.Settings());
+    this.color = color;
+  }
+
+  @Override
+  public DyeColorless getColor() {
+    return color;
   }
   //  @Override // TODO: maybe only for colorless
   //  public BlockState getStateForPlacement(BlockPlaceContext ctx) {

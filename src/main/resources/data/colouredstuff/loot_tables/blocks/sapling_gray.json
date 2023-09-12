@@ -7,16 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "block": "colouredstuff:sapling",
-              "function": "minecraft:copy_state",
-              "properties": [
-                "color"
-              ]
-            }
-          ],
-          "name": "colouredstuff:sapling"
+          "name": "colouredstuff:sapling_gray"
         }
       ],
       "conditions": [

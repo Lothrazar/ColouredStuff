@@ -1,6 +1,6 @@
 package com.lothrazar.colouredstuff.block;
 
-import com.lothrazar.library.block.BlockFlib;
+import com.lothrazar.colouredstuff.color.DyeColorless;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.Block;
@@ -15,7 +15,7 @@ public class BlockColourPillar extends BlockColour {
 
   public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
-  public BlockColourPillar(Properties p, BlockFlib.Settings s) {
+  public BlockColourPillar(Properties p, DyeColorless s) {
     super(p, s);
   }
 
