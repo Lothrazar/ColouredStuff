@@ -1,4 +1,4 @@
-package com.lothrazar.colouredstuff.client;
+package com.lothrazar.colouredstuff.registry.client;
 
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.color.DyeColorless;

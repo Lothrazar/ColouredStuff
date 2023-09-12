@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 
-public class BlockColourPillar extends BlockColour {
+public abstract class BlockColourPillar extends BlockColour {
 
   public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 

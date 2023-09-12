@@ -1,9 +1,9 @@
 package com.lothrazar.colouredstuff.block;
 
-import com.lothrazar.colouredstuff.ColourableItemRegistry;
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.color.IHasColor;
+import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
 import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -28,27 +28,6 @@ public class BlockColour extends BlockFlib implements IHasColor {
   public DyeColorless getColor() {
     return color;
   }
-  //  @Override // TODO: maybe only for colorless
-  //  public BlockState getStateForPlacement(BlockPlaceContext ctx) {
-  //    BlockState state = this.defaultBlockState();
-  //    if (ctx.getHand() == InteractionHand.MAIN_HAND && ctx.getPlayer() != null) {
-  //      //now attempt
-  //      ItemStack itemInHand = ctx.getPlayer().getItemInHand(InteractionHand.OFF_HAND);
-  //      if (itemInHand.getItem() instanceof DyeItem dye) {
-  //        //if we already have a colour, dont worry about -none
-  //        //TODO: unless we want to check for a tagged 'soap' item?
-  //        state = state.setValue(BlockColour.COLOR, DyeColorless.toColorless(dye.getDyeColor()));
-  //      }
-  //      else if (itemInHand.is(ColourableRegistry.DYES_NONE)) {
-  //        //is dyes none 
-  //        state = state.setValue(BlockColour.COLOR, DyeColorless.NONE);
-  //      }
-  //      else if (itemInHand.is(Tags.Items.DYES)) {
-  //        ModColourable.LOGGER.error("TODO: this is tagged as a dye item but its not a vanilla dye , we should fix this");
-  //      }
-  //    }
-  //    return state;
-  //  }
 
   @Override // TODO port
   public void onRightClickBlock(RightClickBlock event, BlockState state) {

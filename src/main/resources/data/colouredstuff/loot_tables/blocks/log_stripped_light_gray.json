@@ -7,16 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "block": "colouredstuff:log_stripped",
-              "function": "minecraft:copy_state",
-              "properties": [
-                "color"
-              ]
-            }
-          ],
-          "name": "colouredstuff:log_stripped"
+          "name": "colouredstuff:log_stripped_light_gray"
         }
       ],
       "conditions": [

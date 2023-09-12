@@ -1,5 +1,23 @@
 {
 
+"block.colouredstuff.log_stripped_black" : "Black Stone Bricks",
+"block.colouredstuff.log_stripped_blue" : "Blue Stone Bricks",
+"block.colouredstuff.log_stripped_brown" : "Brown Stone Bricks",
+"block.colouredstuff.log_stripped_cyan" : "Cyan Stone Bricks",
+"block.colouredstuff.log_stripped_gray" : "Gray Stone Bricks",
+"block.colouredstuff.log_stripped_green" : "Green Stone Bricks",
+"block.colouredstuff.log_stripped_light_blue" : "Light Blue Stone Bricks",
+"block.colouredstuff.log_stripped_light_gray" : "Light Gray Stone Bricks",
+"block.colouredstuff.log_stripped_lime" : "Lime Stone Bricks",
+"block.colouredstuff.log_stripped_magenta" : "Magenta Stone Bricks",
+"block.colouredstuff.log_stripped_none" : "Colorless Stone Bricks",
+"block.colouredstuff.log_stripped_orange" : "Orange Stone Bricks",
+"block.colouredstuff.log_stripped_pink" : "Pink Stone Bricks",
+"block.colouredstuff.log_stripped_purple" : "Purple Stone Bricks",
+"block.colouredstuff.log_stripped_red" : "Red Stone Bricks",
+"block.colouredstuff.log_stripped_white" : "White Stone Bricks",
+"block.colouredstuff.log_stripped_yellow" : "Yellow Stone Bricks",
+
 "block.colouredstuff.stone_bricks_black" : "Black Stone Bricks",
 "block.colouredstuff.stone_bricks_blue" : "Blue Stone Bricks",
 "block.colouredstuff.stone_bricks_brown" : "Brown Stone Bricks",

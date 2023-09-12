@@ -22,7 +22,7 @@ import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.common.PlantType;
 
-public class FarmlandColour extends BlockColourPathy {
+public class FarmlandColour extends PathColour {
 
   public static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
 

@@ -12,13 +12,13 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class BlockColourPathy extends BlockColour {
+public class PathColour extends BlockColour {
 
   public static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
   //  protected static final VoxelShape SHAPE = FarmBlock.SHAPE;
   protected static final VoxelShape SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 15.0D, 16.0D);
 
-  public BlockColourPathy(Properties p, DyeColorless s) {
+  public PathColour(Properties p, DyeColorless s) {
     super(p, s);
     RAINBOW.put(s, this);
   }

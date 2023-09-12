@@ -38,10 +38,10 @@ do
 	cp "${folderdata}"/loot_tables/blocks/"${seed}"_black.json "${folderdata}"/loot_tables/blocks/"${seed}"_$color.json
 	sed -i -e "s/black/${color}/g" "${folderdata}"/loot_tables/blocks/"${seed}"_$color.json
    
-	cp "${folderdata}"/recipes/"${seed}"_black.json "${folderdata}"/recipes/"${seed}"_$color.json
-	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_$color.json
-	cp "${folderdata}"/recipes/"${seed}"_black_sc.json "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
-	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
+#	cp "${folderdata}"/recipes/"${seed}"_black.json "${folderdata}"/recipes/"${seed}"_$color.json
+#	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_$color.json
+#	cp "${folderdata}"/recipes/"${seed}"_black_sc.json "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
+#	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
 
 	echo "\"block.colouredstuff.${seed}_${color}\" : \"${name} Stone Bricks\","
 	 

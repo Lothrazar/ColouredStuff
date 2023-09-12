@@ -1,5 +1,6 @@
-package com.lothrazar.colouredstuff;
+package com.lothrazar.colouredstuff.registry;
 
+import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.item.ItemColour;
 import com.lothrazar.library.item.ItemFlib;
 import net.minecraft.core.registries.Registries;
@@ -57,6 +58,24 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> log_red = ITEMS.register("log_red", () -> new ItemColour(ColourableBlockRegistry.log_red.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> log_white = ITEMS.register("log_white", () -> new ItemColour(ColourableBlockRegistry.log_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> log_yellow = ITEMS.register("log_yellow", () -> new ItemColour(ColourableBlockRegistry.log_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
+  //
+  public static final RegistryObject<Item> log_stripped_none = ITEMS.register("log_stripped_none", () -> new ItemColour(ColourableBlockRegistry.log_stripped_none.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_BLACK = ITEMS.register("log_stripped_black", () -> new ItemColour(ColourableBlockRegistry.log_stripped_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_BLUE = ITEMS.register("log_stripped_blue", () -> new ItemColour(ColourableBlockRegistry.log_stripped_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_brown = ITEMS.register("log_stripped_brown", () -> new ItemColour(ColourableBlockRegistry.log_stripped_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_cyan = ITEMS.register("log_stripped_cyan", () -> new ItemColour(ColourableBlockRegistry.log_stripped_cyan.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_gray = ITEMS.register("log_stripped_gray", () -> new ItemColour(ColourableBlockRegistry.log_stripped_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_green = ITEMS.register("log_stripped_green", () -> new ItemColour(ColourableBlockRegistry.log_stripped_green.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_light_blue = ITEMS.register("log_stripped_light_blue", () -> new ItemColour(ColourableBlockRegistry.log_stripped_light_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_light_gray = ITEMS.register("log_stripped_light_gray", () -> new ItemColour(ColourableBlockRegistry.log_stripped_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_lime = ITEMS.register("log_stripped_lime", () -> new ItemColour(ColourableBlockRegistry.log_stripped_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_magenta = ITEMS.register("log_stripped_magenta", () -> new ItemColour(ColourableBlockRegistry.log_stripped_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_orange = ITEMS.register("log_stripped_orange", () -> new ItemColour(ColourableBlockRegistry.log_stripped_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_pink = ITEMS.register("log_stripped_pink", () -> new ItemColour(ColourableBlockRegistry.log_stripped_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_purple = ITEMS.register("log_stripped_purple", () -> new ItemColour(ColourableBlockRegistry.log_stripped_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_red = ITEMS.register("log_stripped_red", () -> new ItemColour(ColourableBlockRegistry.log_stripped_red.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_white = ITEMS.register("log_stripped_white", () -> new ItemColour(ColourableBlockRegistry.log_stripped_white.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> log_stripped_yellow = ITEMS.register("log_stripped_yellow", () -> new ItemColour(ColourableBlockRegistry.log_stripped_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
   public static final RegistryObject<Item> stone_none = ITEMS.register("stone_none", () -> new ItemColour(ColourableBlockRegistry.stone_none.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stone_BLACK = ITEMS.register("stone_black", () -> new ItemColour(ColourableBlockRegistry.stone_black.get(), new Item.Properties(), new ItemFlib.Settings()));

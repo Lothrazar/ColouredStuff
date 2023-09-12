@@ -2,7 +2,8 @@ package com.lothrazar.colouredstuff;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.lothrazar.colouredstuff.client.ColourableClient;
+import com.lothrazar.colouredstuff.registry.ColourableBlockRegistry;
+import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -17,7 +18,6 @@ public class ModColourable {
     IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
     ColourableBlockRegistry.BLOCKS.register(eventBus);
     ColourableItemRegistry.ITEMS.register(eventBus);
-    FMLJavaModLoadingContext.get().getModEventBus().addListener(ColourableClient::setupClient);
-    //    MinecraftForge.EVENT_BUS.register(new RuneEvents());  
+    //    FMLJavaModLoadingContext.get().getModEventBus().addListener(ColourableClient::setupClient); 
   }
 }
