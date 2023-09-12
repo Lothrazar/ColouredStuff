@@ -1,49 +1,29 @@
 package com.lothrazar.colouredstuff.item;
 
-import java.util.List;
-import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.library.item.BlockItemFlib;
 import com.lothrazar.library.item.ItemFlib;
-import com.lothrazar.library.util.ChatUtil;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class ItemColour extends BlockItemFlib {
 
   public ItemColour(Block b, Properties prop, ItemFlib.Settings s) {
     super(b, prop, s);
   }
-
-  @Override
-  @OnlyIn(Dist.CLIENT)
-  public void appendHoverText(ItemStack stack, Level worldIn, List<Component> tooltip, TooltipFlag flagIn) {
-    if (stack.hasTag() && stack.getTag().contains("BlockStateTag")) {
-      String color = getColorStringFromNbt(stack);
-      tooltip.add(ChatUtil.ilang("item.minecraft." + color + "_dye"));
-      return;
-    }
-    super.appendHoverText(stack, worldIn, tooltip, flagIn);
-  }
-
-  public static String getColorStringFromNbt(ItemStack stack) {
-    if (stack.hasTag() && stack.getTag().contains("BlockStateTag")
-        && stack.getTag().getCompound("BlockStateTag").contains("color")) {
-      String color = stack.getTag().getCompound("BlockStateTag").getString("color");
-      return color;
-    }
-    return DyeColorless.NONE.getSerializedName(); // default
-  }
-
-  public static void writeColorStringNbt(ItemStack stack, String color) {
-    //TODO: validate color
-    CompoundTag state = new CompoundTag();
-    state.putString("color", color);
-    stack.getOrCreateTag().put("BlockStateTag", state);
-  }
+  //  @Override
+  //  @OnlyIn(Dist.CLIENT)
+  //  public void appendHoverText(ItemStack stack, Level worldIn, List<Component> tooltip, TooltipFlag flagIn) {
+  //    if (stack.hasTag() && stack.getTag().contains("BlockStateTag")) {
+  //      String color = getColorStringFromNbt(stack);
+  //      tooltip.add(ChatUtil.ilang("item.minecraft." + color + "_dye"));
+  //      return;
+  //    }
+  //    super.appendHoverText(stack, worldIn, tooltip, flagIn);
+  //  }
+  //
+  //  public static void writeColorStringNbt(ItemStack stack, String color) {
+  //    //TODO: validate color
+  //    CompoundTag state = new CompoundTag();
+  //    state.putString("color", color);
+  //    stack.getOrCreateTag().put("BlockStateTag", state);
+  //  }
 }

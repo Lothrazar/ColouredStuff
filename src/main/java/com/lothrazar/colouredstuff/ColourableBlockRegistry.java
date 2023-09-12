@@ -13,8 +13,8 @@ import net.minecraftforge.registries.RegistryObject;
 public class ColourableBlockRegistry {
 
   public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ModColourable.MODID);
-  public static final RegistryObject<BlockColour> PLANKS_BLACK = BLOCKS.register("planks_black", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_PLANKS), new BlockFlib.Settings())); // .strength(2.0F, 3.0F)
-  public static final RegistryObject<BlockColour> PLANKS_BLUE = BLOCKS.register("planks_blue", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_PLANKS), new BlockFlib.Settings())); // .strength(2.0F, 3.0F)
+  public static final RegistryObject<BlockColour> planks_black = BLOCKS.register("planks_black", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_PLANKS), new BlockFlib.Settings())); // .strength(2.0F, 3.0F)
+  public static final RegistryObject<BlockColour> planks_blue = BLOCKS.register("planks_blue", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_PLANKS), new BlockFlib.Settings())); // .strength(2.0F, 3.0F)
   public static final RegistryObject<BlockColour> PLANKS_brown = BLOCKS.register("planks_brown", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_PLANKS), new BlockFlib.Settings()));
   public static final RegistryObject<BlockColour> PLANKS_cyan = BLOCKS.register("planks_cyan", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_PLANKS), new BlockFlib.Settings()));
   public static final RegistryObject<BlockColour> PLANKS_gray = BLOCKS.register("planks_gray", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_PLANKS), new BlockFlib.Settings()));

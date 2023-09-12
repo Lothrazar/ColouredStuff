@@ -22,23 +22,26 @@ import net.minecraftforge.registries.RegistryObject;
 public class ColourableItemRegistry {
 
   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ModColourable.MODID);
-  public static final RegistryObject<Item> PLANKS_BLACK = ITEMS.register("planks_black", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLACK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_BLUE = ITEMS.register("planks_blue", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_brown = ITEMS.register("planks_brown", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_cyan = ITEMS.register("planks_cyan", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_gray = ITEMS.register("planks_gray", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_green = ITEMS.register("planks_green", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_light_blue = ITEMS.register("planks_light_blue", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_light_gray = ITEMS.register("planks_light_gray", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_lime = ITEMS.register("planks_lime", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_magenta = ITEMS.register("planks_magenta", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_none = ITEMS.register("planks_none", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_orange = ITEMS.register("planks_orange", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_pink = ITEMS.register("planks_pink", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_purple = ITEMS.register("planks_purple", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_red = ITEMS.register("planks_red", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_white = ITEMS.register("planks_white", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
-  public static final RegistryObject<Item> PLANKS_yellow = ITEMS.register("planks_yellow", () -> new ItemColour(ColourableBlockRegistry.PLANKS_BLUE.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_BLACK = ITEMS.register("planks_black", () -> new ItemColour(ColourableBlockRegistry.planks_black.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_BLUE = ITEMS.register("planks_blue", () -> new ItemColour(ColourableBlockRegistry.planks_blue.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_brown = ITEMS.register("planks_brown", () -> new ItemColour(ColourableBlockRegistry.PLANKS_brown.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_cyan = ITEMS.register("planks_cyan", () -> new ItemColour(ColourableBlockRegistry.PLANKS_cyan.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_gray = ITEMS.register("planks_gray", () -> new ItemColour(ColourableBlockRegistry.PLANKS_gray.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_green = ITEMS.register("planks_green", () -> new ItemColour(ColourableBlockRegistry.PLANKS_green.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_light_blue = ITEMS.register("planks_light_blue", () -> new ItemColour(ColourableBlockRegistry.PLANKS_light_blue.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_light_gray = ITEMS.register("planks_light_gray", () -> new ItemColour(ColourableBlockRegistry.PLANKS_light_gray.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_lime = ITEMS.register("planks_lime", () -> new ItemColour(ColourableBlockRegistry.PLANKS_lime.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_magenta = ITEMS.register("planks_magenta", () -> new ItemColour(ColourableBlockRegistry.PLANKS_magenta.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_none = ITEMS.register("planks_none", () -> new ItemColour(ColourableBlockRegistry.PLANKS_none.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_orange = ITEMS.register("planks_orange", () -> new ItemColour(ColourableBlockRegistry.PLANKS_orange.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_pink = ITEMS.register("planks_pink", () -> new ItemColour(ColourableBlockRegistry.PLANKS_pink.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_purple = ITEMS.register("planks_purple", () -> new ItemColour(ColourableBlockRegistry.PLANKS_purple.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_red = ITEMS.register("planks_red", () -> new ItemColour(ColourableBlockRegistry.PLANKS_red.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_white = ITEMS.register("planks_white", () -> new ItemColour(ColourableBlockRegistry.PLANKS_white.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> PLANKS_yellow = ITEMS.register("planks_yellow", () -> new ItemColour(ColourableBlockRegistry.PLANKS_yellow.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  //
+  //
+  //
   //  public static final RegistryObject<Item> BRICKS_ITEM = ITEMS.register("bricks", () -> new ItemColour(BRICKS_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   //  public static final RegistryObject<Item> SANDSTONE_ITEM = ITEMS.register("sandstone", () -> new ItemColour(SANDSTONE_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   //  public static final RegistryObject<Item> LOG_ITEM = ITEMS.register("log", () -> new ItemColour(LOG_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));

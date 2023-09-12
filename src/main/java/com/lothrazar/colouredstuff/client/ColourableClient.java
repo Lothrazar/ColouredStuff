@@ -2,12 +2,21 @@ package com.lothrazar.colouredstuff.client;
 
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.color.DyeColorless;
-import com.lothrazar.colouredstuff.item.ItemColour;
 import net.minecraft.client.renderer.item.ItemPropertyFunction;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 public class ColourableClient {
+
+  public static String getColorStringFromNbt(ItemStack stack) {
+    if (stack.hasTag() && stack.getTag().contains("BlockStateTag")
+        && stack.getTag().getCompound("BlockStateTag").contains("color")) {
+      String color = stack.getTag().getCompound("BlockStateTag").getString("color");
+      return color;
+    }
+    return DyeColorless.NONE.getSerializedName(); // default
+  }
 
   @SuppressWarnings("deprecation")
   public static void setupClient(final FMLClientSetupEvent event) {
@@ -15,7 +24,7 @@ public class ColourableClient {
     final ResourceLocation dyeId = new ResourceLocation(ModColourable.MODID, "dye");
     final ItemPropertyFunction predicate = (stack, world, living, id) -> {
       if (stack.hasTag()) {
-        String colorString = ItemColour.getColorStringFromNbt(stack).toUpperCase();
+        String colorString = getColorStringFromNbt(stack).toUpperCase();
         return DyeColorless.valueOf(colorString).ordinal();
       }
       return DyeColorless.NONE.ordinal();

@@ -1,31 +1,25 @@
 {
+
+
+	"block.colouredstuff.planks_blue" : "Blue Wooden Planks",
+	"block.colouredstuff.planks_brown" : "Brown Wooden Planks",
+	"block.colouredstuff.planks_cyan" : "Cyan Wooden Planks",
+	"block.colouredstuff.planks_gray" : "Gray Wooden Planks",
+	"block.colouredstuff.planks_green" : "Green Wooden Planks",
+	"block.colouredstuff.planks_light_blue" : "Light Blue Wooden Planks",
+	"block.colouredstuff.planks_light_gray" : "Light Gray Wooden Planks",
+	"block.colouredstuff.planks_lime" : "Lime Wooden Planks",
+	"block.colouredstuff.planks_magenta" : "Magenta Wooden Planks",
+	"block.colouredstuff.planks_none" : "Colorless Wooden Planks",
+	"block.colouredstuff.planks_orange" : "Orange Wooden Planks",
+	"block.colouredstuff.planks_pink" : "Pink Wooden Planks",
+	"block.colouredstuff.planks_purple" : "Purple Wooden Planks",
+	"block.colouredstuff.planks_red" : "Red Wooden Planks",
+	"block.colouredstuff.planks_white" : "White Wooden Planks",
+	"block.colouredstuff.planks_yellow" : "Yellow Wooden Planks",
+	
+
 	"item.minecraft.none_dye":"None Dye",
 
-	"itemGroup.colouredstuff":"Colourable Stuff",
-	"block.colouredstuff.planks":"Colourable Wooden Planks",
-	"block.colouredstuff.planks.tooltip":"Hold dye in offhand or dye after placing",
-	"block.colouredstuff.bricks":"Colourable Stonebricks",
-	"block.colouredstuff.bricks.tooltip":"Hold dye in offhand or dye after placing",
-	"block.colouredstuff.sandstone":"Colourable Sandstone ",
-	"block.colouredstuff.sandstone.tooltip":"Hold dye in offhand or dye after placing",
-	"block.colouredstuff.chiseled_sandstone":"Colourable Chiseled Sandstone ",
-	"block.colouredstuff.chiseled_sandstone.tooltip":"Hold dye in offhand or dye after placing",
-	"block.colouredstuff.dirt":"Colourable Dirt",
-	"block.colouredstuff.dirt.tooltip":"Hold dye in offhand or dye after placing",
-	"block.colouredstuff.log":"Colourable Logs",
-	"block.colouredstuff.log.tooltip":"Hold dye in offhand or dye after placing",
-	"block.colouredstuff.log_stripped":"Colourable Stripped Logs",
-	"block.colouredstuff.log_stripped.tooltip":"Hold dye in offhand or dye after placing",
-	"block.colouredstuff.leaves":"Colourable Leaves",
-	"block.colouredstuff.leaves.tooltip":"Hold dye in offhand or dye after placing",
-	"block.colouredstuff.sapling":"Colourable Sapling",
-	"block.colouredstuff.sapling.tooltip":"Hold dye in offhand or dye after placing",
-	"block.colouredstuff.stone":"Colourable Stone",
-	"block.colouredstuff.stone.tooltip":"Hold dye in offhand or dye after placing",
-	"block.colouredstuff.cobblestone":"Colourable Cobblestone",
-	"block.colouredstuff.cobblestone.tooltip":"Hold dye in offhand or dye after placing",
-	"block.colouredstuff.path":"Colourable Dirt Path",
-	"block.colouredstuff.path.tooltip":"Hold dye in offhand or dye after placing",
-	"block.colouredstuff.farmland":"Colourable Farmland",
-	"block.colouredstuff.farmland.tooltip":"Hold dye in offhand or dye after placing"
+	"itemGroup.colouredstuff":"Colourable Stuff"
 }
