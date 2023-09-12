@@ -1,4 +1,22 @@
 {
+"block.colouredstuff.sandstone_black" : "Black Sandstone",
+"block.colouredstuff.sandstone_blue" : "Blue Sandstone",
+"block.colouredstuff.sandstone_brown" : "Brown Sandstone",
+"block.colouredstuff.sandstone_cyan" : "Cyan Sandstone",
+"block.colouredstuff.sandstone_gray" : "Gray Sandstone",
+"block.colouredstuff.sandstone_green" : "Green Sandstone",
+"block.colouredstuff.sandstone_light_blue" : "Light Blue Sandstone",
+"block.colouredstuff.sandstone_light_gray" : "Light Gray Sandstone",
+"block.colouredstuff.sandstone_lime" : "Lime Sandstone",
+"block.colouredstuff.sandstone_magenta" : "Magenta Sandstone",
+"block.colouredstuff.sandstone_none" : "Colorless Sandstone",
+"block.colouredstuff.sandstone_orange" : "Orange Sandstone",
+"block.colouredstuff.sandstone_pink" : "Pink Sandstone",
+"block.colouredstuff.sandstone_purple" : "Purple Sandstone",
+"block.colouredstuff.sandstone_red" : "Red Sandstone",
+"block.colouredstuff.sandstone_white" : "White Sandstone",
+"block.colouredstuff.sandstone_yellow" : "Yellow Sandstone",
+
 
 
 "block.colouredstuff.log_stripped_black" : "Black Stripped Log",

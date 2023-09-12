@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#-#"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:sandstone"
+    },
+    "-": {
+      "tag": "forge:dyes/purple"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:sandstone_purple",
+    "count": 2
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#-#"
+  ],
+  "key": {
+    "#": {
+      "tag": "forge:sandstone"
+    },
+    "-": {
+      "tag": "forge:dyes/yellow"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:sandstone_yellow",
+    "count": 2
+  }
+}

@@ -3,7 +3,9 @@
   "values": [
     
     
-    "#minecraft:stone_bricks",
+"#minecraft:stone_bricks",
+"#forge:sandstone",
+
 "colouredstuff:cobblestone_black",
 "colouredstuff:cobblestone_blue",
 "colouredstuff:cobblestone_brown",

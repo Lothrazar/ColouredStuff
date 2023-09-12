@@ -1,6 +1,22 @@
 {
   "replace": false,
   "values": [
- 
+"colouredstuff:sandstone_black",
+"colouredstuff:sandstone_blue",
+"colouredstuff:sandstone_brown",
+"colouredstuff:sandstone_cyan",
+"colouredstuff:sandstone_gray",
+"colouredstuff:sandstone_green",
+"colouredstuff:sandstone_light_blue",
+"colouredstuff:sandstone_light_gray",
+"colouredstuff:sandstone_lime",
+"colouredstuff:sandstone_magenta",
+"colouredstuff:sandstone_none",
+"colouredstuff:sandstone_orange",
+"colouredstuff:sandstone_pink",
+"colouredstuff:sandstone_purple",
+"colouredstuff:sandstone_red",
+"colouredstuff:sandstone_white",
+"colouredstuff:sandstone_yellow"
   ]
 }
