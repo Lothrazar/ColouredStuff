@@ -7,16 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "block": "colouredstuff:sandstone",
-              "function": "minecraft:copy_state",
-              "properties": [
-                "color"
-              ]
-            }
-          ],
-          "name": "colouredstuff:sandstone"
+          "name": "colouredstuff:sandstone_black"
         }
       ],
       "conditions": [

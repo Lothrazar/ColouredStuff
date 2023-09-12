@@ -221,6 +221,24 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> stone_bricks_white = ITEMS.register("stone_bricks_white", () -> new ItemColour(ColourableBlockRegistry.stone_bricks_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stone_bricks_yellow = ITEMS.register("stone_bricks_yellow", () -> new ItemColour(ColourableBlockRegistry.stone_bricks_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
+  public static final RegistryObject<Item> sandstone_none = ITEMS.register("sandstone_none", () -> new ItemColour(ColourableBlockRegistry.sandstone_none.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_BLACK = ITEMS.register("sandstone_black", () -> new ItemColour(ColourableBlockRegistry.sandstone_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_BLUE = ITEMS.register("sandstone_blue", () -> new ItemColour(ColourableBlockRegistry.sandstone_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_brown = ITEMS.register("sandstone_brown", () -> new ItemColour(ColourableBlockRegistry.sandstone_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_cyan = ITEMS.register("sandstone_cyan", () -> new ItemColour(ColourableBlockRegistry.sandstone_cyan.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_gray = ITEMS.register("sandstone_gray", () -> new ItemColour(ColourableBlockRegistry.sandstone_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_green = ITEMS.register("sandstone_green", () -> new ItemColour(ColourableBlockRegistry.sandstone_green.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_light_blue = ITEMS.register("sandstone_light_blue", () -> new ItemColour(ColourableBlockRegistry.sandstone_light_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_light_gray = ITEMS.register("sandstone_light_gray", () -> new ItemColour(ColourableBlockRegistry.sandstone_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_lime = ITEMS.register("sandstone_lime", () -> new ItemColour(ColourableBlockRegistry.sandstone_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_magenta = ITEMS.register("sandstone_magenta", () -> new ItemColour(ColourableBlockRegistry.sandstone_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_orange = ITEMS.register("sandstone_orange", () -> new ItemColour(ColourableBlockRegistry.sandstone_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_pink = ITEMS.register("sandstone_pink", () -> new ItemColour(ColourableBlockRegistry.sandstone_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_purple = ITEMS.register("sandstone_purple", () -> new ItemColour(ColourableBlockRegistry.sandstone_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_red = ITEMS.register("sandstone_red", () -> new ItemColour(ColourableBlockRegistry.sandstone_red.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_white = ITEMS.register("sandstone_white", () -> new ItemColour(ColourableBlockRegistry.sandstone_white.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> sandstone_yellow = ITEMS.register("sandstone_yellow", () -> new ItemColour(ColourableBlockRegistry.sandstone_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
+  //
   public static final TagKey<Item> DYES_NONE = ItemTags.create(new ResourceLocation("forge:dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));
 
