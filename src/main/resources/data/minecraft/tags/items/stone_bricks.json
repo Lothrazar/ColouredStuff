@@ -1,6 +1,23 @@
 {
   "replace": false,
   "values": [
+"colouredstuff:stone_bricks_black",
+"colouredstuff:stone_bricks_blue",
+"colouredstuff:stone_bricks_brown",
+"colouredstuff:stone_bricks_cyan",
+"colouredstuff:stone_bricks_gray",
+"colouredstuff:stone_bricks_green",
+"colouredstuff:stone_bricks_light_blue",
+"colouredstuff:stone_bricks_light_gray",
+"colouredstuff:stone_bricks_lime",
+"colouredstuff:stone_bricks_magenta",
+"colouredstuff:stone_bricks_none",
+"colouredstuff:stone_bricks_orange",
+"colouredstuff:stone_bricks_pink",
+"colouredstuff:stone_bricks_purple",
+"colouredstuff:stone_bricks_red",
+"colouredstuff:stone_bricks_white",
+"colouredstuff:stone_bricks_yellow"
    
   ]
 }

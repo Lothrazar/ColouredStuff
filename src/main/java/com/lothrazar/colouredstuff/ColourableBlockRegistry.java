@@ -182,4 +182,22 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<BlockColour> farmland_white = BLOCKS.register("farmland_white", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.WHITE));
   public static final RegistryObject<BlockColour> farmland_yellow = BLOCKS.register("farmland_yellow", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.YELLOW));
   //
+  public static final RegistryObject<BlockColour> stone_bricks_none = BLOCKS.register("stone_bricks_none", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.NONE));
+  public static final RegistryObject<BlockColour> stone_bricks_black = BLOCKS.register("stone_bricks_black", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.BLACK));
+  public static final RegistryObject<BlockColour> stone_bricks_blue = BLOCKS.register("stone_bricks_blue", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.BLUE));
+  public static final RegistryObject<BlockColour> stone_bricks_brown = BLOCKS.register("stone_bricks_brown", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.BROWN));
+  public static final RegistryObject<BlockColour> stone_bricks_cyan = BLOCKS.register("stone_bricks_cyan", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.CYAN));
+  public static final RegistryObject<BlockColour> stone_bricks_gray = BLOCKS.register("stone_bricks_gray", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.GRAY));
+  public static final RegistryObject<BlockColour> stone_bricks_green = BLOCKS.register("stone_bricks_green", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.GREEN));
+  public static final RegistryObject<BlockColour> stone_bricks_light_blue = BLOCKS.register("stone_bricks_light_blue", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<BlockColour> stone_bricks_light_gray = BLOCKS.register("stone_bricks_light_gray", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<BlockColour> stone_bricks_lime = BLOCKS.register("stone_bricks_lime", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.LIME));
+  public static final RegistryObject<BlockColour> stone_bricks_magenta = BLOCKS.register("stone_bricks_magenta", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.MAGENTA));
+  public static final RegistryObject<BlockColour> stone_bricks_orange = BLOCKS.register("stone_bricks_orange", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.ORANGE));
+  public static final RegistryObject<BlockColour> stone_bricks_pink = BLOCKS.register("stone_bricks_pink", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.PINK));
+  public static final RegistryObject<BlockColour> stone_bricks_purple = BLOCKS.register("stone_bricks_purple", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.PURPLE));
+  public static final RegistryObject<BlockColour> stone_bricks_red = BLOCKS.register("stone_bricks_red", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.RED));
+  public static final RegistryObject<BlockColour> stone_bricks_white = BLOCKS.register("stone_bricks_white", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.WHITE));
+  public static final RegistryObject<BlockColour> stone_bricks_yellow = BLOCKS.register("stone_bricks_yellow", () -> new BlockColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.YELLOW));
+  //
 }

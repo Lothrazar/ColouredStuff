@@ -7,16 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "block": "colouredstuff:bricks",
-              "function": "minecraft:copy_state",
-              "properties": [
-                "color"
-              ]
-            }
-          ],
-          "name": "colouredstuff:bricks"
+          "name": "colouredstuff:stone_bricks_black"
         }
       ],
       "conditions": [

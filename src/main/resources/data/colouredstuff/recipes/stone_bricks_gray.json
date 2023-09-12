@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:stone_gray"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:stone_bricks_gray",
+    "count": 4
+  }
+}

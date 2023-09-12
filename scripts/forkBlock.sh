@@ -19,7 +19,7 @@ folderdata="src/main/resources/data/${modid}"
 arraylength=${#arr[@]}
 ## now loop through the above array
 # use for loop to read all values and indexes
-echo "\"block.colouredstuff.${seed}_black\" : \"Black Farmland\","
+echo "\"block.colouredstuff.${seed}_black\" : \"Black Stone Bricks\","
 for (( i=0; i<${arraylength}; i++ ));
 do
    color="${arr[$i]}"
@@ -38,10 +38,12 @@ do
 	cp "${folderdata}"/loot_tables/blocks/"${seed}"_black.json "${folderdata}"/loot_tables/blocks/"${seed}"_$color.json
 	sed -i -e "s/black/${color}/g" "${folderdata}"/loot_tables/blocks/"${seed}"_$color.json
    
-#	cp "${folderdata}"/recipes/"${seed}"_black.json "${folderdata}"/recipes/"${seed}"_$color.json
-#	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_$color.json
+	cp "${folderdata}"/recipes/"${seed}"_black.json "${folderdata}"/recipes/"${seed}"_$color.json
+	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_$color.json
+	cp "${folderdata}"/recipes/"${seed}"_black_sc.json "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
+	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
 
-	echo "\"block.colouredstuff.${seed}_${color}\" : \"${name} Farmland\","
+	echo "\"block.colouredstuff.${seed}_${color}\" : \"${name} Stone Bricks\","
 	 
 done
 

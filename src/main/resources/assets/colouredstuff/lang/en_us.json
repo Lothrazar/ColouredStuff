@@ -1,5 +1,24 @@
 {
 
+"block.colouredstuff.stone_bricks_black" : "Black Stone Bricks",
+"block.colouredstuff.stone_bricks_blue" : "Blue Stone Bricks",
+"block.colouredstuff.stone_bricks_brown" : "Brown Stone Bricks",
+"block.colouredstuff.stone_bricks_cyan" : "Cyan Stone Bricks",
+"block.colouredstuff.stone_bricks_gray" : "Gray Stone Bricks",
+"block.colouredstuff.stone_bricks_green" : "Green Stone Bricks",
+"block.colouredstuff.stone_bricks_light_blue" : "Light Blue Stone Bricks",
+"block.colouredstuff.stone_bricks_light_gray" : "Light Gray Stone Bricks",
+"block.colouredstuff.stone_bricks_lime" : "Lime Stone Bricks",
+"block.colouredstuff.stone_bricks_magenta" : "Magenta Stone Bricks",
+"block.colouredstuff.stone_bricks_none" : "Colorless Stone Bricks",
+"block.colouredstuff.stone_bricks_orange" : "Orange Stone Bricks",
+"block.colouredstuff.stone_bricks_pink" : "Pink Stone Bricks",
+"block.colouredstuff.stone_bricks_purple" : "Purple Stone Bricks",
+"block.colouredstuff.stone_bricks_red" : "Red Stone Bricks",
+"block.colouredstuff.stone_bricks_white" : "White Stone Bricks",
+"block.colouredstuff.stone_bricks_yellow" : "Yellow Stone Bricks",
+
+
 "block.colouredstuff.farmland_black" : "Black Farmland",
 "block.colouredstuff.farmland_blue" : "Blue Farmland",
 "block.colouredstuff.farmland_brown" : "Brown Farmland",

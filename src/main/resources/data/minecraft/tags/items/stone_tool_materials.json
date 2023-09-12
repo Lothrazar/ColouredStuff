@@ -3,7 +3,6 @@
   "values": [
     
     
-    "#minecraft:stone_bricks",
 "colouredstuff:cobblestone_black",
 "colouredstuff:cobblestone_blue",
 "colouredstuff:cobblestone_brown",
@@ -20,26 +19,6 @@
 "colouredstuff:cobblestone_purple",
 "colouredstuff:cobblestone_red",
 "colouredstuff:cobblestone_white",
-"colouredstuff:cobblestone_yellow",
-    
-    
-"colouredstuff:stone_black",
-"colouredstuff:stone_blue",
-"colouredstuff:stone_brown",
-"colouredstuff:stone_cyan",
-"colouredstuff:stone_gray",
-"colouredstuff:stone_green",
-"colouredstuff:stone_light_blue",
-"colouredstuff:stone_light_gray",
-"colouredstuff:stone_lime",
-"colouredstuff:stone_magenta",
-"colouredstuff:stone_none",
-"colouredstuff:stone_orange",
-"colouredstuff:stone_pink",
-"colouredstuff:stone_purple",
-"colouredstuff:stone_red",
-"colouredstuff:stone_white",
-"colouredstuff:stone_yellow"
-    
+"colouredstuff:cobblestone_yellow"
   ]
 }

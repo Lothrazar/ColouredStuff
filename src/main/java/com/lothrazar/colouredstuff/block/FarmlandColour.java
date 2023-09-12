@@ -29,6 +29,7 @@ public class FarmlandColour extends BlockColourPathy {
   public FarmlandColour(Properties p, DyeColorless s) {
     super(p, s);
     RAINBOW.put(s, this);
+    this.registerDefaultState(this.defaultBlockState().setValue(FarmBlock.MOISTURE, 0));
   }
 
   @Override
