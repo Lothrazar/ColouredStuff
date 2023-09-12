@@ -7,16 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "block": "colouredstuff:cobblestone",
-              "function": "minecraft:copy_state",
-              "properties": [
-                "color"
-              ]
-            }
-          ],
-          "name": "colouredstuff:cobblestone"
+          "name": "colouredstuff:cobblestone_orange"
         }
       ],
       "conditions": [

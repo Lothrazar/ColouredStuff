@@ -1,5 +1,24 @@
 {
 
+"block.colouredstuff.cobblestone_black" : "Black Cobblestone",
+"block.colouredstuff.cobblestone_blue" : "Blue Cobblestone",
+"block.colouredstuff.cobblestone_brown" : "Brown Cobblestone",
+"block.colouredstuff.cobblestone_cyan" : "Cyan Cobblestone",
+"block.colouredstuff.cobblestone_gray" : "Gray Cobblestone",
+"block.colouredstuff.cobblestone_green" : "Green Cobblestone",
+"block.colouredstuff.cobblestone_light_blue" : "Light Blue Cobblestone",
+"block.colouredstuff.cobblestone_light_gray" : "Light Gray Cobblestone",
+"block.colouredstuff.cobblestone_lime" : "Lime Cobblestone",
+"block.colouredstuff.cobblestone_magenta" : "Magenta Cobblestone",
+"block.colouredstuff.cobblestone_none" : "Colorless Cobblestone",
+"block.colouredstuff.cobblestone_orange" : "Orange Cobblestone",
+"block.colouredstuff.cobblestone_pink" : "Pink Cobblestone",
+"block.colouredstuff.cobblestone_purple" : "Purple Cobblestone",
+"block.colouredstuff.cobblestone_red" : "Red Cobblestone",
+"block.colouredstuff.cobblestone_white" : "White Cobblestone",
+"block.colouredstuff.cobblestone_yellow" : "Yellow Cobblestone",
+
+
 "block.colouredstuff.stone_black" : "Black Stone",
 "block.colouredstuff.stone_blue" : "Blue Stone",
 "block.colouredstuff.stone_brown" : "Brown Stone",

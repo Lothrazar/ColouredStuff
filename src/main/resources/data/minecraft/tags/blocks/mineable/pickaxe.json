@@ -2,6 +2,25 @@
   "replace": false,
   "values": [
     
+"colouredstuff:cobblestone_black",
+"colouredstuff:cobblestone_blue",
+"colouredstuff:cobblestone_brown",
+"colouredstuff:cobblestone_cyan",
+"colouredstuff:cobblestone_gray",
+"colouredstuff:cobblestone_green",
+"colouredstuff:cobblestone_light_blue",
+"colouredstuff:cobblestone_light_gray",
+"colouredstuff:cobblestone_lime",
+"colouredstuff:cobblestone_magenta",
+"colouredstuff:cobblestone_none",
+"colouredstuff:cobblestone_orange",
+"colouredstuff:cobblestone_pink",
+"colouredstuff:cobblestone_purple",
+"colouredstuff:cobblestone_red",
+"colouredstuff:cobblestone_white",
+"colouredstuff:cobblestone_yellow",
+    
+    
 "colouredstuff:stone_black",
 "colouredstuff:stone_blue",
 "colouredstuff:stone_brown",

@@ -22,6 +22,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class ColourableItemRegistry {
 
   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ModColourable.MODID);
+  public static final RegistryObject<Item> PLANKS_none = ITEMS.register("planks_none", () -> new ItemColour(ColourableBlockRegistry.PLANKS_none.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> PLANKS_BLACK = ITEMS.register("planks_black", () -> new ItemColour(ColourableBlockRegistry.planks_black.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> PLANKS_BLUE = ITEMS.register("planks_blue", () -> new ItemColour(ColourableBlockRegistry.planks_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> PLANKS_brown = ITEMS.register("planks_brown", () -> new ItemColour(ColourableBlockRegistry.PLANKS_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
@@ -32,7 +33,6 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> PLANKS_light_gray = ITEMS.register("planks_light_gray", () -> new ItemColour(ColourableBlockRegistry.PLANKS_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> PLANKS_lime = ITEMS.register("planks_lime", () -> new ItemColour(ColourableBlockRegistry.PLANKS_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> PLANKS_magenta = ITEMS.register("planks_magenta", () -> new ItemColour(ColourableBlockRegistry.PLANKS_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
-  public static final RegistryObject<Item> PLANKS_none = ITEMS.register("planks_none", () -> new ItemColour(ColourableBlockRegistry.PLANKS_none.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> PLANKS_orange = ITEMS.register("planks_orange", () -> new ItemColour(ColourableBlockRegistry.PLANKS_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> PLANKS_pink = ITEMS.register("planks_pink", () -> new ItemColour(ColourableBlockRegistry.PLANKS_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> PLANKS_purple = ITEMS.register("planks_purple", () -> new ItemColour(ColourableBlockRegistry.PLANKS_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
@@ -40,6 +40,7 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> PLANKS_white = ITEMS.register("planks_white", () -> new ItemColour(ColourableBlockRegistry.PLANKS_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> PLANKS_yellow = ITEMS.register("planks_yellow", () -> new ItemColour(ColourableBlockRegistry.PLANKS_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
+  public static final RegistryObject<Item> log_none = ITEMS.register("log_none", () -> new ItemColour(ColourableBlockRegistry.log_none.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> log_BLACK = ITEMS.register("log_black", () -> new ItemColour(ColourableBlockRegistry.log_black.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> log_BLUE = ITEMS.register("log_blue", () -> new ItemColour(ColourableBlockRegistry.log_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> log_brown = ITEMS.register("log_brown", () -> new ItemColour(ColourableBlockRegistry.log_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
@@ -50,7 +51,6 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> log_light_gray = ITEMS.register("log_light_gray", () -> new ItemColour(ColourableBlockRegistry.log_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> log_lime = ITEMS.register("log_lime", () -> new ItemColour(ColourableBlockRegistry.log_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> log_magenta = ITEMS.register("log_magenta", () -> new ItemColour(ColourableBlockRegistry.log_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
-  public static final RegistryObject<Item> log_none = ITEMS.register("log_none", () -> new ItemColour(ColourableBlockRegistry.log_none.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> log_orange = ITEMS.register("log_orange", () -> new ItemColour(ColourableBlockRegistry.log_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> log_pink = ITEMS.register("log_pink", () -> new ItemColour(ColourableBlockRegistry.log_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> log_purple = ITEMS.register("log_purple", () -> new ItemColour(ColourableBlockRegistry.log_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
@@ -58,6 +58,7 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> log_white = ITEMS.register("log_white", () -> new ItemColour(ColourableBlockRegistry.log_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> log_yellow = ITEMS.register("log_yellow", () -> new ItemColour(ColourableBlockRegistry.log_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
+  public static final RegistryObject<Item> stone_none = ITEMS.register("stone_none", () -> new ItemColour(ColourableBlockRegistry.stone_none.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stone_BLACK = ITEMS.register("stone_black", () -> new ItemColour(ColourableBlockRegistry.stone_black.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stone_BLUE = ITEMS.register("stone_blue", () -> new ItemColour(ColourableBlockRegistry.stone_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stone_brown = ITEMS.register("stone_brown", () -> new ItemColour(ColourableBlockRegistry.stone_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
@@ -68,7 +69,6 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> stone_light_gray = ITEMS.register("stone_light_gray", () -> new ItemColour(ColourableBlockRegistry.stone_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stone_lime = ITEMS.register("stone_lime", () -> new ItemColour(ColourableBlockRegistry.stone_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stone_magenta = ITEMS.register("stone_magenta", () -> new ItemColour(ColourableBlockRegistry.stone_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
-  public static final RegistryObject<Item> stone_none = ITEMS.register("stone_none", () -> new ItemColour(ColourableBlockRegistry.stone_none.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stone_orange = ITEMS.register("stone_orange", () -> new ItemColour(ColourableBlockRegistry.stone_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stone_pink = ITEMS.register("stone_pink", () -> new ItemColour(ColourableBlockRegistry.stone_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stone_purple = ITEMS.register("stone_purple", () -> new ItemColour(ColourableBlockRegistry.stone_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
@@ -76,6 +76,23 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> stone_white = ITEMS.register("stone_white", () -> new ItemColour(ColourableBlockRegistry.stone_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stone_yellow = ITEMS.register("stone_yellow", () -> new ItemColour(ColourableBlockRegistry.stone_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
+  public static final RegistryObject<Item> cobblestone_none = ITEMS.register("cobblestone_none", () -> new ItemColour(ColourableBlockRegistry.cobblestone_none.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_BLACK = ITEMS.register("cobblestone_black", () -> new ItemColour(ColourableBlockRegistry.cobblestone_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_BLUE = ITEMS.register("cobblestone_blue", () -> new ItemColour(ColourableBlockRegistry.cobblestone_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_brown = ITEMS.register("cobblestone_brown", () -> new ItemColour(ColourableBlockRegistry.cobblestone_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_cyan = ITEMS.register("cobblestone_cyan", () -> new ItemColour(ColourableBlockRegistry.cobblestone_cyan.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_gray = ITEMS.register("cobblestone_gray", () -> new ItemColour(ColourableBlockRegistry.cobblestone_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_green = ITEMS.register("cobblestone_green", () -> new ItemColour(ColourableBlockRegistry.cobblestone_green.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_light_blue = ITEMS.register("cobblestone_light_blue", () -> new ItemColour(ColourableBlockRegistry.cobblestone_light_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_light_gray = ITEMS.register("cobblestone_light_gray", () -> new ItemColour(ColourableBlockRegistry.cobblestone_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_lime = ITEMS.register("cobblestone_lime", () -> new ItemColour(ColourableBlockRegistry.cobblestone_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_magenta = ITEMS.register("cobblestone_magenta", () -> new ItemColour(ColourableBlockRegistry.cobblestone_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_orange = ITEMS.register("cobblestone_orange", () -> new ItemColour(ColourableBlockRegistry.cobblestone_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_pink = ITEMS.register("cobblestone_pink", () -> new ItemColour(ColourableBlockRegistry.cobblestone_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_purple = ITEMS.register("cobblestone_purple", () -> new ItemColour(ColourableBlockRegistry.cobblestone_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_red = ITEMS.register("cobblestone_red", () -> new ItemColour(ColourableBlockRegistry.cobblestone_red.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_white = ITEMS.register("cobblestone_white", () -> new ItemColour(ColourableBlockRegistry.cobblestone_white.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> cobblestone_yellow = ITEMS.register("cobblestone_yellow", () -> new ItemColour(ColourableBlockRegistry.cobblestone_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
   //  public static final RegistryObject<Item> BRICKS_ITEM = ITEMS.register("bricks", () -> new ItemColour(BRICKS_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings()));
   //  public static final RegistryObject<Item> SANDSTONE_ITEM = ITEMS.register("sandstone", () -> new ItemColour(SANDSTONE_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings()));
