@@ -135,10 +135,10 @@ dependencies {
     implementation fg.deobf("curse.maven:flib-661261:${flib_file}")
     
     //possible paint/ink compatibility  https://www.curseforge.com/minecraft/mc-mods/caveopolis-mod
-    implementation fg.deobf("curse.maven:caveopolis-mod-639186:4742865")
+  //  implementation fg.deobf("curse.maven:caveopolis-mod-639186:4742865")
     
     //nbt ingredients https://www.curseforge.com/minecraft/mc-mods/recipes-library
-    implementation fg.deobf("curse.maven:recipes-library-398351:4628674")
+  //  implementation fg.deobf("curse.maven:recipes-library-398351:4628674")
     
     // Specify the version of Minecraft to use. 
     // Any artifact can be supplied so long as it has a "userdev" classifier artifact and is a compatible patcher artifact.

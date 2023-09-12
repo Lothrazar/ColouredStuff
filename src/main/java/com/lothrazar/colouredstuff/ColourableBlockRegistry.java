@@ -51,4 +51,21 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<BlockColour> log_white = BLOCKS.register("log_white", () -> new BlockColourPillar(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
   public static final RegistryObject<BlockColour> log_yellow = BLOCKS.register("log_yellow", () -> new BlockColourPillar(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
   //
+  public static final RegistryObject<BlockColour> stone_black = BLOCKS.register("stone_black", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_blue = BLOCKS.register("stone_blue", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_brown = BLOCKS.register("stone_brown", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_cyan = BLOCKS.register("stone_cyan", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_gray = BLOCKS.register("stone_gray", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_green = BLOCKS.register("stone_green", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_light_blue = BLOCKS.register("stone_light_blue", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_light_gray = BLOCKS.register("stone_light_gray", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_lime = BLOCKS.register("stone_lime", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_magenta = BLOCKS.register("stone_magenta", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_none = BLOCKS.register("stone_none", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_orange = BLOCKS.register("stone_orange", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_pink = BLOCKS.register("stone_pink", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_purple = BLOCKS.register("stone_purple", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_red = BLOCKS.register("stone_red", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_white = BLOCKS.register("stone_white", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> stone_yellow = BLOCKS.register("stone_yellow", () -> new BlockColour(Block.Properties.copy(Blocks.ACACIA_LOG), new BlockFlib.Settings()));
 }

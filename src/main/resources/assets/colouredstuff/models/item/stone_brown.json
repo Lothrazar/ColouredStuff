@@ -1,0 +1,23 @@
+{
+  "parent": "colouredstuff:block/stone_brown",
+  
+  "__overrides": [
+ 	 { "predicate": {  "colouredstuff:dye": 0  }, "model":  "colouredstuff:block/stone_white"},
+ 	 { "predicate": {  "colouredstuff:dye": 1  }, "model":  "colouredstuff:block/stone_orange"},
+ 	 { "predicate": {  "colouredstuff:dye": 2  }, "model":  "colouredstuff:block/stone_magenta"},
+ 	 { "predicate": {  "colouredstuff:dye": 3  }, "model":  "colouredstuff:block/stone_light_blue"},
+ 	 { "predicate": {  "colouredstuff:dye": 4  }, "model":  "colouredstuff:block/stone_yellow"},
+ 	 { "predicate": {  "colouredstuff:dye": 5  }, "model":  "colouredstuff:block/stone_lime"},
+ 	 { "predicate": {  "colouredstuff:dye": 6  }, "model":  "colouredstuff:block/stone_pink"},
+ 	 { "predicate": {  "colouredstuff:dye": 7  }, "model":  "colouredstuff:block/stone_gray"},
+ 	 { "predicate": {  "colouredstuff:dye": 8  }, "model":  "colouredstuff:block/stone_light_gray"},
+ 	 { "predicate": {  "colouredstuff:dye": 9  }, "model":  "colouredstuff:block/stone_cyan"},
+ 	 { "predicate": {  "colouredstuff:dye": 10 }, "model":  "colouredstuff:block/stone_purple"},
+ 	 { "predicate": {  "colouredstuff:dye": 11 }, "model":  "colouredstuff:block/stone_blue"},
+ 	 { "predicate": {  "colouredstuff:dye": 12 }, "model":  "colouredstuff:block/stone_brown"},
+ 	 { "predicate": {  "colouredstuff:dye": 13 }, "model":  "colouredstuff:block/stone_green"},
+ 	 { "predicate": {  "colouredstuff:dye": 14 }, "model":  "colouredstuff:block/stone_red"},
+ 	 { "predicate": {  "colouredstuff:dye": 15 }, "model":  "colouredstuff:block/stone_brown"},
+ 	 { "predicate": {  "colouredstuff:dye": 16 }, "model":  "colouredstuff:block/stone_none"}
+  ]
+}

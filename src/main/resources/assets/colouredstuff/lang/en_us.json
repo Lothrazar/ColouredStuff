@@ -1,5 +1,23 @@
 {
 
+"block.colouredstuff.stone_black" : "Black Stone",
+"block.colouredstuff.stone_blue" : "Blue Stone",
+"block.colouredstuff.stone_brown" : "Brown Stone",
+"block.colouredstuff.stone_cyan" : "Cyan Stone",
+"block.colouredstuff.stone_gray" : "Gray Stone",
+"block.colouredstuff.stone_green" : "Green Stone",
+"block.colouredstuff.stone_light_blue" : "Light Blue Stone",
+"block.colouredstuff.stone_light_gray" : "Light Gray Stone",
+"block.colouredstuff.stone_lime" : "Lime Stone",
+"block.colouredstuff.stone_magenta" : "Magenta Stone",
+"block.colouredstuff.stone_none" : "Colorless Stone",
+"block.colouredstuff.stone_orange" : "Orange Stone",
+"block.colouredstuff.stone_pink" : "Pink Stone",
+"block.colouredstuff.stone_purple" : "Purple Stone",
+"block.colouredstuff.stone_red" : "Red Stone",
+"block.colouredstuff.stone_white" : "White Stone",
+"block.colouredstuff.stone_yellow" : "Yellow Stone",
+
 
 "block.colouredstuff.planks_black" : "Black Wooden Planks",
 "block.colouredstuff.planks_blue" : "Blue Wooden Planks",

@@ -1,7 +1,7 @@
 {
-  "parent": "colouredstuff:block/stone_white",
+  "parent": "colouredstuff:block/stone_green",
   
-  "overrides": [
+  "__overrides": [
  	 { "predicate": {  "colouredstuff:dye": 0  }, "model":  "colouredstuff:block/stone_white"},
  	 { "predicate": {  "colouredstuff:dye": 1  }, "model":  "colouredstuff:block/stone_orange"},
  	 { "predicate": {  "colouredstuff:dye": 2  }, "model":  "colouredstuff:block/stone_magenta"},
@@ -17,7 +17,7 @@
  	 { "predicate": {  "colouredstuff:dye": 12 }, "model":  "colouredstuff:block/stone_brown"},
  	 { "predicate": {  "colouredstuff:dye": 13 }, "model":  "colouredstuff:block/stone_green"},
  	 { "predicate": {  "colouredstuff:dye": 14 }, "model":  "colouredstuff:block/stone_red"},
- 	 { "predicate": {  "colouredstuff:dye": 15 }, "model":  "colouredstuff:block/stone_black"},
+ 	 { "predicate": {  "colouredstuff:dye": 15 }, "model":  "colouredstuff:block/stone_green"},
  	 { "predicate": {  "colouredstuff:dye": 16 }, "model":  "colouredstuff:block/stone_none"}
   ]
 }
