@@ -5,9 +5,9 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
 
-public class BlockColourStrippable extends BlockColourPillar {
+public class BlockColourLog extends BlockColourPillar {
 
-  public BlockColourStrippable(Properties p, BlockFlib.Settings s) {
+  public BlockColourLog(Properties p, BlockFlib.Settings s) {
     super(p, s);
   }
 

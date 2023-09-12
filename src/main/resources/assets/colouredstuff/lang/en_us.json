@@ -1,5 +1,23 @@
 {
 
+"block.colouredstuff.leaves_black" : "Black Leaves",
+"block.colouredstuff.leaves_blue" : "Blue Leaves",
+"block.colouredstuff.leaves_brown" : "Brown Leaves",
+"block.colouredstuff.leaves_cyan" : "Cyan Leaves",
+"block.colouredstuff.leaves_gray" : "Gray Leaves",
+"block.colouredstuff.leaves_green" : "Green Leaves",
+"block.colouredstuff.leaves_light_blue" : "Light Blue Leaves",
+"block.colouredstuff.leaves_light_gray" : "Light Gray Leaves",
+"block.colouredstuff.leaves_lime" : "Lime Leaves",
+"block.colouredstuff.leaves_magenta" : "Magenta Leaves",
+"block.colouredstuff.leaves_none" : "Colorless Leaves",
+"block.colouredstuff.leaves_orange" : "Orange Leaves",
+"block.colouredstuff.leaves_pink" : "Pink Leaves",
+"block.colouredstuff.leaves_purple" : "Purple Leaves",
+"block.colouredstuff.leaves_red" : "Red Leaves",
+"block.colouredstuff.leaves_white" : "White Leaves",
+"block.colouredstuff.leaves_yellow" : "Yellow Leaves",
+
 "block.colouredstuff.cobblestone_black" : "Black Cobblestone",
 "block.colouredstuff.cobblestone_blue" : "Blue Cobblestone",
 "block.colouredstuff.cobblestone_brown" : "Brown Cobblestone",

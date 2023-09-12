@@ -87,4 +87,21 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<BlockColour> cobblestone_white = BLOCKS.register("cobblestone_white", () -> new BlockColour(Block.Properties.copy(Blocks.COBBLESTONE), new BlockFlib.Settings()));
   public static final RegistryObject<BlockColour> cobblestone_yellow = BLOCKS.register("cobblestone_yellow", () -> new BlockColour(Block.Properties.copy(Blocks.COBBLESTONE), new BlockFlib.Settings()));
   //
+  public static final RegistryObject<BlockColour> leaves_none = BLOCKS.register("leaves_none", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_black = BLOCKS.register("leaves_black", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_blue = BLOCKS.register("leaves_blue", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_brown = BLOCKS.register("leaves_brown", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_cyan = BLOCKS.register("leaves_cyan", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_gray = BLOCKS.register("leaves_gray", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_green = BLOCKS.register("leaves_green", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_light_blue = BLOCKS.register("leaves_light_blue", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_light_gray = BLOCKS.register("leaves_light_gray", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_lime = BLOCKS.register("leaves_lime", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_magenta = BLOCKS.register("leaves_magenta", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_orange = BLOCKS.register("leaves_orange", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_pink = BLOCKS.register("leaves_pink", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_purple = BLOCKS.register("leaves_purple", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_red = BLOCKS.register("leaves_red", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_white = BLOCKS.register("leaves_white", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
+  public static final RegistryObject<BlockColour> leaves_yellow = BLOCKS.register("leaves_yellow", () -> new BlockColour(Block.Properties.copy(Blocks.OAK_LEAVES), new BlockFlib.Settings()));
 }

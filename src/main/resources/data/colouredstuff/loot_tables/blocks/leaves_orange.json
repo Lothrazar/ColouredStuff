@@ -37,16 +37,7 @@
                   ]
                 }
               ],
-	          "functions": [
-	            {
-	              "block": "colouredstuff:leaves",
-	              "function": "minecraft:copy_state",
-	              "properties": [
-	                "color"
-	              ]
-	            }
-	          ],
-              "name": "colouredstuff:leaves"
+              "name": "colouredstuff:leaves_orange"
             },
             {
               "type": "minecraft:item",
@@ -65,16 +56,7 @@
                   "enchantment": "minecraft:fortune"
                 }
               ],
-	          "functions": [
-	            {
-	              "block": "colouredstuff:sapling",
-	              "function": "minecraft:copy_state",
-	              "properties": [
-	                "color"
-	              ]
-	            }
-	          ],
-              "name": "colouredstuff:sapling"
+              "name": "colouredstuff:sapling_orange"
             }
           ]
         }

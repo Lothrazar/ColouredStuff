@@ -1,0 +1,23 @@
+{
+  "parent": "colouredstuff:block/leaves_brown",
+  
+  "__overrides": [
+ 	 { "predicate": {  "colouredstuff:dye": 0  }, "model":  "colouredstuff:block/leaves_white"},
+ 	 { "predicate": {  "colouredstuff:dye": 1  }, "model":  "colouredstuff:block/leaves_orange"},
+ 	 { "predicate": {  "colouredstuff:dye": 2  }, "model":  "colouredstuff:block/leaves_magenta"},
+ 	 { "predicate": {  "colouredstuff:dye": 3  }, "model":  "colouredstuff:block/leaves_light_blue"},
+ 	 { "predicate": {  "colouredstuff:dye": 4  }, "model":  "colouredstuff:block/leaves_yellow"},
+ 	 { "predicate": {  "colouredstuff:dye": 5  }, "model":  "colouredstuff:block/leaves_lime"},
+ 	 { "predicate": {  "colouredstuff:dye": 6  }, "model":  "colouredstuff:block/leaves_pink"},
+ 	 { "predicate": {  "colouredstuff:dye": 7  }, "model":  "colouredstuff:block/leaves_gray"},
+ 	 { "predicate": {  "colouredstuff:dye": 8  }, "model":  "colouredstuff:block/leaves_light_gray"},
+ 	 { "predicate": {  "colouredstuff:dye": 9  }, "model":  "colouredstuff:block/leaves_cyan"},
+ 	 { "predicate": {  "colouredstuff:dye": 10 }, "model":  "colouredstuff:block/leaves_purple"},
+ 	 { "predicate": {  "colouredstuff:dye": 11 }, "model":  "colouredstuff:block/leaves_blue"},
+ 	 { "predicate": {  "colouredstuff:dye": 12 }, "model":  "colouredstuff:block/leaves_brown"},
+ 	 { "predicate": {  "colouredstuff:dye": 13 }, "model":  "colouredstuff:block/leaves_green"},
+ 	 { "predicate": {  "colouredstuff:dye": 14 }, "model":  "colouredstuff:block/leaves_red"},
+ 	 { "predicate": {  "colouredstuff:dye": 15 }, "model":  "colouredstuff:block/leaves_brown"},
+ 	 { "predicate": {  "colouredstuff:dye": 16 }, "model":  "colouredstuff:block/leaves_none"}
+  ]
+}
