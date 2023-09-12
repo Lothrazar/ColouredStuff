@@ -1,0 +1,31 @@
+{
+  "multipart": [    
+        {   "when": { "moisture": "0"   },
+            "apply": { "model": "colouredstuff:block/tmpl_farmland_dry", "uvlock": true }
+        },
+        {   "when": { "moisture": "1"   },
+            "apply": { "model": "colouredstuff:block/tmpl_farmland_dry", "uvlock": true }
+        },
+        {   "when": { "moisture": "2"   },
+            "apply": { "model": "colouredstuff:block/tmpl_farmland_dry", "uvlock": true }
+        },
+        {   "when": { "moisture": "3"   },
+            "apply": { "model": "colouredstuff:block/tmpl_farmland_dry", "uvlock": true }
+        },
+        {   "when": { "moisture": "4"   },
+            "apply": { "model": "colouredstuff:block/tmpl_farmland_dry", "uvlock": true }
+        },
+        {   "when": { "moisture": "5"   },
+            "apply": { "model": "colouredstuff:block/tmpl_farmland_dry", "uvlock": true }
+        },
+        {   "when": { "moisture": "6"   },
+            "apply": { "model": "colouredstuff:block/tmpl_farmland_dry", "uvlock": true }
+        },
+        {   "when": { "moisture": "7"   },
+            "apply": { "model": "colouredstuff:block/tmpl_farmland_moist", "uvlock": true }
+        },
+        {  
+            "apply": { "model": "colouredstuff:block/farmland_brown", "uvlock": true }
+        }     
+    ]
+}

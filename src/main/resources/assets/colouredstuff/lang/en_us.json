@@ -1,5 +1,24 @@
 {
 
+"block.colouredstuff.farmland_black" : "Black Farmland",
+"block.colouredstuff.farmland_blue" : "Blue Farmland",
+"block.colouredstuff.farmland_brown" : "Brown Farmland",
+"block.colouredstuff.farmland_cyan" : "Cyan Farmland",
+"block.colouredstuff.farmland_gray" : "Gray Farmland",
+"block.colouredstuff.farmland_green" : "Green Farmland",
+"block.colouredstuff.farmland_light_blue" : "Light Blue Farmland",
+"block.colouredstuff.farmland_light_gray" : "Light Gray Farmland",
+"block.colouredstuff.farmland_lime" : "Lime Farmland",
+"block.colouredstuff.farmland_magenta" : "Magenta Farmland",
+"block.colouredstuff.farmland_none" : "Colorless Farmland",
+"block.colouredstuff.farmland_orange" : "Orange Farmland",
+"block.colouredstuff.farmland_pink" : "Pink Farmland",
+"block.colouredstuff.farmland_purple" : "Purple Farmland",
+"block.colouredstuff.farmland_red" : "Red Farmland",
+"block.colouredstuff.farmland_white" : "White Farmland",
+"block.colouredstuff.farmland_yellow" : "Yellow Farmland",
+
+
 "block.colouredstuff.path_black" : "Black Path",
 "block.colouredstuff.path_blue" : "Blue Path",
 "block.colouredstuff.path_brown" : "Brown Path",

@@ -5,6 +5,7 @@ import com.lothrazar.colouredstuff.block.BlockColourDirt;
 import com.lothrazar.colouredstuff.block.BlockColourPathy;
 import com.lothrazar.colouredstuff.block.BlockColourPillar;
 import com.lothrazar.colouredstuff.block.BlockColourSaplin;
+import com.lothrazar.colouredstuff.block.FarmlandColour;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.world.RainbowTreeGrower;
 import net.minecraft.world.level.block.Block;
@@ -162,5 +163,23 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<BlockColour> path_red = BLOCKS.register("path_red", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.RED));
   public static final RegistryObject<BlockColour> path_white = BLOCKS.register("path_white", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.WHITE));
   public static final RegistryObject<BlockColour> path_yellow = BLOCKS.register("path_yellow", () -> new BlockColourPathy(Block.Properties.copy(Blocks.DIRT_PATH), DyeColorless.YELLOW));
+  //
+  public static final RegistryObject<BlockColour> farmland_none = BLOCKS.register("farmland_none", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.NONE));
+  public static final RegistryObject<BlockColour> farmland_black = BLOCKS.register("farmland_black", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.BLACK));
+  public static final RegistryObject<BlockColour> farmland_blue = BLOCKS.register("farmland_blue", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.BLUE));
+  public static final RegistryObject<BlockColour> farmland_brown = BLOCKS.register("farmland_brown", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.BROWN));
+  public static final RegistryObject<BlockColour> farmland_cyan = BLOCKS.register("farmland_cyan", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.CYAN));
+  public static final RegistryObject<BlockColour> farmland_gray = BLOCKS.register("farmland_gray", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.GRAY));
+  public static final RegistryObject<BlockColour> farmland_green = BLOCKS.register("farmland_green", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.GREEN));
+  public static final RegistryObject<BlockColour> farmland_light_blue = BLOCKS.register("farmland_light_blue", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<BlockColour> farmland_light_gray = BLOCKS.register("farmland_light_gray", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<BlockColour> farmland_lime = BLOCKS.register("farmland_lime", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.LIME));
+  public static final RegistryObject<BlockColour> farmland_magenta = BLOCKS.register("farmland_magenta", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.MAGENTA));
+  public static final RegistryObject<BlockColour> farmland_orange = BLOCKS.register("farmland_orange", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.ORANGE));
+  public static final RegistryObject<BlockColour> farmland_pink = BLOCKS.register("farmland_pink", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.PINK));
+  public static final RegistryObject<BlockColour> farmland_purple = BLOCKS.register("farmland_purple", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.PURPLE));
+  public static final RegistryObject<BlockColour> farmland_red = BLOCKS.register("farmland_red", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.RED));
+  public static final RegistryObject<BlockColour> farmland_white = BLOCKS.register("farmland_white", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.WHITE));
+  public static final RegistryObject<BlockColour> farmland_yellow = BLOCKS.register("farmland_yellow", () -> new FarmlandColour(Block.Properties.copy(Blocks.FARMLAND), DyeColorless.YELLOW));
   //
 }

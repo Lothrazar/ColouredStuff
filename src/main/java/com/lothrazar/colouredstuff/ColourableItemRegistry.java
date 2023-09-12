@@ -166,6 +166,24 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> path_white = ITEMS.register("path_white", () -> new ItemColour(ColourableBlockRegistry.path_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> path_yellow = ITEMS.register("path_yellow", () -> new ItemColour(ColourableBlockRegistry.path_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   // 
+  public static final RegistryObject<Item> farmland_none = ITEMS.register("farmland_none", () -> new ItemColour(ColourableBlockRegistry.farmland_none.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_BLACK = ITEMS.register("farmland_black", () -> new ItemColour(ColourableBlockRegistry.farmland_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_BLUE = ITEMS.register("farmland_blue", () -> new ItemColour(ColourableBlockRegistry.farmland_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_brown = ITEMS.register("farmland_brown", () -> new ItemColour(ColourableBlockRegistry.farmland_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_cyan = ITEMS.register("farmland_cyan", () -> new ItemColour(ColourableBlockRegistry.farmland_cyan.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_gray = ITEMS.register("farmland_gray", () -> new ItemColour(ColourableBlockRegistry.farmland_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_green = ITEMS.register("farmland_green", () -> new ItemColour(ColourableBlockRegistry.farmland_green.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_light_blue = ITEMS.register("farmland_light_blue", () -> new ItemColour(ColourableBlockRegistry.farmland_light_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_light_gray = ITEMS.register("farmland_light_gray", () -> new ItemColour(ColourableBlockRegistry.farmland_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_lime = ITEMS.register("farmland_lime", () -> new ItemColour(ColourableBlockRegistry.farmland_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_magenta = ITEMS.register("farmland_magenta", () -> new ItemColour(ColourableBlockRegistry.farmland_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_orange = ITEMS.register("farmland_orange", () -> new ItemColour(ColourableBlockRegistry.farmland_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_pink = ITEMS.register("farmland_pink", () -> new ItemColour(ColourableBlockRegistry.farmland_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_purple = ITEMS.register("farmland_purple", () -> new ItemColour(ColourableBlockRegistry.farmland_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_red = ITEMS.register("farmland_red", () -> new ItemColour(ColourableBlockRegistry.farmland_red.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_white = ITEMS.register("farmland_white", () -> new ItemColour(ColourableBlockRegistry.farmland_white.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> farmland_yellow = ITEMS.register("farmland_yellow", () -> new ItemColour(ColourableBlockRegistry.farmland_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
+  //
   public static final TagKey<Item> DYES_NONE = ItemTags.create(new ResourceLocation("forge:dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));
 

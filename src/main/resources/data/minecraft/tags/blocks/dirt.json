@@ -1,6 +1,23 @@
 {
   "replace": false,
   "values": [
+"colouredstuff:farmland_black",
+"colouredstuff:farmland_blue",
+"colouredstuff:farmland_brown",
+"colouredstuff:farmland_cyan",
+"colouredstuff:farmland_gray",
+"colouredstuff:farmland_green",
+"colouredstuff:farmland_light_blue",
+"colouredstuff:farmland_light_gray",
+"colouredstuff:farmland_lime",
+"colouredstuff:farmland_magenta",
+"colouredstuff:farmland_none",
+"colouredstuff:farmland_orange",
+"colouredstuff:farmland_pink",
+"colouredstuff:farmland_purple",
+"colouredstuff:farmland_red",
+"colouredstuff:farmland_white",
+"colouredstuff:farmland_yellow",
    
 "colouredstuff:path_black",
 "colouredstuff:path_blue",
