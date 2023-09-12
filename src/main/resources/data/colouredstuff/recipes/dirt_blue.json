@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#-#"
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:dirt"
+    },
+    "-": {
+      "tag": "forge:dyes/blue"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:dirt_blue",
+    "count": 2
+  }
+}

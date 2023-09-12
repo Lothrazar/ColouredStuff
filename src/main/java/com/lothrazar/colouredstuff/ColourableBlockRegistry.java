@@ -1,6 +1,7 @@
 package com.lothrazar.colouredstuff;
 
 import com.lothrazar.colouredstuff.block.BlockColour;
+import com.lothrazar.colouredstuff.block.BlockColourDirt;
 import com.lothrazar.colouredstuff.block.BlockColourPillar;
 import com.lothrazar.colouredstuff.block.BlockColourSaplin;
 import com.lothrazar.colouredstuff.color.DyeColorless;
@@ -125,4 +126,21 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<BlockColourSaplin> sapling_white = BLOCKS.register("sapling_white", () -> new BlockColourSaplin(new RainbowTreeGrower(), Block.Properties.copy(Blocks.OAK_SAPLING), DyeColorless.WHITE));
   public static final RegistryObject<BlockColourSaplin> sapling_yellow = BLOCKS.register("sapling_yellow", () -> new BlockColourSaplin(new RainbowTreeGrower(), Block.Properties.copy(Blocks.OAK_SAPLING), DyeColorless.YELLOW));
   // 
+  public static final RegistryObject<BlockColour> dirt_none = BLOCKS.register("dirt_none", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.NONE));
+  public static final RegistryObject<BlockColour> dirt_black = BLOCKS.register("dirt_black", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.BLACK));
+  public static final RegistryObject<BlockColour> dirt_blue = BLOCKS.register("dirt_blue", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.BLUE));
+  public static final RegistryObject<BlockColour> dirt_brown = BLOCKS.register("dirt_brown", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.BROWN));
+  public static final RegistryObject<BlockColour> dirt_cyan = BLOCKS.register("dirt_cyan", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.CYAN));
+  public static final RegistryObject<BlockColour> dirt_gray = BLOCKS.register("dirt_gray", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.GRAY));
+  public static final RegistryObject<BlockColour> dirt_green = BLOCKS.register("dirt_green", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.GREEN));
+  public static final RegistryObject<BlockColour> dirt_light_blue = BLOCKS.register("dirt_light_blue", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<BlockColour> dirt_light_gray = BLOCKS.register("dirt_light_gray", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<BlockColour> dirt_lime = BLOCKS.register("dirt_lime", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.LIME));
+  public static final RegistryObject<BlockColour> dirt_magenta = BLOCKS.register("dirt_magenta", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.MAGENTA));
+  public static final RegistryObject<BlockColour> dirt_orange = BLOCKS.register("dirt_orange", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.ORANGE));
+  public static final RegistryObject<BlockColour> dirt_pink = BLOCKS.register("dirt_pink", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.PINK));
+  public static final RegistryObject<BlockColour> dirt_purple = BLOCKS.register("dirt_purple", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.PURPLE));
+  public static final RegistryObject<BlockColour> dirt_red = BLOCKS.register("dirt_red", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.RED));
+  public static final RegistryObject<BlockColour> dirt_white = BLOCKS.register("dirt_white", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.WHITE));
+  public static final RegistryObject<BlockColour> dirt_yellow = BLOCKS.register("dirt_yellow", () -> new BlockColourDirt(Block.Properties.copy(Blocks.DIRT), DyeColorless.YELLOW));
 }

@@ -1,8 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#-#",
-    "#-#",
     "#-#"
   ],
   "key": {
@@ -10,11 +8,11 @@
       "tag": "minecraft:dirt"
     },
     "-": {
-      "tag": "forge:dyes/none"
+      "tag": "forge:dyes/light_gray"
     }
   },
   "result": {
-    "item": "colouredstuff:bricks",
-    "count": 6
+    "item": "colouredstuff:dirt_light_gray",
+    "count": 2
   }
 }

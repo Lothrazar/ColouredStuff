@@ -19,7 +19,7 @@ folderdata="src/main/resources/data/${modid}"
 arraylength=${#arr[@]}
 ## now loop through the above array
 # use for loop to read all values and indexes
-echo "\"block.colouredstuff.${seed}_black\" : \"Black Sapling\","
+echo "\"block.colouredstuff.${seed}_black\" : \"Black Dirt\","
 for (( i=0; i<${arraylength}; i++ ));
 do
    color="${arr[$i]}"
@@ -41,7 +41,7 @@ do
 	cp "${folderdata}"/recipes/"${seed}"_black.json "${folderdata}"/recipes/"${seed}"_$color.json
 	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_$color.json
 
-	echo "\"block.colouredstuff.${seed}_${color}\" : \"${name} Sapling\","
+	echo "\"block.colouredstuff.${seed}_${color}\" : \"${name} Dirt\","
 	 
 done
 

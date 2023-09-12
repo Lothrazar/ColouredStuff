@@ -129,14 +129,25 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> sapling_red = ITEMS.register("sapling_red", () -> new ItemColour(ColourableBlockRegistry.sapling_red.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> sapling_white = ITEMS.register("sapling_white", () -> new ItemColour(ColourableBlockRegistry.sapling_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> sapling_yellow = ITEMS.register("sapling_yellow", () -> new ItemColour(ColourableBlockRegistry.sapling_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
-  //  public static final RegistryObject<Item> BRICKS_ITEM = ITEMS.register("bricks", () -> new ItemColour(BRICKS_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings()));
-  //  public static final RegistryObject<Item> SANDSTONE_ITEM = ITEMS.register("sandstone", () -> new ItemColour(SANDSTONE_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings()));
-  //  public static final RegistryObject<Item> LOG_STR_ITEM = ITEMS.register("log_stripped", () -> new ItemColour(LOG_STR_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings()));
-  //  public static final RegistryObject<Item> SANDSTONE_CH_ITEM = ITEMS.register("chiseled_sandstone", () -> new ItemColour(SANDSTONE_CH_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings()));
-  //  public static final RegistryObject<Item> SAPLIN = ITEMS.register("sapling", () -> new ItemColour(SAPLIN_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings()));
-  //  public static final RegistryObject<Item> DIRT_ITEM = ITEMS.register("dirt", () -> new ItemColour(DIRT_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings()));
-  //  public static final RegistryObject<Item> PATH_ITEM = ITEMS.register("path", () -> new ItemColour(PATH_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings()));
-  //  public static final RegistryObject<Item> FARM_ITEM = ITEMS.register("farmland", () -> new ItemColour(FARM_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings()));
+  //
+  public static final RegistryObject<Item> dirt_none = ITEMS.register("dirt_none", () -> new ItemColour(ColourableBlockRegistry.dirt_none.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_BLACK = ITEMS.register("dirt_black", () -> new ItemColour(ColourableBlockRegistry.dirt_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_BLUE = ITEMS.register("dirt_blue", () -> new ItemColour(ColourableBlockRegistry.dirt_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_brown = ITEMS.register("dirt_brown", () -> new ItemColour(ColourableBlockRegistry.dirt_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_cyan = ITEMS.register("dirt_cyan", () -> new ItemColour(ColourableBlockRegistry.dirt_cyan.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_gray = ITEMS.register("dirt_gray", () -> new ItemColour(ColourableBlockRegistry.dirt_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_green = ITEMS.register("dirt_green", () -> new ItemColour(ColourableBlockRegistry.dirt_green.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_light_blue = ITEMS.register("dirt_light_blue", () -> new ItemColour(ColourableBlockRegistry.dirt_light_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_light_gray = ITEMS.register("dirt_light_gray", () -> new ItemColour(ColourableBlockRegistry.dirt_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_lime = ITEMS.register("dirt_lime", () -> new ItemColour(ColourableBlockRegistry.dirt_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_magenta = ITEMS.register("dirt_magenta", () -> new ItemColour(ColourableBlockRegistry.dirt_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_orange = ITEMS.register("dirt_orange", () -> new ItemColour(ColourableBlockRegistry.dirt_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_pink = ITEMS.register("dirt_pink", () -> new ItemColour(ColourableBlockRegistry.dirt_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_purple = ITEMS.register("dirt_purple", () -> new ItemColour(ColourableBlockRegistry.dirt_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_red = ITEMS.register("dirt_red", () -> new ItemColour(ColourableBlockRegistry.dirt_red.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_white = ITEMS.register("dirt_white", () -> new ItemColour(ColourableBlockRegistry.dirt_white.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> dirt_yellow = ITEMS.register("dirt_yellow", () -> new ItemColour(ColourableBlockRegistry.dirt_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
+  //
   public static final TagKey<Item> DYES_NONE = ItemTags.create(new ResourceLocation("forge:dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));
 

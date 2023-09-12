@@ -1,20 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "#-#",
-    "#-#",
     "#-#"
   ],
   "key": {
     "#": {
-      "item": "minecraft:stone"
+      "tag": "minecraft:dirt"
     },
     "-": {
-      "tag": "forge:dyes/none"
+      "tag": "forge:dyes/orange"
     }
   },
   "result": {
-    "item": "colouredstuff:stone",
-    "count": 6
+    "item": "colouredstuff:dirt_orange",
+    "count": 2
   }
 }

@@ -1,5 +1,23 @@
 {
 
+"block.colouredstuff.dirt_black" : "Black Dirt",
+"block.colouredstuff.dirt_blue" : "Blue Dirt",
+"block.colouredstuff.dirt_brown" : "Brown Dirt",
+"block.colouredstuff.dirt_cyan" : "Cyan Dirt",
+"block.colouredstuff.dirt_gray" : "Gray Dirt",
+"block.colouredstuff.dirt_green" : "Green Dirt",
+"block.colouredstuff.dirt_light_blue" : "Light Blue Dirt",
+"block.colouredstuff.dirt_light_gray" : "Light Gray Dirt",
+"block.colouredstuff.dirt_lime" : "Lime Dirt",
+"block.colouredstuff.dirt_magenta" : "Magenta Dirt",
+"block.colouredstuff.dirt_none" : "Colorless Dirt",
+"block.colouredstuff.dirt_orange" : "Orange Dirt",
+"block.colouredstuff.dirt_pink" : "Pink Dirt",
+"block.colouredstuff.dirt_purple" : "Purple Dirt",
+"block.colouredstuff.dirt_red" : "Red Dirt",
+"block.colouredstuff.dirt_white" : "White Dirt",
+"block.colouredstuff.dirt_yellow" : "Yellow Dirt",
+
 "block.colouredstuff.sapling_black" : "Black Sapling",
 "block.colouredstuff.sapling_blue" : "Blue Sapling",
 "block.colouredstuff.sapling_brown" : "Brown Sapling",

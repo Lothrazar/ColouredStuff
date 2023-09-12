@@ -1,6 +1,23 @@
 {
   "replace": false,
   "values": [
-    "colouredstuff:sapling"
+
+"colouredstuff:sapling_black",
+"colouredstuff:sapling_blue",
+"colouredstuff:sapling_brown",
+"colouredstuff:sapling_cyan",
+"colouredstuff:sapling_gray",
+"colouredstuff:sapling_green",
+"colouredstuff:sapling_light_blue",
+"colouredstuff:sapling_light_gray",
+"colouredstuff:sapling_lime",
+"colouredstuff:sapling_magenta",
+"colouredstuff:sapling_none",
+"colouredstuff:sapling_orange",
+"colouredstuff:sapling_pink",
+"colouredstuff:sapling_purple",
+"colouredstuff:sapling_red",
+"colouredstuff:sapling_white",
+"colouredstuff:sapling_yellow"
   ]
 }
