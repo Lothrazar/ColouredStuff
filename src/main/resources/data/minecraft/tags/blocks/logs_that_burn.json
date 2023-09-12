@@ -1,7 +1,23 @@
 {
   "replace": false,
   "values": [
-    "colouredstuff:log",
-    "colouredstuff:log_stripped"
+
+"colouredstuff:log_black",
+"colouredstuff:log_blue",
+"colouredstuff:log_brown",
+"colouredstuff:log_cyan",
+"colouredstuff:log_gray",
+"colouredstuff:log_green",
+"colouredstuff:log_light_blue",
+"colouredstuff:log_light_gray",
+"colouredstuff:log_lime",
+"colouredstuff:log_magenta",
+"colouredstuff:log_none",
+"colouredstuff:log_orange",
+"colouredstuff:log_pink",
+"colouredstuff:log_purple",
+"colouredstuff:log_red",
+"colouredstuff:log_white",
+"colouredstuff:log_yellow"
   ]
 }

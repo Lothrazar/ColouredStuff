@@ -1,6 +1,23 @@
 {
   "replace": false,
   "values": [
-    "colouredstuff:planks"
+
+"colouredstuff:planks_black",
+"colouredstuff:planks_blue",
+"colouredstuff:planks_brown",
+"colouredstuff:planks_cyan",
+"colouredstuff:planks_gray",
+"colouredstuff:planks_green",
+"colouredstuff:planks_light_blue",
+"colouredstuff:planks_light_gray",
+"colouredstuff:planks_lime",
+"colouredstuff:planks_magenta",
+"colouredstuff:planks_none",
+"colouredstuff:planks_orange",
+"colouredstuff:planks_pink",
+"colouredstuff:planks_purple",
+"colouredstuff:planks_red",
+"colouredstuff:planks_white",
+"colouredstuff:planks_yellow"
   ]
 }
