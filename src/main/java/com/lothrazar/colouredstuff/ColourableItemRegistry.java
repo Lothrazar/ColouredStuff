@@ -40,6 +40,23 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> PLANKS_white = ITEMS.register("planks_white", () -> new ItemColour(ColourableBlockRegistry.PLANKS_white.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   public static final RegistryObject<Item> PLANKS_yellow = ITEMS.register("planks_yellow", () -> new ItemColour(ColourableBlockRegistry.PLANKS_yellow.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   //
+  public static final RegistryObject<Item> log_BLACK = ITEMS.register("log_black", () -> new ItemColour(ColourableBlockRegistry.log_black.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_BLUE = ITEMS.register("log_blue", () -> new ItemColour(ColourableBlockRegistry.log_blue.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_brown = ITEMS.register("log_brown", () -> new ItemColour(ColourableBlockRegistry.log_brown.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_cyan = ITEMS.register("log_cyan", () -> new ItemColour(ColourableBlockRegistry.log_cyan.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_gray = ITEMS.register("log_gray", () -> new ItemColour(ColourableBlockRegistry.log_gray.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_green = ITEMS.register("log_green", () -> new ItemColour(ColourableBlockRegistry.log_green.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_light_blue = ITEMS.register("log_light_blue", () -> new ItemColour(ColourableBlockRegistry.log_light_blue.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_light_gray = ITEMS.register("log_light_gray", () -> new ItemColour(ColourableBlockRegistry.log_light_gray.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_lime = ITEMS.register("log_lime", () -> new ItemColour(ColourableBlockRegistry.log_lime.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_magenta = ITEMS.register("log_magenta", () -> new ItemColour(ColourableBlockRegistry.log_magenta.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_none = ITEMS.register("log_none", () -> new ItemColour(ColourableBlockRegistry.log_none.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_orange = ITEMS.register("log_orange", () -> new ItemColour(ColourableBlockRegistry.log_orange.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_pink = ITEMS.register("log_pink", () -> new ItemColour(ColourableBlockRegistry.log_pink.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_purple = ITEMS.register("log_purple", () -> new ItemColour(ColourableBlockRegistry.log_purple.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_red = ITEMS.register("log_red", () -> new ItemColour(ColourableBlockRegistry.log_red.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_white = ITEMS.register("log_white", () -> new ItemColour(ColourableBlockRegistry.log_white.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
+  public static final RegistryObject<Item> log_yellow = ITEMS.register("log_yellow", () -> new ItemColour(ColourableBlockRegistry.log_yellow.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));
   //
   //
   //  public static final RegistryObject<Item> BRICKS_ITEM = ITEMS.register("bricks", () -> new ItemColour(BRICKS_BLOCK.get(), new Item.Properties(), new ItemFlib.Settings().tooltip()));

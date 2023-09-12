@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "colouredstuff:block/log_horizontal_magenta",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "colouredstuff:block/log_magenta"
+    },
+    "axis=z": {
+      "model": "colouredstuff:block/log_horizontal_magenta",
+      "x": 90
+    }
+  }
+}
