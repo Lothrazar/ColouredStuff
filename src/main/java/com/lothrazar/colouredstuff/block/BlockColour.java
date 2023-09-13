@@ -9,7 +9,6 @@ import com.lothrazar.library.block.BlockFlib;
 import com.lothrazar.library.util.ItemStackUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.DyeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
@@ -35,15 +34,17 @@ public abstract class BlockColour extends BlockFlib implements IHasColor {
   public void onRightClickBlock(RightClickBlock event, BlockState state) {
     final ItemStack itemInHand = event.getItemStack();
     boolean doConnected = event.getEntity().isCrouching();
-    if (itemInHand.getItem() instanceof DyeItem newColor) {
-      rotateDye(state, event.getLevel(), event.getPos(), event.getEntity(), itemInHand, DyeColorless.toColorless(newColor.getDyeColor()), doConnected);
-    }
-    else if (itemInHand.is(ColourableItemRegistry.DYES_NONE)) {
-      //is dyes none  
+    if (itemInHand.is(ColourableItemRegistry.DYES_NONE)) {
       rotateDye(state, event.getLevel(), event.getPos(), event.getEntity(), itemInHand, DyeColorless.NONE, doConnected);
     }
-    else if (itemInHand.is(Tags.Items.DYES)) {
-      ModColourable.LOGGER.error("TODO: this is tagged as a dye item but its not a vanilla dye , we should fix this");
+    else if (itemInHand.is(Tags.Items.DYES) || itemInHand.is(Tags.Items.DYES)) {
+      DyeColorless dye = DyeColorless.getDyeFromItem(itemInHand);
+      if (dye != null) {
+        rotateDye(state, event.getLevel(), event.getPos(), event.getEntity(), itemInHand, dye, doConnected);
+      }
+      else {
+        ModColourable.LOGGER.error("TODO: this is tagged as a dye item but its not a vanilla 16x dye  " + dye);
+      }
     }
   }
 

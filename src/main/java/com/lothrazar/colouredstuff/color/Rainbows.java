@@ -19,7 +19,7 @@ public class Rainbows {
     BlockState oldState = world.getBlockState(pos);
     if (oldState.getBlock() instanceof IHasColor cblock) {
       var oldColour = cblock.getColor();
-      if (newColour != oldColour && oldColour == originalSourceColour) { // AND oldColr == SourceColor
+      if (newColour != oldColour && oldColour == originalSourceColour) {
         var rainbow = cblock.getRainbow();
         BlockState newState = rainbow.get(newColour).defaultBlockState();
         if (newState.hasProperty(BlockColourPillar.AXIS)) {
@@ -28,7 +28,7 @@ public class Rainbows {
             newState = newState.setValue(BlockColourPillar.AXIS, oldState.getValue(BlockColourPillar.AXIS));
           }
         }
-        ModColourable.LOGGER.debug(pos + " set to  " + newColour);
+        ModColourable.LOGGER.info(pos + " set to  " + newColour);
         world.removeBlock(pos, false);
         return world.setBlock(pos, newState, 0);
       }
