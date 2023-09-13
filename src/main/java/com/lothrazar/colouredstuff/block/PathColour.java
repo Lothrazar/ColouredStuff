@@ -3,6 +3,8 @@ package com.lothrazar.colouredstuff.block;
 import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
+import com.lothrazar.colouredstuff.color.IHasColor;
+import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelReader;
@@ -13,19 +15,27 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 @SuppressWarnings("deprecation")
-public class PathColour extends BlockColour {
+public class PathColour extends BlockFlib implements IHasColor {
 
-  public static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
+  public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
   //  protected static final VoxelShape SHAPE = FarmBlock.SHAPE;
   protected static final VoxelShape SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 15.0D, 16.0D);
 
   public PathColour(Properties p, DyeColorless s) {
-    super(p, s);
+    super(p);
     RAINBOW.put(s, this);
+    this.color = s;
+  }
+
+  private final DyeColorless color;
+
+  @Override
+  public DyeColorless getColor() {
+    return color;
   }
 
   @Override
-  public Map<DyeColorless, BlockColour> getRainbow() {
+  public Map<DyeColorless, Block> getRainbow() {
     return RAINBOW;
   }
 

@@ -3,6 +3,8 @@ package com.lothrazar.colouredstuff.block;
 import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
+import com.lothrazar.colouredstuff.color.IHasColor;
+import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.stats.Stats;
@@ -19,17 +21,25 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 
-public class CraftingColour extends BlockColour {
+public class CraftingColour extends BlockFlib implements IHasColor {
 
-  private static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
+  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public CraftingColour(Properties p, DyeColorless color) {
-    super(p, color);
+    super(p);
     RAINBOW.put(color, this);
+    this.color = color;
+  }
+
+  private final DyeColorless color;
+
+  @Override
+  public DyeColorless getColor() {
+    return color;
   }
 
   @Override
-  public Map<DyeColorless, BlockColour> getRainbow() {
+  public Map<DyeColorless, Block> getRainbow() {
     return RAINBOW;
   }
 

@@ -3,18 +3,29 @@ package com.lothrazar.colouredstuff.block;
 import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
+import com.lothrazar.colouredstuff.color.IHasColor;
+import com.lothrazar.library.block.BlockFlib;
+import net.minecraft.world.level.block.Block;
 
-public class BrickstoneColour extends BlockColour {
+public class BrickstoneColour extends BlockFlib implements IHasColor {
 
-  private static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
+  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
-  public BrickstoneColour(Properties p, DyeColorless color) {
-    super(p, color);
-    RAINBOW.put(color, this);
+  public BrickstoneColour(Properties p, DyeColorless s) {
+    super(p);
+    RAINBOW.put(s, this);
+    this.color = s;
+  }
+
+  private final DyeColorless color;
+
+  @Override
+  public DyeColorless getColor() {
+    return color;
   }
 
   @Override
-  public Map<DyeColorless, BlockColour> getRainbow() {
+  public Map<DyeColorless, Block> getRainbow() {
     return RAINBOW;
   }
 }

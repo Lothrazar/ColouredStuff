@@ -3,22 +3,32 @@ package com.lothrazar.colouredstuff.block;
 import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
+import com.lothrazar.colouredstuff.lib.BlockFlibPillar;
 import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
 import net.minecraftforge.common.ToolActions;
 
-public class LogColour extends BlockColourPillar {
+public class LogColour extends BlockFlibPillar {
 
-  public static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
+  public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public LogColour(Properties p, DyeColorless s) {
-    super(p, s);
+    super(p);
     RAINBOW.put(s, this);
+    this.color = s;
+  }
+
+  private final DyeColorless color;
+
+  @Override
+  public DyeColorless getColor() {
+    return color;
   }
 
   @Override
-  public Map<DyeColorless, BlockColour> getRainbow() {
+  public Map<DyeColorless, Block> getRainbow() {
     return RAINBOW;
   }
 

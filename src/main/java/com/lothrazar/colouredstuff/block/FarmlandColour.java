@@ -23,7 +23,7 @@ import net.minecraftforge.common.PlantType;
 
 public class FarmlandColour extends PathColour {
 
-  public static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
+  public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public FarmlandColour(Properties p, DyeColorless s) {
     super(p, s);
@@ -32,7 +32,7 @@ public class FarmlandColour extends PathColour {
   }
 
   @Override
-  public Map<DyeColorless, BlockColour> getRainbow() {
+  public Map<DyeColorless, Block> getRainbow() {
     return RAINBOW;
   }
 

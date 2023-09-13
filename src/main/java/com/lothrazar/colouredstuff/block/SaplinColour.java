@@ -3,6 +3,8 @@ package com.lothrazar.colouredstuff.block;
 import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
+import com.lothrazar.colouredstuff.color.IHasColor;
+import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -29,23 +31,31 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.common.IPlantable;
 
 @SuppressWarnings("deprecation")
-public class SaplinColour extends BlockColour implements IPlantable, BonemealableBlock {
+public class SaplinColour extends BlockFlib implements IHasColor, IPlantable, BonemealableBlock {
 
-  public static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
+  public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
   public static final IntegerProperty STAGE = BlockStateProperties.STAGE;
   protected static final float AABB_OFFSET = 6.0F; // SaplingBlock.AABB_OFFSET;
   protected static final VoxelShape SHAPE = Block.box(2.0D, 0.0D, 2.0D, 14.0D, 12.0D, 14.0D); // SaplingBlock.SHAPE;
   private final AbstractTreeGrower treeGrower;
 
   public SaplinColour(AbstractTreeGrower g, Properties p, DyeColorless s) {
-    super(p.mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY), s);
+    super(p.mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY));
     this.treeGrower = g;
     this.registerDefaultState(this.stateDefinition.any().setValue(STAGE, Integer.valueOf(0)));
     RAINBOW.put(s, this);
+    this.color = s;
+  }
+
+  private final DyeColorless color;
+
+  @Override
+  public DyeColorless getColor() {
+    return color;
   }
 
   @Override
-  public Map<DyeColorless, BlockColour> getRainbow() {
+  public Map<DyeColorless, Block> getRainbow() {
     return RAINBOW;
   }
 

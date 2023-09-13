@@ -1,6 +1,7 @@
-package com.lothrazar.colouredstuff.block;
+package com.lothrazar.colouredstuff.lib;
 
-import com.lothrazar.colouredstuff.color.DyeColorless;
+import com.lothrazar.colouredstuff.color.IHasColor;
+import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.Block;
@@ -11,12 +12,12 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 
-public abstract class BlockColourPillar extends BlockColour {
+public abstract class BlockFlibPillar extends BlockFlib implements IHasColor {
 
   public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
-  public BlockColourPillar(Properties p, DyeColorless s) {
-    super(p, s);
+  public BlockFlibPillar(Properties p) {
+    super(p, new BlockFlib.Settings());
   }
 
   @Override
@@ -31,7 +32,6 @@ public abstract class BlockColourPillar extends BlockColour {
 
   @Override
   public BlockState getStateForPlacement(BlockPlaceContext ctx) {
-    BlockState withColour = super.getStateForPlacement(ctx);
-    return withColour.setValue(AXIS, ctx.getClickedFace().getAxis());
+    return super.getStateForPlacement(ctx).setValue(AXIS, ctx.getClickedFace().getAxis());
   }
 }
