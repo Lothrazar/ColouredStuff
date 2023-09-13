@@ -12,7 +12,7 @@
               "conditions": [
                 {
                   "condition": "minecraft:block_state_property",
-                  "block": "absentbydesign:slab_planks_red",
+                  "block": "colouredstuff:slab_planks_red",
                   "properties": {
                     "type": "double"
                   }
