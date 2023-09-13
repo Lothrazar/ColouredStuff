@@ -7,8 +7,11 @@ declare -a arr=("blue" "brown" "cyan" "gray" "green" "light_blue" "light_gray" "
 declare -a names=("Blue" "Brown" "Cyan" "Gray" "Green" "Light Blue" "Light Gray" "Lime" "Magenta" "Colorless" "Orange" "Pink" "Purple" "Red" "White" "Yellow")
 
 
-seed=$1
-
+input=$1
+seed=stairs_$1
+#echo $seed;
+#echo $input;
+#exit 1;
 
 modid="colouredstuff"
 folder="src/main/resources/assets/${modid}"
@@ -19,7 +22,7 @@ folderdata="src/main/resources/data/${modid}"
 arraylength=${#arr[@]}
 ## now loop through the above array
 # use for loop to read all values and indexes
-echo "\"block.colouredstuff.${seed}_black\" : \"Black Wooden Slabs\","
+echo "\"block.colouredstuff.${seed}_black\" : \"Black Wooden Stairs\","
 for (( i=0; i<${arraylength}; i++ ));
 do
    color="${arr[$i]}"
@@ -35,23 +38,25 @@ do
 	sed -i -e "s/black/${color}/g" "${folder}"/models/item/"${seed}"_"${color}".json
 	
 	# block model  
-	cp "${folder}"/models/block/slab/"${seed}"_black.json "${folder}"/models/block/slab/"${seed}"_"${color}".json
-	sed -i -e "s/black/${color}/g" "${folder}"/models/block/slab/"${seed}"_"${color}".json
-	cp "${folder}"/models/block/slab/"${seed}"_black_upper.json "${folder}"/models/block/slab/"${seed}"_"${color}"_upper.json
-	sed -i -e "s/black/${color}/g" "${folder}"/models/block/slab/"${seed}"_"${color}"_upper.json
+	cp "${folder}"/models/block/stairs/"${input}"_black.json "${folder}"/models/block/stairs/"${input}"_"${color}".json
+	sed -i -e "s/black/${color}/g" "${folder}"/models/block/stairs/"${input}"_"${color}".json
+	cp "${folder}"/models/block/stairs/"${input}"_black_upper.json "${folder}"/models/block/stairs/"${input}"_"${color}"_inner.json
+	sed -i -e "s/black/${color}/g" "${folder}"/models/block/stairs/"${input}"_"${color}"_inner.json
+	cp "${folder}"/models/block/stairs/"${input}"_black_upper.json "${folder}"/models/block/stairs/"${input}"_"${color}"_outer.json
+	sed -i -e "s/black/${color}/g" "${folder}"/models/block/stairs/"${input}"_"${color}"_outer.json
 	
 	# loot
 	cp "${folderdata}"/loot_tables/blocks/"${seed}"_black.json "${folderdata}"/loot_tables/blocks/"${seed}"_"${color}".json
 	sed -i -e "s/black/${color}/g" "${folderdata}"/loot_tables/blocks/"${seed}"_"${color}".json
    
-   #recipe
+    #recipes
 	cp "${folderdata}"/recipes/"${seed}"_black.json "${folderdata}"/recipes/"${seed}"_"${color}".json
 	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_"${color}".json
 	#stone cutter or other variants 
-#	cp "${folderdata}"/recipes/"${seed}"_black_sc.json "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
-#	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
+	cp "${folderdata}"/recipes/"${seed}"_black_sc.json "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
+	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
 
-	echo "\"block.colouredstuff.${seed}_${color}\" : \"${name} Wooden Slabs\","
+	echo "\"block.colouredstuff.${seed}_${color}\" : \"${name} Wooden Stairs\","
 	 
 done
 
