@@ -40,9 +40,9 @@ do
 	# block model  
 	cp "${folder}"/models/block/stairs/"${input}"_black.json "${folder}"/models/block/stairs/"${input}"_"${color}".json
 	sed -i -e "s/black/${color}/g" "${folder}"/models/block/stairs/"${input}"_"${color}".json
-	cp "${folder}"/models/block/stairs/"${input}"_black_upper.json "${folder}"/models/block/stairs/"${input}"_"${color}"_inner.json
+	cp "${folder}"/models/block/stairs/"${input}"_black_inner.json "${folder}"/models/block/stairs/"${input}"_"${color}"_inner.json
 	sed -i -e "s/black/${color}/g" "${folder}"/models/block/stairs/"${input}"_"${color}"_inner.json
-	cp "${folder}"/models/block/stairs/"${input}"_black_upper.json "${folder}"/models/block/stairs/"${input}"_"${color}"_outer.json
+	cp "${folder}"/models/block/stairs/"${input}"_black_outer.json "${folder}"/models/block/stairs/"${input}"_"${color}"_outer.json
 	sed -i -e "s/black/${color}/g" "${folder}"/models/block/stairs/"${input}"_"${color}"_outer.json
 	
 	# loot

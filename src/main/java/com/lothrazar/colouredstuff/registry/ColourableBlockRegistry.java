@@ -301,7 +301,23 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> slab_planks_white = BLOCKS.register("slab_planks_white", () -> new PlanksSlab(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
   public static final RegistryObject<Block> slab_planks_yellow = BLOCKS.register("slab_planks_yellow", () -> new PlanksSlab(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
-  public static final RegistryObject<Block> stairs_planks_black = BLOCKS.register("stairs_planks_black", () -> new PlanksStair(() -> PLANKS_none.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
+  public static final RegistryObject<Block> stairs_planks_none = BLOCKS.register("stairs_planks_none", () -> new PlanksStair(() -> PLANKS_none.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
+  public static final RegistryObject<Block> stairs_planks_black = BLOCKS.register("stairs_planks_black", () -> new PlanksStair(() -> planks_black.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  public static final RegistryObject<Block> stairs_planks_blue = BLOCKS.register("stairs_planks_blue", () -> new PlanksStair(() -> planks_blue.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLUE));
+  public static final RegistryObject<Block> stairs_planks_brown = BLOCKS.register("stairs_planks_brown", () -> new PlanksStair(() -> PLANKS_brown.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BROWN));
+  public static final RegistryObject<Block> stairs_planks_cyan = BLOCKS.register("stairs_planks_cyan", () -> new PlanksStair(() -> PLANKS_cyan.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.CYAN));
+  public static final RegistryObject<Block> stairs_planks_gray = BLOCKS.register("stairs_planks_gray", () -> new PlanksStair(() -> PLANKS_gray.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GRAY));
+  public static final RegistryObject<Block> stairs_planks_green = BLOCKS.register("stairs_planks_green", () -> new PlanksStair(() -> PLANKS_green.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GREEN));
+  public static final RegistryObject<Block> stairs_planks_light_blue = BLOCKS.register("stairs_planks_light_blue", () -> new PlanksStair(() -> PLANKS_light_blue.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> stairs_planks_light_gray = BLOCKS.register("stairs_planks_light_gray", () -> new PlanksStair(() -> PLANKS_light_gray.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> stairs_planks_lime = BLOCKS.register("stairs_planks_lime", () -> new PlanksStair(() -> PLANKS_lime.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIME));
+  public static final RegistryObject<Block> stairs_planks_magenta = BLOCKS.register("stairs_planks_magenta", () -> new PlanksStair(() -> PLANKS_magenta.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> stairs_planks_orange = BLOCKS.register("stairs_planks_orange", () -> new PlanksStair(() -> PLANKS_orange.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> stairs_planks_pink = BLOCKS.register("stairs_planks_pink", () -> new PlanksStair(() -> PLANKS_pink.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PINK));
+  public static final RegistryObject<Block> stairs_planks_purple = BLOCKS.register("stairs_planks_purple", () -> new PlanksStair(() -> PLANKS_purple.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> stairs_planks_red = BLOCKS.register("stairs_planks_red", () -> new PlanksStair(() -> PLANKS_red.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
+  public static final RegistryObject<Block> stairs_planks_white = BLOCKS.register("stairs_planks_white", () -> new PlanksStair(() -> PLANKS_white.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
+  public static final RegistryObject<Block> stairs_planks_yellow = BLOCKS.register("stairs_planks_yellow", () -> new PlanksStair(() -> PLANKS_yellow.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
   //
 }

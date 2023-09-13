@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "colouredstuff:planks_black"
+      "item": "colouredstuff:planks_cyan"
     }
   },
   "result": {
-    "item": "colouredstuff:stairs_planks_black",
+    "item": "colouredstuff:stairs_planks_cyan",
     "count": 4
   }
 }

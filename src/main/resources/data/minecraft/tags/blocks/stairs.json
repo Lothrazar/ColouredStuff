@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+
+"colouredstuff:stairs_planks_black",
+"colouredstuff:stairs_planks_blue",
+"colouredstuff:stairs_planks_brown",
+"colouredstuff:stairs_planks_cyan",
+"colouredstuff:stairs_planks_gray",
+"colouredstuff:stairs_planks_green",
+"colouredstuff:stairs_planks_light_blue",
+"colouredstuff:stairs_planks_light_gray",
+"colouredstuff:stairs_planks_lime",
+"colouredstuff:stairs_planks_magenta",
+"colouredstuff:stairs_planks_none",
+"colouredstuff:stairs_planks_orange",
+"colouredstuff:stairs_planks_pink",
+"colouredstuff:stairs_planks_purple",
+"colouredstuff:stairs_planks_red",
+"colouredstuff:stairs_planks_white",
+"colouredstuff:stairs_planks_yellow"
+  ]
+}
