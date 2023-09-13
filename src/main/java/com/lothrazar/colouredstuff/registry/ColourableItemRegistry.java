@@ -300,6 +300,8 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> slab_planks_white = ITEMS.register("slab_planks_white", () -> new ItemColour(ColourableBlockRegistry.slab_planks_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> slab_planks_yellow = ITEMS.register("slab_planks_yellow", () -> new ItemColour(ColourableBlockRegistry.slab_planks_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
+  public static final RegistryObject<Item> stairs_planks_black = ITEMS.register("stairs_planks_black", () -> new ItemColour(ColourableBlockRegistry.stairs_planks_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  //
   public static final TagKey<Item> DYES_NONE = ItemTags.create(new ResourceLocation("forge", "dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));
 

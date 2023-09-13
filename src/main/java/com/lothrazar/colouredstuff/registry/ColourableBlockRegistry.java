@@ -12,6 +12,7 @@ import com.lothrazar.colouredstuff.block.LogColour;
 import com.lothrazar.colouredstuff.block.PathColour;
 import com.lothrazar.colouredstuff.block.PlanksColour;
 import com.lothrazar.colouredstuff.block.PlanksSlab;
+import com.lothrazar.colouredstuff.block.PlanksStair;
 import com.lothrazar.colouredstuff.block.SandstoneColour;
 import com.lothrazar.colouredstuff.block.SaplinColour;
 import com.lothrazar.colouredstuff.block.StoneColour;
@@ -282,7 +283,7 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<CraftingColour> crafting_table_white = BLOCKS.register("crafting_table_white", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.WHITE));
   public static final RegistryObject<CraftingColour> crafting_table_yellow = BLOCKS.register("crafting_table_yellow", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.YELLOW));
   //
-  public static final RegistryObject<PlanksSlab> slab_planks_none = BLOCKS.register("slab_planks_none", () -> new PlanksSlab(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
+  public static final RegistryObject<Block> slab_planks_none = BLOCKS.register("slab_planks_none", () -> new PlanksSlab(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
   public static final RegistryObject<Block> slab_planks_black = BLOCKS.register("slab_planks_black", () -> new PlanksSlab(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
   public static final RegistryObject<Block> slab_planks_blue = BLOCKS.register("slab_planks_blue", () -> new PlanksSlab(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLUE));
   public static final RegistryObject<Block> slab_planks_brown = BLOCKS.register("slab_planks_brown", () -> new PlanksSlab(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BROWN));
@@ -299,4 +300,8 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> slab_planks_red = BLOCKS.register("slab_planks_red", () -> new PlanksSlab(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
   public static final RegistryObject<Block> slab_planks_white = BLOCKS.register("slab_planks_white", () -> new PlanksSlab(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
   public static final RegistryObject<Block> slab_planks_yellow = BLOCKS.register("slab_planks_yellow", () -> new PlanksSlab(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
+  //
+  public static final RegistryObject<Block> stairs_planks_black = BLOCKS.register("stairs_planks_black", () -> new PlanksStair(() -> PLANKS_none.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
+  //
+  //
 }

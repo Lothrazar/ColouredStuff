@@ -51,8 +51,8 @@ do
 	cp "${folderdata}"/recipes/"${seed}"_black.json "${folderdata}"/recipes/"${seed}"_"${color}".json
 	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_"${color}".json
 	#stone cutter or other variants 
-#	cp "${folderdata}"/recipes/"${seed}"_black_sc.json "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
-#	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
+	cp "${folderdata}"/recipes/"${seed}"_black_sc.json "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
+	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
 
 	echo "\"block.colouredstuff.${seed}_${color}\" : \"${name} Wooden Slabs\","
 	 
