@@ -1,6 +1,22 @@
 {
 	"replace": false,
 	"values": [
-	  "colouredstuff:wall_stone_black"
+"colouredstuff:wall_stone_black",
+"colouredstuff:wall_stone_blue",
+"colouredstuff:wall_stone_brown",
+"colouredstuff:wall_stone_cyan",
+"colouredstuff:wall_stone_gray",
+"colouredstuff:wall_stone_green",
+"colouredstuff:wall_stone_light_blue",
+"colouredstuff:wall_stone_light_gray",
+"colouredstuff:wall_stone_lime",
+"colouredstuff:wall_stone_magenta",
+"colouredstuff:wall_stone_none",
+"colouredstuff:wall_stone_orange",
+"colouredstuff:wall_stone_pink",
+"colouredstuff:wall_stone_purple",
+"colouredstuff:wall_stone_red",
+"colouredstuff:wall_stone_white",
+"colouredstuff:wall_stone_yellow"
 	]
 }

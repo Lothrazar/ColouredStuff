@@ -1,5 +1,23 @@
 {
 
+"block.colouredstuff.wall_stone_black" : "Black Stone Wall",
+"block.colouredstuff.wall_stone_blue" : "Blue Stone Wall",
+"block.colouredstuff.wall_stone_brown" : "Brown Stone Wall",
+"block.colouredstuff.wall_stone_cyan" : "Cyan Stone Wall",
+"block.colouredstuff.wall_stone_gray" : "Gray Stone Wall",
+"block.colouredstuff.wall_stone_green" : "Green Stone Wall",
+"block.colouredstuff.wall_stone_light_blue" : "Light Blue Stone Wall",
+"block.colouredstuff.wall_stone_light_gray" : "Light Gray Stone Wall",
+"block.colouredstuff.wall_stone_lime" : "Lime Stone Wall",
+"block.colouredstuff.wall_stone_magenta" : "Magenta Stone Wall",
+"block.colouredstuff.wall_stone_none" : "Colorless Stone Wall",
+"block.colouredstuff.wall_stone_orange" : "Orange Stone Wall",
+"block.colouredstuff.wall_stone_pink" : "Pink Stone Wall",
+"block.colouredstuff.wall_stone_purple" : "Purple Stone Wall",
+"block.colouredstuff.wall_stone_red" : "Red Stone Wall",
+"block.colouredstuff.wall_stone_white" : "White Stone Wall",
+"block.colouredstuff.wall_stone_yellow" : "Yellow Stone Wall",
+
 "block.colouredstuff.stairs_planks_black" : "Black Wooden Stairs",
 "block.colouredstuff.stairs_planks_blue" : "Blue Wooden Stairs",
 "block.colouredstuff.stairs_planks_brown" : "Brown Wooden Stairs",
