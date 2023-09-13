@@ -11,6 +11,7 @@ import com.lothrazar.colouredstuff.block.LeavesColour;
 import com.lothrazar.colouredstuff.block.LogColour;
 import com.lothrazar.colouredstuff.block.PathColour;
 import com.lothrazar.colouredstuff.block.PlanksColour;
+import com.lothrazar.colouredstuff.block.PlanksFence;
 import com.lothrazar.colouredstuff.block.PlanksSlab;
 import com.lothrazar.colouredstuff.block.PlanksStair;
 import com.lothrazar.colouredstuff.block.SandstoneColour;
@@ -319,5 +320,6 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> stairs_planks_white = BLOCKS.register("stairs_planks_white", () -> new PlanksStair(() -> PLANKS_white.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
   public static final RegistryObject<Block> stairs_planks_yellow = BLOCKS.register("stairs_planks_yellow", () -> new PlanksStair(() -> PLANKS_yellow.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
+  public static final RegistryObject<Block> fence_planks_black = BLOCKS.register("fence_planks_black", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
   //
 }
