@@ -18,6 +18,5 @@ public class ModColourable {
     IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
     ColourableBlockRegistry.BLOCKS.register(eventBus);
     ColourableItemRegistry.ITEMS.register(eventBus);
-    //    FMLJavaModLoadingContext.get().getModEventBus().addListener(ColourableClient::setupClient); 
   }
 }

@@ -18,7 +18,7 @@ public class Rainbows {
   public static boolean rotateToColor(Level world, BlockPos pos, DyeColorless originalSourceColour, DyeColorless newColour) {
     BlockState oldState = world.getBlockState(pos);
     if (oldState.getBlock() instanceof IHasColor cblock) {
-      var oldColour = cblock.getColor();// Rainbows.KEYS.get(oldState.getBlock());
+      var oldColour = cblock.getColor();
       if (newColour != oldColour && oldColour == originalSourceColour) { // AND oldColr == SourceColor
         var rainbow = cblock.getRainbow();
         BlockState newState = rainbow.get(newColour).defaultBlockState();
@@ -28,7 +28,7 @@ public class Rainbows {
             newState = newState.setValue(BlockColourPillar.AXIS, oldState.getValue(BlockColourPillar.AXIS));
           }
         }
-        ModColourable.LOGGER.error(pos + " set to  " + newColour);
+        ModColourable.LOGGER.debug(pos + " set to  " + newColour);
         world.removeBlock(pos, false);
         return world.setBlock(pos, newState, 0);
       }

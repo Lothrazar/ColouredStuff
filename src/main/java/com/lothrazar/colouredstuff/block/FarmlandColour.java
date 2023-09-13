@@ -2,7 +2,6 @@ package com.lothrazar.colouredstuff.block;
 
 import java.util.HashMap;
 import java.util.Map;
-import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -99,8 +98,6 @@ public class FarmlandColour extends PathColour {
 
   @Override
   public boolean canSustainPlant(BlockState state, BlockGetter level, BlockPos pos, Direction facing, IPlantable plantable) {
-    ModColourable.LOGGER.info("IPlantable sustain plant = ?  " + state);
-    //
     //    BlockState plant = plantable.getPlant(level, pos.relative(facing));
     PlantType plantType = plantable.getPlantType(level, pos.relative(facing));
     // 

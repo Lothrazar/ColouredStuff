@@ -19,23 +19,6 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 
 public class RainbowTreeGrower extends AbstractTreeGrower {
 
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> BLACK = FeatureUtils.createKey(ModMain.MODID + ":tree_black");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> BLUE = FeatureUtils.createKey(ModMain.MODID + ":tree_blue");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> BROWN = FeatureUtils.createKey(ModMain.MODID + ":tree_brown");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> CYAN = FeatureUtils.createKey(ModMain.MODID + ":tree_cyan");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> GRAY = FeatureUtils.createKey(ModMain.MODID + ":tree_gray");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> GREEN = FeatureUtils.createKey(ModMain.MODID + ":tree_green");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> LIGHT_BLUE = FeatureUtils.createKey(ModMain.MODID + ":tree_light_blue");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> LIGHT_GRAY = FeatureUtils.createKey(ModMain.MODID + ":tree_light_gray");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> LIME = FeatureUtils.createKey(ModMain.MODID + ":tree_lime");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> MAGENTA = FeatureUtils.createKey(ModMain.MODID + ":tree_magenta");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> ORANGE = FeatureUtils.createKey(ModMain.MODID + ":tree_orange");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> PINK = FeatureUtils.createKey(ModMain.MODID + ":tree_pink");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> PURPLE = FeatureUtils.createKey(ModMain.MODID + ":tree_purple");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> RED = FeatureUtils.createKey(ModMain.MODID + ":tree_red");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> WHITE = FeatureUtils.createKey(ModMain.MODID + ":tree_white");
-  //  public static final ResourceKey<ConfiguredFeature<?, ?>> YELLOW = FeatureUtils.createKey(ModMain.MODID + ":tree_yellow");
-  //
   public static final Map<DyeColorless, ResourceKey> RAINBOW_OF_TREES = new HashMap<>() {
 
     {
@@ -67,16 +50,11 @@ public class RainbowTreeGrower extends AbstractTreeGrower {
   @Override
   public boolean growTree(ServerLevel level, ChunkGenerator cgen, BlockPos pos, BlockState saplingState, RandomSource rand) {
     final boolean hasFlowers = false;
-    var resourcekey = this.getConfiguredFeature(rand, hasFlowers); //default 
-    // TODO: new method to get blcoks 
+    var resourcekey = this.getConfiguredFeature(rand, hasFlowers);
     if (saplingState.getBlock() instanceof IHasColor block) {
       DyeColorless color = block.getColor();
       resourcekey = RAINBOW_OF_TREES.get(color);
     }
-    //    if (saplingState.hasProperty(BlockColour.COLOR)) {
-    //      DyeColorless color = saplingState.getValue(BlockColour.COLOR);
-    //      resourcekey = RAINBOW_OF_TREES.get(color);
-    //    }
     if (resourcekey == null) {
       return false;
     }

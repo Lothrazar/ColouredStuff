@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
+@SuppressWarnings("deprecation")
 public class PathColour extends BlockColour {
 
   public static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();

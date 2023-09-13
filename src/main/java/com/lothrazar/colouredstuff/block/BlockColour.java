@@ -35,7 +35,6 @@ public abstract class BlockColour extends BlockFlib implements IHasColor {
   public void onRightClickBlock(RightClickBlock event, BlockState state) {
     final ItemStack itemInHand = event.getItemStack();
     boolean doConnected = event.getEntity().isCrouching();
-    ModColourable.LOGGER.error("itemInHand " + itemInHand);
     if (itemInHand.getItem() instanceof DyeItem newColor) {
       rotateDye(state, event.getLevel(), event.getPos(), event.getEntity(), itemInHand, DyeColorless.toColorless(newColor.getDyeColor()), doConnected);
     }
