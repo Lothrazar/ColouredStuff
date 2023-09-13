@@ -280,4 +280,25 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<CraftingColour> crafting_table_red = BLOCKS.register("crafting_table_red", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.RED));
   public static final RegistryObject<CraftingColour> crafting_table_white = BLOCKS.register("crafting_table_white", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.WHITE));
   public static final RegistryObject<CraftingColour> crafting_table_yellow = BLOCKS.register("crafting_table_yellow", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.YELLOW));
+  //
+  //
+  public static final RegistryObject<CraftingColour> slab_planks_none = BLOCKS.register("slab_planks_none", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
+  public static final RegistryObject<CraftingColour> slab_planks_black = BLOCKS.register("slab_planks_black", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  public static final RegistryObject<CraftingColour> slab_planks_blue = BLOCKS.register("slab_planks_blue", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLUE));
+  public static final RegistryObject<CraftingColour> slab_planks_brown = BLOCKS.register("slab_planks_brown", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BROWN));
+  public static final RegistryObject<CraftingColour> slab_planks_cyan = BLOCKS.register("slab_planks_cyan", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.CYAN));
+  public static final RegistryObject<CraftingColour> slab_planks_gray = BLOCKS.register("slab_planks_gray", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GRAY));
+  public static final RegistryObject<CraftingColour> slab_planks_green = BLOCKS.register("slab_planks_green", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GREEN));
+  public static final RegistryObject<CraftingColour> slab_planks_light_blue = BLOCKS.register("slab_planks_light_blue", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<CraftingColour> slab_planks_light_gray = BLOCKS.register("slab_planks_light_gray", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<CraftingColour> slab_planks_lime = BLOCKS.register("slab_planks_lime", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIME));
+  public static final RegistryObject<CraftingColour> slab_planks_magenta = BLOCKS.register("slab_planks_magenta", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.MAGENTA));
+  public static final RegistryObject<CraftingColour> slab_planks_orange = BLOCKS.register("slab_planks_orange", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.ORANGE));
+  public static final RegistryObject<CraftingColour> slab_planks_pink = BLOCKS.register("slab_planks_pink", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PINK));
+  public static final RegistryObject<CraftingColour> slab_planks_purple = BLOCKS.register("slab_planks_purple", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PURPLE));
+  public static final RegistryObject<CraftingColour> slab_planks_red = BLOCKS.register("slab_planks_red", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
+  public static final RegistryObject<CraftingColour> slab_planks_white = BLOCKS.register("slab_planks_white", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
+  public static final RegistryObject<CraftingColour> slab_planks_yellow = BLOCKS.register("slab_planks_yellow", () -> new CraftingColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
+  //  public static final RegistryObject<Block> slab_planks_none = BLOCKS.register("slab_planks_none", () -> new PlanksSlab(Block.Properties.copy(Blocks.ACACIA_SLAB), DyeColorless.NONE));
+  //  public static final RegistryObject<Block> slab_planks_black = BLOCKS.register("slab_planks_black", () -> new PlanksSlab(Block.Properties.copy(Blocks.ACACIA_SLAB), DyeColorless.BLACK));
 }

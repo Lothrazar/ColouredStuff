@@ -12,10 +12,6 @@ public enum DyeColorless implements StringRepresentable {
 
   WHITE, ORANGE, MAGENTA, LIGHT_BLUE, YELLOW, LIME, PINK, GRAY, LIGHT_GRAY, CYAN, PURPLE, BLUE, BROWN, GREEN, RED, BLACK, NONE;
 
-  public boolean isColorless() {
-    return this == NONE;
-  }
-
   public static final Map<DyeColorless, DyeColor> TOCOLOR = new HashMap<>() {
 
     {
@@ -102,14 +98,12 @@ public enum DyeColorless implements StringRepresentable {
     return null;
   }
 
-  /**
-   * Will be null for color NONE
-   * 
-   */
-  //  @Nullable
-  //  public DyeColor toDyeColor() {
-  //    return TOCOLOR.get(this);
-  //  }
+  @Deprecated
+  public boolean isColorless() {
+    return this == NONE;
+  }
+
+  @Deprecated
   public static DyeColorless toColorless(DyeColor color) {
     for (Map.Entry<DyeColorless, DyeColor> entry : TOCOLOR.entrySet()) {
       if (entry.getValue() == color) {

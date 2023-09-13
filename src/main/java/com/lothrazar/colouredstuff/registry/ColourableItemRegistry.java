@@ -282,7 +282,25 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> crafting_table_white = ITEMS.register("crafting_table_white", () -> new ItemColour(ColourableBlockRegistry.crafting_table_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> crafting_table_yellow = ITEMS.register("crafting_table_yellow", () -> new ItemColour(ColourableBlockRegistry.crafting_table_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
-  public static final TagKey<Item> DYES_NONE = ItemTags.create(new ResourceLocation("forge:dyes/none"));
+  public static final RegistryObject<Item> slab_planks_none = ITEMS.register("slab_planks_none", () -> new ItemColour(ColourableBlockRegistry.slab_planks_none.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_BLACK = ITEMS.register("slab_planks_black", () -> new ItemColour(ColourableBlockRegistry.slab_planks_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_BLUE = ITEMS.register("slab_planks_blue", () -> new ItemColour(ColourableBlockRegistry.slab_planks_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_brown = ITEMS.register("slab_planks_brown", () -> new ItemColour(ColourableBlockRegistry.slab_planks_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_cyan = ITEMS.register("slab_planks_cyan", () -> new ItemColour(ColourableBlockRegistry.slab_planks_cyan.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_gray = ITEMS.register("slab_planks_gray", () -> new ItemColour(ColourableBlockRegistry.slab_planks_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_green = ITEMS.register("slab_planks_green", () -> new ItemColour(ColourableBlockRegistry.slab_planks_green.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_light_blue = ITEMS.register("slab_planks_light_blue", () -> new ItemColour(ColourableBlockRegistry.slab_planks_light_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_light_gray = ITEMS.register("slab_planks_light_gray", () -> new ItemColour(ColourableBlockRegistry.slab_planks_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_lime = ITEMS.register("slab_planks_lime", () -> new ItemColour(ColourableBlockRegistry.slab_planks_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_magenta = ITEMS.register("slab_planks_magenta", () -> new ItemColour(ColourableBlockRegistry.slab_planks_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_orange = ITEMS.register("slab_planks_orange", () -> new ItemColour(ColourableBlockRegistry.slab_planks_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_pink = ITEMS.register("slab_planks_pink", () -> new ItemColour(ColourableBlockRegistry.slab_planks_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_purple = ITEMS.register("slab_planks_purple", () -> new ItemColour(ColourableBlockRegistry.slab_planks_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_red = ITEMS.register("slab_planks_red", () -> new ItemColour(ColourableBlockRegistry.slab_planks_red.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_white = ITEMS.register("slab_planks_white", () -> new ItemColour(ColourableBlockRegistry.slab_planks_white.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> slab_planks_yellow = ITEMS.register("slab_planks_yellow", () -> new ItemColour(ColourableBlockRegistry.slab_planks_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
+  //
+  public static final TagKey<Item> DYES_NONE = ItemTags.create(new ResourceLocation("forge", "dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));
 
   @SubscribeEvent
