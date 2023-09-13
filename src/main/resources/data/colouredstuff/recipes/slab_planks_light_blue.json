@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "item": "colouredstuff:planks_black"
+      "item": "colouredstuff:planks_light_blue"
     }
   },
   "result": {
-    "item": "colouredstuff:slab_planks_black",
+    "item": "colouredstuff:slab_planks_light_blue",
     "count": 6
   }
 }

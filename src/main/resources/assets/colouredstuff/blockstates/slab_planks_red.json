@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "colouredstuff:block/slab/planks_red" },
+        "type=top": { "model": "colouredstuff:block/slab/planks_red_upper" },
+        "type=double": { "model": "colouredstuff:block/planks_red" }
+    }
+}

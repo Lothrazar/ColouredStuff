@@ -1,0 +1,6 @@
+{
+  "parent": "colouredstuff:parent/slab_upper",
+  "textures": {
+    "b": "colouredstuff:block/planks_pink"
+  }
+}

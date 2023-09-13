@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_all",
 	"textures": {
-		"all": "colouredstuff:block/planks_brown",
-		"particle": "colouredstuff:block/planks_brown"
+		"all": "colouredstuff:block/planks_orange",
+		"particle": "colouredstuff:block/planks_orange"
 	}
 }

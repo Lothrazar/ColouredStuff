@@ -263,6 +263,24 @@
 "block.colouredstuff.log_yellow" : "Yellow Log",
 	
 	
+"block.colouredstuff.slab_planks_black" : "Black Wooden Slabs",
+"block.colouredstuff.slab_planks_blue" : "Blue Wooden Slabs",
+"block.colouredstuff.slab_planks_brown" : "Brown Wooden Slabs",
+"block.colouredstuff.slab_planks_cyan" : "Cyan Wooden Slabs",
+"block.colouredstuff.slab_planks_gray" : "Gray Wooden Slabs",
+"block.colouredstuff.slab_planks_green" : "Green Wooden Slabs",
+"block.colouredstuff.slab_planks_light_blue" : "Light Blue Wooden Slabs",
+"block.colouredstuff.slab_planks_light_gray" : "Light Gray Wooden Slabs",
+"block.colouredstuff.slab_planks_lime" : "Lime Wooden Slabs",
+"block.colouredstuff.slab_planks_magenta" : "Magenta Wooden Slabs",
+"block.colouredstuff.slab_planks_none" : "Colorless Wooden Slabs",
+"block.colouredstuff.slab_planks_orange" : "Orange Wooden Slabs",
+"block.colouredstuff.slab_planks_pink" : "Pink Wooden Slabs",
+"block.colouredstuff.slab_planks_purple" : "Purple Wooden Slabs",
+"block.colouredstuff.slab_planks_red" : "Red Wooden Slabs",
+"block.colouredstuff.slab_planks_white" : "White Wooden Slabs",
+"block.colouredstuff.slab_planks_yellow" : "Yellow Wooden Slabs",
+	
 
 	"item.minecraft.none_dye":"None Dye",
 
