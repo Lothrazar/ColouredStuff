@@ -33,6 +33,11 @@ public class FarmlandColour extends PathColour {
   }
 
   @Override
+  public Map<DyeColorless, BlockColour> getRainbow() {
+    return RAINBOW;
+  }
+
+  @Override
   protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
     super.createBlockStateDefinition(builder.add(FarmBlock.MOISTURE));
   }

@@ -4,13 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 
-public class StrippedLogColour extends BlockColourPillar {
+public class StoneColour extends BlockColour {
 
-  public static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
+  private static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
 
-  public StrippedLogColour(Properties p, DyeColorless s) {
-    super(p, s);
-    RAINBOW.put(s, this);
+  public StoneColour(Properties p, DyeColorless color) {
+    super(p, color);
+    RAINBOW.put(color, this);
   }
 
   @Override

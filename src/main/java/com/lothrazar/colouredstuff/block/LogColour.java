@@ -18,6 +18,11 @@ public class LogColour extends BlockColourPillar {
   }
 
   @Override
+  public Map<DyeColorless, BlockColour> getRainbow() {
+    return RAINBOW;
+  }
+
+  @Override
   public BlockState getToolModifiedState(BlockState logState, UseOnContext context, ToolAction toolAction, boolean simulate) {
     if (toolAction == ToolActions.AXE_STRIP && StrippedLogColour.RAINBOW.containsKey(this.getColor())) {
       var block = StrippedLogColour.RAINBOW.get(this.getColor());

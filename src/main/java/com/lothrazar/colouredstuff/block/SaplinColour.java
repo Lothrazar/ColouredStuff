@@ -1,5 +1,7 @@
 package com.lothrazar.colouredstuff.block;
 
+import java.util.HashMap;
+import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -29,6 +31,7 @@ import net.minecraftforge.common.IPlantable;
 @SuppressWarnings("deprecation")
 public class SaplinColour extends BlockColour implements IPlantable, BonemealableBlock {
 
+  public static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
   public static final IntegerProperty STAGE = BlockStateProperties.STAGE;
   protected static final float AABB_OFFSET = 6.0F; // SaplingBlock.AABB_OFFSET;
   protected static final VoxelShape SHAPE = Block.box(2.0D, 0.0D, 2.0D, 14.0D, 12.0D, 14.0D); // SaplingBlock.SHAPE;
@@ -38,6 +41,12 @@ public class SaplinColour extends BlockColour implements IPlantable, Bonemealabl
     super(p.mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY), s);
     this.treeGrower = g;
     this.registerDefaultState(this.stateDefinition.any().setValue(STAGE, Integer.valueOf(0)));
+    RAINBOW.put(s, this);
+  }
+
+  @Override
+  public Map<DyeColorless, BlockColour> getRainbow() {
+    return RAINBOW;
   }
 
   @Override

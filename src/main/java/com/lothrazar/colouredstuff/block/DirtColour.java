@@ -18,6 +18,11 @@ public class DirtColour extends BlockColour {
   }
 
   @Override
+  public Map<DyeColorless, BlockColour> getRainbow() {
+    return RAINBOW;
+  }
+
+  @Override
   public BlockState getToolModifiedState(BlockState dirtState, UseOnContext context, ToolAction toolAction, boolean simulate) {
     if (toolAction == ToolActions.HOE_TILL && FarmlandColour.RAINBOW.containsKey(this.getColor())) {
       var block = FarmlandColour.RAINBOW.get(this.getColor());

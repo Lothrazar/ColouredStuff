@@ -1,5 +1,7 @@
 package com.lothrazar.colouredstuff.block;
 
+import java.util.HashMap;
+import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -18,10 +20,17 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 
 public class CraftingColour extends BlockColour {
-  //  private static final Component CONTAINER_TITLE = Component.translatable("container.crafting");
+
+  private static Map<DyeColorless, BlockColour> RAINBOW = new HashMap<>();
 
   public CraftingColour(Properties p, DyeColorless color) {
     super(p, color);
+    RAINBOW.put(color, this);
+  }
+
+  @Override
+  public Map<DyeColorless, BlockColour> getRainbow() {
+    return RAINBOW;
   }
 
   @Override

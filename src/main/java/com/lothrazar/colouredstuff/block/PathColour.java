@@ -24,6 +24,11 @@ public class PathColour extends BlockColour {
   }
 
   @Override
+  public Map<DyeColorless, BlockColour> getRainbow() {
+    return RAINBOW;
+  }
+
+  @Override
   public boolean useShapeForLightOcclusion(BlockState p_153159_) {
     return true;
   }
