@@ -9,7 +9,9 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.FarmBlock;
+import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
@@ -35,6 +37,13 @@ public class Rainbows {
           newState = newState.setValue(BlockStateProperties.WATERLOGGED, oldState.getValue(BlockStateProperties.WATERLOGGED));
         if (newState.hasProperty(FarmBlock.MOISTURE) && oldState.hasProperty(FarmBlock.MOISTURE))
           newState = newState.setValue(FarmBlock.MOISTURE, oldState.getValue(FarmBlock.MOISTURE));
+        if (newState.hasProperty(HorizontalDirectionalBlock.FACING) && oldState.hasProperty(HorizontalDirectionalBlock.FACING))
+          newState = newState.setValue(HorizontalDirectionalBlock.FACING, oldState.getValue(HorizontalDirectionalBlock.FACING));
+        if (newState.hasProperty(StairBlock.HALF) && oldState.hasProperty(StairBlock.HALF))
+          newState = newState.setValue(StairBlock.HALF, oldState.getValue(StairBlock.HALF));
+        if (newState.hasProperty(StairBlock.SHAPE) && oldState.hasProperty(StairBlock.SHAPE))
+          newState = newState.setValue(StairBlock.SHAPE, oldState.getValue(StairBlock.SHAPE));
+        //
         //ok continue as normal
         ModColourable.LOGGER.info(pos + " set to  " + newColour);
         world.removeBlock(pos, false);
