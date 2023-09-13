@@ -2,6 +2,7 @@ package com.lothrazar.colouredstuff.registry;
 
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.block.BlockColour;
+import com.lothrazar.colouredstuff.block.CraftingColour;
 import com.lothrazar.colouredstuff.block.DirtColour;
 import com.lothrazar.colouredstuff.block.FarmlandColour;
 import com.lothrazar.colouredstuff.block.LogColour;
@@ -255,5 +256,22 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<BlockColour> chiseled_sandstone_red = BLOCKS.register("chiseled_sandstone_red", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.RED));
   public static final RegistryObject<BlockColour> chiseled_sandstone_white = BLOCKS.register("chiseled_sandstone_white", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.WHITE));
   public static final RegistryObject<BlockColour> chiseled_sandstone_yellow = BLOCKS.register("chiseled_sandstone_yellow", () -> new BlockColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.YELLOW));
-  //
+  //   
+  public static final RegistryObject<CraftingColour> crafting_table_none = BLOCKS.register("crafting_table_none", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.NONE));
+  public static final RegistryObject<CraftingColour> crafting_table_black = BLOCKS.register("crafting_table_black", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.BLACK));
+  public static final RegistryObject<CraftingColour> crafting_table_blue = BLOCKS.register("crafting_table_blue", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.BLUE));
+  public static final RegistryObject<CraftingColour> crafting_table_brown = BLOCKS.register("crafting_table_brown", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.BROWN));
+  public static final RegistryObject<CraftingColour> crafting_table_cyan = BLOCKS.register("crafting_table_cyan", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.CYAN));
+  public static final RegistryObject<CraftingColour> crafting_table_gray = BLOCKS.register("crafting_table_gray", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.GRAY));
+  public static final RegistryObject<CraftingColour> crafting_table_green = BLOCKS.register("crafting_table_green", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.GREEN));
+  public static final RegistryObject<CraftingColour> crafting_table_light_blue = BLOCKS.register("crafting_table_light_blue", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<CraftingColour> crafting_table_light_gray = BLOCKS.register("crafting_table_light_gray", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<CraftingColour> crafting_table_lime = BLOCKS.register("crafting_table_lime", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.LIME));
+  public static final RegistryObject<CraftingColour> crafting_table_magenta = BLOCKS.register("crafting_table_magenta", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.MAGENTA));
+  public static final RegistryObject<CraftingColour> crafting_table_orange = BLOCKS.register("crafting_table_orange", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.ORANGE));
+  public static final RegistryObject<CraftingColour> crafting_table_pink = BLOCKS.register("crafting_table_pink", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.PINK));
+  public static final RegistryObject<CraftingColour> crafting_table_purple = BLOCKS.register("crafting_table_purple", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.PURPLE));
+  public static final RegistryObject<CraftingColour> crafting_table_red = BLOCKS.register("crafting_table_red", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.RED));
+  public static final RegistryObject<CraftingColour> crafting_table_white = BLOCKS.register("crafting_table_white", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.WHITE));
+  public static final RegistryObject<CraftingColour> crafting_table_yellow = BLOCKS.register("crafting_table_yellow", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.YELLOW));
 }

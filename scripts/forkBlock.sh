@@ -19,7 +19,7 @@ folderdata="src/main/resources/data/${modid}"
 arraylength=${#arr[@]}
 ## now loop through the above array
 # use for loop to read all values and indexes
-echo "\"block.colouredstuff.${seed}_black\" : \"Black Chiseled Sandstone\","
+echo "\"block.colouredstuff.${seed}_black\" : \"Black Crafting Table\","
 for (( i=0; i<${arraylength}; i++ ));
 do
    color="${arr[$i]}"
@@ -34,16 +34,22 @@ do
 	cp "${folder}"/models/item/"${seed}"_black.json "${folder}"/models/item/"${seed}"_$color.json
 	sed -i -e "s/black/${color}/g" "${folder}"/models/item/"${seed}"_$color.json
 	
+	# block model
+	cp "${folder}"/models/block/"${seed}"_black.json "${folder}"/models/block/"${seed}"_$color.json
+	sed -i -e "s/black/${color}/g" "${folder}"/models/block/"${seed}"_$color.json
+	
 	# loot
 	cp "${folderdata}"/loot_tables/blocks/"${seed}"_black.json "${folderdata}"/loot_tables/blocks/"${seed}"_$color.json
 	sed -i -e "s/black/${color}/g" "${folderdata}"/loot_tables/blocks/"${seed}"_$color.json
    
-#	cp "${folderdata}"/recipes/"${seed}"_black.json "${folderdata}"/recipes/"${seed}"_$color.json
-#	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_$color.json
+   #recipe
+	cp "${folderdata}"/recipes/"${seed}"_black.json "${folderdata}"/recipes/"${seed}"_$color.json
+	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_$color.json
+	#stone cutter or other variants 
 #	cp "${folderdata}"/recipes/"${seed}"_black_sc.json "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
 #	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
 
-	echo "\"block.colouredstuff.${seed}_${color}\" : \"${name} Chiseled Sandstone\","
+	echo "\"block.colouredstuff.${seed}_${color}\" : \"${name} Crafting Table\","
 	 
 done
 

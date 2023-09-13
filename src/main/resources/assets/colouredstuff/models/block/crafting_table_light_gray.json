@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "colouredstuff:block/planks_light_gray",
+    "east": "colouredstuff:block/crafting_table/side_light_gray",
+    "north": "colouredstuff:block/crafting_table/front_light_gray",
+    "particle": "colouredstuff:block/crafting_table/front_light_gray",
+    "south": "colouredstuff:block/crafting_table/side_light_gray",
+    "up": "colouredstuff:block/crafting_table/top_light_gray",
+    "west": "colouredstuff:block/crafting_table/front_light_gray"
+  }
+}

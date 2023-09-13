@@ -1,4 +1,25 @@
 {
+
+
+"block.colouredstuff.crafting_table_black" : "Black Crafting Table",
+"block.colouredstuff.crafting_table_blue" : "Blue Crafting Table",
+"block.colouredstuff.crafting_table_brown" : "Brown Crafting Table",
+"block.colouredstuff.crafting_table_cyan" : "Cyan Crafting Table",
+"block.colouredstuff.crafting_table_gray" : "Gray Crafting Table",
+"block.colouredstuff.crafting_table_green" : "Green Crafting Table",
+"block.colouredstuff.crafting_table_light_blue" : "Light Blue Crafting Table",
+"block.colouredstuff.crafting_table_light_gray" : "Light Gray Crafting Table",
+"block.colouredstuff.crafting_table_lime" : "Lime Crafting Table",
+"block.colouredstuff.crafting_table_magenta" : "Magenta Crafting Table",
+"block.colouredstuff.crafting_table_none" : "Colorless Crafting Table",
+"block.colouredstuff.crafting_table_orange" : "Orange Crafting Table",
+"block.colouredstuff.crafting_table_pink" : "Pink Crafting Table",
+"block.colouredstuff.crafting_table_purple" : "Purple Crafting Table",
+"block.colouredstuff.crafting_table_red" : "Red Crafting Table",
+"block.colouredstuff.crafting_table_white" : "White Crafting Table",
+"block.colouredstuff.crafting_table_yellow" : "Yellow Crafting Table",
+
+
 "block.colouredstuff.sandstone_black" : "Black Sandstone",
 "block.colouredstuff.sandstone_blue" : "Blue Sandstone",
 "block.colouredstuff.sandstone_brown" : "Brown Sandstone",

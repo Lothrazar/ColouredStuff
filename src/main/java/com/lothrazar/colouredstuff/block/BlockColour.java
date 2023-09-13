@@ -11,6 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.CraftingTableBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock;
@@ -22,6 +23,7 @@ public class BlockColour extends BlockFlib implements IHasColor {
   public BlockColour(Properties p, DyeColorless color) {
     super(p, new BlockFlib.Settings());
     this.color = color;
+    CraftingTableBlock xy;
   }
 
   @Override

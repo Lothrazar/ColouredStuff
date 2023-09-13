@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "colouredstuff:block/planks_cyan",
+    "east": "colouredstuff:block/crafting_table/side_cyan",
+    "north": "colouredstuff:block/crafting_table/front_cyan",
+    "particle": "colouredstuff:block/crafting_table/front_cyan",
+    "south": "colouredstuff:block/crafting_table/side_cyan",
+    "up": "colouredstuff:block/crafting_table/top_cyan",
+    "west": "colouredstuff:block/crafting_table/front_cyan"
+  }
+}

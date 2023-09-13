@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "colouredstuff:block/planks_orange",
+    "east": "colouredstuff:block/crafting_table/side_orange",
+    "north": "colouredstuff:block/crafting_table/front_orange",
+    "particle": "colouredstuff:block/crafting_table/front_orange",
+    "south": "colouredstuff:block/crafting_table/side_orange",
+    "up": "colouredstuff:block/crafting_table/top_orange",
+    "west": "colouredstuff:block/crafting_table/front_orange"
+  }
+}
