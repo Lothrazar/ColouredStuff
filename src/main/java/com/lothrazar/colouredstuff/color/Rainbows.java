@@ -13,7 +13,7 @@ import net.minecraft.world.level.block.state.BlockState;
 public class Rainbows {
 
   public static Map<BlockColour, DyeColorless> KEYS = new HashMap<>();
-  public static final int MAX_CONNECTED_UPDATE = 18;
+  public static final int MAX_CONNECTED_UPDATE = 24;
 
   public static boolean rotateToColor(Level world, BlockPos pos, DyeColorless originalSourceColour, DyeColorless newColour) {
     BlockState oldState = world.getBlockState(pos);
