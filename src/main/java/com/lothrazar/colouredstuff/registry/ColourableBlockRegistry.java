@@ -320,6 +320,22 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> stairs_planks_white = BLOCKS.register("stairs_planks_white", () -> new PlanksStair(() -> PLANKS_white.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
   public static final RegistryObject<Block> stairs_planks_yellow = BLOCKS.register("stairs_planks_yellow", () -> new PlanksStair(() -> PLANKS_yellow.get().defaultBlockState(), Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
+  public static final RegistryObject<Block> fence_planks_none = BLOCKS.register("fence_planks_none", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
   public static final RegistryObject<Block> fence_planks_black = BLOCKS.register("fence_planks_black", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  public static final RegistryObject<Block> fence_planks_blue = BLOCKS.register("fence_planks_blue", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLUE));
+  public static final RegistryObject<Block> fence_planks_brown = BLOCKS.register("fence_planks_brown", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BROWN));
+  public static final RegistryObject<Block> fence_planks_cyan = BLOCKS.register("fence_planks_cyan", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.CYAN));
+  public static final RegistryObject<Block> fence_planks_gray = BLOCKS.register("fence_planks_gray", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GRAY));
+  public static final RegistryObject<Block> fence_planks_green = BLOCKS.register("fence_planks_green", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GREEN));
+  public static final RegistryObject<Block> fence_planks_light_blue = BLOCKS.register("fence_planks_light_blue", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> fence_planks_light_gray = BLOCKS.register("fence_planks_light_gray", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> fence_planks_lime = BLOCKS.register("fence_planks_lime", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIME));
+  public static final RegistryObject<Block> fence_planks_magenta = BLOCKS.register("fence_planks_magenta", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> fence_planks_orange = BLOCKS.register("fence_planks_orange", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> fence_planks_pink = BLOCKS.register("fence_planks_pink", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PINK));
+  public static final RegistryObject<Block> fence_planks_purple = BLOCKS.register("fence_planks_purple", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> fence_planks_red = BLOCKS.register("fence_planks_red", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
+  public static final RegistryObject<Block> fence_planks_white = BLOCKS.register("fence_planks_white", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
+  public static final RegistryObject<Block> fence_planks_yellow = BLOCKS.register("fence_planks_yellow", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
 }

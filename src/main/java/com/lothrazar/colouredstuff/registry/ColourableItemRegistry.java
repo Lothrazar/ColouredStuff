@@ -318,7 +318,23 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> stairs_planks_white = ITEMS.register("stairs_planks_white", () -> new ItemColour(ColourableBlockRegistry.stairs_planks_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stairs_planks_yellow = ITEMS.register("stairs_planks_yellow", () -> new ItemColour(ColourableBlockRegistry.stairs_planks_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
-  public static final RegistryObject<Item> fence_planks_black = ITEMS.register("fence_planks_black", () -> new ItemColour(ColourableBlockRegistry.fence_planks_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_none = ITEMS.register("fence_planks_none", () -> new ItemColour(ColourableBlockRegistry.fence_planks_none.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_BLACK = ITEMS.register("fence_planks_black", () -> new ItemColour(ColourableBlockRegistry.fence_planks_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_BLUE = ITEMS.register("fence_planks_blue", () -> new ItemColour(ColourableBlockRegistry.fence_planks_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_brown = ITEMS.register("fence_planks_brown", () -> new ItemColour(ColourableBlockRegistry.fence_planks_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_cyan = ITEMS.register("fence_planks_cyan", () -> new ItemColour(ColourableBlockRegistry.fence_planks_cyan.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_gray = ITEMS.register("fence_planks_gray", () -> new ItemColour(ColourableBlockRegistry.fence_planks_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_green = ITEMS.register("fence_planks_green", () -> new ItemColour(ColourableBlockRegistry.fence_planks_green.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_light_blue = ITEMS.register("fence_planks_light_blue", () -> new ItemColour(ColourableBlockRegistry.fence_planks_light_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_light_gray = ITEMS.register("fence_planks_light_gray", () -> new ItemColour(ColourableBlockRegistry.fence_planks_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_lime = ITEMS.register("fence_planks_lime", () -> new ItemColour(ColourableBlockRegistry.fence_planks_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_magenta = ITEMS.register("fence_planks_magenta", () -> new ItemColour(ColourableBlockRegistry.fence_planks_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_orange = ITEMS.register("fence_planks_orange", () -> new ItemColour(ColourableBlockRegistry.fence_planks_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_pink = ITEMS.register("fence_planks_pink", () -> new ItemColour(ColourableBlockRegistry.fence_planks_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_purple = ITEMS.register("fence_planks_purple", () -> new ItemColour(ColourableBlockRegistry.fence_planks_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_red = ITEMS.register("fence_planks_red", () -> new ItemColour(ColourableBlockRegistry.fence_planks_red.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_white = ITEMS.register("fence_planks_white", () -> new ItemColour(ColourableBlockRegistry.fence_planks_white.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> fence_planks_yellow = ITEMS.register("fence_planks_yellow", () -> new ItemColour(ColourableBlockRegistry.fence_planks_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
   public static final TagKey<Item> DYES_NONE = ItemTags.create(new ResourceLocation("forge", "dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));

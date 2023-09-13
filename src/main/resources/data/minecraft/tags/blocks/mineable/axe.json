@@ -2,6 +2,25 @@
   "replace": false,
   "values": [
   
+"colouredstuff:fence_planks_black",
+"colouredstuff:fence_planks_blue",
+"colouredstuff:fence_planks_brown",
+"colouredstuff:fence_planks_cyan",
+"colouredstuff:fence_planks_gray",
+"colouredstuff:fence_planks_green",
+"colouredstuff:fence_planks_light_blue",
+"colouredstuff:fence_planks_light_gray",
+"colouredstuff:fence_planks_lime",
+"colouredstuff:fence_planks_magenta",
+"colouredstuff:fence_planks_none",
+"colouredstuff:fence_planks_orange",
+"colouredstuff:fence_planks_pink",
+"colouredstuff:fence_planks_purple",
+"colouredstuff:fence_planks_red",
+"colouredstuff:fence_planks_white",
+"colouredstuff:fence_planks_yellow",
+
+  
 "colouredstuff:stairs_planks_black",
 "colouredstuff:stairs_planks_blue",
 "colouredstuff:stairs_planks_brown",

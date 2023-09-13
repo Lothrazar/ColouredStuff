@@ -8,7 +8,7 @@ declare -a names=("Blue" "Brown" "Cyan" "Gray" "Green" "Light Blue" "Light Gray"
 
 
 input=$1
-seed=stairs_$1
+seed=fence_$1
 #echo $seed;
 #echo $input;
 #exit 1;
@@ -37,9 +37,7 @@ do
 	cp "${folder}"/models/item/"${seed}"_black.json "${folder}"/models/item/"${seed}"_"${color}".json
 	sed -i -e "s/black/${color}/g" "${folder}"/models/item/"${seed}"_"${color}".json
 	
-	# block model  
-	cp "${folder}"/models/block/fence/"${input}"_black.json "${folder}"/models/block/fence/"${input}"_"${color}".json
-	sed -i -e "s/black/${color}/g" "${folder}"/models/block/fence/"${input}"_"${color}".json
+	# block model   
 	cp "${folder}"/models/block/fence/"${input}"_black_inventory.json "${folder}"/models/block/fence/"${input}"_"${color}"_inventory.json
 	sed -i -e "s/black/${color}/g" "${folder}"/models/block/fence/"${input}"_"${color}"_inventory.json
 	cp "${folder}"/models/block/fence/"${input}"_black_post.json "${folder}"/models/block/fence/"${input}"_"${color}"_post.json
@@ -55,8 +53,8 @@ do
 	cp "${folderdata}"/recipes/"${seed}"_black.json "${folderdata}"/recipes/"${seed}"_"${color}".json
 	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_"${color}".json
 	#stone cutter or other variants 
-	#cp "${folderdata}"/recipes/"${seed}"_black_sc.json "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
-	#sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
+	cp "${folderdata}"/recipes/"${seed}"_black_sc.json "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
+	sed -i -e "s/black/${color}/g" "${folderdata}"/recipes/"${seed}"_"${color}"_sc.json
 
 	echo "\"block.colouredstuff.${seed}_${color}\" : \"${name} Wooden Fence\","
 	 
