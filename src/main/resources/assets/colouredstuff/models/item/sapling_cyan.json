@@ -1,3 +1,6 @@
 {
-  "parent": "colouredstuff:block/sapling_cyan"
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "colouredstuff:block/sapling_cyan"
+  }
 }
