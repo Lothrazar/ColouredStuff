@@ -1,0 +1,6 @@
+{
+    "parent": "colouredstuff:parent/stairs_inner",
+    "textures": {
+        "b": "colouredstuff:block/stone_white"
+    }
+}

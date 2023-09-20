@@ -5,15 +5,17 @@ import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.color.IHasColor;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SlabBlock;
+import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.state.BlockState;
 
-public class PlanksSlab extends SlabBlock implements IHasColor {
+public class StoneStair extends StairBlock implements IHasColor {
 
   private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
   private final DyeColorless color;
 
-  public PlanksSlab(Properties p, DyeColorless color) {
-    super(p);
+  //pass in the base block
+  public StoneStair(java.util.function.Supplier<BlockState> state, Properties p, DyeColorless color) {
+    super(state, p);
     RAINBOW.put(color, this);
     this.color = color;
   }

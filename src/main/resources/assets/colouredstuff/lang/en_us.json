@@ -1,6 +1,25 @@
 {
 
 
+"block.colouredstuff.stairs_stone_black" : "Black Stone Stairs",
+"block.colouredstuff.stairs_stone_blue" : "Blue Stone Stairs",
+"block.colouredstuff.stairs_stone_brown" : "Brown Stone Stairs",
+"block.colouredstuff.stairs_stone_cyan" : "Cyan Stone Stairs",
+"block.colouredstuff.stairs_stone_gray" : "Gray Stone Stairs",
+"block.colouredstuff.stairs_stone_green" : "Green Stone Stairs",
+"block.colouredstuff.stairs_stone_light_blue" : "Light Blue Stone Stairs",
+"block.colouredstuff.stairs_stone_light_gray" : "Light Gray Stone Stairs",
+"block.colouredstuff.stairs_stone_lime" : "Lime Stone Stairs",
+"block.colouredstuff.stairs_stone_magenta" : "Magenta Stone Stairs",
+"block.colouredstuff.stairs_stone_none" : "Colorless Stone Stairs",
+"block.colouredstuff.stairs_stone_orange" : "Orange Stone Stairs",
+"block.colouredstuff.stairs_stone_pink" : "Pink Stone Stairs",
+"block.colouredstuff.stairs_stone_purple" : "Purple Stone Stairs",
+"block.colouredstuff.stairs_stone_red" : "Red Stone Stairs",
+"block.colouredstuff.stairs_stone_white" : "White Stone Stairs",
+"block.colouredstuff.stairs_stone_yellow" : "Yellow Stone Stairs",
+
+
 "block.colouredstuff.slab_stone_bricks_black" : "Black Stonebrick Slab",
 "block.colouredstuff.slab_stone_bricks_blue" : "Blue Stonebrick Slab",
 "block.colouredstuff.slab_stone_bricks_brown" : "Brown Stonebrick Slab",

@@ -4,7 +4,6 @@ import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.block.BrickstoneColour;
 import com.lothrazar.colouredstuff.block.ChiseledColor;
 import com.lothrazar.colouredstuff.block.CobbleColour;
-import com.lothrazar.colouredstuff.block.CobblestoneSlab;
 import com.lothrazar.colouredstuff.block.CraftingColour;
 import com.lothrazar.colouredstuff.block.DirtColour;
 import com.lothrazar.colouredstuff.block.FarmlandColour;
@@ -13,16 +12,18 @@ import com.lothrazar.colouredstuff.block.LogColour;
 import com.lothrazar.colouredstuff.block.PathColour;
 import com.lothrazar.colouredstuff.block.PlanksColour;
 import com.lothrazar.colouredstuff.block.PlanksFence;
-import com.lothrazar.colouredstuff.block.PlanksSlab;
 import com.lothrazar.colouredstuff.block.PlanksStair;
 import com.lothrazar.colouredstuff.block.SandstoneColour;
-import com.lothrazar.colouredstuff.block.SandstoneSlab;
 import com.lothrazar.colouredstuff.block.SaplinColour;
 import com.lothrazar.colouredstuff.block.StoneColour;
-import com.lothrazar.colouredstuff.block.StoneSlab;
+import com.lothrazar.colouredstuff.block.StoneStair;
 import com.lothrazar.colouredstuff.block.StoneWall;
-import com.lothrazar.colouredstuff.block.StonebrickSlab;
 import com.lothrazar.colouredstuff.block.StrippedLogColour;
+import com.lothrazar.colouredstuff.block.slab.CobblestoneSlab;
+import com.lothrazar.colouredstuff.block.slab.PlanksSlab;
+import com.lothrazar.colouredstuff.block.slab.SandstoneSlab;
+import com.lothrazar.colouredstuff.block.slab.StoneSlab;
+import com.lothrazar.colouredstuff.block.slab.StonebrickSlab;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.world.RainbowTreeGrower;
 import net.minecraft.world.level.block.Block;
@@ -438,6 +439,25 @@ public class ColourableBlockRegistry {
   //wall_stone_
   //wall_stone_bricks_
   // 
+  //
+  public static final RegistryObject<Block> stairs_stone_none = BLOCKS.register("stairs_stone_none", () -> new StoneStair(() -> stone_none.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.NONE));
+  public static final RegistryObject<Block> stairs_stone_black = BLOCKS.register("stairs_stone_black", () -> new StoneStair(() -> stone_black.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.BLACK));
+  public static final RegistryObject<Block> stairs_stone_blue = BLOCKS.register("stairs_stone_blue", () -> new StoneStair(() -> stone_blue.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.BLUE));
+  public static final RegistryObject<Block> stairs_stone_brown = BLOCKS.register("stairs_stone_brown", () -> new StoneStair(() -> stone_brown.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.BROWN));
+  public static final RegistryObject<Block> stairs_stone_cyan = BLOCKS.register("stairs_stone_cyan", () -> new StoneStair(() -> stone_cyan.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.CYAN));
+  public static final RegistryObject<Block> stairs_stone_gray = BLOCKS.register("stairs_stone_gray", () -> new StoneStair(() -> stone_gray.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.GRAY));
+  public static final RegistryObject<Block> stairs_stone_green = BLOCKS.register("stairs_stone_green", () -> new StoneStair(() -> stone_green.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.GREEN));
+  public static final RegistryObject<Block> stairs_stone_light_blue = BLOCKS.register("stairs_stone_light_blue", () -> new StoneStair(() -> stone_light_blue.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> stairs_stone_light_gray = BLOCKS.register("stairs_stone_light_gray", () -> new StoneStair(() -> stone_light_gray.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> stairs_stone_lime = BLOCKS.register("stairs_stone_lime", () -> new StoneStair(() -> stone_lime.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.LIME));
+  public static final RegistryObject<Block> stairs_stone_magenta = BLOCKS.register("stairs_stone_magenta", () -> new StoneStair(() -> stone_magenta.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> stairs_stone_orange = BLOCKS.register("stairs_stone_orange", () -> new StoneStair(() -> stone_orange.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> stairs_stone_pink = BLOCKS.register("stairs_stone_pink", () -> new StoneStair(() -> stone_pink.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.PINK));
+  public static final RegistryObject<Block> stairs_stone_purple = BLOCKS.register("stairs_stone_purple", () -> new StoneStair(() -> stone_purple.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> stairs_stone_red = BLOCKS.register("stairs_stone_red", () -> new StoneStair(() -> stone_red.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.RED));
+  public static final RegistryObject<Block> stairs_stone_white = BLOCKS.register("stairs_stone_white", () -> new StoneStair(() -> stone_white.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.WHITE));
+  public static final RegistryObject<Block> stairs_stone_yellow = BLOCKS.register("stairs_stone_yellow", () -> new StoneStair(() -> stone_yellow.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.YELLOW));
+  //
   //
   //stairs_sandstone_
   //stairs_cobblestone_

@@ -1,6 +1,24 @@
 {
   "replace": false,
   "values": [
+"colouredstuff:stairs_stone_black",
+"colouredstuff:stairs_stone_blue",
+"colouredstuff:stairs_stone_brown",
+"colouredstuff:stairs_stone_cyan",
+"colouredstuff:stairs_stone_gray",
+"colouredstuff:stairs_stone_green",
+"colouredstuff:stairs_stone_light_blue",
+"colouredstuff:stairs_stone_light_gray",
+"colouredstuff:stairs_stone_lime",
+"colouredstuff:stairs_stone_magenta",
+"colouredstuff:stairs_stone_none",
+"colouredstuff:stairs_stone_orange",
+"colouredstuff:stairs_stone_pink",
+"colouredstuff:stairs_stone_purple",
+"colouredstuff:stairs_stone_red",
+"colouredstuff:stairs_stone_white",
+"colouredstuff:stairs_stone_yellow",
+
 
 "colouredstuff:stairs_planks_black",
 "colouredstuff:stairs_planks_blue",

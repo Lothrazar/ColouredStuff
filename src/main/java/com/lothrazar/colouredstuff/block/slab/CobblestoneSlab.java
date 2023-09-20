@@ -1,4 +1,4 @@
-package com.lothrazar.colouredstuff.block;
+package com.lothrazar.colouredstuff.block.slab;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,12 +7,12 @@ import com.lothrazar.colouredstuff.color.IHasColor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SlabBlock;
 
-public class StonebrickSlab extends SlabBlock implements IHasColor {
+public class CobblestoneSlab extends SlabBlock implements IHasColor {
 
   private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
   private final DyeColorless color;
 
-  public StonebrickSlab(Properties p, DyeColorless color) {
+  public CobblestoneSlab(Properties p, DyeColorless color) {
     super(p);
     RAINBOW.put(color, this);
     this.color = color;
