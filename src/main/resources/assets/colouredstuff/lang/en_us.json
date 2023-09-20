@@ -1,5 +1,23 @@
 {
 
+"block.colouredstuff.stairs_cobblestone_black" : "Black Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_blue" : "Blue Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_brown" : "Brown Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_cyan" : "Cyan Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_gray" : "Gray Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_green" : "Green Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_light_blue" : "Light Blue Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_light_gray" : "Light Gray Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_lime" : "Lime Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_magenta" : "Magenta Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_none" : "Colorless Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_orange" : "Orange Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_pink" : "Pink Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_purple" : "Purple Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_red" : "Red Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_white" : "White Cobblestone Stairs",
+"block.colouredstuff.stairs_cobblestone_yellow" : "Yellow Cobblestone Stairs",
+
 
 "block.colouredstuff.stairs_stone_black" : "Black Stone Stairs",
 "block.colouredstuff.stairs_stone_blue" : "Blue Stone Stairs",

@@ -1,6 +1,27 @@
 {
   "replace": false,
   "values": [
+
+
+"colouredstuff:stairs_cobblestone_black",
+"colouredstuff:stairs_cobblestone_blue",
+"colouredstuff:stairs_cobblestone_brown",
+"colouredstuff:stairs_cobblestone_cyan",
+"colouredstuff:stairs_cobblestone_gray",
+"colouredstuff:stairs_cobblestone_green",
+"colouredstuff:stairs_cobblestone_light_blue",
+"colouredstuff:stairs_cobblestone_light_gray",
+"colouredstuff:stairs_cobblestone_lime",
+"colouredstuff:stairs_cobblestone_magenta",
+"colouredstuff:stairs_cobblestone_none",
+"colouredstuff:stairs_cobblestone_orange",
+"colouredstuff:stairs_cobblestone_pink",
+"colouredstuff:stairs_cobblestone_purple",
+"colouredstuff:stairs_cobblestone_red",
+"colouredstuff:stairs_cobblestone_white",
+"colouredstuff:stairs_cobblestone_yellow",
+
+
 "colouredstuff:stairs_stone_black",
 "colouredstuff:stairs_stone_blue",
 "colouredstuff:stairs_stone_brown",

@@ -4,6 +4,7 @@ import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.block.BrickstoneColour;
 import com.lothrazar.colouredstuff.block.ChiseledColor;
 import com.lothrazar.colouredstuff.block.CobbleColour;
+import com.lothrazar.colouredstuff.block.CobblestoneStair;
 import com.lothrazar.colouredstuff.block.CraftingColour;
 import com.lothrazar.colouredstuff.block.DirtColour;
 import com.lothrazar.colouredstuff.block.FarmlandColour;
@@ -458,6 +459,23 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> stairs_stone_white = BLOCKS.register("stairs_stone_white", () -> new StoneStair(() -> stone_white.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.WHITE));
   public static final RegistryObject<Block> stairs_stone_yellow = BLOCKS.register("stairs_stone_yellow", () -> new StoneStair(() -> stone_yellow.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.YELLOW));
   //
+  public static final RegistryObject<Block> stairs_cobblestone_none = BLOCKS.register("stairs_cobblestone_none", () -> new CobblestoneStair(() -> cobblestone_none.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.NONE));
+  public static final RegistryObject<Block> stairs_cobblestone_black = BLOCKS.register("stairs_cobblestone_black", () -> new CobblestoneStair(() -> cobblestone_black.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.BLACK));
+  public static final RegistryObject<Block> stairs_cobblestone_blue = BLOCKS.register("stairs_cobblestone_blue", () -> new CobblestoneStair(() -> cobblestone_blue.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.BLUE));
+  public static final RegistryObject<Block> stairs_cobblestone_brown = BLOCKS.register("stairs_cobblestone_brown", () -> new CobblestoneStair(() -> cobblestone_brown.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.BROWN));
+  public static final RegistryObject<Block> stairs_cobblestone_cyan = BLOCKS.register("stairs_cobblestone_cyan", () -> new CobblestoneStair(() -> cobblestone_cyan.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.CYAN));
+  public static final RegistryObject<Block> stairs_cobblestone_gray = BLOCKS.register("stairs_cobblestone_gray", () -> new CobblestoneStair(() -> cobblestone_gray.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.GRAY));
+  public static final RegistryObject<Block> stairs_cobblestone_green = BLOCKS.register("stairs_cobblestone_green", () -> new CobblestoneStair(() -> cobblestone_green.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.GREEN));
+  public static final RegistryObject<Block> stairs_cobblestone_light_blue = BLOCKS.register("stairs_cobblestone_light_blue", () -> new CobblestoneStair(() -> cobblestone_light_blue.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> stairs_cobblestone_light_gray = BLOCKS.register("stairs_cobblestone_light_gray", () -> new CobblestoneStair(() -> cobblestone_light_gray.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> stairs_cobblestone_lime = BLOCKS.register("stairs_cobblestone_lime", () -> new CobblestoneStair(() -> cobblestone_lime.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.LIME));
+  public static final RegistryObject<Block> stairs_cobblestone_magenta = BLOCKS.register("stairs_cobblestone_magenta", () -> new CobblestoneStair(() -> cobblestone_magenta.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> stairs_cobblestone_orange = BLOCKS.register("stairs_cobblestone_orange", () -> new CobblestoneStair(() -> cobblestone_orange.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> stairs_cobblestone_pink = BLOCKS.register("stairs_cobblestone_pink", () -> new CobblestoneStair(() -> cobblestone_pink.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.PINK));
+  public static final RegistryObject<Block> stairs_cobblestone_purple = BLOCKS.register("stairs_cobblestone_purple", () -> new CobblestoneStair(() -> cobblestone_purple.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> stairs_cobblestone_red = BLOCKS.register("stairs_cobblestone_red", () -> new CobblestoneStair(() -> cobblestone_red.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.RED));
+  public static final RegistryObject<Block> stairs_cobblestone_white = BLOCKS.register("stairs_cobblestone_white", () -> new CobblestoneStair(() -> cobblestone_white.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.WHITE));
+  public static final RegistryObject<Block> stairs_cobblestone_yellow = BLOCKS.register("stairs_cobblestone_yellow", () -> new CobblestoneStair(() -> cobblestone_yellow.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.YELLOW));
   //
   //stairs_sandstone_
   //stairs_cobblestone_

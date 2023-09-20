@@ -448,6 +448,24 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> stairs_stone_white = ITEMS.register("stairs_stone_white", () -> new ItemColour(ColourableBlockRegistry.stairs_stone_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stairs_stone_yellow = ITEMS.register("stairs_stone_yellow", () -> new ItemColour(ColourableBlockRegistry.stairs_stone_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
+  public static final RegistryObject<Item> stairs_cobblestone_none = ITEMS.register("stairs_cobblestone_none", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_none.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_black = ITEMS.register("stairs_cobblestone_black", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_blue = ITEMS.register("stairs_cobblestone_blue", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_brown = ITEMS.register("stairs_cobblestone_brown", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_cyan = ITEMS.register("stairs_cobblestone_cyan", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_cyan.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_gray = ITEMS.register("stairs_cobblestone_gray", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_green = ITEMS.register("stairs_cobblestone_green", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_green.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_light_blue = ITEMS.register("stairs_cobblestone_light_blue", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_light_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_light_gray = ITEMS.register("stairs_cobblestone_light_gray", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_lime = ITEMS.register("stairs_cobblestone_lime", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_magenta = ITEMS.register("stairs_cobblestone_magenta", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_orange = ITEMS.register("stairs_cobblestone_orange", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_pink = ITEMS.register("stairs_cobblestone_pink", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_purple = ITEMS.register("stairs_cobblestone_purple", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_red = ITEMS.register("stairs_cobblestone_red", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_red.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_white = ITEMS.register("stairs_cobblestone_white", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_white.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> stairs_cobblestone_yellow = ITEMS.register("stairs_cobblestone_yellow", () -> new ItemColour(ColourableBlockRegistry.stairs_cobblestone_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
+  //
   public static final TagKey<Item> DYES_NONE = ItemTags.create(new ResourceLocation("forge", "dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));
 
