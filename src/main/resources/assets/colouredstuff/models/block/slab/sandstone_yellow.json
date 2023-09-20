@@ -1,0 +1,6 @@
+{
+  "parent": "colouredstuff:parent/slab",
+  "textures": {
+    "b": "colouredstuff:block/sandstone_yellow"
+  }
+}

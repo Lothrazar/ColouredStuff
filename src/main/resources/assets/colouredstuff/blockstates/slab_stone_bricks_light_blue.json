@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "colouredstuff:block/slab/stone_bricks_light_blue" },
+        "type=top": { "model": "colouredstuff:block/slab/stone_bricks_light_blue_upper" },
+        "type=double": { "model": "colouredstuff:block/stone_bricks_light_blue" }
+    }
+}

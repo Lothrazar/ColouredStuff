@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "colouredstuff:block/slab/cobblestone_white" },
+        "type=top": { "model": "colouredstuff:block/slab/cobblestone_white_upper" },
+        "type=double": { "model": "colouredstuff:block/cobblestone_white" }
+    }
+}

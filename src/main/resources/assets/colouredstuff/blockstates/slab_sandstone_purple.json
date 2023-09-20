@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "colouredstuff:block/slab/sandstone_purple" },
+        "type=top": { "model": "colouredstuff:block/slab/sandstone_purple_upper" },
+        "type=double": { "model": "colouredstuff:block/sandstone_purple" }
+    }
+}
