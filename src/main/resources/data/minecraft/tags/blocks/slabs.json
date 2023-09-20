@@ -1,6 +1,26 @@
 {
   "replace": false,
   "values": [
+  
+  
+"colouredstuff:slab_stone_black",
+"colouredstuff:slab_stone_blue",
+"colouredstuff:slab_stone_brown",
+"colouredstuff:slab_stone_cyan",
+"colouredstuff:slab_stone_gray",
+"colouredstuff:slab_stone_green",
+"colouredstuff:slab_stone_light_blue",
+"colouredstuff:slab_stone_light_gray",
+"colouredstuff:slab_stone_lime",
+"colouredstuff:slab_stone_magenta",
+"colouredstuff:slab_stone_none",
+"colouredstuff:slab_stone_orange",
+"colouredstuff:slab_stone_pink",
+"colouredstuff:slab_stone_purple",
+"colouredstuff:slab_stone_red",
+"colouredstuff:slab_stone_white",
+"colouredstuff:slab_stone_yellow",
+
 "colouredstuff:slab_planks_blue",
 "colouredstuff:slab_planks_brown",
 "colouredstuff:slab_planks_cyan",
@@ -17,7 +37,6 @@
 "colouredstuff:slab_planks_red",
 "colouredstuff:slab_planks_white",
 "colouredstuff:slab_planks_yellow",
-  
-  	"colouredstuff:slab_planks_black"
+"colouredstuff:slab_planks_black"
   ]
 }

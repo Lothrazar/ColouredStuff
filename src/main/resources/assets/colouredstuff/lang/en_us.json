@@ -1,5 +1,24 @@
 {
 
+"block.colouredstuff.slab_stone_black" : "Black Stone Slabs",
+"block.colouredstuff.slab_stone_blue" : "Blue Stone Slabs",
+"block.colouredstuff.slab_stone_brown" : "Brown Stone Slabs",
+"block.colouredstuff.slab_stone_cyan" : "Cyan Stone Slabs",
+"block.colouredstuff.slab_stone_gray" : "Gray Stone Slabs",
+"block.colouredstuff.slab_stone_green" : "Green Stone Slabs",
+"block.colouredstuff.slab_stone_light_blue" : "Light Blue Stone Slabs",
+"block.colouredstuff.slab_stone_light_gray" : "Light Gray Stone Slabs",
+"block.colouredstuff.slab_stone_lime" : "Lime Stone Slabs",
+"block.colouredstuff.slab_stone_magenta" : "Magenta Stone Slabs",
+"block.colouredstuff.slab_stone_none" : "Colorless Stone Slabs",
+"block.colouredstuff.slab_stone_orange" : "Orange Stone Slabs",
+"block.colouredstuff.slab_stone_pink" : "Pink Stone Slabs",
+"block.colouredstuff.slab_stone_purple" : "Purple Stone Slabs",
+"block.colouredstuff.slab_stone_red" : "Red Stone Slabs",
+"block.colouredstuff.slab_stone_white" : "White Stone Slabs",
+"block.colouredstuff.slab_stone_yellow" : "Yellow Stone Slabs",
+
+
 "block.colouredstuff.wall_stone_black" : "Black Stone Wall",
 "block.colouredstuff.wall_stone_blue" : "Blue Stone Wall",
 "block.colouredstuff.wall_stone_brown" : "Brown Stone Wall",
