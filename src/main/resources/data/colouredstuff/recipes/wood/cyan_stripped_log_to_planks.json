@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "colouredstuff:log_stripped_cyan"
+    }
+  ],
+  "result": {
+    "item": "colouredstuff:planks_cyan",
+    "count": 4
+  }
+}

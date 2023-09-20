@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "colouredstuff:log_stripped_lime"
+    }
+  ],
+  "result": {
+    "item": "colouredstuff:planks_lime",
+    "count": 4
+  }
+}
