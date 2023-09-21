@@ -4,7 +4,6 @@ import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.block.BrickstoneColour;
 import com.lothrazar.colouredstuff.block.ChiseledColor;
 import com.lothrazar.colouredstuff.block.CobbleColour;
-import com.lothrazar.colouredstuff.block.CobblestoneStair;
 import com.lothrazar.colouredstuff.block.CraftingColour;
 import com.lothrazar.colouredstuff.block.DirtColour;
 import com.lothrazar.colouredstuff.block.FarmlandColour;
@@ -12,21 +11,26 @@ import com.lothrazar.colouredstuff.block.LeavesColour;
 import com.lothrazar.colouredstuff.block.LogColour;
 import com.lothrazar.colouredstuff.block.PathColour;
 import com.lothrazar.colouredstuff.block.PlanksColour;
-import com.lothrazar.colouredstuff.block.PlanksFence;
-import com.lothrazar.colouredstuff.block.PlanksStair;
 import com.lothrazar.colouredstuff.block.SandstoneColour;
-import com.lothrazar.colouredstuff.block.SandstoneStair;
 import com.lothrazar.colouredstuff.block.SaplinColour;
 import com.lothrazar.colouredstuff.block.StoneColour;
-import com.lothrazar.colouredstuff.block.StoneStair;
-import com.lothrazar.colouredstuff.block.StoneWall;
-import com.lothrazar.colouredstuff.block.StonebrickStair;
 import com.lothrazar.colouredstuff.block.StrippedLogColour;
+import com.lothrazar.colouredstuff.block.fence.PlanksFence;
 import com.lothrazar.colouredstuff.block.slab.CobblestoneSlab;
 import com.lothrazar.colouredstuff.block.slab.PlanksSlab;
 import com.lothrazar.colouredstuff.block.slab.SandstoneSlab;
 import com.lothrazar.colouredstuff.block.slab.StoneSlab;
 import com.lothrazar.colouredstuff.block.slab.StonebrickSlab;
+import com.lothrazar.colouredstuff.block.stair.CobblestoneStair;
+import com.lothrazar.colouredstuff.block.stair.PlanksStair;
+import com.lothrazar.colouredstuff.block.stair.SandstoneStair;
+import com.lothrazar.colouredstuff.block.stair.StoneStair;
+import com.lothrazar.colouredstuff.block.stair.StonebrickStair;
+import com.lothrazar.colouredstuff.block.wall.CobblestoneWall;
+import com.lothrazar.colouredstuff.block.wall.PlanksWall;
+import com.lothrazar.colouredstuff.block.wall.SandstoneWall;
+import com.lothrazar.colouredstuff.block.wall.StoneWall;
+import com.lothrazar.colouredstuff.block.wall.StonebrickWall;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.world.RainbowTreeGrower;
 import net.minecraft.world.level.block.Block;
@@ -437,12 +441,6 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> slab_sandstone_white = BLOCKS.register("slab_sandstone_white", () -> new SandstoneSlab(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.WHITE));
   public static final RegistryObject<Block> slab_sandstone_yellow = BLOCKS.register("slab_sandstone_yellow", () -> new SandstoneSlab(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.YELLOW));
   //
-  //wall_sandstone_
-  //wall_cobblestone_
-  //wall_stone_
-  //wall_stone_bricks_
-  // 
-  //
   public static final RegistryObject<Block> stairs_stone_none = BLOCKS.register("stairs_stone_none", () -> new StoneStair(() -> stone_none.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.NONE));
   public static final RegistryObject<Block> stairs_stone_black = BLOCKS.register("stairs_stone_black", () -> new StoneStair(() -> stone_black.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.BLACK));
   public static final RegistryObject<Block> stairs_stone_blue = BLOCKS.register("stairs_stone_blue", () -> new StoneStair(() -> stone_blue.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.BLUE));
@@ -514,5 +512,77 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> stairs_stone_bricks_red = BLOCKS.register("stairs_stone_bricks_red", () -> new StonebrickStair(() -> stone_bricks_red.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.RED));
   public static final RegistryObject<Block> stairs_stone_bricks_white = BLOCKS.register("stairs_stone_bricks_white", () -> new StonebrickStair(() -> stone_bricks_white.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.WHITE));
   public static final RegistryObject<Block> stairs_stone_bricks_yellow = BLOCKS.register("stairs_stone_bricks_yellow", () -> new StonebrickStair(() -> stone_bricks_yellow.get().defaultBlockState(), Block.Properties.copy(Blocks.STONE), DyeColorless.YELLOW));
+  //
+  public static final RegistryObject<Block> wall_stone_bricks_none = BLOCKS.register("wall_stone_bricks_none", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.NONE));
+  public static final RegistryObject<Block> wall_stone_bricks_black = BLOCKS.register("wall_stone_bricks_black", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.BLACK));
+  public static final RegistryObject<Block> wall_stone_bricks_blue = BLOCKS.register("wall_stone_bricks_blue", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.BLUE));
+  public static final RegistryObject<Block> wall_stone_bricks_brown = BLOCKS.register("wall_stone_bricks_brown", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.BROWN));
+  public static final RegistryObject<Block> wall_stone_bricks_cyan = BLOCKS.register("wall_stone_bricks_cyan", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.CYAN));
+  public static final RegistryObject<Block> wall_stone_bricks_gray = BLOCKS.register("wall_stone_bricks_gray", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.GRAY));
+  public static final RegistryObject<Block> wall_stone_bricks_green = BLOCKS.register("wall_stone_bricks_green", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.GREEN));
+  public static final RegistryObject<Block> wall_stone_bricks_light_blue = BLOCKS.register("wall_stone_bricks_light_blue", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> wall_stone_bricks_light_gray = BLOCKS.register("wall_stone_bricks_light_gray", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> wall_stone_bricks_lime = BLOCKS.register("wall_stone_bricks_lime", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.LIME));
+  public static final RegistryObject<Block> wall_stone_bricks_magenta = BLOCKS.register("wall_stone_bricks_magenta", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> wall_stone_bricks_orange = BLOCKS.register("wall_stone_bricks_orange", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> wall_stone_bricks_pink = BLOCKS.register("wall_stone_bricks_pink", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.PINK));
+  public static final RegistryObject<Block> wall_stone_bricks_purple = BLOCKS.register("wall_stone_bricks_purple", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> wall_stone_bricks_red = BLOCKS.register("wall_stone_bricks_red", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.RED));
+  public static final RegistryObject<Block> wall_stone_bricks_white = BLOCKS.register("wall_stone_bricks_white", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.WHITE));
+  public static final RegistryObject<Block> wall_stone_bricks_yellow = BLOCKS.register("wall_stone_bricks_yellow", () -> new StonebrickWall(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.YELLOW));
+  // 
+  public static final RegistryObject<Block> wall_sandstone_none = BLOCKS.register("wall_sandstone_none", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.NONE));
+  public static final RegistryObject<Block> wall_sandstone_black = BLOCKS.register("wall_sandstone_black", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.BLACK));
+  public static final RegistryObject<Block> wall_sandstone_blue = BLOCKS.register("wall_sandstone_blue", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.BLUE));
+  public static final RegistryObject<Block> wall_sandstone_brown = BLOCKS.register("wall_sandstone_brown", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.BROWN));
+  public static final RegistryObject<Block> wall_sandstone_cyan = BLOCKS.register("wall_sandstone_cyan", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.CYAN));
+  public static final RegistryObject<Block> wall_sandstone_gray = BLOCKS.register("wall_sandstone_gray", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.GRAY));
+  public static final RegistryObject<Block> wall_sandstone_green = BLOCKS.register("wall_sandstone_green", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.GREEN));
+  public static final RegistryObject<Block> wall_sandstone_light_blue = BLOCKS.register("wall_sandstone_light_blue", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> wall_sandstone_light_gray = BLOCKS.register("wall_sandstone_light_gray", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> wall_sandstone_lime = BLOCKS.register("wall_sandstone_lime", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.LIME));
+  public static final RegistryObject<Block> wall_sandstone_magenta = BLOCKS.register("wall_sandstone_magenta", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> wall_sandstone_orange = BLOCKS.register("wall_sandstone_orange", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> wall_sandstone_pink = BLOCKS.register("wall_sandstone_pink", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.PINK));
+  public static final RegistryObject<Block> wall_sandstone_purple = BLOCKS.register("wall_sandstone_purple", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> wall_sandstone_red = BLOCKS.register("wall_sandstone_red", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.RED));
+  public static final RegistryObject<Block> wall_sandstone_white = BLOCKS.register("wall_sandstone_white", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.WHITE));
+  public static final RegistryObject<Block> wall_sandstone_yellow = BLOCKS.register("wall_sandstone_yellow", () -> new SandstoneWall(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.YELLOW));
+  //
+  public static final RegistryObject<Block> wall_cobblestone_none = BLOCKS.register("wall_cobblestone_none", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.NONE));
+  public static final RegistryObject<Block> wall_cobblestone_black = BLOCKS.register("wall_cobblestone_black", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.BLACK));
+  public static final RegistryObject<Block> wall_cobblestone_blue = BLOCKS.register("wall_cobblestone_blue", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.BLUE));
+  public static final RegistryObject<Block> wall_cobblestone_brown = BLOCKS.register("wall_cobblestone_brown", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.BROWN));
+  public static final RegistryObject<Block> wall_cobblestone_cyan = BLOCKS.register("wall_cobblestone_cyan", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.CYAN));
+  public static final RegistryObject<Block> wall_cobblestone_gray = BLOCKS.register("wall_cobblestone_gray", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.GRAY));
+  public static final RegistryObject<Block> wall_cobblestone_green = BLOCKS.register("wall_cobblestone_green", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.GREEN));
+  public static final RegistryObject<Block> wall_cobblestone_light_blue = BLOCKS.register("wall_cobblestone_light_blue", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> wall_cobblestone_light_gray = BLOCKS.register("wall_cobblestone_light_gray", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> wall_cobblestone_lime = BLOCKS.register("wall_cobblestone_lime", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.LIME));
+  public static final RegistryObject<Block> wall_cobblestone_magenta = BLOCKS.register("wall_cobblestone_magenta", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> wall_cobblestone_orange = BLOCKS.register("wall_cobblestone_orange", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> wall_cobblestone_pink = BLOCKS.register("wall_cobblestone_pink", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.PINK));
+  public static final RegistryObject<Block> wall_cobblestone_purple = BLOCKS.register("wall_cobblestone_purple", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> wall_cobblestone_red = BLOCKS.register("wall_cobblestone_red", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.RED));
+  public static final RegistryObject<Block> wall_cobblestone_white = BLOCKS.register("wall_cobblestone_white", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.WHITE));
+  public static final RegistryObject<Block> wall_cobblestone_yellow = BLOCKS.register("wall_cobblestone_yellow", () -> new CobblestoneWall(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.YELLOW));
+  //
+  public static final RegistryObject<Block> wall_planks_none = BLOCKS.register("wall_planks_none", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
+  public static final RegistryObject<Block> wall_planks_black = BLOCKS.register("wall_planks_black", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  public static final RegistryObject<Block> wall_planks_blue = BLOCKS.register("wall_planks_blue", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLUE));
+  public static final RegistryObject<Block> wall_planks_brown = BLOCKS.register("wall_planks_brown", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BROWN));
+  public static final RegistryObject<Block> wall_planks_cyan = BLOCKS.register("wall_planks_cyan", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.CYAN));
+  public static final RegistryObject<Block> wall_planks_gray = BLOCKS.register("wall_planks_gray", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GRAY));
+  public static final RegistryObject<Block> wall_planks_green = BLOCKS.register("wall_planks_green", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GREEN));
+  public static final RegistryObject<Block> wall_planks_light_blue = BLOCKS.register("wall_planks_light_blue", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> wall_planks_light_gray = BLOCKS.register("wall_planks_light_gray", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> wall_planks_lime = BLOCKS.register("wall_planks_lime", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIME));
+  public static final RegistryObject<Block> wall_planks_magenta = BLOCKS.register("wall_planks_magenta", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> wall_planks_orange = BLOCKS.register("wall_planks_orange", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> wall_planks_pink = BLOCKS.register("wall_planks_pink", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PINK));
+  public static final RegistryObject<Block> wall_planks_purple = BLOCKS.register("wall_planks_purple", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> wall_planks_red = BLOCKS.register("wall_planks_red", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
+  public static final RegistryObject<Block> wall_planks_white = BLOCKS.register("wall_planks_white", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
+  public static final RegistryObject<Block> wall_planks_yellow = BLOCKS.register("wall_planks_yellow", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
 }

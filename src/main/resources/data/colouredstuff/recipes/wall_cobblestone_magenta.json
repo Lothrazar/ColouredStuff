@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:cobblestone_magenta"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:wall_cobblestone_magenta",
+    "count": 6
+  }
+}

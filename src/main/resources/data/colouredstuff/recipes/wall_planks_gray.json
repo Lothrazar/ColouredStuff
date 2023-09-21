@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:planks_gray"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:wall_planks_gray",
+    "count": 5
+  }
+}

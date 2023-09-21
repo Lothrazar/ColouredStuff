@@ -1,0 +1,6 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "colouredstuff:block/bricks_none"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "colouredstuff:parent/wall_side",
+  "textures": {
+    "wall": "colouredstuff:block/planks_brown"
+  }
+}

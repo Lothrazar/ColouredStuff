@@ -1,0 +1,6 @@
+{
+  "parent": "colouredstuff:parent/wall_post",
+  "textures": {
+    "wall": "colouredstuff:block/bricks_yellow"
+  }
+}
