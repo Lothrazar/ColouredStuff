@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  	"#  ",
+  	"## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:sandstone_lime"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:stairs_sandstone_lime",
+    "count": 4
+  }
+}

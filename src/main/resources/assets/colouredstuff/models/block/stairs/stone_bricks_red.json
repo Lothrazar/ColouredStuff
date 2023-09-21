@@ -1,0 +1,6 @@
+{
+    "parent": "colouredstuff:parent/stairs",
+    "textures": {
+        "b": "colouredstuff:block/bricks_red"
+    }
+}
