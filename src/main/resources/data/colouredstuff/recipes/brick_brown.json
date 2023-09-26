@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#-#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bricks"
+    },
+    "-": {
+      "tag": "forge:dyes/brown"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:brick_brown",
+    "count": 8
+  }
+}

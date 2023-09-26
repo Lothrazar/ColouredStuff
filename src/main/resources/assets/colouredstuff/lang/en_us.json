@@ -1,5 +1,24 @@
 {
 
+"block.colouredstuff.brick_black" : "Black Bricks",
+"block.colouredstuff.brick_blue" : "Blue Bricks",
+"block.colouredstuff.brick_brown" : "Brown Bricks",
+"block.colouredstuff.brick_cyan" : "Cyan Bricks",
+"block.colouredstuff.brick_gray" : "Gray Bricks",
+"block.colouredstuff.brick_green" : "Green Bricks",
+"block.colouredstuff.brick_light_blue" : "Light Blue Bricks",
+"block.colouredstuff.brick_light_gray" : "Light Gray Bricks",
+"block.colouredstuff.brick_lime" : "Lime Bricks",
+"block.colouredstuff.brick_magenta" : "Magenta Bricks",
+"block.colouredstuff.brick_none" : "Colorless Bricks",
+"block.colouredstuff.brick_orange" : "Orange Bricks",
+"block.colouredstuff.brick_pink" : "Pink Bricks",
+"block.colouredstuff.brick_purple" : "Purple Bricks",
+"block.colouredstuff.brick_red" : "Red Bricks",
+"block.colouredstuff.brick_white" : "White Bricks",
+"block.colouredstuff.brick_yellow" : "Yellow Bricks",
+
+
 "block.colouredstuff.gate_planks_black" : "Black Wooden Gate",
 "block.colouredstuff.gate_planks_blue" : "Blue Wooden Gate",
 "block.colouredstuff.gate_planks_brown" : "Brown Wooden Gate",

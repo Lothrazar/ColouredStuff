@@ -1,6 +1,7 @@
 package com.lothrazar.colouredstuff.registry;
 
 import com.lothrazar.colouredstuff.ModColourable;
+import com.lothrazar.colouredstuff.block.BrickColour;
 import com.lothrazar.colouredstuff.block.BrickstoneColour;
 import com.lothrazar.colouredstuff.block.ChiseledColor;
 import com.lothrazar.colouredstuff.block.CobbleColour;
@@ -279,6 +280,24 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<ChiseledColor> chiseled_sandstone_red = BLOCKS.register("chiseled_sandstone_red", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.RED));
   public static final RegistryObject<ChiseledColor> chiseled_sandstone_white = BLOCKS.register("chiseled_sandstone_white", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.WHITE));
   public static final RegistryObject<ChiseledColor> chiseled_sandstone_yellow = BLOCKS.register("chiseled_sandstone_yellow", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.YELLOW));
+  //
+  public static final RegistryObject<BrickColour> brick_none = BLOCKS.register("brick_none", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.NONE));
+  public static final RegistryObject<BrickColour> brick_black = BLOCKS.register("brick_black", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.BLACK));
+  public static final RegistryObject<BrickColour> brick_blue = BLOCKS.register("brick_blue", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.BLUE));
+  public static final RegistryObject<BrickColour> brick_brown = BLOCKS.register("brick_brown", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.BROWN));
+  public static final RegistryObject<BrickColour> brick_cyan = BLOCKS.register("brick_cyan", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.CYAN));
+  public static final RegistryObject<BrickColour> brick_gray = BLOCKS.register("brick_gray", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.GRAY));
+  public static final RegistryObject<BrickColour> brick_green = BLOCKS.register("brick_green", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.GREEN));
+  public static final RegistryObject<BrickColour> brick_light_blue = BLOCKS.register("brick_light_blue", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<BrickColour> brick_light_gray = BLOCKS.register("brick_light_gray", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<BrickColour> brick_lime = BLOCKS.register("brick_lime", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.LIME));
+  public static final RegistryObject<BrickColour> brick_magenta = BLOCKS.register("brick_magenta", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.MAGENTA));
+  public static final RegistryObject<BrickColour> brick_orange = BLOCKS.register("brick_orange", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.ORANGE));
+  public static final RegistryObject<BrickColour> brick_pink = BLOCKS.register("brick_pink", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.PINK));
+  public static final RegistryObject<BrickColour> brick_purple = BLOCKS.register("brick_purple", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.PURPLE));
+  public static final RegistryObject<BrickColour> brick_red = BLOCKS.register("brick_red", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.RED));
+  public static final RegistryObject<BrickColour> brick_white = BLOCKS.register("brick_white", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.WHITE));
+  public static final RegistryObject<BrickColour> brick_yellow = BLOCKS.register("brick_yellow", () -> new BrickColour(Block.Properties.copy(Blocks.BRICKS), DyeColorless.YELLOW));
   //   
   public static final RegistryObject<CraftingColour> crafting_table_none = BLOCKS.register("crafting_table_none", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.NONE));
   public static final RegistryObject<CraftingColour> crafting_table_black = BLOCKS.register("crafting_table_black", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.BLACK));
