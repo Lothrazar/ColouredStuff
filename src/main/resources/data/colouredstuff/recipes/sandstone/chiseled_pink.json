@@ -6,11 +6,11 @@
   ],
   "key": {
     "#": {
-      "item": "colouredstuff:slab_sandstone_black"
+      "item": "colouredstuff:slab_sandstone_pink"
     }
   },
   "result": {
-    "item": "colouredstuff:chiseled_sandstone_black",
+    "item": "colouredstuff:chiseled_sandstone_pink",
     "count": 1
   }
 }
