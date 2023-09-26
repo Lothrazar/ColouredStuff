@@ -1,6 +1,8 @@
 {
-  "parent": "colouredstuff:parent/slab",
+  "parent": "minecraft:block/slab",
   "textures": {
-    "b": "colouredstuff:block/sandstone_white"
+    "bottom": "colouredstuff:block/sandstone_bottom_white",
+    "top": "colouredstuff:block/sandstone_top_white",
+    "side": "colouredstuff:block/sandstone_white"
   }
 }
