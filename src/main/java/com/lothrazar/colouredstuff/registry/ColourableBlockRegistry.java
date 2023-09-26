@@ -16,6 +16,7 @@ import com.lothrazar.colouredstuff.block.SaplinColour;
 import com.lothrazar.colouredstuff.block.StoneColour;
 import com.lothrazar.colouredstuff.block.StrippedLogColour;
 import com.lothrazar.colouredstuff.block.fence.PlanksFence;
+import com.lothrazar.colouredstuff.block.gate.PlanksGate;
 import com.lothrazar.colouredstuff.block.slab.CobblestoneSlab;
 import com.lothrazar.colouredstuff.block.slab.PlanksSlab;
 import com.lothrazar.colouredstuff.block.slab.SandstoneSlab;
@@ -584,5 +585,23 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> wall_planks_red = BLOCKS.register("wall_planks_red", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
   public static final RegistryObject<Block> wall_planks_white = BLOCKS.register("wall_planks_white", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
   public static final RegistryObject<Block> wall_planks_yellow = BLOCKS.register("wall_planks_yellow", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
+  //
+  public static final RegistryObject<Block> gate_planks_none = BLOCKS.register("gate_planks_none", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
+  public static final RegistryObject<Block> gate_planks_black = BLOCKS.register("gate_planks_black", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  public static final RegistryObject<Block> gate_planks_blue = BLOCKS.register("gate_planks_blue", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLUE));
+  public static final RegistryObject<Block> gate_planks_brown = BLOCKS.register("gate_planks_brown", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BROWN));
+  public static final RegistryObject<Block> gate_planks_cyan = BLOCKS.register("gate_planks_cyan", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.CYAN));
+  public static final RegistryObject<Block> gate_planks_gray = BLOCKS.register("gate_planks_gray", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GRAY));
+  public static final RegistryObject<Block> gate_planks_green = BLOCKS.register("gate_planks_green", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GREEN));
+  public static final RegistryObject<Block> gate_planks_light_blue = BLOCKS.register("gate_planks_light_blue", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> gate_planks_light_gray = BLOCKS.register("gate_planks_light_gray", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> gate_planks_lime = BLOCKS.register("gate_planks_lime", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIME));
+  public static final RegistryObject<Block> gate_planks_magenta = BLOCKS.register("gate_planks_magenta", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> gate_planks_orange = BLOCKS.register("gate_planks_orange", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> gate_planks_pink = BLOCKS.register("gate_planks_pink", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PINK));
+  public static final RegistryObject<Block> gate_planks_purple = BLOCKS.register("gate_planks_purple", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> gate_planks_red = BLOCKS.register("gate_planks_red", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
+  public static final RegistryObject<Block> gate_planks_white = BLOCKS.register("gate_planks_white", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
+  public static final RegistryObject<Block> gate_planks_yellow = BLOCKS.register("gate_planks_yellow", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
 }

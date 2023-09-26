@@ -569,6 +569,25 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> stairs_stone_bricks_red = ITEMS.register("stairs_stone_bricks_red", () -> new ItemColour(ColourableBlockRegistry.stairs_stone_bricks_red.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stairs_stone_bricks_white = ITEMS.register("stairs_stone_bricks_white", () -> new ItemColour(ColourableBlockRegistry.stairs_stone_bricks_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stairs_stone_bricks_yellow = ITEMS.register("stairs_stone_bricks_yellow", () -> new ItemColour(ColourableBlockRegistry.stairs_stone_bricks_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
+  // 
+  //public static final RegistryObject<Item> gate_planks_black = ITEMS.register("gate_planks_black", () -> new ItemColour(ColourableBlockRegistry.gate_planks_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_none = ITEMS.register("gate_planks_none", () -> new ItemColour(ColourableBlockRegistry.gate_planks_none.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_black = ITEMS.register("gate_planks_black", () -> new ItemColour(ColourableBlockRegistry.gate_planks_black.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_blue = ITEMS.register("gate_planks_blue", () -> new ItemColour(ColourableBlockRegistry.gate_planks_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_brown = ITEMS.register("gate_planks_brown", () -> new ItemColour(ColourableBlockRegistry.gate_planks_brown.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_cyan = ITEMS.register("gate_planks_cyan", () -> new ItemColour(ColourableBlockRegistry.gate_planks_cyan.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_gray = ITEMS.register("gate_planks_gray", () -> new ItemColour(ColourableBlockRegistry.gate_planks_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_green = ITEMS.register("gate_planks_green", () -> new ItemColour(ColourableBlockRegistry.gate_planks_green.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_light_blue = ITEMS.register("gate_planks_light_blue", () -> new ItemColour(ColourableBlockRegistry.gate_planks_light_blue.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_light_gray = ITEMS.register("gate_planks_light_gray", () -> new ItemColour(ColourableBlockRegistry.gate_planks_light_gray.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_lime = ITEMS.register("gate_planks_lime", () -> new ItemColour(ColourableBlockRegistry.gate_planks_lime.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_magenta = ITEMS.register("gate_planks_magenta", () -> new ItemColour(ColourableBlockRegistry.gate_planks_magenta.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_orange = ITEMS.register("gate_planks_orange", () -> new ItemColour(ColourableBlockRegistry.gate_planks_orange.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_pink = ITEMS.register("gate_planks_pink", () -> new ItemColour(ColourableBlockRegistry.gate_planks_pink.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_purple = ITEMS.register("gate_planks_purple", () -> new ItemColour(ColourableBlockRegistry.gate_planks_purple.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_red = ITEMS.register("gate_planks_red", () -> new ItemColour(ColourableBlockRegistry.gate_planks_red.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_white = ITEMS.register("gate_planks_white", () -> new ItemColour(ColourableBlockRegistry.gate_planks_white.get(), new Item.Properties(), new ItemFlib.Settings()));
+  public static final RegistryObject<Item> gate_planks_yellow = ITEMS.register("gate_planks_yellow", () -> new ItemColour(ColourableBlockRegistry.gate_planks_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
   public static final TagKey<Item> DYES_NONE = ItemTags.create(new ResourceLocation("forge", "dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));

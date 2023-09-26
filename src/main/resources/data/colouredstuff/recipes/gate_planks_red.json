@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "-#-",
+    "-#-"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:planks_red"
+    },
+    "-": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:gate_planks_red",
+    "count": 1
+  }
+}

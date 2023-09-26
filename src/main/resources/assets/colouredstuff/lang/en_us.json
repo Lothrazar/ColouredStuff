@@ -1,5 +1,24 @@
 {
 
+"block.colouredstuff.gate_planks_black" : "Black Wooden Gate",
+"block.colouredstuff.gate_planks_blue" : "Blue Wooden Gate",
+"block.colouredstuff.gate_planks_brown" : "Brown Wooden Gate",
+"block.colouredstuff.gate_planks_cyan" : "Cyan Wooden Gate",
+"block.colouredstuff.gate_planks_gray" : "Gray Wooden Gate",
+"block.colouredstuff.gate_planks_green" : "Green Wooden Gate",
+"block.colouredstuff.gate_planks_light_blue" : "Light Blue Wooden Gate",
+"block.colouredstuff.gate_planks_light_gray" : "Light Gray Wooden Gate",
+"block.colouredstuff.gate_planks_lime" : "Lime Wooden Gate",
+"block.colouredstuff.gate_planks_magenta" : "Magenta Wooden Gate",
+"block.colouredstuff.gate_planks_none" : "Colorless Wooden Gate",
+"block.colouredstuff.gate_planks_orange" : "Orange Wooden Gate",
+"block.colouredstuff.gate_planks_pink" : "Pink Wooden Gate",
+"block.colouredstuff.gate_planks_purple" : "Purple Wooden Gate",
+"block.colouredstuff.gate_planks_red" : "Red Wooden Gate",
+"block.colouredstuff.gate_planks_white" : "White Wooden Gate",
+"block.colouredstuff.gate_planks_yellow" : "Yellow Wooden Gate",
+
+
 
 "block.colouredstuff.wall_planks_black" : "Black Wooden Wall",
 "block.colouredstuff.wall_planks_blue" : "Blue Wooden Wall",

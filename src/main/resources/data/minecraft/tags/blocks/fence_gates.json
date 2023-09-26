@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    
+"colouredstuff:gate_planks_black",
+"colouredstuff:gate_planks_blue",
+"colouredstuff:gate_planks_brown",
+"colouredstuff:gate_planks_cyan",
+"colouredstuff:gate_planks_gray",
+"colouredstuff:gate_planks_green",
+"colouredstuff:gate_planks_light_blue",
+"colouredstuff:gate_planks_light_gray",
+"colouredstuff:gate_planks_lime",
+"colouredstuff:gate_planks_magenta",
+"colouredstuff:gate_planks_none",
+"colouredstuff:gate_planks_orange",
+"colouredstuff:gate_planks_pink",
+"colouredstuff:gate_planks_purple",
+"colouredstuff:gate_planks_red",
+"colouredstuff:gate_planks_white",
+"colouredstuff:gate_planks_yellow"
+  ]
+}

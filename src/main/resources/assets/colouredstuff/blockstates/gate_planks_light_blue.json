@@ -1,0 +1,80 @@
+{
+  "variants": {
+    "facing=east,in_wall=false,open=false": {
+      "uvlock": true,
+      "y": 270,
+      "model": "colouredstuff:block/gate/planks_light_blue"
+    },
+    "facing=east,in_wall=false,open=true": {
+      "uvlock": true,
+      "y": 270,
+      "model": "colouredstuff:block/gate/planks_light_blue_open"
+    },
+    "facing=east,in_wall=true,open=false": {
+      "uvlock": true,
+      "y": 270,
+      "model": "colouredstuff:block/gate/planks_light_blue_wall"
+    },
+    "facing=east,in_wall=true,open=true": {
+      "uvlock": true,
+      "y": 270,
+      "model": "colouredstuff:block/gate/planks_light_blue_wall_open"
+    },
+    "facing=north,in_wall=false,open=false": {
+      "uvlock": true,
+      "y": 180,
+      "model": "colouredstuff:block/gate/planks_light_blue"
+    },
+    "facing=north,in_wall=false,open=true": {
+      "uvlock": true,
+      "y": 180,
+      "model": "colouredstuff:block/gate/planks_light_blue_open"
+    },
+    "facing=north,in_wall=true,open=false": {
+      "uvlock": true,
+      "y": 180,
+      "model": "colouredstuff:block/gate/planks_light_blue_wall"
+    },
+    "facing=north,in_wall=true,open=true": {
+      "uvlock": true,
+      "y": 180,
+      "model": "colouredstuff:block/gate/planks_light_blue_wall_open"
+    },
+    "facing=south,in_wall=false,open=false": {
+      "uvlock": true,
+      "model": "colouredstuff:block/gate/planks_light_blue"
+    },
+    "facing=south,in_wall=false,open=true": {
+      "uvlock": true,
+      "model": "colouredstuff:block/gate/planks_light_blue_open"
+    },
+    "facing=south,in_wall=true,open=false": {
+      "uvlock": true,
+      "model": "colouredstuff:block/gate/planks_light_blue_wall"
+    },
+    "facing=south,in_wall=true,open=true": {
+      "uvlock": true,
+      "model": "colouredstuff:block/gate/planks_light_blue_wall_open"
+    },
+    "facing=west,in_wall=false,open=false": {
+      "uvlock": true,
+      "y": 90,
+      "model": "colouredstuff:block/gate/planks_light_blue"
+    },
+    "facing=west,in_wall=false,open=true": {
+      "uvlock": true,
+      "y": 90,
+      "model": "colouredstuff:block/gate/planks_light_blue_open"
+    },
+    "facing=west,in_wall=true,open=false": {
+      "uvlock": true,
+      "y": 90,
+      "model": "colouredstuff:block/gate/planks_light_blue_wall"
+    },
+    "facing=west,in_wall=true,open=true": {
+      "uvlock": true,
+      "y": 90,
+      "model": "colouredstuff:block/gate/planks_light_blue_wall_open"
+    }
+  }
+}
