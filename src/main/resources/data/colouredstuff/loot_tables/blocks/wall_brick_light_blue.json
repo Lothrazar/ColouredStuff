@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "colouredstuff:wall_light_blue_light_blue"
+          "name": "colouredstuff:wall_brick_light_blue"
         }
       ],
       "conditions": [
