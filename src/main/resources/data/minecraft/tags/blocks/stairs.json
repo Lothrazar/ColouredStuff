@@ -3,6 +3,24 @@
   "values": [
 
 
+"colouredstuff:stairs_brick_black",
+"colouredstuff:stairs_brick_blue",
+"colouredstuff:stairs_brick_brown",
+"colouredstuff:stairs_brick_cyan",
+"colouredstuff:stairs_brick_gray",
+"colouredstuff:stairs_brick_green",
+"colouredstuff:stairs_brick_light_blue",
+"colouredstuff:stairs_brick_light_gray",
+"colouredstuff:stairs_brick_lime",
+"colouredstuff:stairs_brick_magenta",
+"colouredstuff:stairs_brick_none",
+"colouredstuff:stairs_brick_orange",
+"colouredstuff:stairs_brick_pink",
+"colouredstuff:stairs_brick_purple",
+"colouredstuff:stairs_brick_red",
+"colouredstuff:stairs_brick_white",
+"colouredstuff:stairs_brick_yellow",
+
 
 "colouredstuff:stairs_stone_bricks_black",
 "colouredstuff:stairs_stone_bricks_blue",

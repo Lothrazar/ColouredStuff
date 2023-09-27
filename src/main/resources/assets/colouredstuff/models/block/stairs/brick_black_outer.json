@@ -1,0 +1,6 @@
+{
+    "parent": "colouredstuff:parent/stairs_outer",
+    "textures": {
+        "b": "colouredstuff:block/brick_black"
+    }
+}

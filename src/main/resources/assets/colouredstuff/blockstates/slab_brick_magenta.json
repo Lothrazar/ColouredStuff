@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "colouredstuff:block/slab/brick_magenta" },
+        "type=top": { "model": "colouredstuff:block/slab/brick_magenta_upper" },
+        "type=double": { "model": "colouredstuff:block/brick_magenta" }
+    }
+}

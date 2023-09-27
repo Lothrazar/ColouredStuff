@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+  	"#  ",
+  	"## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:brick_red"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:stairs_brick_red",
+    "count": 4
+  }
+}

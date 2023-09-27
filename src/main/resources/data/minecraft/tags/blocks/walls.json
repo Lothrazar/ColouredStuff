@@ -2,6 +2,25 @@
 	"replace": false,
 	"values": [
 
+"colouredstuff:wall_brick_black",
+"colouredstuff:wall_brick_blue",
+"colouredstuff:wall_brick_brown",
+"colouredstuff:wall_brick_cyan",
+"colouredstuff:wall_brick_gray",
+"colouredstuff:wall_brick_green",
+"colouredstuff:wall_brick_light_blue",
+"colouredstuff:wall_brick_light_gray",
+"colouredstuff:wall_brick_lime",
+"colouredstuff:wall_brick_magenta",
+"colouredstuff:wall_brick_none",
+"colouredstuff:wall_brick_orange",
+"colouredstuff:wall_brick_pink",
+"colouredstuff:wall_brick_purple",
+"colouredstuff:wall_brick_red",
+"colouredstuff:wall_brick_white",
+"colouredstuff:wall_brick_yellow",
+
+
 "colouredstuff:wall_planks_black",
 "colouredstuff:wall_planks_blue",
 "colouredstuff:wall_planks_brown",
