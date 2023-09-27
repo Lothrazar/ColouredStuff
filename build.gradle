@@ -134,12 +134,14 @@ dependencies {
 // implementation fg.deobf("blank:flib-1.20.1:${flib_version}")
     implementation fg.deobf("curse.maven:flib-661261:${flib_file}")
     
+//optional dependencies
+//    implementation fg.deobf("curse.maven:visual-workbench-500273:4612695")
+//    implementation fg.deobf("curse.maven:puzzles-lib-495476:4707419")
 
-    implementation fg.deobf("curse.maven:visual-workbench-500273:4612695")
-    implementation fg.deobf("curse.maven:puzzles-lib-495476:4707419")
-    implementation fg.deobf("curse.maven:ex-deorum-901420:4747081")
+  //  implementation fg.deobf("curse.maven:ex-deorum-901420:4747081")
   //  implementation fg.deobf("curse.maven:caveopolis-mod-639186:4742865")
   //  implementation fg.deobf("curse.maven:recipes-library-398351:4628674")
+  //  implementation fg.deobf("com.blamejared.crafttweaker:CraftTweaker-forge-${minecraft_version}:${crafttweaker_version}")
     
     // Specify the version of Minecraft to use. 
     // Any artifact can be supplied so long as it has a "userdev" classifier artifact and is a compatible patcher artifact.
@@ -147,9 +149,6 @@ dependencies {
     // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
     // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
     minecraft "net.neoforged:forge:${minecraft_version}-${neo_version}"
-
-
-     //optional integrations
 
      
  //    compileOnly fg.deobf("vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-FORGE:api")
@@ -162,7 +161,6 @@ dependencies {
  //    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
  //    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}:api")
  
-    implementation fg.deobf("com.blamejared.crafttweaker:CraftTweaker-forge-${minecraft_version}:${crafttweaker_version}")
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${minecraft_version}-${coolmod_version}.jar
