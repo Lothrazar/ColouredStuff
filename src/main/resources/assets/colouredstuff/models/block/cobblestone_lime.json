@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_all",
 	"textures": {
-		"all": "colouredstuff:block/stone_lime",
-		"particle": "colouredstuff:block/stone_lime"
+		"all": "colouredstuff:block/cobblestone_lime",
+		"particle": "colouredstuff:block/cobblestone_lime"
 	}
 }

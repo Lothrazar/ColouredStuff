@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "colouredstuff:block/stone_black"
+      "model": "colouredstuff:block/cobblestone_black"
     }
   }
 }

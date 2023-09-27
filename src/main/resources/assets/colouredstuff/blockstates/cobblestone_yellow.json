@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "colouredstuff:block/stone_yellow"
+      "model": "colouredstuff:block/cobblestone_yellow"
     }
   }
 }
