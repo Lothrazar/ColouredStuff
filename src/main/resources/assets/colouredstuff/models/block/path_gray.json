@@ -1,5 +1,5 @@
 {   "parent": "colouredstuff:block/tmpl_path",   
     "textures": {
-        "side": "colouredstuff:block/dirt_red"
+        "side": "colouredstuff:block/dirt_gray"
     }
 }
