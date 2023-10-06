@@ -30,7 +30,7 @@ public class LeavesColour extends BlockFlib implements IHasColor, SimpleWaterlog
   //TODO: , IForgeShearable
   public static final IntegerProperty DISTANCE = BlockStateProperties.DISTANCE;
   public static final BooleanProperty PERSISTENT = BlockStateProperties.PERSISTENT;
-  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
+  public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public LeavesColour(Properties p, DyeColorless color) {
     super(p);

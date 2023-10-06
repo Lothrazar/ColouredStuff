@@ -6,14 +6,14 @@
   ],
   "key": {
     "#": {
-      "item": "colouredstuff:planks_purple"
+      "item": "colouredstuff:planks_lime"
     },
     "-": {
-      "item": "minecraft:stick"
+      "tag": "forge:rods/wooden"
     }
   },
   "result": {
-    "item": "colouredstuff:gate_planks_purple",
+    "item": "colouredstuff:gate_planks_lime",
     "count": 1
   }
 }

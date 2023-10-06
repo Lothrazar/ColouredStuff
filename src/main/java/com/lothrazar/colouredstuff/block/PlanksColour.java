@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.Block;
 
 public class PlanksColour extends BlockFlib implements IHasColor {
 
-  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
+  public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public PlanksColour(Properties p, DyeColorless color) {
     super(p);

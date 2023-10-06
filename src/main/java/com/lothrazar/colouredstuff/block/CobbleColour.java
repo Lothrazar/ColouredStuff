@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.Block;
 
 public class CobbleColour extends BlockFlib implements IHasColor {
 
-  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
+  public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public CobbleColour(Properties p, DyeColorless color) {
     super(p);
