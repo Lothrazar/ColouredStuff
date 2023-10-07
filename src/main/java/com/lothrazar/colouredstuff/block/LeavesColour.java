@@ -12,8 +12,11 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FireBlock;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -109,5 +112,15 @@ public class LeavesColour extends BlockFlib implements IHasColor, SimpleWaterlog
       dropResources(bs, level, pos);
       level.removeBlock(pos, false);
     }
+  }
+
+  @Override
+  public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+    return ((FireBlock) Blocks.FIRE).getBurnOdds(Blocks.OAK_LEAVES.defaultBlockState());
+  }
+
+  @Override
+  public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+    return ((FireBlock) Blocks.FIRE).getIgniteOdds(Blocks.OAK_LEAVES.defaultBlockState());
   }
 }
