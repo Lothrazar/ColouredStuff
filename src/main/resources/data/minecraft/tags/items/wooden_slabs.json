@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+"colouredstuff:slab_planks_blue",
+"colouredstuff:slab_planks_brown",
+"colouredstuff:slab_planks_cyan",
+"colouredstuff:slab_planks_gray",
+"colouredstuff:slab_planks_green",
+"colouredstuff:slab_planks_light_blue",
+"colouredstuff:slab_planks_light_gray",
+"colouredstuff:slab_planks_lime",
+"colouredstuff:slab_planks_magenta",
+"colouredstuff:slab_planks_none",
+"colouredstuff:slab_planks_orange",
+"colouredstuff:slab_planks_pink",
+"colouredstuff:slab_planks_purple",
+"colouredstuff:slab_planks_red",
+"colouredstuff:slab_planks_white",
+"colouredstuff:slab_planks_yellow",
+"colouredstuff:slab_planks_black"
+  ]
+}
