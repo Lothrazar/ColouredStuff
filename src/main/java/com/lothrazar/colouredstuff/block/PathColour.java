@@ -18,7 +18,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 public class PathColour extends BlockFlib implements IHasColor {
 
   public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
-  //  protected static final VoxelShape SHAPE = FarmBlock.SHAPE;
   protected static final VoxelShape SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 15.0D, 16.0D);
 
   public PathColour(Properties p, DyeColorless s) {
@@ -27,7 +26,7 @@ public class PathColour extends BlockFlib implements IHasColor {
     this.color = s;
   }
 
-  private final DyeColorless color;
+  protected final DyeColorless color;
 
   @Override
   public DyeColorless getColor() {

@@ -42,9 +42,9 @@ public class FarmlandColour extends PathColour {
   }
 
   @Override
-  public void tick(BlockState p_221134_, ServerLevel p_221135_, BlockPos p_221136_, RandomSource p_221137_) {
-    if (!p_221134_.canSurvive(p_221135_, p_221136_)) {
-      turnToDirt((Entity) null, p_221134_, p_221135_, p_221136_);
+  public void tick(BlockState bs, ServerLevel level, BlockPos pos, RandomSource rand) {
+    if (!bs.canSurvive(level, pos)) {
+      turnToDirt((Entity) null, bs, level, pos);
     }
   }
 
@@ -65,35 +65,34 @@ public class FarmlandColour extends PathColour {
   }
 
   @Override
-  public void fallOn(Level p_153227_, BlockState p_153228_, BlockPos p_153229_, Entity p_153230_, float p_153231_) {
-    if (!p_153227_.isClientSide && net.minecraftforge.common.ForgeHooks.onFarmlandTrample(p_153227_, p_153229_, Blocks.DIRT.defaultBlockState(), p_153231_, p_153230_)) { // Forge: Move logic to Entity#canTrample
-      turnToDirt(p_153230_, p_153228_, p_153227_, p_153229_);
+  public void fallOn(Level level, BlockState bs, BlockPos pos, Entity entity, float f) {
+    if (!level.isClientSide && net.minecraftforge.common.ForgeHooks.onFarmlandTrample(level, pos, Blocks.DIRT.defaultBlockState(), f, entity)) { // Forge: Move logic to Entity#canTrample
+      turnToDirt(entity, bs, level, pos);
     }
-    super.fallOn(p_153227_, p_153228_, p_153229_, p_153230_, p_153231_);
+    super.fallOn(level, bs, pos, entity, f);
   }
 
-  public static void turnToDirt(Entity p_270981_, BlockState farmlandState, Level p_270568_, BlockPos pos) {
-    //    ModColourable.LOGGER.info("turn to dirt " + pos);
-    var dirt = Blocks.DIRT.defaultBlockState(); // TODO //ColourableRegistry.DIRT_BLOCK.get().defaultBlockState().setValue(COLOR, farmlandState.getValue(COLOR));
-    BlockState modifiedDirt = pushEntitiesUp(farmlandState, dirt, p_270568_, pos);
-    p_270568_.setBlockAndUpdate(pos, modifiedDirt);
-    p_270568_.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(p_270981_, modifiedDirt));
+  private void turnToDirt(Entity entity, BlockState farmlandState, Level level, BlockPos pos) {
+    var dirt = DirtColour.RAINBOW.get(this.color).defaultBlockState();
+    BlockState modifiedDirt = FarmBlock.pushEntitiesUp(farmlandState, dirt, level, pos);
+    level.setBlockAndUpdate(pos, modifiedDirt);
+    level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(entity, modifiedDirt));
   }
 
-  private static boolean shouldMaintainFarmland(BlockGetter p_279219_, BlockPos p_279209_) {
-    BlockState plant = p_279219_.getBlockState(p_279209_.above());
-    BlockState state = p_279219_.getBlockState(p_279209_);
-    return plant.getBlock() instanceof net.minecraftforge.common.IPlantable && state.canSustainPlant(p_279219_, p_279209_, Direction.UP, (net.minecraftforge.common.IPlantable) plant.getBlock());
+  private static boolean shouldMaintainFarmland(BlockGetter level, BlockPos pos) {
+    BlockState plant = level.getBlockState(pos.above());
+    BlockState state = level.getBlockState(pos);
+    return plant.getBlock() instanceof net.minecraftforge.common.IPlantable && state.canSustainPlant(level, pos, Direction.UP, (net.minecraftforge.common.IPlantable) plant.getBlock());
   }
 
-  private static boolean isNearWater(LevelReader p_53259_, BlockPos p_53260_) {
-    BlockState state = p_53259_.getBlockState(p_53260_);
-    for (BlockPos blockpos : BlockPos.betweenClosed(p_53260_.offset(-4, 0, -4), p_53260_.offset(4, 1, 4))) {
-      if (state.canBeHydrated(p_53259_, p_53260_, p_53259_.getFluidState(blockpos), blockpos)) {
+  private static boolean isNearWater(LevelReader level, BlockPos pos) {
+    BlockState state = level.getBlockState(pos);
+    for (BlockPos blockpos : BlockPos.betweenClosed(pos.offset(-4, 0, -4), pos.offset(4, 1, 4))) {
+      if (state.canBeHydrated(level, pos, level.getFluidState(blockpos), blockpos)) {
         return true;
       }
     }
-    return net.minecraftforge.common.FarmlandWaterManager.hasBlockWaterTicket(p_53259_, p_53260_);
+    return net.minecraftforge.common.FarmlandWaterManager.hasBlockWaterTicket(level, pos);
   }
 
   @Override

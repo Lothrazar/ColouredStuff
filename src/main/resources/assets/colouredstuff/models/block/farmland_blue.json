@@ -1,6 +1,6 @@
 { "parent": "colouredstuff:block/tmpl_farmland",
   "textures": {
-    "dirt": "colouredstuff:block/dirt_black",
+    "dirt": "colouredstuff:block/dirt_blue",
     "top": "minecraft:block/farmland"
   }
 }

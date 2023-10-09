@@ -14,7 +14,6 @@ import net.minecraft.world.level.block.FireBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
 import net.minecraftforge.common.ToolActions;
-import net.minecraftforge.common.extensions.IForgeBlock;
 
 public class LogColour extends BlockFlibPillar {
 
