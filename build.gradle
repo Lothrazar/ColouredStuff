@@ -135,8 +135,11 @@ dependencies {
     implementation fg.deobf("curse.maven:flib-661261:${flib_file}")
     
 //optional dependencies
-//    implementation fg.deobf("curse.maven:visual-workbench-500273:4612695")
-//    implementation fg.deobf("curse.maven:puzzles-lib-495476:4707419")
+    implementation fg.deobf("curse.maven:cyclic-239286:4722579")
+    implementation fg.deobf("curse.maven:vein-creeper-907093:4742832")
+    
+    implementation fg.deobf("curse.maven:visual-workbench-500273:4612695")
+    implementation fg.deobf("curse.maven:puzzles-lib-495476:4707419")
 
   //  implementation fg.deobf("curse.maven:ex-deorum-901420:4747081")
   //  implementation fg.deobf("curse.maven:caveopolis-mod-639186:4742865")

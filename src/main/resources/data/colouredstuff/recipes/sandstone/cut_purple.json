@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:sandstone_purple"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:cut_sandstone_purple",
+    "count": 4
+  }
+}
