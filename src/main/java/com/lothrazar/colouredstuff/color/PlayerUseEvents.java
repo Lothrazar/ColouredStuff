@@ -51,6 +51,7 @@ public class PlayerUseEvents extends EventFlib {
     }
     //dye is non-null now
     boolean doConnected = false;
+
     //TODO: config to allow right click to dye yes no. default true
     if (stateHit.getBlock() instanceof IHasColor block) {
       originalSourceColour = block.getColor();
@@ -111,5 +112,12 @@ public class PlayerUseEvents extends EventFlib {
     else if (stateHit.is(BlockTags.PLANKS)) {
       Rainbows.rotateToColor(PlanksColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
     }
+    // TODO: new mod for : RECIPE: for in-world conversion
+    // needs some sort of rainbow type registry
+    // {"type":"colouredstuff:dye",  "rainbow_type":"DIRT", "target":{"block":"minecraft:dirt"}}
+    // {"type":"colouredstuff:dye",  "rainbow_type":"PLANKS", "target":{"tag":"minecraft:planks"}}
+    //TODO: standalone mod would also have to build all Vanilla rainbow types!? : candle, bed, banner?, glass, glass_panes, shulker?,terracotta, concrete, 
+    // {"type":"colouredstuff:dye",  "rainbow_type":"SAPLINGS", "target":{"tag":"minecraft:saplings"}}
+    // {"type":"colouredstuff:dye",  "rainbow_type":"CONCRETE", "target":{"tag":"minecraft:concrete_powder"}}
   }
 }

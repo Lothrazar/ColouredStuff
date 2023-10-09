@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "tag": "forge:sandstone"
+      "item": "minecraft:stone"
     },
     "-": {
-      "tag": "forge:dyes/black"
+      "tag": "forge:dyes/blue"
     }
   },
   "result": {
-    "item": "colouredstuff:sandstone_black",
+    "item": "colouredstuff:stone_blue",
     "count": 8
   }
 }

@@ -20,5 +20,13 @@ public class ModColourable {
     ColourableBlockRegistry.BLOCKS.register(eventBus);
     ColourableItemRegistry.ITEMS.register(eventBus);
     new PlayerUseEvents();
+    //TODO: door_
+    //TODO: chiseled_stone_
+    // wooden_button_
+    // stone_button_
+    // trapdoor_
+    // smooth_stone_
+    // cracked_stone_bricks_
+    // cut_sandstone_
   }
 }
