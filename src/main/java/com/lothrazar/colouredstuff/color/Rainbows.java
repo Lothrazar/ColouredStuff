@@ -4,7 +4,6 @@ import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.lib.BlockFlibPillar;
-import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.player.Player;
@@ -17,8 +16,6 @@ import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraftforge.common.Tags;
-import net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock;
 
 public class Rainbows {
 
@@ -83,24 +80,24 @@ public class Rainbows {
 
   //world interactions
   //DyeColorless originalSourceColour can be null if previous block was non-mod
-  public static void rotateColourByEvent(RightClickBlock event, Map<DyeColorless, Block> rainbow, DyeColorless originalSourceColour, boolean doConnected) {
-    //    boolean doConnected = event.getEntity().isCrouching();
-    final ItemStack itemInHand = event.getItemStack();
-    final Level level = event.getLevel();
-    if (itemInHand.is(ColourableItemRegistry.DYES_NONE)) {
-      rotateDye(rainbow, originalSourceColour, level, event.getPos(), event.getEntity(), itemInHand, DyeColorless.NONE, doConnected);
-    }
-    else if (itemInHand.is(Tags.Items.DYES)) {
-      DyeColorless dye = DyeColorless.getDyeFromItem(itemInHand);
-      if (dye != null) {
-        rotateDye(rainbow, originalSourceColour, level, event.getPos(), event.getEntity(), itemInHand, dye, doConnected);
-      }
-      else { //this never happens
-        ModColourable.LOGGER.error(itemInHand);
-        ModColourable.LOGGER.error("This is tagged as a dye item but its not a vanilla 16x dye  " + dye);
-      }
-    }
-  }
+  //  public static void rotateColourByEvent(RightClickBlock event, Map<DyeColorless, Block> rainbow, DyeColorless originalSourceColour) {
+  //    //    boolean doConnected = event.getEntity().isCrouching();
+  //    final ItemStack itemInHand = event.getItemStack();
+  //    final Level level = event.getLevel();
+  //    if (itemInHand.is(ColourableItemRegistry.DYES_NONE)) {
+  //      rotateDye(rainbow, originalSourceColour, level, event.getPos(), event.getEntity(), itemInHand, DyeColorless.NONE, false);
+  //    }
+  //    else if (itemInHand.is(Tags.Items.DYES)) {
+  //      DyeColorless dye = DyeColorless.getDyeFromItem(itemInHand);
+  //      if (dye != null) {
+  //        rotateDye(rainbow, originalSourceColour, level, event.getPos(), event.getEntity(), itemInHand, dye, false);
+  //      }
+  //      else { //this never happens
+  //        ModColourable.LOGGER.error(itemInHand);
+  //        ModColourable.LOGGER.error("This is tagged as a dye item but its not a vanilla 16x dye  " + dye);
+  //      }
+  //    }
+  //  }
 
   static void rotateDye(Map<DyeColorless, Block> rainbow,
       DyeColorless originalSourceColour,

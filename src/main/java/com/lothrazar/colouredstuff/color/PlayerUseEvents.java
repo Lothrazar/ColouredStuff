@@ -1,11 +1,26 @@
 package com.lothrazar.colouredstuff.color;
 
 import com.lothrazar.colouredstuff.ModColourable;
+import com.lothrazar.colouredstuff.block.BrickColour;
+import com.lothrazar.colouredstuff.block.BrickstoneColour;
+import com.lothrazar.colouredstuff.block.ChiseledColor;
+import com.lothrazar.colouredstuff.block.CobbleColour;
+import com.lothrazar.colouredstuff.block.DirtColour;
+import com.lothrazar.colouredstuff.block.FarmlandColour;
+import com.lothrazar.colouredstuff.block.LeavesColour;
+import com.lothrazar.colouredstuff.block.LogColour;
+import com.lothrazar.colouredstuff.block.PathColour;
+import com.lothrazar.colouredstuff.block.PlanksColour;
+import com.lothrazar.colouredstuff.block.SandstoneColour;
+import com.lothrazar.colouredstuff.block.SaplinColour;
+import com.lothrazar.colouredstuff.block.StoneColour;
 import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
 import com.lothrazar.library.events.EventFlib;
 import com.lothrazar.library.util.ItemStackUtil;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock;
@@ -55,47 +70,47 @@ public class PlayerUseEvents extends EventFlib {
       }
     }
     //TODO: config to allow non-mod block dyes. default true
-    //    else if (stateHit.is(Blocks.DIRT)) {
-    //      Rainbows.rotateColourByEvent(event, DirtColour.RAINBOW, originalSourceColour, doConnected);
-    //    }
-    //    else if (stateHit.is(Blocks.FARMLAND)) {
-    //      Rainbows.rotateColourByEvent(event, FarmlandColour.RAINBOW, originalSourceColour, doConnected);
-    //    }
-    //    else if (stateHit.is(Blocks.DIRT_PATH)) {
-    //      Rainbows.rotateColourByEvent(event, PathColour.RAINBOW, originalSourceColour, doConnected);
-    //    }
-    //    else if (stateHit.is(Blocks.SANDSTONE)) {
-    //      Rainbows.rotateColourByEvent(event, SandstoneColour.RAINBOW, originalSourceColour, doConnected);
-    //    }
-    //    else if (stateHit.is(Blocks.CHISELED_SANDSTONE)) {
-    //      Rainbows.rotateColourByEvent(event, ChiseledColor.RAINBOW, originalSourceColour, doConnected);
-    //    }
-    //    else if (stateHit.is(Blocks.CHISELED_RED_SANDSTONE)) {
-    //      Rainbows.rotateColourByEvent(event, ChiseledColor.RAINBOW, originalSourceColour, doConnected);
-    //    }
-    //    else if (stateHit.is(Blocks.STONE)) {
-    //      Rainbows.rotateColourByEvent(event, StoneColour.RAINBOW, originalSourceColour, doConnected);
-    //    }
-    //    else if (stateHit.is(Blocks.COBBLESTONE)) {
-    //      Rainbows.rotateColourByEvent(event, CobbleColour.RAINBOW, originalSourceColour, doConnected);
-    //    }
-    //    else if (stateHit.is(Blocks.STONE_BRICKS)) {
-    //      Rainbows.rotateColourByEvent(event, BrickstoneColour.RAINBOW, originalSourceColour, doConnected);
-    //    }
-    //    else if (stateHit.is(Blocks.BRICKS)) {
-    //      Rainbows.rotateColourByEvent(event, BrickColour.RAINBOW, originalSourceColour, doConnected);
-    //    }
-    //    else if (stateHit.is(BlockTags.SAPLINGS)) {
-    //      Rainbows.rotateColourByEvent(event, SaplinColour.RAINBOW, originalSourceColour, doConnected);
-    //    }
-    //    else if (stateHit.is(BlockTags.LEAVES)) {
-    //      Rainbows.rotateColourByEvent(event, LeavesColour.RAINBOW, originalSourceColour, doConnected);
-    //    }
-    //    else if (stateHit.is(BlockTags.LOGS)) {
-    //      Rainbows.rotateColourByEvent(event, LogColour.RAINBOW, originalSourceColour, doConnected);
-    //    }
-    //    else if (stateHit.is(BlockTags.PLANKS)) {
-    //      Rainbows.rotateColourByEvent(event, PlanksColour.RAINBOW, originalSourceColour, doConnected);
-    //    }
+    else if (stateHit.is(Blocks.DIRT)) {
+      Rainbows.rotateToColor(DirtColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
+    else if (stateHit.is(Blocks.FARMLAND)) {
+      Rainbows.rotateToColor(FarmlandColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
+    else if (stateHit.is(Blocks.DIRT_PATH)) {
+      Rainbows.rotateToColor(PathColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
+    else if (stateHit.is(Blocks.SANDSTONE)) {
+      Rainbows.rotateToColor(SandstoneColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
+    else if (stateHit.is(Blocks.CHISELED_SANDSTONE)) {
+      Rainbows.rotateToColor(ChiseledColor.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
+    else if (stateHit.is(Blocks.CHISELED_RED_SANDSTONE)) {
+      Rainbows.rotateToColor(ChiseledColor.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
+    else if (stateHit.is(Blocks.STONE)) {
+      Rainbows.rotateToColor(StoneColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
+    else if (stateHit.is(Blocks.COBBLESTONE)) {
+      Rainbows.rotateToColor(CobbleColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
+    else if (stateHit.is(Blocks.STONE_BRICKS)) {
+      Rainbows.rotateToColor(BrickstoneColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
+    else if (stateHit.is(Blocks.BRICKS)) {
+      Rainbows.rotateToColor(BrickColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
+    else if (stateHit.is(BlockTags.SAPLINGS)) {
+      Rainbows.rotateToColor(SaplinColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
+    else if (stateHit.is(BlockTags.LEAVES)) {
+      Rainbows.rotateToColor(LeavesColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
+    else if (stateHit.is(BlockTags.LOGS)) {
+      Rainbows.rotateToColor(LogColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
+    else if (stateHit.is(BlockTags.PLANKS)) {
+      Rainbows.rotateToColor(PlanksColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    }
   }
 }
