@@ -301,7 +301,6 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> brick_white = ITEMS.register("brick_white", () -> new ItemColour(ColourableBlockRegistry.brick_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> brick_yellow = ITEMS.register("brick_yellow", () -> new ItemColour(ColourableBlockRegistry.brick_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
-
   public static final RegistryObject<Item> slab_planks_none = ITEMS.register("slab_planks_none", () -> new ItemColour(ColourableBlockRegistry.slab_planks_none.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOODSLAB)));
   public static final RegistryObject<Item> slab_planks_black = ITEMS.register("slab_planks_black", () -> new ItemColour(ColourableBlockRegistry.slab_planks_black.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOODSLAB)));
   public static final RegistryObject<Item> slab_planks_blue = ITEMS.register("slab_planks_blue", () -> new ItemColour(ColourableBlockRegistry.slab_planks_blue.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOODSLAB)));
@@ -427,7 +426,6 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> stairs_brick_red = ITEMS.register("stairs_brick_red", () -> new ItemColour(ColourableBlockRegistry.stairs_brick_red.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stairs_brick_white = ITEMS.register("stairs_brick_white", () -> new ItemColour(ColourableBlockRegistry.stairs_brick_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> stairs_brick_yellow = ITEMS.register("stairs_brick_yellow", () -> new ItemColour(ColourableBlockRegistry.stairs_brick_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
-
   public static final RegistryObject<Item> stairs_planks_none = ITEMS.register("stairs_planks_none", () -> new ItemColour(ColourableBlockRegistry.stairs_planks_none.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
   public static final RegistryObject<Item> stairs_planks_black = ITEMS.register("stairs_planks_black", () -> new ItemColour(ColourableBlockRegistry.stairs_planks_black.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
   public static final RegistryObject<Item> stairs_planks_blue = ITEMS.register("stairs_planks_blue", () -> new ItemColour(ColourableBlockRegistry.stairs_planks_blue.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
@@ -608,7 +606,6 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> wall_stone_bricks_white = ITEMS.register("wall_stone_bricks_white", () -> new ItemColour(ColourableBlockRegistry.wall_stone_bricks_white.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> wall_stone_bricks_yellow = ITEMS.register("wall_stone_bricks_yellow", () -> new ItemColour(ColourableBlockRegistry.wall_stone_bricks_yellow.get(), new Item.Properties(), new ItemFlib.Settings()));
   //
-
   public static final RegistryObject<Item> wall_brick_none = ITEMS.register("wall_brick_none", () -> new ItemColour(ColourableBlockRegistry.wall_brick_none.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> wall_brick_black = ITEMS.register("wall_brick_black", () -> new ItemColour(ColourableBlockRegistry.wall_brick_black.get(), new Item.Properties(), new ItemFlib.Settings()));
   public static final RegistryObject<Item> wall_brick_blue = ITEMS.register("wall_brick_blue", () -> new ItemColour(ColourableBlockRegistry.wall_brick_blue.get(), new Item.Properties(), new ItemFlib.Settings()));

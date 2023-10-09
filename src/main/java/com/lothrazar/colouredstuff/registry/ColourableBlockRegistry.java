@@ -339,7 +339,6 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> slab_planks_white = BLOCKS.register("slab_planks_white", () -> new PlanksSlab(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
   public static final RegistryObject<Block> slab_planks_yellow = BLOCKS.register("slab_planks_yellow", () -> new PlanksSlab(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
-
   public static final RegistryObject<Block> slab_cobblestone_none = BLOCKS.register("slab_cobblestone_none", () -> new CobblestoneSlab(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.NONE));
   public static final RegistryObject<Block> slab_cobblestone_black = BLOCKS.register("slab_cobblestone_black", () -> new CobblestoneSlab(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.BLACK));
   public static final RegistryObject<Block> slab_cobblestone_blue = BLOCKS.register("slab_cobblestone_blue", () -> new CobblestoneSlab(Block.Properties.copy(Blocks.COBBLESTONE), DyeColorless.BLUE));
@@ -411,7 +410,6 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> slab_sandstone_red = BLOCKS.register("slab_sandstone_red", () -> new SandstoneSlab(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.RED));
   public static final RegistryObject<Block> slab_sandstone_white = BLOCKS.register("slab_sandstone_white", () -> new SandstoneSlab(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.WHITE));
   public static final RegistryObject<Block> slab_sandstone_yellow = BLOCKS.register("slab_sandstone_yellow", () -> new SandstoneSlab(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.YELLOW));
-
   //
   public static final RegistryObject<Block> slab_brick_none = BLOCKS.register("slab_brick_none", () -> new BrickSlab(Block.Properties.copy(Blocks.BRICKS), DyeColorless.NONE));
   public static final RegistryObject<Block> slab_brick_black = BLOCKS.register("slab_brick_black", () -> new BrickSlab(Block.Properties.copy(Blocks.BRICKS), DyeColorless.BLACK));
@@ -648,7 +646,6 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> wall_brick_white = BLOCKS.register("wall_brick_white", () -> new BrickWall(Block.Properties.copy(Blocks.BRICKS), DyeColorless.WHITE));
   public static final RegistryObject<Block> wall_brick_yellow = BLOCKS.register("wall_brick_yellow", () -> new BrickWall(Block.Properties.copy(Blocks.BRICKS), DyeColorless.YELLOW));
   //
-
   public static final RegistryObject<Block> fence_planks_none = BLOCKS.register("fence_planks_none", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
   public static final RegistryObject<Block> fence_planks_black = BLOCKS.register("fence_planks_black", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
   public static final RegistryObject<Block> fence_planks_blue = BLOCKS.register("fence_planks_blue", () -> new PlanksFence(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLUE));

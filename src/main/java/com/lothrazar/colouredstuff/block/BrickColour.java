@@ -12,7 +12,7 @@ public class BrickColour extends BlockFlib implements IHasColor {
   public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public BrickColour(Properties p, DyeColorless s) {
-    super(p); 
+    super(p);
     RAINBOW.put(s, this);
     this.color = s;
   }

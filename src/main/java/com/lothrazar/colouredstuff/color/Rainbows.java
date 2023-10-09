@@ -1,6 +1,5 @@
 package com.lothrazar.colouredstuff.color;
 
-import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.lib.BlockFlibPillar;
@@ -19,22 +18,17 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 
 public class Rainbows {
 
-  @Deprecated
-  public static Map<Block, DyeColorless> KEYS = new HashMap<>();
   public static final int MAX_CONNECTED_UPDATE = 24;
 
   public static boolean rotateToColor(Map<DyeColorless, Block> rainbow, Level world, BlockPos pos, DyeColorless originalSourceColour, DyeColorless newColour) {
     //
     BlockState stateFromPos = world.getBlockState(pos);
-    // 
-    //
     DyeColorless oldColour = null;
     if (stateFromPos.getBlock() instanceof IHasColor cblock) {
       oldColour = cblock.getColor();
     }
     if ((oldColour == null || newColour != oldColour)
         && (originalSourceColour == null || oldColour == originalSourceColour)) {
-      //        var rainbow = cblock.getRainbow();
       BlockState newState = rainbow.get(newColour).defaultBlockState();
       //life hacks
       if (newState.hasProperty(BlockFlibPillar.AXIS) && stateFromPos.hasProperty(BlockFlibPillar.AXIS))
@@ -53,7 +47,7 @@ public class Rainbows {
         newState = newState.setValue(StairBlock.SHAPE, stateFromPos.getValue(StairBlock.SHAPE));
       //
       //ok continue as normal
-      ModColourable.LOGGER.info(pos + " set to  " + newColour);
+      ModColourable.LOGGER.debug(pos + " set to  " + newColour);
       world.removeBlock(pos, false);
       return world.setBlock(pos, newState, 0);
     }
@@ -77,7 +71,6 @@ public class Rainbows {
       }
     }
   }
-
   //world interactions
   //DyeColorless originalSourceColour can be null if previous block was non-mod
   //  public static void rotateColourByEvent(RightClickBlock event, Map<DyeColorless, Block> rainbow, DyeColorless originalSourceColour) {
