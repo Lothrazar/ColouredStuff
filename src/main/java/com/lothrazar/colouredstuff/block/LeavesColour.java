@@ -25,12 +25,12 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraftforge.common.IForgeShearable;
 
-public class LeavesColour extends BlockFlib implements IHasColor, SimpleWaterloggedBlock {
+public class LeavesColour extends BlockFlib implements IHasColor, SimpleWaterloggedBlock, IForgeShearable {
 
   public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
   public static final int DECAY_DISTANCE = 7;
-  //TODO: , IForgeShearable
   public static final IntegerProperty DISTANCE = BlockStateProperties.DISTANCE;
   public static final BooleanProperty PERSISTENT = BlockStateProperties.PERSISTENT;
   public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
