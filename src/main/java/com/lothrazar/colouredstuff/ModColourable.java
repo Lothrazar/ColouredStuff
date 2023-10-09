@@ -20,13 +20,22 @@ public class ModColourable {
     ColourableBlockRegistry.BLOCKS.register(eventBus);
     ColourableItemRegistry.ITEMS.register(eventBus);
     new PlayerUseEvents();
-    //TODO: door_
-    //TODO: chiseled_stone_
-    // wooden_button_
-    // stone_button_
-    // trapdoor_
+    //TODO: new SIMPLE blocks 
+    // chiseled_stone_bricks_
     // smooth_stone_
     // cracked_stone_bricks_
     // cut_sandstone_
+    // smooth_sandstone_
+    // TODO: new block types
+    // grass_  BUT bottom is only normal dirt, top changes 
+    // door_
+    // button_
+    // trapdoor_
+    // pressure_plate_
+    // sign_
+    // hanging_sign_
+    // TODO: big crazy extra stuff  - might not do these
+    // cobblestone: furnace, dropper, dispenser, observer, piston
+    //wood: CHEST, Barrel, BOATS!? , ladders
   }
 }

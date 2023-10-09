@@ -36,7 +36,6 @@ public class LogColour extends BlockFlibPillar {
   public Map<DyeColorless, Block> getRainbow() {
     return RAINBOW;
   }
-
   @Override
   public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
     return ((FireBlock) Blocks.FIRE).getBurnOdds(Blocks.OAK_LOG.defaultBlockState());

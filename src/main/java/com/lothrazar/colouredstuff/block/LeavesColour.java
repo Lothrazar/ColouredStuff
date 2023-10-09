@@ -27,6 +27,7 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.common.IForgeShearable;
 
+@SuppressWarnings("deprecation")
 public class LeavesColour extends BlockFlib implements IHasColor, SimpleWaterloggedBlock, IForgeShearable {
 
   public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
