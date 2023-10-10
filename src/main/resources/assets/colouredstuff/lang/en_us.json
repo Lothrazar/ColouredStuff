@@ -1,5 +1,23 @@
 {
 
+"block.colouredstuff.chiseled_stone_bricks_black" : "Black Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_blue" : "Blue Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_brown" : "Brown Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_cyan" : "Cyan Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_gray" : "Gray Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_green" : "Green Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_light_blue" : "Light Blue Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_light_gray" : "Light Gray Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_lime" : "Lime Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_magenta" : "Magenta Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_none" : "Colorless Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_orange" : "Orange Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_pink" : "Pink Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_purple" : "Purple Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_red" : "Red Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_white" : "White Chiseled Stone Bricks",
+"block.colouredstuff.chiseled_stone_bricks_yellow" : "Yellow Chiseled Stone Bricks",
+
 "block.colouredstuff.cut_sandstone_black" : "Black Cut Sandstone",
 "block.colouredstuff.cut_sandstone_blue" : "Blue Cut Sandstone",
 "block.colouredstuff.cut_sandstone_brown" : "Brown Cut Sandstone",

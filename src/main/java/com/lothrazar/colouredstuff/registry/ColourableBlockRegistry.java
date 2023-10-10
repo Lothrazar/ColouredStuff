@@ -3,6 +3,7 @@ package com.lothrazar.colouredstuff.registry;
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.block.BrickColour;
 import com.lothrazar.colouredstuff.block.BrickstoneColour;
+import com.lothrazar.colouredstuff.block.ChiseledBrickstoneColour;
 import com.lothrazar.colouredstuff.block.ChiseledColor;
 import com.lothrazar.colouredstuff.block.CobbleColour;
 import com.lothrazar.colouredstuff.block.CraftingColour;
@@ -213,7 +214,25 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<BrickstoneColour> stone_bricks_red = BLOCKS.register("stone_bricks_red", () -> new BrickstoneColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.RED));
   public static final RegistryObject<BrickstoneColour> stone_bricks_white = BLOCKS.register("stone_bricks_white", () -> new BrickstoneColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.WHITE));
   public static final RegistryObject<BrickstoneColour> stone_bricks_yellow = BLOCKS.register("stone_bricks_yellow", () -> new BrickstoneColour(Block.Properties.copy(Blocks.STONE_BRICKS), DyeColorless.YELLOW));
-  // 
+  //
+  public static final RegistryObject<Block> chiseled_stone_bricks_none = BLOCKS.register("chiseled_stone_bricks_none", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.NONE));
+  public static final RegistryObject<Block> chiseled_stone_bricks_black = BLOCKS.register("chiseled_stone_bricks_black", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.BLACK));
+  public static final RegistryObject<Block> chiseled_stone_bricks_blue = BLOCKS.register("chiseled_stone_bricks_blue", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.BLUE));
+  public static final RegistryObject<Block> chiseled_stone_bricks_brown = BLOCKS.register("chiseled_stone_bricks_brown", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.BROWN));
+  public static final RegistryObject<Block> chiseled_stone_bricks_cyan = BLOCKS.register("chiseled_stone_bricks_cyan", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.CYAN));
+  public static final RegistryObject<Block> chiseled_stone_bricks_gray = BLOCKS.register("chiseled_stone_bricks_gray", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.GRAY));
+  public static final RegistryObject<Block> chiseled_stone_bricks_green = BLOCKS.register("chiseled_stone_bricks_green", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.GREEN));
+  public static final RegistryObject<Block> chiseled_stone_bricks_light_blue = BLOCKS.register("chiseled_stone_bricks_light_blue", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> chiseled_stone_bricks_light_gray = BLOCKS.register("chiseled_stone_bricks_light_gray", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> chiseled_stone_bricks_lime = BLOCKS.register("chiseled_stone_bricks_lime", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.LIME));
+  public static final RegistryObject<Block> chiseled_stone_bricks_magenta = BLOCKS.register("chiseled_stone_bricks_magenta", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> chiseled_stone_bricks_orange = BLOCKS.register("chiseled_stone_bricks_orange", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> chiseled_stone_bricks_pink = BLOCKS.register("chiseled_stone_bricks_pink", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.PINK));
+  public static final RegistryObject<Block> chiseled_stone_bricks_purple = BLOCKS.register("chiseled_stone_bricks_purple", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> chiseled_stone_bricks_red = BLOCKS.register("chiseled_stone_bricks_red", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.RED));
+  public static final RegistryObject<Block> chiseled_stone_bricks_white = BLOCKS.register("chiseled_stone_bricks_white", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.WHITE));
+  public static final RegistryObject<Block> chiseled_stone_bricks_yellow = BLOCKS.register("chiseled_stone_bricks_yellow", () -> new ChiseledBrickstoneColour(Block.Properties.copy(Blocks.CHISELED_STONE_BRICKS), DyeColorless.YELLOW));
+  //
   public static final RegistryObject<Block> dirt_none = BLOCKS.register("dirt_none", () -> new DirtColour(Block.Properties.copy(Blocks.DIRT), DyeColorless.NONE));
   public static final RegistryObject<Block> dirt_black = BLOCKS.register("dirt_black", () -> new DirtColour(Block.Properties.copy(Blocks.DIRT), DyeColorless.BLACK));
   public static final RegistryObject<Block> dirt_blue = BLOCKS.register("dirt_blue", () -> new DirtColour(Block.Properties.copy(Blocks.DIRT), DyeColorless.BLUE));

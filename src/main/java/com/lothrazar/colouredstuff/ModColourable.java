@@ -22,10 +22,6 @@ public class ModColourable {
     new PlayerUseEvents();
     //TODO: new SIMPLE blocks 
     // chiseled_stone_bricks_
-    // smooth_stone_
-    // cracked_stone_bricks_
-    // cut_sandstone_
-    // smooth_sandstone_
     // TODO: new block types
     // grass_  BUT bottom is only normal dirt, top changes 
     // door_

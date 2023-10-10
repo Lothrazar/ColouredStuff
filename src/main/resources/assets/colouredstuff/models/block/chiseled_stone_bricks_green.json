@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+	"textures": {
+		"all": "colouredstuff:block/chiseled_bricks_green",
+		"particle": "colouredstuff:block/chiseled_bricks_green"
+	}
+}
