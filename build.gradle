@@ -136,6 +136,7 @@ dependencies {
     
 //optional dependencies
     implementation fg.deobf("curse.maven:cyclic-239286:4722579")
+    implementation fg.deobf("curse.maven:similsax-transtructors-233659:4648844")
     implementation fg.deobf("curse.maven:vein-creeper-907093:4742832")
     
     implementation fg.deobf("curse.maven:visual-workbench-500273:4612695")
