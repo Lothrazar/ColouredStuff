@@ -20,9 +20,7 @@ public class ModColourable {
     ColourableBlockRegistry.BLOCKS.register(eventBus);
     ColourableItemRegistry.ITEMS.register(eventBus);
     new PlayerUseEvents();
-    //TODO: new SIMPLE blocks 
-    // chiseled_stone_bricks_
-    // TODO: new block types
+    // TODO: ? new block types
     // grass_  BUT bottom is only normal dirt, top changes 
     // door_
     // button_
