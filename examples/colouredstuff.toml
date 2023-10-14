@@ -1,0 +1,12 @@
+
+#Colourable Stuff config
+[colouredstuff]
+
+	[colouredstuff.in_world_dye]
+		# If enabled, then vanilla blocks can also be dyed in world and converted to the modded block (only works if enabled=true also)
+		vanilla_override = true
+		# Also allows you to sneak and dye multiple blocks from the mod all at once for the same cost (only works if enabled=true also)
+		multi_block = true
+		# Use dye items on blocks in-world to change dye colour of target block
+		enabled = true
+

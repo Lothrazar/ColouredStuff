@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 import com.lothrazar.colouredstuff.color.PlayerUseEvents;
 import com.lothrazar.colouredstuff.registry.ColourableBlockRegistry;
 import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
+import com.lothrazar.colouredstuff.registry.ConfigColourable;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -16,6 +17,7 @@ public class ModColourable {
   public static final Logger LOGGER = LogManager.getLogger();
 
   public ModColourable() {
+    new ConfigColourable();
     IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
     ColourableBlockRegistry.BLOCKS.register(eventBus);
     ColourableItemRegistry.ITEMS.register(eventBus);
@@ -28,7 +30,7 @@ public class ModColourable {
     // pressure_plate_
     // sign_
     // hanging_sign_
-    // TODO: big crazy extra stuff  - might not do these
+    //------  big crazy extra stuff  - might not do these
     // cobblestone: furnace, dropper, dispenser, observer, piston
     //wood: CHEST, Barrel, BOATS!? , ladders
   }

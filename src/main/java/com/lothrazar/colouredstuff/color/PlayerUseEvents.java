@@ -15,6 +15,7 @@ import com.lothrazar.colouredstuff.block.SandstoneColour;
 import com.lothrazar.colouredstuff.block.SaplinColour;
 import com.lothrazar.colouredstuff.block.StoneColour;
 import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
+import com.lothrazar.colouredstuff.registry.ConfigColourable;
 import com.lothrazar.library.events.EventFlib;
 import com.lothrazar.library.util.ItemStackUtil;
 import net.minecraft.tags.BlockTags;
@@ -30,6 +31,9 @@ public class PlayerUseEvents extends EventFlib {
 
   @SubscribeEvent
   public void onRightClickBlock(RightClickBlock event) {
+    if (!ConfigColourable.IN_WORLD_DYE.get()) {
+      return;
+    }
     final ItemStack itemInHand = event.getItemStack();
     if (itemInHand.isEmpty()) {
       return;
@@ -51,13 +55,11 @@ public class PlayerUseEvents extends EventFlib {
     }
     //dye is non-null now
     boolean doConnected = false;
-    //TODO: config to allow right click to dye yes no. default true
     if (stateHit.getBlock() instanceof IHasColor block) {
       originalSourceColour = block.getColor();
-      doConnected = event.getEntity().isCrouching(); // TODO: standalone connected-multiblock config default true
-      //      Rainbows.rotateColourByEvent(event, block.getRainbow(), originalSourceColour, doConnected);
+      //if configs allows it, then sneaking/crouching does the multiblock 
+      doConnected = ConfigColourable.MULTI_DYE.get() && event.getEntity().isCrouching();
       var rainbow = block.getRainbow();
-      // Rainbows.rotateDye(rainbow, originalSourceColour, level, event.getPos(), event.getEntity(), itemInHand, DyeColorless.NONE, doConnected);
       boolean success = Rainbows.rotateToColor(rainbow, level, event.getPos(), originalSourceColour, dye);
       //new color is different, NOW update
       if (success) {
@@ -68,55 +70,49 @@ public class PlayerUseEvents extends EventFlib {
         }
       }
     }
-    //TODO: config to allow non-mod block dyes. default true
-    else if (stateHit.is(Blocks.DIRT)) {
-      Rainbows.rotateToColor(DirtColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+    else if (ConfigColourable.VANILLA_OVERRIDE.get()) {
+      if (stateHit.is(Blocks.DIRT)) {
+        Rainbows.rotateToColor(DirtColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
+      else if (stateHit.is(Blocks.FARMLAND)) {
+        Rainbows.rotateToColor(FarmlandColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
+      else if (stateHit.is(Blocks.DIRT_PATH)) {
+        Rainbows.rotateToColor(PathColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
+      else if (stateHit.is(Blocks.SANDSTONE)) {
+        Rainbows.rotateToColor(SandstoneColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
+      else if (stateHit.is(Blocks.CHISELED_SANDSTONE)) {
+        Rainbows.rotateToColor(ChiseledColor.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
+      else if (stateHit.is(Blocks.CHISELED_RED_SANDSTONE)) {
+        Rainbows.rotateToColor(ChiseledColor.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
+      else if (stateHit.is(Blocks.STONE)) {
+        Rainbows.rotateToColor(StoneColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
+      else if (stateHit.is(Blocks.COBBLESTONE)) {
+        Rainbows.rotateToColor(CobbleColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
+      else if (stateHit.is(Blocks.STONE_BRICKS)) {
+        Rainbows.rotateToColor(BrickstoneColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
+      else if (stateHit.is(Blocks.BRICKS)) {
+        Rainbows.rotateToColor(BrickColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
+      else if (stateHit.is(BlockTags.SAPLINGS)) {
+        Rainbows.rotateToColor(SaplinColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
+      else if (stateHit.is(BlockTags.LEAVES)) {
+        Rainbows.rotateToColor(LeavesColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
+      else if (stateHit.is(BlockTags.LOGS)) {
+        Rainbows.rotateToColor(LogColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
+      else if (stateHit.is(BlockTags.PLANKS)) {
+        Rainbows.rotateToColor(PlanksColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
+      }
     }
-    else if (stateHit.is(Blocks.FARMLAND)) {
-      Rainbows.rotateToColor(FarmlandColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
-    }
-    else if (stateHit.is(Blocks.DIRT_PATH)) {
-      Rainbows.rotateToColor(PathColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
-    }
-    else if (stateHit.is(Blocks.SANDSTONE)) {
-      Rainbows.rotateToColor(SandstoneColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
-    }
-    else if (stateHit.is(Blocks.CHISELED_SANDSTONE)) {
-      Rainbows.rotateToColor(ChiseledColor.RAINBOW, level, event.getPos(), originalSourceColour, dye);
-    }
-    else if (stateHit.is(Blocks.CHISELED_RED_SANDSTONE)) {
-      Rainbows.rotateToColor(ChiseledColor.RAINBOW, level, event.getPos(), originalSourceColour, dye);
-    }
-    else if (stateHit.is(Blocks.STONE)) {
-      Rainbows.rotateToColor(StoneColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
-    }
-    else if (stateHit.is(Blocks.COBBLESTONE)) {
-      Rainbows.rotateToColor(CobbleColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
-    }
-    else if (stateHit.is(Blocks.STONE_BRICKS)) {
-      Rainbows.rotateToColor(BrickstoneColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
-    }
-    else if (stateHit.is(Blocks.BRICKS)) {
-      Rainbows.rotateToColor(BrickColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
-    }
-    else if (stateHit.is(BlockTags.SAPLINGS)) {
-      Rainbows.rotateToColor(SaplinColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
-    }
-    else if (stateHit.is(BlockTags.LEAVES)) {
-      Rainbows.rotateToColor(LeavesColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
-    }
-    else if (stateHit.is(BlockTags.LOGS)) {
-      Rainbows.rotateToColor(LogColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
-    }
-    else if (stateHit.is(BlockTags.PLANKS)) {
-      Rainbows.rotateToColor(PlanksColour.RAINBOW, level, event.getPos(), originalSourceColour, dye);
-    }
-    // TODO: new mod for : RECIPE: for in-world conversion
-    // needs some sort of rainbow type registry
-    // {"type":"colouredstuff:dye",  "rainbow_type":"DIRT", "target":{"block":"minecraft:dirt"}}
-    // {"type":"colouredstuff:dye",  "rainbow_type":"PLANKS", "target":{"tag":"minecraft:planks"}}
-    //TODO: standalone mod would also have to build all Vanilla rainbow types!? : candle, bed, banner?, glass, glass_panes, shulker?,terracotta, concrete, 
-    // {"type":"colouredstuff:dye",  "rainbow_type":"SAPLINGS", "target":{"tag":"minecraft:saplings"}}
-    // {"type":"colouredstuff:dye",  "rainbow_type":"CONCRETE", "target":{"tag":"minecraft:concrete_powder"}}
   }
 }
