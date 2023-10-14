@@ -51,7 +51,6 @@ public class PlayerUseEvents extends EventFlib {
     }
     //dye is non-null now
     boolean doConnected = false;
-
     //TODO: config to allow right click to dye yes no. default true
     if (stateHit.getBlock() instanceof IHasColor block) {
       originalSourceColour = block.getColor();

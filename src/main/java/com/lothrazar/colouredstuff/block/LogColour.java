@@ -36,14 +36,15 @@ public class LogColour extends BlockFlibPillar {
   public Map<DyeColorless, Block> getRainbow() {
     return RAINBOW;
   }
+
   @Override
   public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-    return ((FireBlock) Blocks.FIRE).getBurnOdds(Blocks.OAK_LOG.defaultBlockState());
+    return ((FireBlock) Blocks.FIRE).getFlammability(Blocks.OAK_PLANKS.defaultBlockState(), level, pos, direction);
   }
 
   @Override
   public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
-    return ((FireBlock) Blocks.FIRE).getIgniteOdds(Blocks.OAK_LOG.defaultBlockState());
+    return ((FireBlock) Blocks.FIRE).getFireSpreadSpeed(Blocks.OAK_PLANKS.defaultBlockState(), level, pos, direction);
   }
 
   @Override

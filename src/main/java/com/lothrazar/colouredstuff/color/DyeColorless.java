@@ -14,6 +14,7 @@ public enum DyeColorless implements StringRepresentable {
 
   public static final Map<DyeColorless, DyeColor> TOCOLOR = new HashMap<>() {
 
+    private static final long serialVersionUID = 445285689922340002L;
     {
       put(DyeColorless.WHITE, DyeColor.WHITE);
       put(DyeColorless.ORANGE, DyeColor.ORANGE);

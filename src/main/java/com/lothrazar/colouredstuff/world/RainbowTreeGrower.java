@@ -17,10 +17,12 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 
+@SuppressWarnings({ "unchecked", "rawtypes" })
 public class RainbowTreeGrower extends AbstractTreeGrower {
 
   public static final Map<DyeColorless, ResourceKey> RAINBOW_OF_TREES = new HashMap<>() {
 
+    private static final long serialVersionUID = -8508257691284548455L;
     {
       put(DyeColorless.BLACK, FeatureUtils.createKey(ModColourable.MODID + ":tree_black"));
       put(DyeColorless.BLUE, FeatureUtils.createKey(ModColourable.MODID + ":tree_blue"));

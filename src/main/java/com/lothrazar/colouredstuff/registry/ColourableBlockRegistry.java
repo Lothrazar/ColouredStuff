@@ -105,7 +105,6 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> log_stripped_red = BLOCKS.register("log_stripped_red", () -> new StrippedLogColour(Block.Properties.copy(Blocks.OAK_LOG), DyeColorless.RED));
   public static final RegistryObject<Block> log_stripped_white = BLOCKS.register("log_stripped_white", () -> new StrippedLogColour(Block.Properties.copy(Blocks.OAK_LOG), DyeColorless.WHITE));
   public static final RegistryObject<Block> log_stripped_yellow = BLOCKS.register("log_stripped_yellow", () -> new StrippedLogColour(Block.Properties.copy(Blocks.OAK_LOG), DyeColorless.YELLOW));
-
   //
   public static final RegistryObject<CraftingColour> crafting_table_none = BLOCKS.register("crafting_table_none", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.NONE));
   public static final RegistryObject<CraftingColour> crafting_table_black = BLOCKS.register("crafting_table_black", () -> new CraftingColour(Block.Properties.copy(Blocks.CRAFTING_TABLE), DyeColorless.BLACK));
