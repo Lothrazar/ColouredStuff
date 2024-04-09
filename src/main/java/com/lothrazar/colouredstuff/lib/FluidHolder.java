@@ -1,5 +1,6 @@
 package com.lothrazar.colouredstuff.lib;
 
+import com.lothrazar.colouredstuff.registry.ConfigColourable;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
@@ -22,8 +23,12 @@ public class FluidHolder {
   }
 
   public static FluidType.Properties fluidtypeProperties() {
+    return fluidtypeProperties(ConfigColourable.infWater());
+  }
+
+  public static FluidType.Properties fluidtypeProperties(boolean isInfinite) {
     return FluidType.Properties.create()
-        .canConvertToSource(true)
+        .canConvertToSource(isInfinite)
         .canExtinguish(true)
         .canSwim(true)
         .canHydrate(true)

@@ -10,3 +10,7 @@
 		# Use dye items on blocks in-world to change dye colour of target block
 		enabled = true
 
+	[colouredstuff.water]
+		# Is the dyed water an infinite source like regular water where new source blocks get generated
+		infinite = true
+

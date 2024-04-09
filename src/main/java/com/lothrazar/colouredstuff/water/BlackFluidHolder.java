@@ -61,4 +61,5 @@ public class BlackFluidHolder extends FluidHolder {
   private static ForgeFlowingFluid.Properties makeProperties() {
     return new ForgeFlowingFluid.Properties(FTYPE, STILL, FLOWING).bucket(BUCKET).block(BLOCK);
   }
+
 }

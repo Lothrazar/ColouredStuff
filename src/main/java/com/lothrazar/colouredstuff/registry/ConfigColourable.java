@@ -7,6 +7,7 @@ import net.minecraftforge.common.ForgeConfigSpec.BooleanValue;
 
 public class ConfigColourable extends ConfigTemplate {
 
+  public static BooleanValue INFINITE_WATER;
   public static BooleanValue IN_WORLD_DYE;
   public static BooleanValue MULTI_DYE;
   public static BooleanValue VANILLA_OVERRIDE;
@@ -15,6 +16,7 @@ public class ConfigColourable extends ConfigTemplate {
     final ForgeConfigSpec.Builder BUILDER = builder();
     BUILDER.comment("Colourable Stuff config").push(ModColourable.MODID);
     //
+    //
     IN_WORLD_DYE = BUILDER.comment(" Use dye items on blocks in-world to change dye colour of target block")
         .define("in_world_dye.enabled", true);
     MULTI_DYE = BUILDER.comment(" Also allows you to sneak and dye multiple blocks from the mod all at once for the same cost (only works if enabled=true also)")
@@ -22,8 +24,15 @@ public class ConfigColourable extends ConfigTemplate {
     VANILLA_OVERRIDE = BUILDER.comment(" If enabled, then vanilla blocks can also be dyed in world and converted to the modded block (only works if enabled=true also)")
         .define("in_world_dye.vanilla_override", true);
     //
+    INFINITE_WATER = BUILDER.comment(" Is the dyed water an infinite source like regular water where new source blocks get generated")
+        .define("water.infinite", true);
+    //
     BUILDER.pop();
     CONFIG = BUILDER.build();
+  }
+
+  public static boolean infWater() {
+    return INFINITE_WATER.get();
   }
 
   public ConfigColourable() {
