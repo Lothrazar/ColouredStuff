@@ -1,0 +1,31 @@
+{
+	"type": "cyclic:solidifier",
+	"ingredients": [
+		{
+			"item": "minecraft:bucket"
+		}
+	],
+	"energy": {
+		"rfpertick": 10,
+		"ticks": 10
+	},
+	"mix": {
+		"fluid": "colouredstuff:water_light_blue",
+		"count": 1000
+	},
+	"result": {
+		"item": "colouredstuff:water_bucket_light_blue",
+		"count": 1
+	},
+	"conditions": [
+		{
+			"values": [
+				{
+					"modid": "cyclic",
+					"type": "forge:mod_loaded"
+				}
+			],
+			"type": "forge:and"
+		}
+	]
+}

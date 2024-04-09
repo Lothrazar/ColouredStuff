@@ -148,9 +148,9 @@ dependencies {
     implementation fg.deobf("curse.maven:cofh-core-69162:4970669")
     implementation fg.deobf("curse.maven:thermal-foundation-222880:4979840")
     implementation fg.deobf("curse.maven:thermal-dynamics-227443:4970699")
-
+*/
     
-     */
+     
 
   //  implementation fg.deobf("curse.maven:ex-deorum-901420:4747081")
   //  implementation fg.deobf("curse.maven:caveopolis-mod-639186:4742865")
