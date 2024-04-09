@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "colouredstuff:water_black",
+    "colouredstuff:water_blue",
+    "colouredstuff:water_brown",
+    "colouredstuff:water_cyan",
+    "colouredstuff:water_gray",
+    "colouredstuff:water_green",
+    "colouredstuff:water_light_blue",
+    "colouredstuff:water_light_gray",
+    "colouredstuff:water_lime",
+    "colouredstuff:water_magenta",
+    "colouredstuff:water_none",
+    "colouredstuff:water_orange",
+    "colouredstuff:water_pink",
+    "colouredstuff:water_purple",
+    "colouredstuff:water_red",
+    "colouredstuff:water_white",
+    "colouredstuff:water_yellow"
+  ]
+}

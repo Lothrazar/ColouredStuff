@@ -20,7 +20,7 @@ version="${mod_version}" #mandatory
  
 displayName="colouredstuff" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
-updateJSONURL="https://raw.githubusercontent.com/Lothrazar/colouredstuff/trunk/1.20/update.json" #optional
+updateJSONURL="https://raw.githubusercontent.com/Lothrazar/colouredstuff/trunk/1.20.1/update.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI # replace with your website
 displayURL="https://www.curseforge.com/minecraft/mc-mods/coloured-stuff"
 
