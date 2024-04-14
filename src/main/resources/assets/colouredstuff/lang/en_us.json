@@ -18,7 +18,6 @@
 "item.colouredstuff.water_bucket_white":"White Water Bucket",
 "item.colouredstuff.water_bucket_yellow":"Yellow Water Bucket",
 
-
 "fluid_type.colouredstuff.water_black":"Black Water",
 "fluid_type.colouredstuff.water_blue":"Blue Water",
 "fluid_type.colouredstuff.water_brown":"Brown Water",
@@ -36,6 +35,24 @@
 "fluid_type.colouredstuff.water_red":"Red Water",
 "fluid_type.colouredstuff.water_yellow":"Yellow Water",
 "fluid_type.colouredstuff.water_white":"White Water",
+
+"block.colouredstuff.water_black_block":"Black Water",
+"block.colouredstuff.water_blue_block":"Blue Water",
+"block.colouredstuff.water_brown_block":"Brown Water",
+"block.colouredstuff.water_cyan_block":"Cyan Water",
+"block.colouredstuff.water_gray_block":"Gray Water",
+"block.colouredstuff.water_green_block":"Green Water",
+"block.colouredstuff.water_light_blue_block":"Light Blue Water",
+"block.colouredstuff.water_light_gray_block":"Light Gray Water",
+"block.colouredstuff.water_lime_block":"Lime Water",
+"block.colouredstuff.water_magenta_block":"Magenta Water",
+"block.colouredstuff.water_none_block":"Colourless Water",
+"block.colouredstuff.water_orange_block":"Orange Water",
+"block.colouredstuff.water_pink_block":"Pink Water",
+"block.colouredstuff.water_purple_block":"Purple Water",
+"block.colouredstuff.water_red_block":"Red Water",
+"block.colouredstuff.water_yellow_block":"Yellow Water",
+"block.colouredstuff.water_white_block":"White Water",
 
 "block.colouredstuff.chiseled_stone_bricks_black" : "Black Chiseled Stone Bricks",
 "block.colouredstuff.chiseled_stone_bricks_blue" : "Blue Chiseled Stone Bricks",

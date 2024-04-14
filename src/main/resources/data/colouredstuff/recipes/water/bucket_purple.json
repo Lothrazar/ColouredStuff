@@ -6,11 +6,11 @@
     },{
       "item": "minecraft:bucket"
     },{
-      "tag": "forge:dyes/red"
+      "tag": "forge:dyes/purple"
     }
   ],
   "result": {
-    "item": "colouredstuff:water_bucket_red",
+    "item": "colouredstuff:water_bucket_purple",
     "count": 1
   }
 }

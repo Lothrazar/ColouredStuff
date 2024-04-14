@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.color.IHasColor;
-import com.lothrazar.colouredstuff.library.BlockAxisPillar;
+import com.lothrazar.library.block.BlockAxisPillar;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.UseOnContext;

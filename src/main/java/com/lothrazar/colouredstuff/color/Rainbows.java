@@ -2,7 +2,7 @@ package com.lothrazar.colouredstuff.color;
 
 import java.util.Map;
 import com.lothrazar.colouredstuff.ModColourable;
-import com.lothrazar.colouredstuff.library.BlockAxisPillar;
+import com.lothrazar.library.block.BlockAxisPillar;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.player.Player;
