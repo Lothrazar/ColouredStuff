@@ -1,6 +1,5 @@
-package com.lothrazar.colouredstuff.lib;
+package com.lothrazar.colouredstuff.library;
 
-import com.lothrazar.colouredstuff.color.IHasColor;
 import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
@@ -12,11 +11,11 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 
-public abstract class BlockFlibPillar extends BlockFlib implements IHasColor {
+public abstract class BlockAxisPillar extends BlockFlib {
 
   public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
-  public BlockFlibPillar(Properties p) {
+  public BlockAxisPillar(Properties p) {
     super(p, new BlockFlib.Settings());
   }
 

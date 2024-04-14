@@ -1,6 +1,5 @@
-package com.lothrazar.colouredstuff.lib;
+package com.lothrazar.colouredstuff.library;
 
-import com.lothrazar.colouredstuff.registry.ConfigColourable;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
@@ -11,6 +10,9 @@ import net.minecraftforge.fluids.FluidType;
 
 public class FluidHolder {
 
+  /**
+   * Builds default fluid-block properties that can be overridden
+   */
   public static Block.Properties blockProps() {
     return Block.Properties.of().liquid()
         .replaceable()
@@ -22,13 +24,12 @@ public class FluidHolder {
         .noLootTable();
   }
 
+  /**
+   * Builds default fluidtype properties that can be overridden
+   */
   public static FluidType.Properties fluidtypeProperties() {
-    return fluidtypeProperties(ConfigColourable.infWater());
-  }
-
-  public static FluidType.Properties fluidtypeProperties(boolean isInfinite) {
     return FluidType.Properties.create()
-        .canConvertToSource(isInfinite)
+        .canConvertToSource(false)
         .canExtinguish(true)
         .canSwim(true)
         .canHydrate(true)

@@ -3,7 +3,8 @@ package com.lothrazar.colouredstuff.block;
 import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
-import com.lothrazar.colouredstuff.lib.BlockFlibPillar;
+import com.lothrazar.colouredstuff.color.IHasColor;
+import com.lothrazar.colouredstuff.library.BlockAxisPillar;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.UseOnContext;
@@ -15,7 +16,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.ToolAction;
 import net.minecraftforge.common.ToolActions;
 
-public class LogColour extends BlockFlibPillar {
+public class LogColour extends BlockAxisPillar implements IHasColor {
 
   public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 

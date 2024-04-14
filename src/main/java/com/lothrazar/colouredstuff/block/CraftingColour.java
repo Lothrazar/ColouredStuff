@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.color.IHasColor;
-import com.lothrazar.colouredstuff.gui.CraftingMenuExt;
+import com.lothrazar.colouredstuff.library.CraftingMenuExt;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.MenuProvider;

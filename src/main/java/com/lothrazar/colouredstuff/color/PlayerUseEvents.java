@@ -42,7 +42,7 @@ public class PlayerUseEvents extends EventFlib {
     BlockState stateHit = level.getBlockState(event.getPos());
     DyeColorless originalSourceColour = null;
     DyeColorless dye = null;
-    if (itemInHand.is(ColourableItemRegistry.DYES_NONE)) {
+    if (itemInHand.is(ColourableItemRegistry.DYES_NONE_ITEMTAG)) {
       dye = DyeColorless.NONE;
     }
     else if (itemInHand.is(Tags.Items.DYES)) {

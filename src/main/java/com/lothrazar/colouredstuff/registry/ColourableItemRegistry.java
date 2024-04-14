@@ -714,7 +714,7 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> gate_planks_white = ITEMS.register("gate_planks_white", () -> new ItemColour(ColourableBlockRegistry.gate_planks_white.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
   public static final RegistryObject<Item> gate_planks_yellow = ITEMS.register("gate_planks_yellow", () -> new ItemColour(ColourableBlockRegistry.gate_planks_yellow.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
   //
-  public static final TagKey<Item> DYES_NONE = ItemTags.create(new ResourceLocation("forge", "dyes/none"));
+  public static final TagKey<Item> DYES_NONE_ITEMTAG = ItemTags.create(new ResourceLocation("forge", "dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));
 
   @SubscribeEvent

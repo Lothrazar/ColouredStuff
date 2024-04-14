@@ -1,15 +1,14 @@
-package com.lothrazar.colouredstuff.water;
+package com.lothrazar.colouredstuff.fluid.water;
 
 import java.util.function.Consumer;
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.block.ColourLiquidBlock;
-import com.lothrazar.colouredstuff.lib.FluidHolder;
+import com.lothrazar.colouredstuff.fluid.InfiniteFluidHolder;
 import com.lothrazar.colouredstuff.registry.ColourableBlockRegistry;
 import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
 import com.lothrazar.colouredstuff.registry.FluidColourRegistry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BucketItem;
-import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.LiquidBlock;
@@ -20,9 +19,9 @@ import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.registries.RegistryObject;
 
 //Thanks to example https://github.com/MinecraftForge/MinecraftForge/blob/1.15.x/src/test/java/net/minecraftforge/debug/fluid/NewFluidTest.java
-public class LightblueFluidHolder extends FluidHolder {
+public class NoneFluidHolder extends InfiniteFluidHolder {
 
-  private static final String COLOUR = "light_blue";
+  private static final String COLOUR = "none";
   private static final String TYPE = "water";
   private static final String ID = TYPE + "_" + COLOUR;
   private static final ResourceLocation FLUID_FLOWING = new ResourceLocation(ModColourable.MODID, "block/" + TYPE + "/" + TYPE + "_flow_" + COLOUR);
@@ -30,7 +29,7 @@ public class LightblueFluidHolder extends FluidHolder {
   public static RegistryObject<FlowingFluid> FLOWING = FluidColourRegistry.FLUIDS.register(ID + "_flowing", () -> new ForgeFlowingFluid.Flowing(makeProperties()));
   public static RegistryObject<FlowingFluid> STILL = FluidColourRegistry.FLUIDS.register(ID, () -> new ForgeFlowingFluid.Source(makeProperties()));
   public static RegistryObject<LiquidBlock> BLOCK = ColourableBlockRegistry.BLOCKS.register(ID + "_block", () -> new ColourLiquidBlock(STILL,
-      blockProps().mapColor(DyeColor.LIGHT_BLUE)));
+      blockProps()));
   public static RegistryObject<Item> BUCKET = ColourableItemRegistry.ITEMS.register(TYPE + "_bucket_" + COLOUR, () -> new BucketItem(STILL, new Item.Properties()
       .craftRemainder(Items.BUCKET).stacksTo(1)));
   public static RegistryObject<FluidType> FTYPE = FluidColourRegistry.FLUID_TYPES.register(ID, () -> new FluidType(fluidtypeProperties()) {

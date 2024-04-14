@@ -2,7 +2,7 @@ package com.lothrazar.colouredstuff.color;
 
 import java.util.Map;
 import com.lothrazar.colouredstuff.ModColourable;
-import com.lothrazar.colouredstuff.lib.BlockFlibPillar;
+import com.lothrazar.colouredstuff.library.BlockAxisPillar;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.player.Player;
@@ -31,8 +31,8 @@ public class Rainbows {
         && (originalSourceColour == null || oldColour == originalSourceColour)) {
       BlockState newState = rainbow.get(newColour).defaultBlockState();
       //life hacks
-      if (newState.hasProperty(BlockFlibPillar.AXIS) && stateFromPos.hasProperty(BlockFlibPillar.AXIS))
-        newState = newState.setValue(BlockFlibPillar.AXIS, stateFromPos.getValue(BlockFlibPillar.AXIS));
+      if (newState.hasProperty(BlockAxisPillar.AXIS) && stateFromPos.hasProperty(BlockAxisPillar.AXIS))
+        newState = newState.setValue(BlockAxisPillar.AXIS, stateFromPos.getValue(BlockAxisPillar.AXIS));
       if (newState.hasProperty(SlabBlock.TYPE) && stateFromPos.hasProperty(SlabBlock.TYPE))
         newState = newState.setValue(SlabBlock.TYPE, stateFromPos.getValue(SlabBlock.TYPE));
       if (newState.hasProperty(BlockStateProperties.WATERLOGGED) && stateFromPos.hasProperty(BlockStateProperties.WATERLOGGED))
@@ -71,26 +71,7 @@ public class Rainbows {
       }
     }
   }
-  //world interactions
-  //DyeColorless originalSourceColour can be null if previous block was non-mod
-  //  public static void rotateColourByEvent(RightClickBlock event, Map<DyeColorless, Block> rainbow, DyeColorless originalSourceColour) {
-  //    //    boolean doConnected = event.getEntity().isCrouching();
-  //    final ItemStack itemInHand = event.getItemStack();
-  //    final Level level = event.getLevel();
-  //    if (itemInHand.is(ColourableItemRegistry.DYES_NONE)) {
-  //      rotateDye(rainbow, originalSourceColour, level, event.getPos(), event.getEntity(), itemInHand, DyeColorless.NONE, false);
-  //    }
-  //    else if (itemInHand.is(Tags.Items.DYES)) {
-  //      DyeColorless dye = DyeColorless.getDyeFromItem(itemInHand);
-  //      if (dye != null) {
-  //        rotateDye(rainbow, originalSourceColour, level, event.getPos(), event.getEntity(), itemInHand, dye, false);
-  //      }
-  //      else { //this never happens
-  //        ModColourable.LOGGER.error(itemInHand);
-  //        ModColourable.LOGGER.error("This is tagged as a dye item but its not a vanilla 16x dye  " + dye);
-  //      }
-  //    }
-  //  }
+
 
   static void rotateDye(Map<DyeColorless, Block> rainbow,
       DyeColorless originalSourceColour,

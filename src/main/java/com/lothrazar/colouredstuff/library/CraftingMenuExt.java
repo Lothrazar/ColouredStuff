@@ -1,18 +1,21 @@
-package com.lothrazar.colouredstuff.gui;
+package com.lothrazar.colouredstuff.library;
 
-import com.lothrazar.colouredstuff.block.CraftingColour;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.inventory.CraftingMenu;
+import net.minecraft.world.level.block.CraftingTableBlock;
 
+/**
+ * Wrapper to extend the regular minecraft:crafting_table's gui container to allow custom blocks to re-use the GUI
+ */
 public class CraftingMenuExt extends CraftingMenu {
 
   private ContainerLevelAccess cla; // mirrors this.access
-  private CraftingColour block;
+  private CraftingTableBlock block;
 
-  public CraftingMenuExt(int id, Inventory inv, ContainerLevelAccess cla, CraftingColour block) {
+  public CraftingMenuExt(int id, Inventory inv, ContainerLevelAccess cla, CraftingTableBlock block) {
     super(id, inv, cla);
     this.cla = cla;
     this.block = block;

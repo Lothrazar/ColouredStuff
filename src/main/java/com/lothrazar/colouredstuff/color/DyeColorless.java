@@ -37,11 +37,7 @@ public enum DyeColorless implements StringRepresentable {
   };
 
   public static DyeColorless getDyeFromItem(ItemStack itemInHand) {
-    //cheap hack
-    //    if (itemInHand.getItem() instanceof DyeItem newColor) {
-    //      return toColorless(newColor.getDyeColor());
-    //    }
-    //    else 
+    // cheap hacks lol
     if (itemInHand.is(Tags.Items.DYES_WHITE)) {
       return WHITE;
     }
@@ -93,25 +89,10 @@ public enum DyeColorless implements StringRepresentable {
     if (itemInHand.is(Tags.Items.DYES_YELLOW)) {
       return YELLOW;
     }
-    else if (itemInHand.is(ColourableItemRegistry.DYES_NONE)) {
-      return NONE;
+    else if (itemInHand.is(ColourableItemRegistry.DYES_NONE_ITEMTAG)) {
+      return NONE; // ^ the custom tag added by this mod
     }
     return null;
-  }
-
-  @Deprecated
-  public boolean isColorless() {
-    return this == NONE;
-  }
-
-  @Deprecated
-  public static DyeColorless toColorless(DyeColor color) {
-    for (Map.Entry<DyeColorless, DyeColor> entry : TOCOLOR.entrySet()) {
-      if (entry.getValue() == color) {
-        return entry.getKey();
-      }
-    }
-    return DyeColorless.NONE;
   }
 
   @Override
