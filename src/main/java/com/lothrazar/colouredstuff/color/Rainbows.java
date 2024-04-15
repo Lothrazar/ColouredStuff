@@ -1,7 +1,6 @@
 package com.lothrazar.colouredstuff.color;
 
 import java.util.Map;
-import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.library.block.BlockAxisPillar;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -47,7 +46,6 @@ public class Rainbows {
         newState = newState.setValue(StairBlock.SHAPE, stateFromPos.getValue(StairBlock.SHAPE));
       //
       //ok continue as normal
-      ModColourable.LOGGER.debug(pos + " set to  " + newColour);
       world.removeBlock(pos, false);
       return world.setBlock(pos, newState, 0);
     }
@@ -71,7 +69,6 @@ public class Rainbows {
       }
     }
   }
-
 
   static void rotateDye(Map<DyeColorless, Block> rainbow,
       DyeColorless originalSourceColour,

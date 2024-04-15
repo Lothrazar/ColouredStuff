@@ -3,6 +3,7 @@ package com.lothrazar.colouredstuff.fluid.water;
 import java.util.function.Consumer;
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.block.ColourLiquidBlock;
+import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.fluid.InfiniteFluidHolder;
 import com.lothrazar.colouredstuff.registry.ColourableBlockRegistry;
 import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
@@ -19,7 +20,6 @@ import net.minecraftforge.fluids.FluidType;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.registries.RegistryObject;
 
-//Thanks to example https://github.com/MinecraftForge/MinecraftForge/blob/1.15.x/src/test/java/net/minecraftforge/debug/fluid/NewFluidTest.java
 public class PinkFluidHolder extends InfiniteFluidHolder {
 
   private static final String COLOUR = "pink";
@@ -30,7 +30,7 @@ public class PinkFluidHolder extends InfiniteFluidHolder {
   public static RegistryObject<FlowingFluid> FLOWING = FluidColourRegistry.FLUIDS.register(ID + "_flowing", () -> new ForgeFlowingFluid.Flowing(makeProperties()));
   public static RegistryObject<FlowingFluid> STILL = FluidColourRegistry.FLUIDS.register(ID, () -> new ForgeFlowingFluid.Source(makeProperties()));
   public static RegistryObject<LiquidBlock> BLOCK = ColourableBlockRegistry.BLOCKS.register(ID + "_block", () -> new ColourLiquidBlock(STILL,
-      blockProps().mapColor(DyeColor.PINK)));
+      blockProps().mapColor(DyeColor.PINK), DyeColorless.PINK));
   public static RegistryObject<Item> BUCKET = ColourableItemRegistry.ITEMS.register(TYPE + "_bucket_" + COLOUR, () -> new BucketItem(STILL, new Item.Properties()
       .craftRemainder(Items.BUCKET).stacksTo(1)));
   public static RegistryObject<FluidType> FTYPE = FluidColourRegistry.FLUID_TYPES.register(ID, () -> new FluidType(fluidtypeProperties()) {

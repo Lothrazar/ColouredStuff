@@ -46,5 +46,4 @@ public class FluidColourRegistry {
   public static final InfiniteFluidHolder RED = new RedFluidHolder();
   public static final InfiniteFluidHolder WHITE = new WhiteFluidHolder();
   public static final InfiniteFluidHolder YELLOW = new YellowFluidHolder();
-
 }

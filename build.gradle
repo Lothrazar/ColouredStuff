@@ -131,16 +131,32 @@ repositories {
 
 dependencies {
 
-// implementation fg.deobf("blank:flib-1.20.1:${flib_version}")
-   implementation fg.deobf("curse.maven:flib-661261:${flib_file}")
-    
+    // Specify the version of Minecraft to use. 
+    // Any artifact can be supplied so long as it has a "userdev" classifier artifact and is a compatible patcher artifact.
+    // The "userdev" classifier will be requested and setup by ForgeGradle.
+    // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
+    // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
+    minecraft "net.neoforged:forge:${minecraft_version}-${neo_version}"
+
+     
+  // implementation fg.deobf("blank:flib-1.20.1:${flib_version}")
+  implementation fg.deobf("curse.maven:flib-661261:${flib_file}")
+     
+     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
+     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
+     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
+
+
 //optional dependencies
-   //  implementation fg.deobf("curse.maven:puzzles-lib-495476:4707419")
-  //   implementation fg.deobf("curse.maven:visual-workbench-500273:4612695")
-   //    implementation fg.deobf("curse.maven:vein-creeper-907093:4742832")
-   /*
-     implementation fg.deobf("curse.maven:similsax-transtructors-233659:4648844")
-     implementation fg.deobf("curse.maven:cyclic-239286:4722579")
+/*
+    implementation fg.deobf("com.blamejared.crafttweaker:CraftTweaker-forge-${minecraft_version}:${crafttweaker_version}")
+  
+    implementation fg.deobf("curse.maven:puzzles-lib-495476:4707419")
+    implementation fg.deobf("curse.maven:visual-workbench-500273:4612695")
+    implementation fg.deobf("curse.maven:vein-creeper-907093:4742832")
+   
+    implementation fg.deobf("curse.maven:similsax-transtructors-233659:4648844")
+    implementation fg.deobf("curse.maven:cyclic-239286:4722579")
      
     implementation fg.deobf("curse.maven:titanium-287342:5151228")
     implementation fg.deobf("curse.maven:industrial-foregoing-266515:5240372")
@@ -150,40 +166,7 @@ dependencies {
     implementation fg.deobf("curse.maven:thermal-dynamics-227443:4970699")
 */
     
-     
 
-  //  implementation fg.deobf("curse.maven:ex-deorum-901420:4747081")
-  //  implementation fg.deobf("curse.maven:caveopolis-mod-639186:4742865")
-  //  implementation fg.deobf("curse.maven:recipes-library-398351:4628674")
-  //  implementation fg.deobf("com.blamejared.crafttweaker:CraftTweaker-forge-${minecraft_version}:${crafttweaker_version}")
-    
-    // Specify the version of Minecraft to use. 
-    // Any artifact can be supplied so long as it has a "userdev" classifier artifact and is a compatible patcher artifact.
-    // The "userdev" classifier will be requested and setup by ForgeGradle.
-    // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
-    // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
-    minecraft "net.neoforged:forge:${minecraft_version}-${neo_version}"
-
-     
- //    compileOnly fg.deobf("vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-FORGE:api")
- //    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${minecraft_version}-${patchouli_version}-FORGE")
-     
-     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
-     compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
-     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
-
- //    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
- //    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}:api")
- 
-
-    // Example mod dependency using a mod jar from ./libs with a flat dir repository
-    // This maps to ./libs/coolmod-${minecraft_version}-${coolmod_version}.jar
-    // The group id is ignored when searching -- in this case, it is "blank"
-    // implementation fg.deobf("blank:coolmod-${minecraft_version}:${coolmod_version}")
-
-    // For more info:
-    // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
-    // http://www.gradle.org/docs/current/userguide/dependency_management.html
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
