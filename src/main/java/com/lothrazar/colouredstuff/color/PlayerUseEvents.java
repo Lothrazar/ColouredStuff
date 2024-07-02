@@ -1,6 +1,5 @@
 package com.lothrazar.colouredstuff.color;
 
-import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.block.BrickColour;
 import com.lothrazar.colouredstuff.block.BrickstoneColour;
 import com.lothrazar.colouredstuff.block.ChiseledColor;
@@ -58,7 +57,6 @@ public class PlayerUseEvents extends EventFlib {
       dye = DyeColorless.getDyeFromItem(itemInHand);
     }
     else { //this never happens 
-      ModColourable.LOGGER.error("This is tagged as a dye item but its not a vanilla 16x dye  " + dye, itemInHand);
       return;
     }
     //dye is non-null now
