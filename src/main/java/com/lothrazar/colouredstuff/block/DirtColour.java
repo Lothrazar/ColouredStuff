@@ -16,7 +16,7 @@ public class DirtColour extends BlockFlib implements IHasColor {
   public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public DirtColour(Properties p, DyeColorless s) {
-    super(p.noOcclusion());
+    super(p);
     RAINBOW.put(s, this);
     this.color = s;
   }

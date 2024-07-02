@@ -45,7 +45,7 @@ colouredstuff by ${mod_authors}
 [[dependencies.colouredstuff]]
     modId="minecraft"
     mandatory=true
-    versionRange="[${minecraft_version},)"
+    versionRange="[${mc_version},)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.colouredstuff]]
