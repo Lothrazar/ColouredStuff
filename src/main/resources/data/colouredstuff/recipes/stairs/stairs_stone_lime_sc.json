@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "item": "colouredstuff:planks_lime"
+    "item": "colouredstuff:stone_lime"
   },
   "result": "colouredstuff:stairs_stone_lime"
 }

@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 1,
   "ingredient": {
-    "item": "colouredstuff:planks_magenta"
+    "item": "colouredstuff:stone_magenta"
   },
   "result": "colouredstuff:stairs_stone_magenta"
 }
