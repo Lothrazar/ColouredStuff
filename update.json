@@ -8,5 +8,6 @@
   	,"1.1.0":"All textures replaced by a new set by Marioluigi7896 that better matches the vanilla dye pallette"
   	,"1.2.0":"Added 17 types of coloured water: craft with snow block + dye + an empty bucket. "
   	,"1.2.1":"Fix Goats not being able to spawn on coloured grass (by removing 'noOcclusion()' internal setting so that it matches vanilla dirt transparency).  Fix missing 'minecraft:mineable/' tags for harvesting some blocks (Chiseled Stone, Stairs, slabs, path blocks).  Removed error log mentioning 'its not a vanilla 16x dye...' "
+  	,"1.2.2":" fix stonecutter stairs regular stone recipe"
   }
 }
