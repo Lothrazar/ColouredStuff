@@ -785,9 +785,7 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> door_planks_red = ITEMS.register("door_planks_red", () -> new ItemColour(ColourableBlockRegistry.door_planks_red.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
   public static final RegistryObject<Item> door_planks_white = ITEMS.register("door_planks_white", () -> new ItemColour(ColourableBlockRegistry.door_planks_white.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
   public static final RegistryObject<Item> door_planks_yellow = ITEMS.register("door_planks_yellow", () -> new ItemColour(ColourableBlockRegistry.door_planks_yellow.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
-  //
-  //  darkosto
-  public static final RegistryObject<Item> crafting_table_rainbow = ITEMS.register("crafting_table_rainbow", () -> new ItemColour(ColourableBlockRegistry.crafting_table_rainbow.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
+
   //
   public static final TagKey<Item> DYES_NONE_ITEMTAG = ItemTags.create(new ResourceLocation("forge", "dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));

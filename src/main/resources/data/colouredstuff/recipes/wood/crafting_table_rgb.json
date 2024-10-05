@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+    "item": "colouredstuff:crafting_table_red"
+    },{
+    "item": "colouredstuff:crafting_table_green"
+    },{
+    "item": "colouredstuff:crafting_table_blue"
+    }
+  ],
+  "result": {
+    "item": "colouredstuff:crafting_table_rainbow",
+    "count": 1
+  },
+	"conditions": [
+		{
+			"type": "forge:item_exists",
+			"item": "colouredstuff:crafting_table_rainbow"
+		}
+	]
+}

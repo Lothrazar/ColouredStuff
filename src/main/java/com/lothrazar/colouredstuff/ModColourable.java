@@ -7,6 +7,7 @@ import com.lothrazar.colouredstuff.registry.ClientRegistry;
 import com.lothrazar.colouredstuff.registry.ColourableBlockRegistry;
 import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
 import com.lothrazar.colouredstuff.registry.ConfigColourable;
+import com.lothrazar.colouredstuff.registry.DynamicRegistry;
 import com.lothrazar.colouredstuff.registry.FluidColourRegistry;
 import com.lothrazar.colouredstuff.registry.InteractionRegistry;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -29,5 +30,6 @@ public class ModColourable {
     new PlayerUseEvents();
     bus.addListener(InteractionRegistry::register);
     bus.addListener(ClientRegistry::register);
+    bus.addListener(DynamicRegistry::register);
   }
 }

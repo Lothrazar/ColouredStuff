@@ -11,12 +11,15 @@ public class ConfigColourable extends ConfigTemplate {
   public static BooleanValue IN_WORLD_DYE;
   public static BooleanValue MULTI_DYE;
   public static BooleanValue VANILLA_OVERRIDE;
+  public static BooleanValue RGB_CRAFTING_TABLE;
   private static ForgeConfigSpec CONFIG;
   static {
     final ForgeConfigSpec.Builder BUILDER = builder();
     BUILDER.comment("Colourable Stuff config").push(ModColourable.MODID);
     //
-    //
+    RGB_CRAFTING_TABLE = BUILDER.comment(" Add the RGB/rainbow crafting table item.  Setting to false will not register the item")
+        .define("rgb.enabled", true);
+    //   
     IN_WORLD_DYE = BUILDER.comment(" Use dye items on blocks in-world to change dye colour of target block")
         .define("in_world_dye.enabled", true);
     MULTI_DYE = BUILDER.comment(" Also allows you to sneak and dye multiple blocks from the mod all at once for the same cost (only works if enabled=true also)")
