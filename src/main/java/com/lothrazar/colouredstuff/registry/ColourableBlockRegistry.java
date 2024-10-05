@@ -3,21 +3,25 @@ package com.lothrazar.colouredstuff.registry;
 import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.block.BrickColour;
 import com.lothrazar.colouredstuff.block.BrickstoneColour;
+import com.lothrazar.colouredstuff.block.ButtonColour;
 import com.lothrazar.colouredstuff.block.ChiseledBrickstoneColour;
 import com.lothrazar.colouredstuff.block.ChiseledColor;
 import com.lothrazar.colouredstuff.block.CobbleColour;
 import com.lothrazar.colouredstuff.block.CraftingColour;
+import com.lothrazar.colouredstuff.block.CraftingRainbow;
 import com.lothrazar.colouredstuff.block.DirtColour;
 import com.lothrazar.colouredstuff.block.FarmlandColour;
 import com.lothrazar.colouredstuff.block.LeavesColour;
 import com.lothrazar.colouredstuff.block.LogColour;
 import com.lothrazar.colouredstuff.block.PathColour;
 import com.lothrazar.colouredstuff.block.PlanksColour;
+import com.lothrazar.colouredstuff.block.PressurePlateColour;
 import com.lothrazar.colouredstuff.block.SandstoneColour;
 import com.lothrazar.colouredstuff.block.SandstoneCutColour;
 import com.lothrazar.colouredstuff.block.SaplinColour;
 import com.lothrazar.colouredstuff.block.StoneColour;
 import com.lothrazar.colouredstuff.block.StrippedLogColour;
+import com.lothrazar.colouredstuff.block.TrapDoorColour;
 import com.lothrazar.colouredstuff.block.fence.PlanksFence;
 import com.lothrazar.colouredstuff.block.gate.PlanksGate;
 import com.lothrazar.colouredstuff.block.slab.BrickSlab;
@@ -737,4 +741,15 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> gate_planks_white = BLOCKS.register("gate_planks_white", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
   public static final RegistryObject<Block> gate_planks_yellow = BLOCKS.register("gate_planks_yellow", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
+  public static final RegistryObject<Block> button_black = BLOCKS.register("button_black", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  //
+  public static final RegistryObject<Block> pressure_plate_black = BLOCKS.register("pressure_plate_black", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  // 
+  public static final RegistryObject<Block> trapdoor_black = BLOCKS.register("trapdoor_black", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  //
+  //darkosto
+  //
+  public static final RegistryObject<CraftingRainbow> crafting_table_rainbow = BLOCKS.register("crafting_table_rainbow", () -> new CraftingRainbow(Block.Properties.copy(Blocks.CRAFTING_TABLE)
+      .explosionResistance(1200F)
+      .destroyTime(8.0F)));
 }
