@@ -60,8 +60,9 @@ public class PlayerUseEvents extends EventFlib {
       return;
     }
     //dye is non-null now
+    boolean success = false;
     if (stateHit.getBlock() instanceof IHasColor block) {
-      dyeBlockInWorld(event.getEntity(), itemInHand, level, eventPos, dye, block);
+      success = dyeBlockInWorld(event.getEntity(), itemInHand, level, eventPos, dye, block);
     }
     else {
       if (ConfigColourable.VANILLA_OVERRIDE.get()) {
@@ -76,62 +77,68 @@ public class PlayerUseEvents extends EventFlib {
         }
         else if (offsetStateHit.getBlock() instanceof IHasColor block) {
           // is it dye-able liquid that is not water
-          dyeBlockInWorld(event.getEntity(), itemInHand, level, eventPos, dye, block);
+          success = dyeBlockInWorld(event.getEntity(), itemInHand, level, eventPos, dye, block);
         }
       }
     }
+    if (success) {
+      event.getEntity().swing(event.getHand());
+    }
   }
 
-  private void dyeMojangBlocks(final Level level, BlockPos eventPos, BlockState stateHit, DyeColorless dye) {
+  private boolean dyeMojangBlocks(final Level level, BlockPos eventPos, BlockState stateHit, DyeColorless dye) {
     if (stateHit.is(Blocks.DIRT)) {
-      Rainbows.rotateToColor(DirtColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(DirtColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(Blocks.FARMLAND)) {
-      Rainbows.rotateToColor(FarmlandColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(FarmlandColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(Blocks.DIRT_PATH)) {
-      Rainbows.rotateToColor(PathColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(PathColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(Blocks.SANDSTONE)) {
-      Rainbows.rotateToColor(SandstoneColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(SandstoneColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(Blocks.CHISELED_SANDSTONE)) {
-      Rainbows.rotateToColor(ChiseledColor.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(ChiseledColor.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(Blocks.CHISELED_RED_SANDSTONE)) {
-      Rainbows.rotateToColor(ChiseledColor.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(ChiseledColor.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(Blocks.STONE)) {
-      Rainbows.rotateToColor(StoneColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(StoneColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(Blocks.COBBLESTONE)) {
-      Rainbows.rotateToColor(CobbleColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(CobbleColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(Blocks.STONE_BRICKS)) {
-      Rainbows.rotateToColor(BrickstoneColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(BrickstoneColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(Blocks.BRICKS)) {
-      Rainbows.rotateToColor(BrickColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(BrickColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(BlockTags.SAPLINGS)) {
-      Rainbows.rotateToColor(SaplinColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(SaplinColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(BlockTags.LEAVES)) {
-      Rainbows.rotateToColor(LeavesColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(LeavesColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(BlockTags.LOGS)) {
-      Rainbows.rotateToColor(LogColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(LogColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(BlockTags.PLANKS)) {
-      Rainbows.rotateToColor(PlanksColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(PlanksColour.RAINBOW, level, eventPos, null, dye);
     }
+    return false;
   }
 
   /**
    * 
    * Dye single blockpos re-used by liquid and solid blocks. Too many params TBH
+   * 
+   * @param hand
    */
-  private void dyeBlockInWorld(Player playerIn, final ItemStack itemInHand, final Level level, BlockPos eventPos, DyeColorless dye, IHasColor block) {
+  private boolean dyeBlockInWorld(Player playerIn, final ItemStack itemInHand, final Level level, BlockPos eventPos, DyeColorless dye, IHasColor block) {
     DyeColorless originalSourceColour = block.getColor();
     //if configs allows it, then sneaking/crouching does the multiblock 
     boolean doConnected = ConfigColourable.MULTI_DYE.get() && playerIn.isCrouching();
@@ -146,5 +153,6 @@ public class PlayerUseEvents extends EventFlib {
         Rainbows.rotateToColorConnectedRecursive(level, eventPos, originalSourceColour, dye, 0);
       }
     }
+    return success;
   }
 }

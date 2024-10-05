@@ -1,6 +1,25 @@
 package com.lothrazar.colouredstuff.registry;
 
 import com.lothrazar.colouredstuff.ModColourable;
+import com.lothrazar.colouredstuff.color.DyeColorless;
+import com.lothrazar.colouredstuff.entity.BlackBoat;
+import com.lothrazar.colouredstuff.entity.BlueBoat;
+import com.lothrazar.colouredstuff.entity.BrownBoat;
+import com.lothrazar.colouredstuff.entity.CyanBoat;
+import com.lothrazar.colouredstuff.entity.GrayBoat;
+import com.lothrazar.colouredstuff.entity.GreenBoat;
+import com.lothrazar.colouredstuff.entity.LightBlueBoat;
+import com.lothrazar.colouredstuff.entity.LightGrayBoat;
+import com.lothrazar.colouredstuff.entity.LimeBoat;
+import com.lothrazar.colouredstuff.entity.MagentaBoat;
+import com.lothrazar.colouredstuff.entity.NoneBoat;
+import com.lothrazar.colouredstuff.entity.OrangeBoat;
+import com.lothrazar.colouredstuff.entity.PinkBoat;
+import com.lothrazar.colouredstuff.entity.PurpleBoat;
+import com.lothrazar.colouredstuff.entity.RedBoat;
+import com.lothrazar.colouredstuff.entity.WhiteBoat;
+import com.lothrazar.colouredstuff.entity.YellowBoat;
+import com.lothrazar.colouredstuff.item.ColourBoatItem;
 import com.lothrazar.colouredstuff.item.ItemColour;
 import com.lothrazar.library.item.ItemFlib;
 import net.minecraft.core.registries.Registries;
@@ -9,6 +28,9 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -29,6 +51,63 @@ public class ColourableItemRegistry {
     public static final int WOODSLAB = 150;
   }
 
+  public static final DeferredRegister<EntityType<?>> ENTITIES = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ModColourable.MODID);
+
+  public static <T extends Entity> EntityType<T> register(String id, EntityType.Builder<T> builder) {
+    return builder.build(id);
+  }
+
+  public static final RegistryObject<EntityType<NoneBoat>> BOAT_ENTITY_NONE = ENTITIES.register("boat_none", () -> register("boat_none",
+      EntityType.Builder.<NoneBoat> of(NoneBoat::new, MobCategory.MISC)
+          .setCustomClientFactory(NoneBoat::new)));
+  public static final RegistryObject<EntityType<BlackBoat>> BOAT_ENTITY_BLACK = ENTITIES.register("boat_black", () -> register("boat_black", EntityType.Builder.<BlackBoat> of(BlackBoat::new, MobCategory.MISC)
+      .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(BlackBoat::new)));
+  public static final RegistryObject<EntityType<BlueBoat>> BOAT_ENTITY_BLUE = ENTITIES.register("boat_blue", () -> register("boat_blue", EntityType.Builder.<BlueBoat> of(BlueBoat::new, MobCategory.MISC)
+      .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(BlueBoat::new)));
+  public static final RegistryObject<EntityType<BrownBoat>> BOAT_ENTITY_BROWN = ENTITIES.register("boat_brown", () -> register("boat_brown",
+      EntityType.Builder.<BrownBoat> of(BrownBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(BrownBoat::new)));
+  public static final RegistryObject<EntityType<CyanBoat>> BOAT_ENTITY_CYAN = ENTITIES.register("boat_cyan", () -> register("boat_cyan",
+      EntityType.Builder.<CyanBoat> of(CyanBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(CyanBoat::new)));
+  public static final RegistryObject<EntityType<GrayBoat>> BOAT_ENTITY_GRAY = ENTITIES.register("boat_gray", () -> register("boat_gray",
+      EntityType.Builder.<GrayBoat> of(GrayBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(GrayBoat::new)));
+  public static final RegistryObject<EntityType<GreenBoat>> BOAT_ENTITY_GREEN = ENTITIES.register("boat_green", () -> register("boat_green",
+      EntityType.Builder.<GreenBoat> of(GreenBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(GreenBoat::new)));
+  public static final RegistryObject<EntityType<LightBlueBoat>> BOAT_ENTITY_LIGHT_BLUE = ENTITIES.register("boat_light_blue", () -> register("boat_light_blue",
+      EntityType.Builder.<LightBlueBoat> of(LightBlueBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(LightBlueBoat::new)));
+  public static final RegistryObject<EntityType<LightGrayBoat>> BOAT_ENTITY_LIGHT_GRAY = ENTITIES.register("boat_light_gray", () -> register("boat_light_gray",
+      EntityType.Builder.<LightGrayBoat> of(LightGrayBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(LightGrayBoat::new)));
+  public static final RegistryObject<EntityType<LimeBoat>> BOAT_ENTITY_LIME = ENTITIES.register("boat_lime", () -> register("boat_lime",
+      EntityType.Builder.<LimeBoat> of(LimeBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(LimeBoat::new)));
+  public static final RegistryObject<EntityType<MagentaBoat>> BOAT_ENTITY_MAGENTA = ENTITIES.register("boat_magenta", () -> register("boat_magenta",
+      EntityType.Builder.<MagentaBoat> of(MagentaBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(MagentaBoat::new)));
+  public static final RegistryObject<EntityType<OrangeBoat>> BOAT_ENTITY_ORANGE = ENTITIES.register("boat_orange", () -> register("boat_orange",
+      EntityType.Builder.<OrangeBoat> of(OrangeBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(OrangeBoat::new)));
+  public static final RegistryObject<EntityType<PinkBoat>> BOAT_ENTITY_PINK = ENTITIES.register("boat_pink", () -> register("boat_pink",
+      EntityType.Builder.<PinkBoat> of(PinkBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(PinkBoat::new)));
+  public static final RegistryObject<EntityType<PurpleBoat>> BOAT_ENTITY_PURPLE = ENTITIES.register("boat_purple", () -> register("boat_purple",
+      EntityType.Builder.<PurpleBoat> of(PurpleBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(PurpleBoat::new)));
+  public static final RegistryObject<EntityType<RedBoat>> BOAT_ENTITY_RED = ENTITIES.register("boat_red", () -> register("boat_red",
+      EntityType.Builder.<RedBoat> of(RedBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(RedBoat::new)));
+  public static final RegistryObject<EntityType<WhiteBoat>> BOAT_ENTITY_WHITE = ENTITIES.register("boat_white", () -> register("boat_white",
+      EntityType.Builder.<WhiteBoat> of(WhiteBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(WhiteBoat::new)));
+  public static final RegistryObject<EntityType<YellowBoat>> BOAT_ENTITY_YELLOW = ENTITIES.register("boat_yellow", () -> register("boat_yellow",
+      EntityType.Builder.<YellowBoat> of(YellowBoat::new, MobCategory.MISC)
+          .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(YellowBoat::new)));
+  //  
+  //
   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ModColourable.MODID);
   // 
   public static final RegistryObject<Item> PLANKS_none = ITEMS.register("planks_none", () -> new ItemColour(ColourableBlockRegistry.PLANKS_none.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
@@ -785,7 +864,24 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> door_planks_red = ITEMS.register("door_planks_red", () -> new ItemColour(ColourableBlockRegistry.door_planks_red.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
   public static final RegistryObject<Item> door_planks_white = ITEMS.register("door_planks_white", () -> new ItemColour(ColourableBlockRegistry.door_planks_white.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
   public static final RegistryObject<Item> door_planks_yellow = ITEMS.register("door_planks_yellow", () -> new ItemColour(ColourableBlockRegistry.door_planks_yellow.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
-
+  //
+  public static final RegistryObject<Item> BOAT_NONE = ITEMS.register("boat_none", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.NONE));
+  public static final RegistryObject<Item> BOAT_BLACK = ITEMS.register("boat_black", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.BLACK));
+  public static final RegistryObject<Item> BOAT_BLUE = ITEMS.register("boat_blue", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.BLUE));
+  public static final RegistryObject<Item> BOAT_BROWN = ITEMS.register("boat_brown", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.BROWN));
+  public static final RegistryObject<Item> BOAT_CYAN = ITEMS.register("boat_cyan", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.CYAN));
+  public static final RegistryObject<Item> BOAT_GRAY = ITEMS.register("boat_gray", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.GRAY));
+  public static final RegistryObject<Item> BOAT_GREEN = ITEMS.register("boat_green", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.GREEN));
+  public static final RegistryObject<Item> BOAT_LIGHT_BLUE = ITEMS.register("boat_light_blue", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Item> BOAT_LIGHT_GRAY = ITEMS.register("boat_light_gray", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Item> BOAT_LIME = ITEMS.register("boat_lime", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.LIME));
+  public static final RegistryObject<Item> BOAT_MAGENTA = ITEMS.register("boat_magenta", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.MAGENTA));
+  public static final RegistryObject<Item> BOAT_ORANGE = ITEMS.register("boat_orange", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.ORANGE));
+  public static final RegistryObject<Item> BOAT_PINK = ITEMS.register("boat_pink", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.PINK));
+  public static final RegistryObject<Item> BOAT_PURPLE = ITEMS.register("boat_purple", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.PURPLE));
+  public static final RegistryObject<Item> BOAT_RED = ITEMS.register("boat_red", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.RED));
+  public static final RegistryObject<Item> BOAT_WHITE = ITEMS.register("boat_white", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.WHITE));
+  public static final RegistryObject<Item> BOAT_YELLOW = ITEMS.register("boat_yellow", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.YELLOW));
   //
   public static final TagKey<Item> DYES_NONE_ITEMTAG = ItemTags.create(new ResourceLocation("forge", "dyes/none"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));

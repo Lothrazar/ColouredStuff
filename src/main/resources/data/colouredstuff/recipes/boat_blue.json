@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:planks_blue"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:boat_blue",
+    "count": 1
+  }
+}

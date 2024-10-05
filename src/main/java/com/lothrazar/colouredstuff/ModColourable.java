@@ -10,7 +10,9 @@ import com.lothrazar.colouredstuff.registry.ConfigColourable;
 import com.lothrazar.colouredstuff.registry.DynamicRegistry;
 import com.lothrazar.colouredstuff.registry.FluidColourRegistry;
 import com.lothrazar.colouredstuff.registry.InteractionRegistry;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
@@ -25,11 +27,18 @@ public class ModColourable {
     IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
     ColourableBlockRegistry.BLOCKS.register(bus);
     ColourableItemRegistry.ITEMS.register(bus);
+    ColourableItemRegistry.ENTITIES.register(bus);
     FluidColourRegistry.FLUID_TYPES.register(bus);
     FluidColourRegistry.FLUIDS.register(bus);
     new PlayerUseEvents();
     bus.addListener(InteractionRegistry::register);
     bus.addListener(ClientRegistry::register);
     bus.addListener(DynamicRegistry::register);
+
+    DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
+      bus.addListener(ClientRegistry::registerEntityRenders);
+
+      //
+    });
   }
 }

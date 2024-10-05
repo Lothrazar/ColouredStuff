@@ -1,5 +1,6 @@
 package com.lothrazar.colouredstuff.registry;
 
+import com.lothrazar.colouredstuff.entity.client.ColourBoatRender;
 import com.lothrazar.colouredstuff.fluid.water.BlackFluidHolder;
 import com.lothrazar.colouredstuff.fluid.water.BlueFluidHolder;
 import com.lothrazar.colouredstuff.fluid.water.BrownFluidHolder;
@@ -19,10 +20,30 @@ import com.lothrazar.colouredstuff.fluid.water.WhiteFluidHolder;
 import com.lothrazar.colouredstuff.fluid.water.YellowFluidHolder;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraftforge.client.event.EntityRenderersEvent.RegisterRenderers;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 public class ClientRegistry {
 
+  public static void registerEntityRenders(RegisterRenderers event) {
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_NONE.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_BLACK.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_BLUE.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_BROWN.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_CYAN.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_GRAY.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_GREEN.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_LIGHT_BLUE.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_LIGHT_GRAY.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_LIME.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_MAGENTA.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_ORANGE.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_PINK.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_PURPLE.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_RED.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_WHITE.get(), ColourBoatRender::new);
+    event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_YELLOW.get(), ColourBoatRender::new);
+  }
   /**
    * make the water translucent
    */
