@@ -10,6 +10,7 @@ import com.lothrazar.colouredstuff.block.CobbleColour;
 import com.lothrazar.colouredstuff.block.CraftingColour;
 import com.lothrazar.colouredstuff.block.CraftingRainbow;
 import com.lothrazar.colouredstuff.block.DirtColour;
+import com.lothrazar.colouredstuff.block.DoorColour;
 import com.lothrazar.colouredstuff.block.FarmlandColour;
 import com.lothrazar.colouredstuff.block.LeavesColour;
 import com.lothrazar.colouredstuff.block.LogColour;
@@ -795,6 +796,26 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> trapdoor_planks_white = BLOCKS.register("trapdoor_planks_white", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
   public static final RegistryObject<Block> trapdoor_planks_yellow = BLOCKS.register("trapdoor_planks_yellow", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
+  //
+
+  public static final RegistryObject<Block> door_planks_none = BLOCKS.register("door_planks_none", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
+  public static final RegistryObject<Block> door_planks_black = BLOCKS.register("door_planks_black", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  public static final RegistryObject<Block> door_planks_blue = BLOCKS.register("door_planks_blue", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLUE));
+  public static final RegistryObject<Block> door_planks_brown = BLOCKS.register("door_planks_brown", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BROWN));
+  public static final RegistryObject<Block> door_planks_cyan = BLOCKS.register("door_planks_cyan", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.CYAN));
+  public static final RegistryObject<Block> door_planks_gray = BLOCKS.register("door_planks_gray", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GRAY));
+  public static final RegistryObject<Block> door_planks_green = BLOCKS.register("door_planks_green", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GREEN));
+  public static final RegistryObject<Block> door_planks_light_blue = BLOCKS.register("door_planks_light_blue", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> door_planks_light_gray = BLOCKS.register("door_planks_light_gray", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> door_planks_lime = BLOCKS.register("door_planks_lime", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIME));
+  public static final RegistryObject<Block> door_planks_magenta = BLOCKS.register("door_planks_magenta", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> door_planks_orange = BLOCKS.register("door_planks_orange", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> door_planks_pink = BLOCKS.register("door_planks_pink", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PINK));
+  public static final RegistryObject<Block> door_planks_purple = BLOCKS.register("door_planks_purple", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> door_planks_red = BLOCKS.register("door_planks_red", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
+  public static final RegistryObject<Block> door_planks_white = BLOCKS.register("door_planks_white", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
+  public static final RegistryObject<Block> door_planks_yellow = BLOCKS.register("door_planks_yellow", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
+ 
   //darkosto
   //
   public static final RegistryObject<CraftingRainbow> crafting_table_rainbow = BLOCKS.register("crafting_table_rainbow", () -> new CraftingRainbow(Block.Properties.copy(Blocks.CRAFTING_TABLE)
