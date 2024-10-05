@@ -2,6 +2,24 @@
   "replace": false,
   "values": [
   
+"colouredstuff:button_planks_black",
+"colouredstuff:button_planks_blue",
+"colouredstuff:button_planks_brown",
+"colouredstuff:button_planks_cyan",
+"colouredstuff:button_planks_gray",
+"colouredstuff:button_planks_green",
+"colouredstuff:button_planks_light_blue",
+"colouredstuff:button_planks_light_gray",
+"colouredstuff:button_planks_lime",
+"colouredstuff:button_planks_magenta",
+"colouredstuff:button_planks_none",
+"colouredstuff:button_planks_orange",
+"colouredstuff:button_planks_pink",
+"colouredstuff:button_planks_purple",
+"colouredstuff:button_planks_red",
+"colouredstuff:button_planks_white",
+"colouredstuff:button_planks_yellow",
+
 
 
 "colouredstuff:stairs_planks_black",

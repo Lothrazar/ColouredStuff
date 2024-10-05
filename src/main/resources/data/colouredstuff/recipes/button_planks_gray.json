@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "colouredstuff:planks_gray"
+    }
+  ],
+  "result": {
+    "item": "colouredstuff:button_planks_gray",
+    "count": 1
+  }
+}

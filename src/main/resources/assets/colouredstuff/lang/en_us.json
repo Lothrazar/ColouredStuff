@@ -1,6 +1,23 @@
 {
 
-"block.colouredstuff.button_planks_black":"Black Wooden Button",
+"block.colouredstuff.button_planks_black" : "Black Wooden Button",
+"block.colouredstuff.button_planks_blue" : "Blue Wooden Button",
+"block.colouredstuff.button_planks_brown" : "Brown Wooden Button",
+"block.colouredstuff.button_planks_cyan" : "Cyan Wooden Button",
+"block.colouredstuff.button_planks_gray" : "Gray Wooden Button",
+"block.colouredstuff.button_planks_green" : "Green Wooden Button",
+"block.colouredstuff.button_planks_light_blue" : "Light Blue Wooden Button",
+"block.colouredstuff.button_planks_light_gray" : "Light Gray Wooden Button",
+"block.colouredstuff.button_planks_lime" : "Lime Wooden Button",
+"block.colouredstuff.button_planks_magenta" : "Magenta Wooden Button",
+"block.colouredstuff.button_planks_none" : "Colorless Wooden Button",
+"block.colouredstuff.button_planks_orange" : "Orange Wooden Button",
+"block.colouredstuff.button_planks_pink" : "Pink Wooden Button",
+"block.colouredstuff.button_planks_purple" : "Purple Wooden Button",
+"block.colouredstuff.button_planks_red" : "Red Wooden Button",
+"block.colouredstuff.button_planks_white" : "White Wooden Button",
+"block.colouredstuff.button_planks_yellow" : "Yellow Wooden Button",
+
 
 "block.colouredstuff.trapdoor_planks_black":"Black Wooden Trapdoor",
 

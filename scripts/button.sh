@@ -40,10 +40,10 @@ do
 	# block model  
 	cp "${folder}"/models/block/button/"${input}"_black.json "${folder}"/models/block/button/"${input}"_"${color}".json
 	sed -i -e "s/black/${color}/g" "${folder}"/models/block/button/"${input}"_"${color}".json
-	cp "${folder}"/models/block/button/"${input}"_black_upper.json "${folder}"/models/block/button/"${input}"_"${color}"_pressed.json
+	cp "${folder}"/models/block/button/"${input}"_black_pressed.json "${folder}"/models/block/button/"${input}"_"${color}"_pressed.json
 	sed -i -e "s/black/${color}/g" "${folder}"/models/block/button/"${input}"_"${color}"_pressed.json
 	
-	cp "${folder}"/models/block/button/"${input}"_black_upper.json "${folder}"/models/block/button/"${input}"_"${color}"_inventory.json
+	cp "${folder}"/models/block/button/"${input}"_black_inventory.json "${folder}"/models/block/button/"${input}"_"${color}"_inventory.json
 	sed -i -e "s/black/${color}/g" "${folder}"/models/block/button/"${input}"_"${color}"_inventory.json
 	
 	# loot
