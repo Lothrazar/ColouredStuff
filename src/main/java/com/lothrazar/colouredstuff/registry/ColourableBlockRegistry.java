@@ -741,11 +741,59 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> gate_planks_white = BLOCKS.register("gate_planks_white", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
   public static final RegistryObject<Block> gate_planks_yellow = BLOCKS.register("gate_planks_yellow", () -> new PlanksGate(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
-  public static final RegistryObject<Block> button_black = BLOCKS.register("button_black", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  public static final RegistryObject<Block> button_planks_none = BLOCKS.register("button_planks_none", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
+  public static final RegistryObject<Block> button_planks_black = BLOCKS.register("button_planks_black", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  public static final RegistryObject<Block> button_planks_blue = BLOCKS.register("button_planks_blue", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLUE));
+  public static final RegistryObject<Block> button_planks_brown = BLOCKS.register("button_planks_brown", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BROWN));
+  public static final RegistryObject<Block> button_planks_cyan = BLOCKS.register("button_planks_cyan", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.CYAN));
+  public static final RegistryObject<Block> button_planks_gray = BLOCKS.register("button_planks_gray", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GRAY));
+  public static final RegistryObject<Block> button_planks_green = BLOCKS.register("button_planks_green", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GREEN));
+  public static final RegistryObject<Block> button_planks_light_blue = BLOCKS.register("button_planks_light_blue", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> button_planks_light_gray = BLOCKS.register("button_planks_light_gray", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> button_planks_lime = BLOCKS.register("button_planks_lime", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIME));
+  public static final RegistryObject<Block> button_planks_magenta = BLOCKS.register("button_planks_magenta", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> button_planks_orange = BLOCKS.register("button_planks_orange", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> button_planks_pink = BLOCKS.register("button_planks_pink", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PINK));
+  public static final RegistryObject<Block> button_planks_purple = BLOCKS.register("button_planks_purple", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> button_planks_red = BLOCKS.register("button_planks_red", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
+  public static final RegistryObject<Block> button_planks_white = BLOCKS.register("button_planks_white", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
+  public static final RegistryObject<Block> button_planks_yellow = BLOCKS.register("button_planks_yellow", () -> new ButtonColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
-  public static final RegistryObject<Block> pressure_plate_black = BLOCKS.register("pressure_plate_black", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  public static final RegistryObject<Block> pressure_plate_planks_none = BLOCKS.register("pressure_plate_planks_none", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
+  public static final RegistryObject<Block> pressure_plate_planks_black = BLOCKS.register("pressure_plate_planks_black", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  public static final RegistryObject<Block> pressure_plate_planks_blue = BLOCKS.register("pressure_plate_planks_blue", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLUE));
+  public static final RegistryObject<Block> pressure_plate_planks_brown = BLOCKS.register("pressure_plate_planks_brown", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BROWN));
+  public static final RegistryObject<Block> pressure_plate_planks_cyan = BLOCKS.register("pressure_plate_planks_cyan", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.CYAN));
+  public static final RegistryObject<Block> pressure_plate_planks_gray = BLOCKS.register("pressure_plate_planks_gray", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GRAY));
+  public static final RegistryObject<Block> pressure_plate_planks_green = BLOCKS.register("pressure_plate_planks_green", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GREEN));
+  public static final RegistryObject<Block> pressure_plate_planks_light_blue = BLOCKS.register("pressure_plate_planks_light_blue", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> pressure_plate_planks_light_gray = BLOCKS.register("pressure_plate_planks_light_gray", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> pressure_plate_planks_lime = BLOCKS.register("pressure_plate_planks_lime", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIME));
+  public static final RegistryObject<Block> pressure_plate_planks_magenta = BLOCKS.register("pressure_plate_planks_magenta", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> pressure_plate_planks_orange = BLOCKS.register("pressure_plate_planks_orange", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> pressure_plate_planks_pink = BLOCKS.register("pressure_plate_planks_pink", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PINK));
+  public static final RegistryObject<Block> pressure_plate_planks_purple = BLOCKS.register("pressure_plate_planks_purple", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> pressure_plate_planks_red = BLOCKS.register("pressure_plate_planks_red", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
+  public static final RegistryObject<Block> pressure_plate_planks_white = BLOCKS.register("pressure_plate_planks_white", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
+  public static final RegistryObject<Block> pressure_plate_planks_yellow = BLOCKS.register("pressure_plate_planks_yellow", () -> new PressurePlateColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   // 
-  public static final RegistryObject<Block> trapdoor_black = BLOCKS.register("trapdoor_black", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  public static final RegistryObject<Block> trapdoor_planks_none = BLOCKS.register("trapdoor_planks_none", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
+  public static final RegistryObject<Block> trapdoor_planks_black = BLOCKS.register("trapdoor_planks_black", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
+  public static final RegistryObject<Block> trapdoor_planks_blue = BLOCKS.register("trapdoor_planks_blue", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLUE));
+  public static final RegistryObject<Block> trapdoor_planks_brown = BLOCKS.register("trapdoor_planks_brown", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BROWN));
+  public static final RegistryObject<Block> trapdoor_planks_cyan = BLOCKS.register("trapdoor_planks_cyan", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.CYAN));
+  public static final RegistryObject<Block> trapdoor_planks_gray = BLOCKS.register("trapdoor_planks_gray", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GRAY));
+  public static final RegistryObject<Block> trapdoor_planks_green = BLOCKS.register("trapdoor_planks_green", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.GREEN));
+  public static final RegistryObject<Block> trapdoor_planks_light_blue = BLOCKS.register("trapdoor_planks_light_blue", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<Block> trapdoor_planks_light_gray = BLOCKS.register("trapdoor_planks_light_gray", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<Block> trapdoor_planks_lime = BLOCKS.register("trapdoor_planks_lime", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.LIME));
+  public static final RegistryObject<Block> trapdoor_planks_magenta = BLOCKS.register("trapdoor_planks_magenta", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.MAGENTA));
+  public static final RegistryObject<Block> trapdoor_planks_orange = BLOCKS.register("trapdoor_planks_orange", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.ORANGE));
+  public static final RegistryObject<Block> trapdoor_planks_pink = BLOCKS.register("trapdoor_planks_pink", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PINK));
+  public static final RegistryObject<Block> trapdoor_planks_purple = BLOCKS.register("trapdoor_planks_purple", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.PURPLE));
+  public static final RegistryObject<Block> trapdoor_planks_red = BLOCKS.register("trapdoor_planks_red", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
+  public static final RegistryObject<Block> trapdoor_planks_white = BLOCKS.register("trapdoor_planks_white", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
+  public static final RegistryObject<Block> trapdoor_planks_yellow = BLOCKS.register("trapdoor_planks_yellow", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
   //darkosto
   //

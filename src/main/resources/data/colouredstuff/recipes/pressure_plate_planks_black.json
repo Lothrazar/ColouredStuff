@@ -1,8 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "###"
+    "##"
   ],
   "key": {
     "#": {
@@ -10,7 +9,7 @@
     }
   },
   "result": {
-    "item": "colouredstuff:trapdoor_black",
-    "count": 2
+    "item": "colouredstuff:pressure_plate_planks_black",
+    "count": 1
   }
 }
