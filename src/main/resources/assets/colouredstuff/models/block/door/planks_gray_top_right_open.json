@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_right_open",
+  "textures": {
+    "bottom": "colouredstuff:block/door/planks_gray_bottom",
+    "top": "colouredstuff:block/door/planks_gray_top"
+  }
+}

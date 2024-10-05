@@ -1,4 +1,24 @@
 {
+"block.colouredstuff.crafting_table_rainbow" : "Rainbow Crafting Table",
+
+"block.colouredstuff.door_planks_black" : "Black Wooden Door",
+"block.colouredstuff.door_planks_blue" : "Blue Wooden Door",
+"block.colouredstuff.door_planks_brown" : "Brown Wooden Door",
+"block.colouredstuff.door_planks_cyan" : "Cyan Wooden Door",
+"block.colouredstuff.door_planks_gray" : "Gray Wooden Door",
+"block.colouredstuff.door_planks_green" : "Green Wooden Door",
+"block.colouredstuff.door_planks_light_blue" : "Light Blue Wooden Door",
+"block.colouredstuff.door_planks_light_gray" : "Light Gray Wooden Door",
+"block.colouredstuff.door_planks_lime" : "Lime Wooden Door",
+"block.colouredstuff.door_planks_magenta" : "Magenta Wooden Door",
+"block.colouredstuff.door_planks_none" : "Colorless Wooden Door",
+"block.colouredstuff.door_planks_orange" : "Orange Wooden Door",
+"block.colouredstuff.door_planks_pink" : "Pink Wooden Door",
+"block.colouredstuff.door_planks_purple" : "Purple Wooden Door",
+"block.colouredstuff.door_planks_red" : "Red Wooden Door",
+"block.colouredstuff.door_planks_white" : "White Wooden Door",
+"block.colouredstuff.door_planks_yellow" : "Yellow Wooden Door",
+
 
 "block.colouredstuff.button_planks_black" : "Black Wooden Button",
 "block.colouredstuff.button_planks_blue" : "Blue Wooden Button",

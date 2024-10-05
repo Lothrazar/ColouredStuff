@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "colouredstuff:planks_black"
+      "item": "colouredstuff:planks_light_blue"
     }
   },
   "result": {
-    "item": "colouredstuff:door_planks_black",
+    "item": "colouredstuff:door_planks_light_blue",
     "count": 3
   }
 }

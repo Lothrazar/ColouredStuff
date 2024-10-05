@@ -1,7 +1,27 @@
 {
   "replace": false,
   "values": [
-  
+    {"id":    "colouredstuff:crafting_table_rainbow","required":false},
+
+"colouredstuff:door_planks_black",
+"colouredstuff:door_planks_blue",
+"colouredstuff:door_planks_brown",
+"colouredstuff:door_planks_cyan",
+"colouredstuff:door_planks_gray",
+"colouredstuff:door_planks_green",
+"colouredstuff:door_planks_light_blue",
+"colouredstuff:door_planks_light_gray",
+"colouredstuff:door_planks_lime",
+"colouredstuff:door_planks_magenta",
+"colouredstuff:door_planks_none",
+"colouredstuff:door_planks_orange",
+"colouredstuff:door_planks_pink",
+"colouredstuff:door_planks_purple",
+"colouredstuff:door_planks_red",
+"colouredstuff:door_planks_white",
+"colouredstuff:door_planks_yellow",
+
+
 "colouredstuff:trapdoor_planks_blue",
 "colouredstuff:trapdoor_planks_brown",
 "colouredstuff:trapdoor_planks_cyan",

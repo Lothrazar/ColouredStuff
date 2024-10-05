@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+
+"colouredstuff:trapdoor_planks_blue",
+"colouredstuff:trapdoor_planks_brown",
+"colouredstuff:trapdoor_planks_cyan",
+"colouredstuff:trapdoor_planks_gray",
+"colouredstuff:trapdoor_planks_green",
+"colouredstuff:trapdoor_planks_light_blue",
+"colouredstuff:trapdoor_planks_light_gray",
+"colouredstuff:trapdoor_planks_lime",
+"colouredstuff:trapdoor_planks_magenta",
+"colouredstuff:trapdoor_planks_none",
+"colouredstuff:trapdoor_planks_orange",
+"colouredstuff:trapdoor_planks_pink",
+"colouredstuff:trapdoor_planks_purple",
+"colouredstuff:trapdoor_planks_red",
+"colouredstuff:trapdoor_planks_white",
+"colouredstuff:trapdoor_planks_yellow"
+
+  ]
+}
