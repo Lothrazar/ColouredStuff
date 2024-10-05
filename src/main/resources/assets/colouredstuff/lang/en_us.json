@@ -19,7 +19,6 @@
 "block.colouredstuff.button_planks_yellow" : "Yellow Wooden Button",
 
 
-"block.colouredstuff.trapdoor_planks_black":"Black Wooden Trapdoor",
 
 "block.colouredstuff.pressure_plate_planks_black" : "Black Wooden Pressure Plate",
 "block.colouredstuff.pressure_plate_planks_blue" : "Blue Wooden Pressure Plate",
@@ -38,6 +37,27 @@
 "block.colouredstuff.pressure_plate_planks_red" : "Red Wooden Pressure Plate",
 "block.colouredstuff.pressure_plate_planks_white" : "White Wooden Pressure Plate",
 "block.colouredstuff.pressure_plate_planks_yellow" : "Yellow Wooden Pressure Plate",
+
+
+
+"block.colouredstuff.trapdoor_planks_black" : "Black Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_blue" : "Blue Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_brown" : "Brown Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_cyan" : "Cyan Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_gray" : "Gray Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_green" : "Green Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_light_blue" : "Light Blue Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_light_gray" : "Light Gray Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_lime" : "Lime Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_magenta" : "Magenta Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_none" : "Colorless Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_orange" : "Orange Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_pink" : "Pink Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_purple" : "Purple Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_red" : "Red Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_white" : "White Wooden Trapdoor",
+"block.colouredstuff.trapdoor_planks_yellow" : "Yellow Wooden Trapdoor",
+
 
 
 
