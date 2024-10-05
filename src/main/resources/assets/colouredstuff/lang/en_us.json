@@ -21,7 +21,24 @@
 
 "block.colouredstuff.trapdoor_planks_black":"Black Wooden Trapdoor",
 
-"block.colouredstuff.pressure_plate_planks_black":"Black Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_black" : "Black Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_blue" : "Blue Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_brown" : "Brown Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_cyan" : "Cyan Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_gray" : "Gray Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_green" : "Green Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_light_blue" : "Light Blue Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_light_gray" : "Light Gray Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_lime" : "Lime Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_magenta" : "Magenta Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_none" : "Colorless Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_orange" : "Orange Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_pink" : "Pink Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_purple" : "Purple Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_red" : "Red Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_white" : "White Wooden Pressure Plate",
+"block.colouredstuff.pressure_plate_planks_yellow" : "Yellow Wooden Pressure Plate",
+
 
 
 "item.colouredstuff.water_bucket_black":"Black Water Bucket",

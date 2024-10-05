@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "colouredstuff:block/pressure_plate/planks_pink"
+    },
+    "powered=true": {
+      "model": "colouredstuff:block/pressure_plate/planks_pink_down"
+    }
+  }
+}

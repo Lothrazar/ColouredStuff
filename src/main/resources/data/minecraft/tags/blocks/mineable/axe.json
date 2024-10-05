@@ -2,6 +2,26 @@
   "replace": false,
   "values": [
   
+
+"colouredstuff:pressure_plate_planks_black",
+"colouredstuff:pressure_plate_planks_blue",
+"colouredstuff:pressure_plate_planks_brown",
+"colouredstuff:pressure_plate_planks_cyan",
+"colouredstuff:pressure_plate_planks_gray",
+"colouredstuff:pressure_plate_planks_green",
+"colouredstuff:pressure_plate_planks_light_blue",
+"colouredstuff:pressure_plate_planks_light_gray",
+"colouredstuff:pressure_plate_planks_lime",
+"colouredstuff:pressure_plate_planks_magenta",
+"colouredstuff:pressure_plate_planks_none",
+"colouredstuff:pressure_plate_planks_orange",
+"colouredstuff:pressure_plate_planks_pink",
+"colouredstuff:pressure_plate_planks_purple",
+"colouredstuff:pressure_plate_planks_red",
+"colouredstuff:pressure_plate_planks_white",
+"colouredstuff:pressure_plate_planks_yellow",
+  
+
 "colouredstuff:button_planks_black",
 "colouredstuff:button_planks_blue",
 "colouredstuff:button_planks_brown",
