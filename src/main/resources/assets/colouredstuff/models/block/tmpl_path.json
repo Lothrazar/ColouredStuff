@@ -1,6 +1,6 @@
 {   "parent": "block/block",   
   "ambientocclusion":false,
-  "render_type": "cutout",
+  "render_type": "cutout_mipped",   "ambientocclusion": false,
   "forge_marker": 1,
     "textures": {
         "particle": "block/dirt",

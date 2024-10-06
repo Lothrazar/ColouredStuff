@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/leaves",
-  "render_type": "cutout",
+  "render_type": "cutout_mipped",   "ambientocclusion": false,
 	"textures": {
 		"all": "colouredstuff:block/leaves_blue",
 		"particle": "colouredstuff:block/leaves_blue"

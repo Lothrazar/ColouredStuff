@@ -72,7 +72,7 @@ public class PlayerUseEvents extends EventFlib {
         eventPos = eventPos.relative(event.getFace());
         BlockState offsetStateHit = level.getBlockState(eventPos);
         if (offsetStateHit.getBlock() == Blocks.WATER && ConfigColourable.VANILLA_OVERRIDE.get()) {
-          //dye water if allowed
+          //dye water if allowed  
           Rainbows.rotateToColor(ColourLiquidBlock.RAINBOW, level, eventPos, null, dye);
         }
         else if (offsetStateHit.getBlock() instanceof IHasColor block) {

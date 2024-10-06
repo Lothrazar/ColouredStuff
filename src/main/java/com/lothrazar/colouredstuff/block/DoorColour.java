@@ -13,7 +13,7 @@ public class DoorColour extends DoorBlock implements IHasColor {
   private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public DoorColour(Properties p, DyeColorless color) {
-    super(p, BlockSetType.OAK); //oak so it has the sound effects of other wood  
+    super(p.noOcclusion(), BlockSetType.OAK); //oak so it has the sound effects of other wood  
     RAINBOW.put(color, this);
     this.color = color;
   }
