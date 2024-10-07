@@ -5,7 +5,21 @@ import java.util.function.Predicate;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.entity.BlackBoat;
 import com.lothrazar.colouredstuff.entity.BlueBoat;
+import com.lothrazar.colouredstuff.entity.BrownBoat;
+import com.lothrazar.colouredstuff.entity.CyanBoat;
+import com.lothrazar.colouredstuff.entity.GrayBoat;
+import com.lothrazar.colouredstuff.entity.GreenBoat;
+import com.lothrazar.colouredstuff.entity.LightBlueBoat;
+import com.lothrazar.colouredstuff.entity.LightGrayBoat;
+import com.lothrazar.colouredstuff.entity.LimeBoat;
+import com.lothrazar.colouredstuff.entity.MagentaBoat;
+import com.lothrazar.colouredstuff.entity.NoneBoat;
+import com.lothrazar.colouredstuff.entity.OrangeBoat;
+import com.lothrazar.colouredstuff.entity.PinkBoat;
+import com.lothrazar.colouredstuff.entity.PurpleBoat;
 import com.lothrazar.colouredstuff.entity.RedBoat;
+import com.lothrazar.colouredstuff.entity.WhiteBoat;
+import com.lothrazar.colouredstuff.entity.YellowBoat;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -60,34 +74,49 @@ public class ColourBoatItem extends Item {
             eboat = new BlueBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case BROWN:
+            eboat = new BrownBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case CYAN:
+            eboat = new CyanBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case GRAY:
+            eboat = new GrayBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case GREEN:
+            eboat = new GreenBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case LIGHT_BLUE:
+            eboat = new LightBlueBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case LIGHT_GRAY:
+            eboat = new LightGrayBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case LIME:
+            eboat = new LimeBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case MAGENTA:
+            eboat = new MagentaBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case NONE:
+            eboat = new NoneBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case ORANGE:
+            eboat = new OrangeBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case PINK:
+            eboat = new PinkBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case PURPLE:
+            eboat = new PurpleBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case RED:
+            eboat = new RedBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case WHITE:
+            eboat = new WhiteBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           case YELLOW:
+            eboat = new YellowBoat(level, hitResult.getLocation().x, hitResult.getLocation().y, hitResult.getLocation().z);
           break;
           default:
           break;

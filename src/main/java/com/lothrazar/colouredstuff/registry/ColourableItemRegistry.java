@@ -59,7 +59,7 @@ public class ColourableItemRegistry {
 
   public static final RegistryObject<EntityType<NoneBoat>> BOAT_ENTITY_NONE = ENTITIES.register("boat_none", () -> register("boat_none",
       EntityType.Builder.<NoneBoat> of(NoneBoat::new, MobCategory.MISC)
-          .setCustomClientFactory(NoneBoat::new)));
+          .sized(1.375F, 0.5625F).setCustomClientFactory(NoneBoat::new)));
   public static final RegistryObject<EntityType<BlackBoat>> BOAT_ENTITY_BLACK = ENTITIES.register("boat_black", () -> register("boat_black", EntityType.Builder.<BlackBoat> of(BlackBoat::new, MobCategory.MISC)
       .sized(1.375F, 0.5625F).clientTrackingRange(10).setCustomClientFactory(BlackBoat::new)));
   public static final RegistryObject<EntityType<BlueBoat>> BOAT_ENTITY_BLUE = ENTITIES.register("boat_blue", () -> register("boat_blue", EntityType.Builder.<BlueBoat> of(BlueBoat::new, MobCategory.MISC)

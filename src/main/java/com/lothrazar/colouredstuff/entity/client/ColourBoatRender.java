@@ -20,23 +20,23 @@ import net.minecraft.world.entity.vehicle.Boat.Type;
 
 public class ColourBoatRender extends EntityRenderer<Boat> {
 
-  private static final ResourceLocation NONE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/none.png");
-  private static final ResourceLocation BLACK = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/black.png");
-  private static final ResourceLocation BLUE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/blue.png");
-  private static final ResourceLocation BROWN = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/brown.png");
-  private static final ResourceLocation CYAN = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/cyan.png");
-  private static final ResourceLocation GRAY = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/gray.png");
-  private static final ResourceLocation GREEN = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/green.png");
-  private static final ResourceLocation LIGHT_BLUE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/light_blue.png");
-  private static final ResourceLocation LIGHT_GRAY = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/light_gray.png");
-  private static final ResourceLocation LIME = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/lime.png");
-  private static final ResourceLocation MAGENTA = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/magenta.png");
-  private static final ResourceLocation ORANGE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/orange.png");
-  private static final ResourceLocation PINK = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/pink.png");
-  private static final ResourceLocation PURPLE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/purple.png");
-  private static final ResourceLocation RED = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/red.png");
-  private static final ResourceLocation WHITE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/white.png");
-  private static final ResourceLocation YELLOW = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/yellow.png");
+  private static final ResourceLocation NONE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_none.png");
+  private static final ResourceLocation BLACK = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_black.png");
+  private static final ResourceLocation BLUE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_blue.png");
+  private static final ResourceLocation BROWN = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_brown.png");
+  private static final ResourceLocation CYAN = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_cyan.png");
+  private static final ResourceLocation GRAY = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_gray.png");
+  private static final ResourceLocation GREEN = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_green.png");
+  private static final ResourceLocation LIGHT_BLUE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_light_blue.png");
+  private static final ResourceLocation LIGHT_GRAY = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_light_gray.png");
+  private static final ResourceLocation LIME = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_lime.png");
+  private static final ResourceLocation MAGENTA = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_magenta.png");
+  private static final ResourceLocation ORANGE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_orange.png");
+  private static final ResourceLocation PINK = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_pink.png");
+  private static final ResourceLocation PURPLE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_purple.png");
+  private static final ResourceLocation RED = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_red.png");
+  private static final ResourceLocation WHITE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_white.png");
+  private static final ResourceLocation YELLOW = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_yellow.png");
   protected final BoatModel model;
 
   public ColourBoatRender(EntityRendererProvider.Context context) {
@@ -101,6 +101,7 @@ public class ColourBoatRender extends EntityRenderer<Boat> {
     return BLACK;
   }
 
+  //thank you to mrbyscos cactus mod with the cactus boat for helping make sense of this 
   @Override
   public void render(Boat entityIn, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource bufferIn, int packedLightIn) {
     poseStack.pushPose();
