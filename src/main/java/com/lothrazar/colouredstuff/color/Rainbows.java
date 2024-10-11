@@ -79,7 +79,8 @@ public class Rainbows {
       BlockState wtfIsIt = world.getBlockState(newPos);
       if (wtfIsIt.getBlock() instanceof IHasColor block) {
         //get rainbow for target block here
-        if (rotateToColor(block.getRainbow(), world, newPos, originalSourceColour, newColor)) {
+        if (block.getRainbow() != null
+            && rotateToColor(block.getRainbow(), world, newPos, originalSourceColour, newColor)) {
           rec++;
           Rainbows.rotateToColorConnectedRecursive(world, newPos, originalSourceColour, newColor, rec);
         }

@@ -1,6 +1,5 @@
 package com.lothrazar.colouredstuff.block;
 
-import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.color.IHasColor;
@@ -10,11 +9,11 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 
 public class DoorColour extends DoorBlock implements IHasColor {
 
-  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
+  //  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public DoorColour(Properties p, DyeColorless color) {
     super(p.noOcclusion(), BlockSetType.OAK); //oak so it has the sound effects of other wood  
-    RAINBOW.put(color, this);
+    //    RAINBOW.put(color, this);
     this.color = color;
   }
 
@@ -27,6 +26,6 @@ public class DoorColour extends DoorBlock implements IHasColor {
 
   @Override
   public Map<DyeColorless, Block> getRainbow() {
-    return RAINBOW;
+    return null; // do not dye them in world. on purpose. buggy double blocks dont work
   }
 }

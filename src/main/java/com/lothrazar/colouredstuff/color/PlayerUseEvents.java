@@ -76,6 +76,7 @@ public class PlayerUseEvents extends EventFlib {
     final Level level = event.getLevel();
     BlockPos eventPos = event.getPos();
     BlockState stateHit = level.getBlockState(eventPos);
+
     if (stateHit.getBlock() instanceof IHasColor block) {
       success = dyeBlockInWorld(event.getEntity(), itemInHand, level, eventPos, dye, block);
     }
@@ -162,7 +163,7 @@ public class PlayerUseEvents extends EventFlib {
     boolean doConnected = ConfigColourable.MULTI_DYE.get() && playerIn.isCrouching();
     var rainbow = block.getRainbow();
     if (rainbow == null) {
-      // doors ?
+      // doors get cancelled here
       return false;
     }
     boolean success = Rainbows.rotateToColor(rainbow, level, eventPos, originalSourceColour, dye);
