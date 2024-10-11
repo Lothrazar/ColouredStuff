@@ -39,6 +39,4 @@ public class WhiteBoat extends Boat {
   public Item getDropItem() {
     return ColourableItemRegistry.BOAT_WHITE.get();
   }
-
-
 }

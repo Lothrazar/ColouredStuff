@@ -39,5 +39,4 @@ public class RedBoat extends Boat {
   public Item getDropItem() {
     return ColourableItemRegistry.BOAT_RED.get();
   }
-
 }

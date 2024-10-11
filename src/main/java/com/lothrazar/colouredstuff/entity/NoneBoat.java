@@ -39,6 +39,4 @@ public class NoneBoat extends Boat {
   public Item getDropItem() {
     return ColourableItemRegistry.BOAT_NONE.get();
   }
-
-
 }

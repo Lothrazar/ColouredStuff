@@ -35,7 +35,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
  * Don't look its a giant mess of if-else statements
  */
 public class PlayerUseEvents extends EventFlib {
-
   //  @SubscribeEvent
   //  public void onEntityInteract(EntityInteract event) {
   //    if (ConfigColourable.IN_WORLD_DYE.get()) {
@@ -49,8 +48,6 @@ public class PlayerUseEvents extends EventFlib {
       rightClickDye(event);
     }
   }
-
-
 
   private void rightClickDye(RightClickBlock event) {
     final ItemStack itemInHand = event.getItemStack();
@@ -76,7 +73,6 @@ public class PlayerUseEvents extends EventFlib {
     final Level level = event.getLevel();
     BlockPos eventPos = event.getPos();
     BlockState stateHit = level.getBlockState(eventPos);
-
     if (stateHit.getBlock() instanceof IHasColor block) {
       success = dyeBlockInWorld(event.getEntity(), itemInHand, level, eventPos, dye, block);
     }

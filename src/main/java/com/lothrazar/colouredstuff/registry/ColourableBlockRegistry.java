@@ -797,7 +797,6 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> trapdoor_planks_yellow = BLOCKS.register("trapdoor_planks_yellow", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
   //
   //
-
   public static final RegistryObject<Block> door_planks_none = BLOCKS.register("door_planks_none", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
   public static final RegistryObject<Block> door_planks_black = BLOCKS.register("door_planks_black", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
   public static final RegistryObject<Block> door_planks_blue = BLOCKS.register("door_planks_blue", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLUE));
@@ -815,7 +814,6 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> door_planks_red = BLOCKS.register("door_planks_red", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
   public static final RegistryObject<Block> door_planks_white = BLOCKS.register("door_planks_white", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
   public static final RegistryObject<Block> door_planks_yellow = BLOCKS.register("door_planks_yellow", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
- 
   //darkosto
   //
   public static final RegistryObject<CraftingRainbow> crafting_table_rainbow = BLOCKS.register("crafting_table_rainbow", () -> new CraftingRainbow(Block.Properties.copy(Blocks.CRAFTING_TABLE)

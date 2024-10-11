@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.FarmBlock;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -34,10 +35,6 @@ public class Rainbows {
         && (originalSourceColour == null || oldColour == originalSourceColour)) {
       //do we want to go all the way back to a default block state her
       BlockState newState = rainbow.get(newColour).defaultBlockState();
-      //if both blocks are the SAME BLOCK, then just clone the state
-      //      if(newState.getBlock() == stateFromPos.getBlock()) {
-      //        newState = stateFromPos.setValue(null, null)
-      //      }
       //life hacks
       newState = tryCloneProperty(stateFromPos, newState, ButtonBlock.FACE);
       newState = tryCloneProperty(stateFromPos, newState, BlockAxisPillar.AXIS);
@@ -48,17 +45,17 @@ public class Rainbows {
       newState = tryCloneProperty(stateFromPos, newState, StairBlock.HALF);
       newState = tryCloneProperty(stateFromPos, newState, StairBlock.SHAPE);
       newState = tryCloneProperty(stateFromPos, newState, ButtonBlock.FACE);
+      newState = tryCloneProperty(stateFromPos, newState, TrapDoorBlock.OPEN);
+      newState = tryCloneProperty(stateFromPos, newState, TrapDoorBlock.HALF);
       newState = tryCloneProperty(stateFromPos, newState, WallBlock.EAST_WALL);
       newState = tryCloneProperty(stateFromPos, newState, WallBlock.NORTH_WALL);
       newState = tryCloneProperty(stateFromPos, newState, WallBlock.SOUTH_WALL);
       newState = tryCloneProperty(stateFromPos, newState, WallBlock.WEST_WALL);
       newState = tryCloneProperty(stateFromPos, newState, WallBlock.UP);
       //ok continue as normal
-      //      world.removeBlock(pos, false);
-      //   Block.UPDATE_ALL_IMMEDIATE 
+      //      world.removeBlock(pos, false); 
       success = world.setBlock(pos, newState, Block.UPDATE_ALL);
     }
-    //    }
     return success;
   }
 

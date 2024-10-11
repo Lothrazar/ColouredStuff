@@ -8,7 +8,6 @@ import net.minecraft.world.level.block.DoorBlock;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 
 public class DoorColour extends DoorBlock implements IHasColor {
-
   //  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public DoorColour(Properties p, DyeColorless color) {

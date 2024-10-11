@@ -39,6 +39,4 @@ public class LimeBoat extends Boat {
   public Item getDropItem() {
     return ColourableItemRegistry.BOAT_LIME.get();
   }
-
-
 }

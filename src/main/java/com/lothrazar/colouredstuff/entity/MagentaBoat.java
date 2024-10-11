@@ -39,6 +39,4 @@ public class MagentaBoat extends Boat {
   public Item getDropItem() {
     return ColourableItemRegistry.BOAT_MAGENTA.get();
   }
-
-
 }

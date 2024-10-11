@@ -44,6 +44,7 @@ public class ClientRegistry {
     event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_WHITE.get(), ColourBoatRender::new);
     event.registerEntityRenderer(ColourableItemRegistry.BOAT_ENTITY_YELLOW.get(), ColourBoatRender::new);
   }
+
   /**
    * make the water translucent
    */

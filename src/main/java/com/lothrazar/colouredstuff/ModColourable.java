@@ -34,10 +34,8 @@ public class ModColourable {
     bus.addListener(InteractionRegistry::register);
     bus.addListener(ClientRegistry::register);
     bus.addListener(DynamicRegistry::register);
-
     DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
       bus.addListener(ClientRegistry::registerEntityRenders);
-
       //
     });
   }

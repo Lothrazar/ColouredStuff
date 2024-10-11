@@ -18,6 +18,7 @@ public class TrapDoorColour extends TrapDoorBlock implements IHasColor {
     RAINBOW.put(color, this);
     this.color = color;
   }
+
   @Override
   public DyeColorless getColor() {
     return color;

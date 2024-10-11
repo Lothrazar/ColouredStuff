@@ -39,6 +39,4 @@ public class GreenBoat extends Boat {
   public Item getDropItem() {
     return ColourableItemRegistry.BOAT_GREEN.get();
   }
-
-
 }
