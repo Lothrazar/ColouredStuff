@@ -27,6 +27,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent.RightClickBlock;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 /**
@@ -34,7 +35,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
  */
 public class PlayerUseEvents extends EventFlib {
 
-  @SubscribeEvent
+  @SubscribeEvent(priority = EventPriority.HIGHEST)
   public void onRightClickBlock(RightClickBlock event) {
     if (ConfigColourable.IN_WORLD_DYE.get()) {
       rightClickDye(event);
@@ -46,9 +47,10 @@ public class PlayerUseEvents extends EventFlib {
     if (itemInHand.isEmpty()) {
       return;
     }
-    final Level level = event.getLevel();
-    BlockPos eventPos = event.getPos();
-    BlockState stateHit = level.getBlockState(eventPos);
+    if (itemInHand.is(ColourableItemRegistry.STATIONERY_ITEMTAG)) {
+      //      ModColourable.LOGGER.info("ignore stationery");
+      return;
+    }
     DyeColorless dye = null;
     if (itemInHand.is(ColourableItemRegistry.DYES_NONE_ITEMTAG)) {
       dye = DyeColorless.NONE;
@@ -61,6 +63,9 @@ public class PlayerUseEvents extends EventFlib {
     }
     //dye is non-null now
     boolean success = false;
+    final Level level = event.getLevel();
+    BlockPos eventPos = event.getPos();
+    BlockState stateHit = level.getBlockState(eventPos);
     if (stateHit.getBlock() instanceof IHasColor block) {
       success = dyeBlockInWorld(event.getEntity(), itemInHand, level, eventPos, dye, block);
     }
@@ -83,6 +88,9 @@ public class PlayerUseEvents extends EventFlib {
     }
     if (success) {
       event.getEntity().swing(event.getHand());
+      //      event.setResult(Result.DENY);
+      event.setCanceled(true);
+      //      event.setCancellationResult(InteractionResult.SUCCESS); 
     }
   }
 
@@ -146,7 +154,10 @@ public class PlayerUseEvents extends EventFlib {
     boolean success = Rainbows.rotateToColor(rainbow, level, eventPos, originalSourceColour, dye);
     //new color is different, NOW update
     if (success) {
-      ItemStackUtil.shrink(playerIn, itemInHand);
+      if (ConfigColourable.CONSUME.get()) {
+        // if the config says we consume one item each time 
+        ItemStackUtil.shrink(playerIn, itemInHand);
+      }
       //  fluids dont enter here due to how crouching fires
       if (doConnected) {
         //get new rainbow for this new block..?

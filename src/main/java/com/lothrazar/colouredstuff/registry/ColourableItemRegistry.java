@@ -884,6 +884,7 @@ public class ColourableItemRegistry {
   public static final RegistryObject<Item> BOAT_YELLOW = ITEMS.register("boat_yellow", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.YELLOW));
   //
   public static final TagKey<Item> DYES_NONE_ITEMTAG = ItemTags.create(new ResourceLocation("forge", "dyes/none"));
+  public static final TagKey<Item> STATIONERY_ITEMTAG = ItemTags.create(new ResourceLocation("forge", "tools/stationery"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, new ResourceLocation(ModColourable.MODID, "tab"));
 
   @SubscribeEvent
