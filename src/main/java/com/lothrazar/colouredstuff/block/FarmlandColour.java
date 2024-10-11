@@ -3,6 +3,8 @@ package com.lothrazar.colouredstuff.block;
 import java.util.HashMap;
 import java.util.Map;
 import com.lothrazar.colouredstuff.color.DyeColorless;
+import com.lothrazar.colouredstuff.color.IHasColor;
+import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -21,14 +23,22 @@ import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.common.PlantType;
 
-public class FarmlandColour extends PathColour {
+public class FarmlandColour extends BlockFlib implements IHasColor {
 
   public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public FarmlandColour(Properties p, DyeColorless s) {
-    super(p, s);
+    super(p);
     RAINBOW.put(s, this);
+    this.color = s;
     this.registerDefaultState(this.defaultBlockState().setValue(FarmBlock.MOISTURE, 0));
+  }
+
+  protected final DyeColorless color;
+
+  @Override
+  public DyeColorless getColor() {
+    return color;
   }
 
   @Override

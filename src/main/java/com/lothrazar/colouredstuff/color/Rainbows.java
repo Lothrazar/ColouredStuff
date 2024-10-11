@@ -8,18 +8,22 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.ButtonBlock;
 import net.minecraft.world.level.block.FarmBlock;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.properties.Property;
 
 public class Rainbows {
 
   public static final int MAX_CONNECTED_UPDATE = 24;
 
   public static boolean rotateToColor(Map<DyeColorless, Block> rainbow, Level world, BlockPos pos, DyeColorless originalSourceColour, DyeColorless newColour) {
+    boolean success = false;
     //
     BlockState stateFromPos = world.getBlockState(pos);
     DyeColorless oldColour = null;
@@ -28,29 +32,42 @@ public class Rainbows {
     }
     if ((oldColour == null || newColour != oldColour)
         && (originalSourceColour == null || oldColour == originalSourceColour)) {
+      //do we want to go all the way back to a default block state her
       BlockState newState = rainbow.get(newColour).defaultBlockState();
+      //if both blocks are the SAME BLOCK, then just clone the state
+      //      if(newState.getBlock() == stateFromPos.getBlock()) {
+      //        newState = stateFromPos.setValue(null, null)
+      //      }
       //life hacks
-      if (newState.hasProperty(BlockAxisPillar.AXIS) && stateFromPos.hasProperty(BlockAxisPillar.AXIS))
-        newState = newState.setValue(BlockAxisPillar.AXIS, stateFromPos.getValue(BlockAxisPillar.AXIS));
-      if (newState.hasProperty(SlabBlock.TYPE) && stateFromPos.hasProperty(SlabBlock.TYPE))
-        newState = newState.setValue(SlabBlock.TYPE, stateFromPos.getValue(SlabBlock.TYPE));
-      if (newState.hasProperty(BlockStateProperties.WATERLOGGED) && stateFromPos.hasProperty(BlockStateProperties.WATERLOGGED))
-        newState = newState.setValue(BlockStateProperties.WATERLOGGED, stateFromPos.getValue(BlockStateProperties.WATERLOGGED));
-      if (newState.hasProperty(FarmBlock.MOISTURE) && stateFromPos.hasProperty(FarmBlock.MOISTURE))
-        newState = newState.setValue(FarmBlock.MOISTURE, stateFromPos.getValue(FarmBlock.MOISTURE));
-      if (newState.hasProperty(HorizontalDirectionalBlock.FACING) && stateFromPos.hasProperty(HorizontalDirectionalBlock.FACING))
-        newState = newState.setValue(HorizontalDirectionalBlock.FACING, stateFromPos.getValue(HorizontalDirectionalBlock.FACING));
-      if (newState.hasProperty(StairBlock.HALF) && stateFromPos.hasProperty(StairBlock.HALF))
-        newState = newState.setValue(StairBlock.HALF, stateFromPos.getValue(StairBlock.HALF));
-      if (newState.hasProperty(StairBlock.SHAPE) && stateFromPos.hasProperty(StairBlock.SHAPE))
-        newState = newState.setValue(StairBlock.SHAPE, stateFromPos.getValue(StairBlock.SHAPE));
-      //
+      newState = tryCloneProperty(stateFromPos, newState, ButtonBlock.FACE);
+      newState = tryCloneProperty(stateFromPos, newState, BlockAxisPillar.AXIS);
+      newState = tryCloneProperty(stateFromPos, newState, SlabBlock.TYPE);
+      newState = tryCloneProperty(stateFromPos, newState, BlockStateProperties.WATERLOGGED);
+      newState = tryCloneProperty(stateFromPos, newState, FarmBlock.MOISTURE);
+      newState = tryCloneProperty(stateFromPos, newState, HorizontalDirectionalBlock.FACING);
+      newState = tryCloneProperty(stateFromPos, newState, StairBlock.HALF);
+      newState = tryCloneProperty(stateFromPos, newState, StairBlock.SHAPE);
+      newState = tryCloneProperty(stateFromPos, newState, ButtonBlock.FACE);
+      newState = tryCloneProperty(stateFromPos, newState, WallBlock.EAST_WALL);
+      newState = tryCloneProperty(stateFromPos, newState, WallBlock.NORTH_WALL);
+      newState = tryCloneProperty(stateFromPos, newState, WallBlock.SOUTH_WALL);
+      newState = tryCloneProperty(stateFromPos, newState, WallBlock.WEST_WALL);
+      newState = tryCloneProperty(stateFromPos, newState, WallBlock.UP);
       //ok continue as normal
-      world.removeBlock(pos, false);
-      return world.setBlock(pos, newState, 0);
+      //      world.removeBlock(pos, false);
+      //   Block.UPDATE_ALL_IMMEDIATE 
+      success = world.setBlock(pos, newState, Block.UPDATE_ALL);
     }
     //    }
-    return false;
+    return success;
+  }
+
+  @SuppressWarnings({ "unchecked", "rawtypes" })
+  private static BlockState tryCloneProperty(BlockState stateFromPos, BlockState newState, Property face) {
+    if (newState.hasProperty(face) && stateFromPos.hasProperty(face)) {
+      newState = newState.setValue(face, stateFromPos.getValue(face));
+    }
+    return newState;
   }
 
   public static void rotateToColorConnectedRecursive(Level world, BlockPos pos, DyeColorless originalSourceColour, DyeColorless newColor, int rec) {

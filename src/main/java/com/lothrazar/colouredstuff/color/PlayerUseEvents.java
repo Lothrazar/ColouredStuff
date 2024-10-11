@@ -20,6 +20,7 @@ import com.lothrazar.library.events.EventFlib;
 import com.lothrazar.library.util.ItemStackUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -35,12 +36,21 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
  */
 public class PlayerUseEvents extends EventFlib {
 
+  //  @SubscribeEvent
+  //  public void onEntityInteract(EntityInteract event) {
+  //    if (ConfigColourable.IN_WORLD_DYE.get()) {
+  //      rightClickDyeEntity(event);
+  //    }
+  //  }
+
   @SubscribeEvent(priority = EventPriority.HIGHEST)
   public void onRightClickBlock(RightClickBlock event) {
     if (ConfigColourable.IN_WORLD_DYE.get()) {
       rightClickDye(event);
     }
   }
+
+
 
   private void rightClickDye(RightClickBlock event) {
     final ItemStack itemInHand = event.getItemStack();
@@ -90,7 +100,7 @@ public class PlayerUseEvents extends EventFlib {
       event.getEntity().swing(event.getHand());
       //      event.setResult(Result.DENY);
       event.setCanceled(true);
-      //      event.setCancellationResult(InteractionResult.SUCCESS); 
+      event.setCancellationResult(InteractionResult.PASS);
     }
   }
 
@@ -151,6 +161,10 @@ public class PlayerUseEvents extends EventFlib {
     //if configs allows it, then sneaking/crouching does the multiblock 
     boolean doConnected = ConfigColourable.MULTI_DYE.get() && playerIn.isCrouching();
     var rainbow = block.getRainbow();
+    if (rainbow == null) {
+      // doors ?
+      return false;
+    }
     boolean success = Rainbows.rotateToColor(rainbow, level, eventPos, originalSourceColour, dye);
     //new color is different, NOW update
     if (success) {
