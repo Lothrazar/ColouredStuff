@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:log_white"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:wood_white",
+    "count": 3
+  }
+}

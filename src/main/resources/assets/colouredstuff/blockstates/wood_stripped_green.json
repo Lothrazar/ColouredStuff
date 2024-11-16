@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "colouredstuff:block/wood_stripped_green",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "colouredstuff:block/wood_stripped_green"
+    },
+    "axis=z": {
+      "model": "colouredstuff:block/wood_stripped_green",
+      "x": 90
+    }
+  }
+}

@@ -1,7 +1,23 @@
 {
   "replace": false,
   "values": [
-
+"colouredstuff:wood_stripped_black",
+"colouredstuff:wood_stripped_blue",
+"colouredstuff:wood_stripped_brown",
+"colouredstuff:wood_stripped_cyan",
+"colouredstuff:wood_stripped_gray",
+"colouredstuff:wood_stripped_green",
+"colouredstuff:wood_stripped_light_blue",
+"colouredstuff:wood_stripped_light_gray",
+"colouredstuff:wood_stripped_lime",
+"colouredstuff:wood_stripped_magenta",
+"colouredstuff:wood_stripped_none",
+"colouredstuff:wood_stripped_orange",
+"colouredstuff:wood_stripped_pink",
+"colouredstuff:wood_stripped_purple",
+"colouredstuff:wood_stripped_red",
+"colouredstuff:wood_stripped_white",
+"colouredstuff:wood_stripped_yellow"
 
   ]
 }

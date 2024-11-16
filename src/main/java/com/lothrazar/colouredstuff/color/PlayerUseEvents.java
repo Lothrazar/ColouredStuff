@@ -18,7 +18,9 @@ import com.lothrazar.colouredstuff.block.SandstoneCutColour;
 import com.lothrazar.colouredstuff.block.SaplinColour;
 import com.lothrazar.colouredstuff.block.StoneColour;
 import com.lothrazar.colouredstuff.block.StrippedLogColour;
+import com.lothrazar.colouredstuff.block.StrippedWoodColour;
 import com.lothrazar.colouredstuff.block.TrapDoorColour;
+import com.lothrazar.colouredstuff.block.WoodColour;
 import com.lothrazar.colouredstuff.block.fence.PlanksFence;
 import com.lothrazar.colouredstuff.block.gate.PlanksGate;
 import com.lothrazar.colouredstuff.block.slab.BrickSlab;
@@ -76,7 +78,6 @@ public class PlayerUseEvents extends EventFlib {
       return;
     }
     if (itemInHand.is(ColourableItemRegistry.STATIONERY_ITEMTAG)) {
-      //      ModColourable.LOGGER.info("ignore stationery");
       return;
     }
     DyeColorless dye = null;
@@ -119,7 +120,6 @@ public class PlayerUseEvents extends EventFlib {
     }
     if (success) {
       event.getEntity().swing(event.getHand());
-      //      event.setResult(Result.DENY);
       event.setCanceled(true);
       event.setCancellationResult(InteractionResult.PASS);
     }
@@ -168,6 +168,12 @@ public class PlayerUseEvents extends EventFlib {
     }
     else if (stateHit.is(DataTags.STRIPPED_LOGS)) {
       return Rainbows.rotateToColor(StrippedLogColour.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.STRIPPED_WOOD)) {
+      return Rainbows.rotateToColor(StrippedWoodColour.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.WOOD)) {
+      return Rainbows.rotateToColor(WoodColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(BlockTags.LOGS)) {
       return Rainbows.rotateToColor(LogColour.RAINBOW, level, eventPos, null, dye);
@@ -243,10 +249,6 @@ public class PlayerUseEvents extends EventFlib {
     }
     else if (stateHit.is(BlockTags.WOODEN_BUTTONS)) {
       return Rainbows.rotateToColor(ButtonColour.RAINBOW, level, eventPos, null, dye);
-    }
-    //TODO make this block
-    else if (stateHit.is(DataTags.STRIPPED_WOOD)) {
-      //          return Rainbows.rotateToColor(ButtonColour.RAINBOW, level, eventPos, null, dye);
     }
     return false;
   }

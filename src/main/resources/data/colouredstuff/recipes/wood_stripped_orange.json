@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:log_stripped_orange"
+    }
+  },
+  "result": {
+    "item": "colouredstuff:wood_stripped_orange",
+    "count": 3
+  }
+}
