@@ -3,7 +3,7 @@ package com.lothrazar.colouredstuff.color;
 import com.lothrazar.colouredstuff.block.BrickColour;
 import com.lothrazar.colouredstuff.block.BrickstoneColour;
 import com.lothrazar.colouredstuff.block.ButtonColour;
-import com.lothrazar.colouredstuff.block.ChiseledColour;
+import com.lothrazar.colouredstuff.block.ChiseledBrickstoneColour;
 import com.lothrazar.colouredstuff.block.CobbleColour;
 import com.lothrazar.colouredstuff.block.ColourLiquidBlock;
 import com.lothrazar.colouredstuff.block.DirtColour;
@@ -13,8 +13,10 @@ import com.lothrazar.colouredstuff.block.LogColour;
 import com.lothrazar.colouredstuff.block.PathColour;
 import com.lothrazar.colouredstuff.block.PlanksColour;
 import com.lothrazar.colouredstuff.block.PressurePlateColour;
+import com.lothrazar.colouredstuff.block.SandstoneChiseledColour;
 import com.lothrazar.colouredstuff.block.SandstoneColour;
 import com.lothrazar.colouredstuff.block.SandstoneCutColour;
+import com.lothrazar.colouredstuff.block.SandstoneSmoothColour;
 import com.lothrazar.colouredstuff.block.SaplinColour;
 import com.lothrazar.colouredstuff.block.StoneColour;
 import com.lothrazar.colouredstuff.block.StrippedLogColour;
@@ -137,12 +139,11 @@ public class PlayerUseEvents extends EventFlib {
     else if (stateHit.is(DataTags.SANDSTONE_CUT)) {
       return Rainbows.rotateToColor(SandstoneCutColour.RAINBOW, level, eventPos, null, dye);
     }
-    //TODO make this block
     else if (stateHit.is(DataTags.SANDSTONE_SMOOTH)) {
-      //      return Rainbows.rotateToColor(SandstoneSmoothColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(SandstoneSmoothColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(DataTags.SANDSTONE_CHISELED)) {
-      return Rainbows.rotateToColor(ChiseledColour.RAINBOW, level, eventPos, null, dye);
+      return Rainbows.rotateToColor(SandstoneChiseledColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(DataTags.SANDSTONE)) {
       return Rainbows.rotateToColor(SandstoneColour.RAINBOW, level, eventPos, null, dye);
@@ -152,6 +153,9 @@ public class PlayerUseEvents extends EventFlib {
     }
     else if (stateHit.is(DataTags.COBBLESTONE)) {
       return Rainbows.rotateToColor(CobbleColour.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(Blocks.CHISELED_STONE_BRICKS)) {
+      return Rainbows.rotateToColor(ChiseledBrickstoneColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(BlockTags.STONE_BRICKS)) {
       return Rainbows.rotateToColor(BrickstoneColour.RAINBOW, level, eventPos, null, dye);
