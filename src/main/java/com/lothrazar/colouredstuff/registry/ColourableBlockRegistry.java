@@ -48,9 +48,6 @@ import com.lothrazar.colouredstuff.block.wall.StoneWall;
 import com.lothrazar.colouredstuff.block.wall.StonebrickWall;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.world.RainbowTreeGrower;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.fml.common.Mod;
@@ -728,7 +725,6 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> wall_planks_red = BLOCKS.register("wall_planks_red", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
   public static final RegistryObject<Block> wall_planks_white = BLOCKS.register("wall_planks_white", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
   public static final RegistryObject<Block> wall_planks_yellow = BLOCKS.register("wall_planks_yellow", () -> new PlanksWall(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
-
   //
   public static final RegistryObject<Block> wall_brick_none = BLOCKS.register("wall_brick_none", () -> new BrickWall(Block.Properties.copy(Blocks.BRICKS), DyeColorless.NONE));
   public static final RegistryObject<Block> wall_brick_black = BLOCKS.register("wall_brick_black", () -> new BrickWall(Block.Properties.copy(Blocks.BRICKS), DyeColorless.BLACK));
@@ -837,7 +833,6 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> trapdoor_planks_red = BLOCKS.register("trapdoor_planks_red", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.RED));
   public static final RegistryObject<Block> trapdoor_planks_white = BLOCKS.register("trapdoor_planks_white", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.WHITE));
   public static final RegistryObject<Block> trapdoor_planks_yellow = BLOCKS.register("trapdoor_planks_yellow", () -> new TrapDoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.YELLOW));
-
   //
   public static final RegistryObject<Block> door_planks_none = BLOCKS.register("door_planks_none", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.NONE));
   public static final RegistryObject<Block> door_planks_black = BLOCKS.register("door_planks_black", () -> new DoorColour(Block.Properties.copy(Blocks.OAK_PLANKS), DyeColorless.BLACK));
@@ -861,41 +856,4 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<CraftingRainbow> crafting_table_rainbow = BLOCKS.register("crafting_table_rainbow", () -> new CraftingRainbow(Block.Properties.copy(Blocks.CRAFTING_TABLE)
       .explosionResistance(1200F)
       .destroyTime(8.0F)));
-
-  public static class DataTags {
-
-    public static final TagKey<Block> WOODEN_GATES = BlockTags.create(new ResourceLocation("forge", "fence_gates/wooden"));
-    public static final TagKey<Block> BRICKS = BlockTags.create(new ResourceLocation("forge", "bricks"));
-    public static final TagKey<Block> STONE = BlockTags.create(new ResourceLocation("forge", "stone"));
-    public static final TagKey<Block> COBBLESTONE = BlockTags.create(new ResourceLocation("forge", "cobblestone"));
-    public static final TagKey<Block> SANDSTONE = BlockTags.create(new ResourceLocation("forge", "sandstone"));
-    public static final TagKey<Block> SANDSTONE_CHISELED = BlockTags.create(new ResourceLocation("forge", "chiseled_sandstone"));
-    public static final TagKey<Block> SANDSTONE_CUT = BlockTags.create(new ResourceLocation("forge", "cut_sandstone"));
-    public static final TagKey<Block> SANDSTONE_SMOOTH = BlockTags.create(new ResourceLocation("forge", "smooth_sandstone"));
-    //
-    public static final TagKey<Block> STRIPPED_LOGS = BlockTags.create(new ResourceLocation("forge", "stripped_logs"));
-    public static final TagKey<Block> STRIPPED_WOOD = BlockTags.create(new ResourceLocation("forge", "stripped_wood"));
-    public static final TagKey<Block> WOOD = BlockTags.create(new ResourceLocation("forge", "wood"));
-    //
-    public static final TagKey<Block> BRICK_STAIRS = BlockTags.create(new ResourceLocation("forge", "brick_stairs"));
-    public static final TagKey<Block> COBBLESTONE_STAIRS = BlockTags.create(new ResourceLocation("forge", "cobblestone_stairs"));
-    public static final TagKey<Block> SANDSTONE_STAIRS = BlockTags.create(new ResourceLocation("forge", "sandstone_stairs"));
-    public static final TagKey<Block> STONE_BRICK_STAIRS = BlockTags.create(new ResourceLocation("forge", "stone_brick_stairs"));
-    public static final TagKey<Block> STONE_STAIRS = BlockTags.create(new ResourceLocation("forge", "stone_stairs"));
-
-    //
-    public static final TagKey<Block> BRICK_SLAB = BlockTags.create(new ResourceLocation("forge", "brick_slab"));
-    public static final TagKey<Block> COBBLESTONE_SLAB = BlockTags.create(new ResourceLocation("forge", "cobblestone_slab"));
-    public static final TagKey<Block> SANDSTONE_SLAB = BlockTags.create(new ResourceLocation("forge", "sandstone_slab"));
-    public static final TagKey<Block> STONE_BRICK_SLAB = BlockTags.create(new ResourceLocation("forge", "stone_brick_slab"));
-    public static final TagKey<Block> STONE_SLAB = BlockTags.create(new ResourceLocation("forge", "stone_slab"));
-    //
-    public static final TagKey<Block> BRICK_WALLS = BlockTags.create(new ResourceLocation("forge", "brick_walls"));
-    public static final TagKey<Block> COBBLESTONE_WALLS = BlockTags.create(new ResourceLocation("forge", "cobblestone_walls"));
-    public static final TagKey<Block> SANDSTONE_WALLS = BlockTags.create(new ResourceLocation("forge", "sandstone_walls"));
-    public static final TagKey<Block> STONE_BRICK_WALLS = BlockTags.create(new ResourceLocation("forge", "stone_brick_walls"));
-    public static final TagKey<Block> STONE_WALLS = BlockTags.create(new ResourceLocation("forge", "stone_walls"));
-    public static final TagKey<Block> WOODEN_WALLS = BlockTags.create(new ResourceLocation("forge", "wooden_walls"));
-
-  }
 }

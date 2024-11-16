@@ -41,9 +41,9 @@ import com.lothrazar.colouredstuff.block.wall.PlanksWall;
 import com.lothrazar.colouredstuff.block.wall.SandstoneWall;
 import com.lothrazar.colouredstuff.block.wall.StoneWall;
 import com.lothrazar.colouredstuff.block.wall.StonebrickWall;
-import com.lothrazar.colouredstuff.registry.ColourableBlockRegistry.DataTags;
 import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
 import com.lothrazar.colouredstuff.registry.ConfigColourable;
+import com.lothrazar.colouredstuff.registry.DataTags;
 import com.lothrazar.library.events.EventFlib;
 import com.lothrazar.library.util.ItemStackUtil;
 import net.minecraft.core.BlockPos;
@@ -63,7 +63,6 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
  * Don't look its a giant mess of if-else statements
  */
 public class PlayerUseEvents extends EventFlib {
-
 
   @SubscribeEvent(priority = EventPriority.HIGHEST)
   public void onRightClickBlock(RightClickBlock event) {
