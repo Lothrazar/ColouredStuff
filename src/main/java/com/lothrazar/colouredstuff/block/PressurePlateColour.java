@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 
 public class PressurePlateColour extends PressurePlateBlock implements IHasColor {
 
-  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
+  public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public PressurePlateColour(Properties p, DyeColorless color) {
     super(PressurePlateBlock.Sensitivity.EVERYTHING, p.noCollission().strength(0.5F), BlockSetType.OAK); //oak so it has the sound effects of other wood pressure plates

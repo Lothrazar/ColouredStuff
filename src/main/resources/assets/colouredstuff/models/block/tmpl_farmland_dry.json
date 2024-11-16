@@ -1,6 +1,6 @@
 {
     "textures": {
-        "particle": "#dirt",
+        "particle": "minecraft:block/farmland",
         "top": "minecraft:block/farmland"
     },
     "elements": [

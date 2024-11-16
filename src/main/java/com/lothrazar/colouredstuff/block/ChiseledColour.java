@@ -7,11 +7,11 @@ import com.lothrazar.colouredstuff.color.IHasColor;
 import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.world.level.block.Block;
 
-public class ChiseledColor extends BlockFlib implements IHasColor {
+public class ChiseledColour extends BlockFlib implements IHasColor {
 
   public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
-  public ChiseledColor(Properties p, DyeColorless color) {
+  public ChiseledColour(Properties p, DyeColorless color) {
     super(p);
     RAINBOW.put(color, this);
     this.color = color;

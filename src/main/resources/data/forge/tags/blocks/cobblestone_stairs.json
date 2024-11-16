@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+
+"minecraft:cobblestone_stairs",
+"minecraft:mossy_cobblestone_stairs",
+"minecraft:blackstone_stairs",
+"minecraft:cobbled_deepslate_stairs"
+  ]
+}

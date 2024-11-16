@@ -10,5 +10,7 @@
   	,"1.2.1":"Fix Goats not being able to spawn on coloured grass (by removing 'noOcclusion()' internal setting so that it matches vanilla dirt transparency).  Fix missing 'minecraft:mineable/' tags for harvesting some blocks (Chiseled Stone, Stairs, slabs, path blocks).  Removed error log mentioning 'its not a vanilla 16x dye...' "
   	,"1.2.2":" fix stonecutter stairs regular stone recipe"
   	,"1.3.0":"Fix: sneak-dyeing multiple dyed water blocks now works correctly.  Fix: Dyeing colourful path blocks in world no longer becomes farmland.  Colourful farmland is now hidden from the JEI menu.  New config value in_world_dye.consume, so you can control whether dyeing blocks in world consumes the dye-item you are holding or not.  You can now write on coloured stuff blocks using Chalk (from the chalk mod) without dyeing the block (see new data tag forge:tools/stationery to edit or add tool-dyes).  Add Wooden Buttons, Pressure Plates, Doors, and Boats with textures by MarioLuigi7896"
+  	,"1.3.1":"Fix particles of farmland block.  Can dye slabs, stairs, walls, etc, after placing them in the world"
+  	
   }
 }

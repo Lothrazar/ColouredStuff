@@ -2,7 +2,8 @@ package com.lothrazar.colouredstuff.color;
 
 import com.lothrazar.colouredstuff.block.BrickColour;
 import com.lothrazar.colouredstuff.block.BrickstoneColour;
-import com.lothrazar.colouredstuff.block.ChiseledColor;
+import com.lothrazar.colouredstuff.block.ButtonColour;
+import com.lothrazar.colouredstuff.block.ChiseledColour;
 import com.lothrazar.colouredstuff.block.CobbleColour;
 import com.lothrazar.colouredstuff.block.ColourLiquidBlock;
 import com.lothrazar.colouredstuff.block.DirtColour;
@@ -11,9 +12,34 @@ import com.lothrazar.colouredstuff.block.LeavesColour;
 import com.lothrazar.colouredstuff.block.LogColour;
 import com.lothrazar.colouredstuff.block.PathColour;
 import com.lothrazar.colouredstuff.block.PlanksColour;
+import com.lothrazar.colouredstuff.block.PressurePlateColour;
 import com.lothrazar.colouredstuff.block.SandstoneColour;
+import com.lothrazar.colouredstuff.block.SandstoneCutColour;
 import com.lothrazar.colouredstuff.block.SaplinColour;
 import com.lothrazar.colouredstuff.block.StoneColour;
+import com.lothrazar.colouredstuff.block.StrippedLogColour;
+import com.lothrazar.colouredstuff.block.TrapDoorColour;
+import com.lothrazar.colouredstuff.block.fence.PlanksFence;
+import com.lothrazar.colouredstuff.block.gate.PlanksGate;
+import com.lothrazar.colouredstuff.block.slab.BrickSlab;
+import com.lothrazar.colouredstuff.block.slab.CobblestoneSlab;
+import com.lothrazar.colouredstuff.block.slab.PlanksSlab;
+import com.lothrazar.colouredstuff.block.slab.SandstoneSlab;
+import com.lothrazar.colouredstuff.block.slab.StoneSlab;
+import com.lothrazar.colouredstuff.block.slab.StonebrickSlab;
+import com.lothrazar.colouredstuff.block.stair.BrickStair;
+import com.lothrazar.colouredstuff.block.stair.CobblestoneStair;
+import com.lothrazar.colouredstuff.block.stair.PlanksStair;
+import com.lothrazar.colouredstuff.block.stair.SandstoneStair;
+import com.lothrazar.colouredstuff.block.stair.StoneStair;
+import com.lothrazar.colouredstuff.block.stair.StonebrickStair;
+import com.lothrazar.colouredstuff.block.wall.BrickWall;
+import com.lothrazar.colouredstuff.block.wall.CobblestoneWall;
+import com.lothrazar.colouredstuff.block.wall.PlanksWall;
+import com.lothrazar.colouredstuff.block.wall.SandstoneWall;
+import com.lothrazar.colouredstuff.block.wall.StoneWall;
+import com.lothrazar.colouredstuff.block.wall.StonebrickWall;
+import com.lothrazar.colouredstuff.registry.ColourableBlockRegistry.DataTags;
 import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
 import com.lothrazar.colouredstuff.registry.ConfigColourable;
 import com.lothrazar.library.events.EventFlib;
@@ -35,12 +61,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
  * Don't look its a giant mess of if-else statements
  */
 public class PlayerUseEvents extends EventFlib {
-  //  @SubscribeEvent
-  //  public void onEntityInteract(EntityInteract event) {
-  //    if (ConfigColourable.IN_WORLD_DYE.get()) {
-  //      rightClickDyeEntity(event);
-  //    }
-  //  }
+
 
   @SubscribeEvent(priority = EventPriority.HIGHEST)
   public void onRightClickBlock(RightClickBlock event) {
@@ -74,13 +95,16 @@ public class PlayerUseEvents extends EventFlib {
     BlockPos eventPos = event.getPos();
     BlockState stateHit = level.getBlockState(eventPos);
     if (stateHit.getBlock() instanceof IHasColor block) {
+      //dye native in-mod blocks first
       success = dyeBlockInWorld(event.getEntity(), itemInHand, level, eventPos, dye, block);
     }
     else {
+      //Then try mojang blocks baesd on tags
       if (ConfigColourable.VANILLA_OVERRIDE.get()) {
-        dyeMojangBlocks(level, eventPos, stateHit, dye);
+        success = dyeMojangBlocks(level, eventPos, stateHit, dye);
       }
-      if (event.getFace() != null) { //  last we check to dye fluid
+      //    last we check to dye fluid
+      if (event.getFace() != null) {
         eventPos = eventPos.relative(event.getFace());
         BlockState offsetStateHit = level.getBlockState(eventPos);
         if (offsetStateHit.getBlock() == Blocks.WATER && ConfigColourable.VANILLA_OVERRIDE.get()) {
@@ -111,25 +135,29 @@ public class PlayerUseEvents extends EventFlib {
     else if (stateHit.is(Blocks.DIRT_PATH)) {
       return Rainbows.rotateToColor(PathColour.RAINBOW, level, eventPos, null, dye);
     }
-    else if (stateHit.is(Blocks.SANDSTONE)) {
+    else if (stateHit.is(DataTags.SANDSTONE_CUT)) {
+      return Rainbows.rotateToColor(SandstoneCutColour.RAINBOW, level, eventPos, null, dye);
+    }
+    //TODO make this block
+    else if (stateHit.is(DataTags.SANDSTONE_SMOOTH)) {
+      //      return Rainbows.rotateToColor(SandstoneSmoothColour.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.SANDSTONE_CHISELED)) {
+      return Rainbows.rotateToColor(ChiseledColour.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.SANDSTONE)) {
       return Rainbows.rotateToColor(SandstoneColour.RAINBOW, level, eventPos, null, dye);
     }
-    else if (stateHit.is(Blocks.CHISELED_SANDSTONE)) {
-      return Rainbows.rotateToColor(ChiseledColor.RAINBOW, level, eventPos, null, dye);
-    }
-    else if (stateHit.is(Blocks.CHISELED_RED_SANDSTONE)) {
-      return Rainbows.rotateToColor(ChiseledColor.RAINBOW, level, eventPos, null, dye);
-    }
-    else if (stateHit.is(Blocks.STONE)) {
+    else if (stateHit.is(DataTags.STONE)) {
       return Rainbows.rotateToColor(StoneColour.RAINBOW, level, eventPos, null, dye);
     }
-    else if (stateHit.is(Blocks.COBBLESTONE)) {
+    else if (stateHit.is(DataTags.COBBLESTONE)) {
       return Rainbows.rotateToColor(CobbleColour.RAINBOW, level, eventPos, null, dye);
     }
-    else if (stateHit.is(Blocks.STONE_BRICKS)) {
+    else if (stateHit.is(BlockTags.STONE_BRICKS)) {
       return Rainbows.rotateToColor(BrickstoneColour.RAINBOW, level, eventPos, null, dye);
     }
-    else if (stateHit.is(Blocks.BRICKS)) {
+    else if (stateHit.is(DataTags.BRICKS)) {
       return Rainbows.rotateToColor(BrickColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(BlockTags.SAPLINGS)) {
@@ -138,11 +166,87 @@ public class PlayerUseEvents extends EventFlib {
     else if (stateHit.is(BlockTags.LEAVES)) {
       return Rainbows.rotateToColor(LeavesColour.RAINBOW, level, eventPos, null, dye);
     }
+    else if (stateHit.is(DataTags.STRIPPED_LOGS)) {
+      return Rainbows.rotateToColor(StrippedLogColour.RAINBOW, level, eventPos, null, dye);
+    }
     else if (stateHit.is(BlockTags.LOGS)) {
       return Rainbows.rotateToColor(LogColour.RAINBOW, level, eventPos, null, dye);
     }
     else if (stateHit.is(BlockTags.PLANKS)) {
       return Rainbows.rotateToColor(PlanksColour.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(BlockTags.WOODEN_SLABS)) {
+      return Rainbows.rotateToColor(PlanksSlab.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(BlockTags.WOODEN_STAIRS)) {
+      return Rainbows.rotateToColor(PlanksStair.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.STONE_STAIRS)) {
+      return Rainbows.rotateToColor(StoneStair.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.COBBLESTONE_STAIRS)) {
+      return Rainbows.rotateToColor(CobblestoneStair.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.STONE_BRICK_STAIRS)) {
+      return Rainbows.rotateToColor(StonebrickStair.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.SANDSTONE_STAIRS)) {
+      return Rainbows.rotateToColor(SandstoneStair.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.BRICK_STAIRS)) {
+      return Rainbows.rotateToColor(BrickStair.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.BRICK_SLAB)) {
+      return Rainbows.rotateToColor(BrickSlab.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.COBBLESTONE_SLAB)) {
+      return Rainbows.rotateToColor(CobblestoneSlab.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.SANDSTONE_SLAB)) {
+      return Rainbows.rotateToColor(SandstoneSlab.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.STONE_BRICK_SLAB)) {
+      return Rainbows.rotateToColor(StonebrickSlab.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.STONE_SLAB)) {
+      return Rainbows.rotateToColor(StoneSlab.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.BRICK_WALLS)) {
+      return Rainbows.rotateToColor(BrickWall.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.COBBLESTONE_WALLS)) {
+      return Rainbows.rotateToColor(CobblestoneWall.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.SANDSTONE_WALLS)) {
+      return Rainbows.rotateToColor(SandstoneWall.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.WOODEN_WALLS)) {
+      return Rainbows.rotateToColor(PlanksWall.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.STONE_BRICK_WALLS)) {
+      return Rainbows.rotateToColor(StonebrickWall.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.STONE_WALLS)) {
+      return Rainbows.rotateToColor(StoneWall.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(BlockTags.WOODEN_PRESSURE_PLATES)) {
+      return Rainbows.rotateToColor(PressurePlateColour.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(BlockTags.WOODEN_TRAPDOORS)) {
+      return Rainbows.rotateToColor(TrapDoorColour.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(BlockTags.WOODEN_FENCES)) {
+      return Rainbows.rotateToColor(PlanksFence.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(DataTags.WOODEN_GATES)) {
+      return Rainbows.rotateToColor(PlanksGate.RAINBOW, level, eventPos, null, dye);
+    }
+    else if (stateHit.is(BlockTags.WOODEN_BUTTONS)) {
+      return Rainbows.rotateToColor(ButtonColour.RAINBOW, level, eventPos, null, dye);
+    }
+    //TODO make this block
+    else if (stateHit.is(DataTags.STRIPPED_WOOD)) {
+      //          return Rainbows.rotateToColor(ButtonColour.RAINBOW, level, eventPos, null, dye);
     }
     return false;
   }

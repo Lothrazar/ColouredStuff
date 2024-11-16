@@ -22,7 +22,7 @@ import net.minecraft.world.level.material.PushReaction;
 public class ButtonColour extends ButtonBlock implements SimpleWaterloggedBlock, IHasColor {
 
   public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
+  public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public ButtonColour(Properties p, DyeColorless color) {
     super(p.noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY), BlockSetType.STONE, 20, true);

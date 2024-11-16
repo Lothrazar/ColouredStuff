@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.state.properties.BlockSetType;
 
 public class TrapDoorColour extends TrapDoorBlock implements IHasColor {
 
-  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
+  public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
   private final DyeColorless color;
 
   public TrapDoorColour(Properties p, DyeColorless color) {

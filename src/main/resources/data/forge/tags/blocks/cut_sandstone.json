@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+  
+     "minecraft:cut_sandstone",
+     "minecraft:cut_red_sandstone",
+     
+     
+     
+"colouredstuff:cut_sandstone_black",
+"colouredstuff:cut_sandstone_blue",
+"colouredstuff:cut_sandstone_brown",
+"colouredstuff:cut_sandstone_cyan",
+"colouredstuff:cut_sandstone_gray",
+"colouredstuff:cut_sandstone_green",
+"colouredstuff:cut_sandstone_light_blue",
+"colouredstuff:cut_sandstone_light_gray",
+"colouredstuff:cut_sandstone_lime",
+"colouredstuff:cut_sandstone_magenta",
+"colouredstuff:cut_sandstone_none",
+"colouredstuff:cut_sandstone_orange",
+"colouredstuff:cut_sandstone_pink",
+"colouredstuff:cut_sandstone_purple",
+"colouredstuff:cut_sandstone_red",
+"colouredstuff:cut_sandstone_white",
+"colouredstuff:cut_sandstone_yellow"
+  ]
+}

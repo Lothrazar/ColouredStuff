@@ -28,7 +28,7 @@ public class FarmlandColour extends BlockFlib implements IHasColor {
   public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public FarmlandColour(Properties p, DyeColorless s) {
-    super(p);
+    super(p.noOcclusion());
     RAINBOW.put(s, this);
     this.color = s;
     this.registerDefaultState(this.defaultBlockState().setValue(FarmBlock.MOISTURE, 0));

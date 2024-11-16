@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.WallBlock;
 
 public class SandstoneWall extends WallBlock implements IHasColor {
 
-  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
+  public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
   private final DyeColorless color;
 
   public SandstoneWall(Properties p, DyeColorless color) {

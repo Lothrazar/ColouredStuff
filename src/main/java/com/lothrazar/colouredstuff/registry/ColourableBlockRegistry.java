@@ -5,7 +5,7 @@ import com.lothrazar.colouredstuff.block.BrickColour;
 import com.lothrazar.colouredstuff.block.BrickstoneColour;
 import com.lothrazar.colouredstuff.block.ButtonColour;
 import com.lothrazar.colouredstuff.block.ChiseledBrickstoneColour;
-import com.lothrazar.colouredstuff.block.ChiseledColor;
+import com.lothrazar.colouredstuff.block.ChiseledColour;
 import com.lothrazar.colouredstuff.block.CobbleColour;
 import com.lothrazar.colouredstuff.block.CraftingColour;
 import com.lothrazar.colouredstuff.block.CraftingRainbow;
@@ -45,6 +45,9 @@ import com.lothrazar.colouredstuff.block.wall.StoneWall;
 import com.lothrazar.colouredstuff.block.wall.StonebrickWall;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.world.RainbowTreeGrower;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.fml.common.Mod;
@@ -309,23 +312,23 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<Block> sandstone_white = BLOCKS.register("sandstone_white", () -> new SandstoneColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.WHITE));
   public static final RegistryObject<Block> sandstone_yellow = BLOCKS.register("sandstone_yellow", () -> new SandstoneColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.YELLOW));
   //
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_none = BLOCKS.register("chiseled_sandstone_none", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.NONE));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_black = BLOCKS.register("chiseled_sandstone_black", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.BLACK));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_blue = BLOCKS.register("chiseled_sandstone_blue", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.BLUE));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_brown = BLOCKS.register("chiseled_sandstone_brown", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.BROWN));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_cyan = BLOCKS.register("chiseled_sandstone_cyan", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.CYAN));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_gray = BLOCKS.register("chiseled_sandstone_gray", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.GRAY));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_green = BLOCKS.register("chiseled_sandstone_green", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.GREEN));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_light_blue = BLOCKS.register("chiseled_sandstone_light_blue", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.LIGHT_BLUE));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_light_gray = BLOCKS.register("chiseled_sandstone_light_gray", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.LIGHT_GRAY));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_lime = BLOCKS.register("chiseled_sandstone_lime", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.LIME));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_magenta = BLOCKS.register("chiseled_sandstone_magenta", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.MAGENTA));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_orange = BLOCKS.register("chiseled_sandstone_orange", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.ORANGE));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_pink = BLOCKS.register("chiseled_sandstone_pink", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.PINK));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_purple = BLOCKS.register("chiseled_sandstone_purple", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.PURPLE));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_red = BLOCKS.register("chiseled_sandstone_red", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.RED));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_white = BLOCKS.register("chiseled_sandstone_white", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.WHITE));
-  public static final RegistryObject<ChiseledColor> chiseled_sandstone_yellow = BLOCKS.register("chiseled_sandstone_yellow", () -> new ChiseledColor(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.YELLOW));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_none = BLOCKS.register("chiseled_sandstone_none", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.NONE));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_black = BLOCKS.register("chiseled_sandstone_black", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.BLACK));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_blue = BLOCKS.register("chiseled_sandstone_blue", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.BLUE));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_brown = BLOCKS.register("chiseled_sandstone_brown", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.BROWN));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_cyan = BLOCKS.register("chiseled_sandstone_cyan", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.CYAN));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_gray = BLOCKS.register("chiseled_sandstone_gray", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.GRAY));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_green = BLOCKS.register("chiseled_sandstone_green", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.GREEN));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_light_blue = BLOCKS.register("chiseled_sandstone_light_blue", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.LIGHT_BLUE));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_light_gray = BLOCKS.register("chiseled_sandstone_light_gray", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.LIGHT_GRAY));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_lime = BLOCKS.register("chiseled_sandstone_lime", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.LIME));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_magenta = BLOCKS.register("chiseled_sandstone_magenta", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.MAGENTA));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_orange = BLOCKS.register("chiseled_sandstone_orange", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.ORANGE));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_pink = BLOCKS.register("chiseled_sandstone_pink", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.PINK));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_purple = BLOCKS.register("chiseled_sandstone_purple", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.PURPLE));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_red = BLOCKS.register("chiseled_sandstone_red", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.RED));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_white = BLOCKS.register("chiseled_sandstone_white", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.WHITE));
+  public static final RegistryObject<ChiseledColour> chiseled_sandstone_yellow = BLOCKS.register("chiseled_sandstone_yellow", () -> new ChiseledColour(Block.Properties.copy(Blocks.SANDSTONE), DyeColorless.YELLOW));
   //
   public static final RegistryObject<Block> cut_sandstone_none = BLOCKS.register("cut_sandstone_none", () -> new SandstoneCutColour(Block.Properties.copy(Blocks.CUT_SANDSTONE), DyeColorless.NONE));
   public static final RegistryObject<Block> cut_sandstone_black = BLOCKS.register("cut_sandstone_black", () -> new SandstoneCutColour(Block.Properties.copy(Blocks.CUT_SANDSTONE), DyeColorless.BLACK));
@@ -819,4 +822,40 @@ public class ColourableBlockRegistry {
   public static final RegistryObject<CraftingRainbow> crafting_table_rainbow = BLOCKS.register("crafting_table_rainbow", () -> new CraftingRainbow(Block.Properties.copy(Blocks.CRAFTING_TABLE)
       .explosionResistance(1200F)
       .destroyTime(8.0F)));
+
+  public static class DataTags {
+
+    public static final TagKey<Block> WOODEN_GATES = BlockTags.create(new ResourceLocation("forge", "fence_gates/wooden"));
+    public static final TagKey<Block> BRICKS = BlockTags.create(new ResourceLocation("forge", "bricks"));
+    public static final TagKey<Block> STONE = BlockTags.create(new ResourceLocation("forge", "stone"));
+    public static final TagKey<Block> COBBLESTONE = BlockTags.create(new ResourceLocation("forge", "cobblestone"));
+    public static final TagKey<Block> SANDSTONE = BlockTags.create(new ResourceLocation("forge", "sandstone"));
+    public static final TagKey<Block> SANDSTONE_CHISELED = BlockTags.create(new ResourceLocation("forge", "chiseled_sandstone"));
+    public static final TagKey<Block> SANDSTONE_CUT = BlockTags.create(new ResourceLocation("forge", "cut_sandstone"));
+    public static final TagKey<Block> SANDSTONE_SMOOTH = BlockTags.create(new ResourceLocation("forge", "smooth_sandstone"));
+    //
+    public static final TagKey<Block> STRIPPED_LOGS = BlockTags.create(new ResourceLocation("forge", "stripped_logs"));
+    public static final TagKey<Block> STRIPPED_WOOD = BlockTags.create(new ResourceLocation("forge", "stripped_wood"));
+    //
+    public static final TagKey<Block> BRICK_STAIRS = BlockTags.create(new ResourceLocation("forge", "brick_stairs"));
+    public static final TagKey<Block> COBBLESTONE_STAIRS = BlockTags.create(new ResourceLocation("forge", "cobblestone_stairs"));
+    public static final TagKey<Block> SANDSTONE_STAIRS = BlockTags.create(new ResourceLocation("forge", "sandstone_stairs"));
+    public static final TagKey<Block> STONE_BRICK_STAIRS = BlockTags.create(new ResourceLocation("forge", "stone_brick_stairs"));
+    public static final TagKey<Block> STONE_STAIRS = BlockTags.create(new ResourceLocation("forge", "stone_stairs"));
+
+    //
+    public static final TagKey<Block> BRICK_SLAB = BlockTags.create(new ResourceLocation("forge", "brick_slab"));
+    public static final TagKey<Block> COBBLESTONE_SLAB = BlockTags.create(new ResourceLocation("forge", "cobblestone_slab"));
+    public static final TagKey<Block> SANDSTONE_SLAB = BlockTags.create(new ResourceLocation("forge", "sandstone_slab"));
+    public static final TagKey<Block> STONE_BRICK_SLAB = BlockTags.create(new ResourceLocation("forge", "stone_brick_slab"));
+    public static final TagKey<Block> STONE_SLAB = BlockTags.create(new ResourceLocation("forge", "stone_slab"));
+    //
+    public static final TagKey<Block> BRICK_WALLS = BlockTags.create(new ResourceLocation("forge", "brick_walls"));
+    public static final TagKey<Block> COBBLESTONE_WALLS = BlockTags.create(new ResourceLocation("forge", "cobblestone_walls"));
+    public static final TagKey<Block> SANDSTONE_WALLS = BlockTags.create(new ResourceLocation("forge", "sandstone_walls"));
+    public static final TagKey<Block> STONE_BRICK_WALLS = BlockTags.create(new ResourceLocation("forge", "stone_brick_walls"));
+    public static final TagKey<Block> STONE_WALLS = BlockTags.create(new ResourceLocation("forge", "stone_walls"));
+    public static final TagKey<Block> WOODEN_WALLS = BlockTags.create(new ResourceLocation("forge", "wooden_walls"));
+
+  }
 }

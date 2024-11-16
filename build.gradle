@@ -141,15 +141,19 @@ dependencies {
      
   // implementation fg.deobf("blank:flib-1.20.1:${flib_version}")
   implementation fg.deobf("curse.maven:flib-661261:${flib_file}")
-  implementation fg.deobf("curse.maven:jade-324717:5493390")
      
+
+
+//optional dependencies
      compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
      compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
      runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
-
-
-  implementation fg.deobf("curse.maven:chalk-533748:5275068")
-//optional dependencies
+     
+    implementation fg.deobf("curse.maven:chalk-533748:5275068")
+    implementation fg.deobf("curse.maven:similsax-transtructors-233659:4648844")
+    implementation fg.deobf("curse.maven:cyclic-239286:4722579")
+    implementation fg.deobf("curse.maven:absent-by-design-305840:5660328")
+    implementation fg.deobf("curse.maven:jade-324717:5493390")
 /*
     implementation fg.deobf("com.blamejared.crafttweaker:CraftTweaker-forge-${mc_version}:${crafttweaker_version}")
   
@@ -157,8 +161,6 @@ dependencies {
     implementation fg.deobf("curse.maven:visual-workbench-500273:4612695")
     implementation fg.deobf("curse.maven:vein-creeper-907093:4742832")
    
-    implementation fg.deobf("curse.maven:similsax-transtructors-233659:4648844")
-    implementation fg.deobf("curse.maven:cyclic-239286:4722579")
      
     implementation fg.deobf("curse.maven:titanium-287342:5151228")
     implementation fg.deobf("curse.maven:industrial-foregoing-266515:5240372")

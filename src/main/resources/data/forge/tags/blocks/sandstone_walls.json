@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+  
+"minecraft:sandstone_wall",
+"minecraft:red_sandstone_wall",
+		{"id":  "absentbydesign:wall_sandstone_red_smooth",      "required":false},
+		{"id":  "absentbydesign:wall_sandstone_smooth",      "required":false}
+  ]
+}

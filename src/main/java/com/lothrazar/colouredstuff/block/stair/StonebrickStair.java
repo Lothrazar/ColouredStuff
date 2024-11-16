@@ -10,7 +10,7 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class StonebrickStair extends StairBlock implements IHasColor {
 
-  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
+  public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
   private final DyeColorless color;
 
   //pass in the base block

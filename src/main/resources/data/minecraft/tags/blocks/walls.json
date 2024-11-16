@@ -2,6 +2,8 @@
 	"replace": false,
 	"values": [
 
+"#forge:wooden_walls",
+
 "colouredstuff:wall_brick_black",
 "colouredstuff:wall_brick_blue",
 "colouredstuff:wall_brick_brown",
@@ -20,24 +22,6 @@
 "colouredstuff:wall_brick_white",
 "colouredstuff:wall_brick_yellow",
 
-
-"colouredstuff:wall_planks_black",
-"colouredstuff:wall_planks_blue",
-"colouredstuff:wall_planks_brown",
-"colouredstuff:wall_planks_cyan",
-"colouredstuff:wall_planks_gray",
-"colouredstuff:wall_planks_green",
-"colouredstuff:wall_planks_light_blue",
-"colouredstuff:wall_planks_light_gray",
-"colouredstuff:wall_planks_lime",
-"colouredstuff:wall_planks_magenta",
-"colouredstuff:wall_planks_none",
-"colouredstuff:wall_planks_orange",
-"colouredstuff:wall_planks_pink",
-"colouredstuff:wall_planks_purple",
-"colouredstuff:wall_planks_red",
-"colouredstuff:wall_planks_white",
-"colouredstuff:wall_planks_yellow",
 
 
 "colouredstuff:wall_stone_bricks_black",

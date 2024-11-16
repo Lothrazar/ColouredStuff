@@ -1,0 +1,38 @@
+{
+	"replace": false,
+	"values": [
+
+    
+		{"id":  "absentbydesign:wall_mangrove_planks",      "required":false},
+		{"id":  "absentbydesign:wall_oak_planks",           "required":false},
+		{"id":  "absentbydesign:wall_dark_oak_planks",      "required":false},
+		{"id":  "absentbydesign:wall_acacia_planks",        "required":false},
+		{"id":  "absentbydesign:wall_jungle_planks",        "required":false},
+		{"id":  "absentbydesign:wall_crimson_planks",       "required":false},
+		{"id":  "absentbydesign:wall_warped_planks",        "required":false},
+		{"id":  "absentbydesign:wall_spruce_planks",        "required":false},
+		{"id":  "absentbydesign:wall_birch_planks",         "required":false},
+	    {"id":   "absentbydesign:wall_cherry_planks",       "required":false},      
+	    {"id":   "absentbydesign:wall_bamboo_planks",       "required":false},      
+	    {"id":   "absentbydesign:wall_bamboo_mosaic",       "required":false},      
+	  
+
+"colouredstuff:wall_planks_black",
+"colouredstuff:wall_planks_blue",
+"colouredstuff:wall_planks_brown",
+"colouredstuff:wall_planks_cyan",
+"colouredstuff:wall_planks_gray",
+"colouredstuff:wall_planks_green",
+"colouredstuff:wall_planks_light_blue",
+"colouredstuff:wall_planks_light_gray",
+"colouredstuff:wall_planks_lime",
+"colouredstuff:wall_planks_magenta",
+"colouredstuff:wall_planks_none",
+"colouredstuff:wall_planks_orange",
+"colouredstuff:wall_planks_pink",
+"colouredstuff:wall_planks_purple",
+"colouredstuff:wall_planks_red",
+"colouredstuff:wall_planks_white",
+"colouredstuff:wall_planks_yellow"
+	]
+}

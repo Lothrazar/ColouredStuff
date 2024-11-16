@@ -9,7 +9,7 @@ import net.minecraft.world.level.block.SlabBlock;
 
 public class PlanksSlab extends SlabBlock implements IHasColor {
 
-  private static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
+  public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
   private final DyeColorless color;
 
   public PlanksSlab(Properties p, DyeColorless color) {
