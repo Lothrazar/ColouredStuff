@@ -1,0 +1,27 @@
+{
+  "type": "cyclic:melter",
+  "ingredients": [{
+    "tag": "forge:dyes/brown"
+  },{
+    "tag": "forge:dyes/brown"
+  }],
+  "result": {
+    "fluid": "colouredstuff:water_brown",
+    "count": 500
+  },
+	"energy": {
+		"rfpertick": 50,
+		"ticks": 20
+	},
+	"conditions": [
+		{
+			"values": [
+				{
+					"modid": "cyclic",
+					"type": "forge:mod_loaded"
+				}
+			],
+			"type": "forge:and"
+		}
+	]
+}
