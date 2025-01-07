@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "colouredstuff:planks_magenta"
+          "name": "colouredstuff:gate_planks_magenta"
         }
       ],
       "conditions": [
