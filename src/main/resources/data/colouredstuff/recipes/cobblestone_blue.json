@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "item": "minecraft:stone"
+      "item": "minecraft:cobblestone"
     },
     "-": {
       "tag": "forge:dyes/blue"
     }
   },
   "result": {
-    "item": "colouredstuff:stone_blue",
+    "item": "colouredstuff:cobblestone_blue",
     "count": 8
   }
 }
