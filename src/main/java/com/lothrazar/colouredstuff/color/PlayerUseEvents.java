@@ -111,7 +111,7 @@ public class PlayerUseEvents extends EventFlib {
         BlockState offsetStateHit = level.getBlockState(eventPos);
         if (offsetStateHit.getBlock() == Blocks.WATER && ConfigColourable.VANILLA_OVERRIDE.get()) {
           //dye water if allowed  
-          Rainbows.rotateToColor(ColourLiquidBlock.RAINBOW, level, eventPos, null, dye);
+          success = Rainbows.rotateToColor(ColourLiquidBlock.RAINBOW, level, eventPos, null, dye);
         }
         else if (offsetStateHit.getBlock() instanceof IHasColor block) {
           // is it dye-able liquid that is not water
@@ -120,6 +120,10 @@ public class PlayerUseEvents extends EventFlib {
       }
     }
     if (success) {
+      if (ConfigColourable.CONSUME.get()) {
+        // if the config says we consume one item each time
+        ItemStackUtil.shrink(event.getEntity(), itemInHand);
+      }
       event.getEntity().swing(event.getHand());
       event.setCanceled(true);
       event.setCancellationResult(InteractionResult.PASS);
@@ -274,10 +278,7 @@ public class PlayerUseEvents extends EventFlib {
     boolean success = Rainbows.rotateToColor(rainbow, level, eventPos, originalSourceColour, dye);
     //new color is different, NOW update
     if (success) {
-      if (ConfigColourable.CONSUME.get()) {
-        // if the config says we consume one item each time 
-        ItemStackUtil.shrink(playerIn, itemInHand);
-      }
+
       //  fluids dont enter here due to how crouching fires
       if (doConnected) {
         //get new rainbow for this new block..?
