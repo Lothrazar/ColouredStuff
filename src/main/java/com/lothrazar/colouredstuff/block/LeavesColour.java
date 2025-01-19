@@ -25,6 +25,8 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.common.IForgeShearable;
 
 @SuppressWarnings("deprecation")
@@ -37,7 +39,7 @@ public class LeavesColour extends BlockFlib implements IHasColor, SimpleWaterlog
   public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public LeavesColour(Properties p, DyeColorless color) {
-    super(p);
+    super(p.mapColor(MapColor.PLANT).strength(0.2F).randomTicks().noOcclusion().isSuffocating(BlockFlib::never).isViewBlocking(BlockFlib::never).ignitedByLava().pushReaction(PushReaction.DESTROY).isRedstoneConductor(BlockFlib::never));
     RAINBOW.put(color, this);
     this.color = color;
     this.registerDefaultState(this.defaultBlockState().setValue(DISTANCE, Integer.valueOf(7)).setValue(WATERLOGGED, false));
