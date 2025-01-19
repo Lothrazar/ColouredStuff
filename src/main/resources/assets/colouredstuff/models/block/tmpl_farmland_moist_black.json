@@ -1,6 +1,7 @@
 {
   "textures": {
-    "particle": "#dirt"
+    "particle": "#dirt",
+    "top": "colouredstuff:block/farmland_moist_black"
   },
   "elements": [
     {

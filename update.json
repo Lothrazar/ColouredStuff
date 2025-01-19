@@ -12,6 +12,6 @@
   	,"1.3.0":"Fix: sneak-dyeing multiple dyed water blocks now works correctly.  Fix: Dyeing colourful path blocks in world no longer becomes farmland.  Colourful farmland is now hidden from the JEI menu.  New config value in_world_dye.consume, so you can control whether dyeing blocks in world consumes the dye-item you are holding or not.  You can now write on coloured stuff blocks using Chalk (from the chalk mod) without dyeing the block (see new data tag forge:tools/stationery to edit or add tool-dyes).  Add Wooden Buttons, Pressure Plates, Doors, and Boats with textures by MarioLuigi7896"
   	,"1.3.1":"Fix particles of farmland block.  Can dye slabs, stairs, walls, etc, after placing them in the world. Added 2x17 new blocks: all colours of log 'Wood' and 'Stripped Wood'"
   	,"1.3.2": "Fix wooden gates loot tables.  Merge three pull requests from Muddr:   Fixes log_horizontal_light_blue.json to use light blue instead of green.Fixes log_horizontal_light_blue.json to use light blue instead of green. Updates cobblestone_blue.json to use cobblestone instead of stone"
-    ,"1.3.3": "Leaves are now non-solid blocks so they do not suffocate players #10.   fix consume config not being applied to some blocks and fluids such as water  "
+    ,"1.3.3": "fix consume config not being applied to some blocks and fluids such as water.  Leaves are now non-solid blocks so they do not suffocate players #10.   Imported missing texture for moist farmland top bug from https://github.com/DarkPacks/SkyFactory-5/pull/94/ "
   }
 }
