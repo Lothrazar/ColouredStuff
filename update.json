@@ -1,7 +1,7 @@
 {
   "homepage": "https://www.curseforge.com/minecraft/mc-mods/coloured-stuff",
   "promos": {
-    "1.20.1-latest": "1.3.3"
+    "1.20.1-latest": "1.3.4"
   },
   "1.20.1": {
     "1.0.0": "Release "
@@ -13,5 +13,6 @@
   	,"1.3.1":"Fix particles of farmland block.  Can dye slabs, stairs, walls, etc, after placing them in the world. Added 2x17 new blocks: all colours of log 'Wood' and 'Stripped Wood'"
   	,"1.3.2": "Fix wooden gates loot tables.  Merge three pull requests from Muddr:   Fixes log_horizontal_light_blue.json to use light blue instead of green.Fixes log_horizontal_light_blue.json to use light blue instead of green. Updates cobblestone_blue.json to use cobblestone instead of stone"
     ,"1.3.3": "fix consume config not being applied to some blocks and fluids such as water.  Leaves are now non-solid blocks so they do not suffocate players #10.   Imported missing texture for moist farmland top bug from https://github.com/DarkPacks/SkyFactory-5/pull/94/ "
+    ,"1.3.4": "Stonebrick -> Stone Brick jamierocks/lang-fixes.   Add coloured buttons to wooden_buttons item tag from jamierocks/tag-item-wooden-buttons"
   }
 }
