@@ -18,7 +18,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.grower.AbstractTreeGrower;
+import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -28,18 +28,16 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.common.IPlantable;
-
 @SuppressWarnings("deprecation")
-public class SaplinColour extends BlockFlib implements IHasColor, IPlantable, BonemealableBlock {
+public class SaplinColour extends BlockFlib implements IHasColor, BonemealableBlock {
 
   public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
   public static final IntegerProperty STAGE = BlockStateProperties.STAGE;
   protected static final float AABB_OFFSET = 6.0F; // SaplingBlock.AABB_OFFSET;
   protected static final VoxelShape SHAPE = Block.box(2.0D, 0.0D, 2.0D, 14.0D, 12.0D, 14.0D); // SaplingBlock.SHAPE;
-  private final AbstractTreeGrower treeGrower;
+  private final TreeGrower treeGrower;
 
-  public SaplinColour(AbstractTreeGrower g, Properties p, DyeColorless s) {
+  public SaplinColour(TreeGrower g, Properties p, DyeColorless s) {
     super(p.mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY));
     this.treeGrower = g;
     this.registerDefaultState(this.stateDefinition.any().setValue(STAGE, Integer.valueOf(0)));
@@ -72,8 +70,6 @@ public class SaplinColour extends BlockFlib implements IHasColor, IPlantable, Bo
   @Override
   public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
     BlockPos blockpos = pos.below();
-    if (state.getBlock() == this) //Forge: This function is called during world gen and placement, before this block is set, so if we are not 'here' then assume it's the pre-check.
-      return level.getBlockState(blockpos).canSustainPlant(level, blockpos, Direction.UP, this);
     return this.mayPlaceOn(level.getBlockState(blockpos), level, blockpos);
   }
 
@@ -83,19 +79,12 @@ public class SaplinColour extends BlockFlib implements IHasColor, IPlantable, Bo
   }
 
   @Override
-  public boolean isPathfindable(BlockState p_51023_, BlockGetter p_51024_, BlockPos p_51025_, PathComputationType p_51026_) {
-    return p_51026_ == PathComputationType.AIR && !this.hasCollision ? true : super.isPathfindable(p_51023_, p_51024_, p_51025_, p_51026_);
+  public boolean isPathfindable(BlockState bs,  PathComputationType pct) {
+    return pct == PathComputationType.AIR && !this.hasCollision ? true : super.isPathfindable(bs, pct);
   }
 
   @Override
-  public BlockState getPlant(BlockGetter world, BlockPos pos) {
-    BlockState state = world.getBlockState(pos);
-    if (state.getBlock() != this) return defaultBlockState();
-    return state;
-  }
-
-  @Override
-  public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state, boolean p_55994_) {
+  public boolean isValidBonemealTarget(LevelReader level, BlockPos pos, BlockState state) {
     return true;
   }
 

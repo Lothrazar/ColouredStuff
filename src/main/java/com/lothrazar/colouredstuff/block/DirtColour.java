@@ -8,8 +8,8 @@ import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.ToolAction;
-import net.minecraftforge.common.ToolActions;
+import net.neoforged.neoforge.common.ItemAbility;
+import net.neoforged.neoforge.common.ItemAbilities;
 
 public class DirtColour extends BlockFlib implements IHasColor {
 
@@ -34,15 +34,15 @@ public class DirtColour extends BlockFlib implements IHasColor {
   }
 
   @Override
-  public BlockState getToolModifiedState(BlockState dirtState, UseOnContext context, ToolAction toolAction, boolean simulate) {
-    if (toolAction == ToolActions.HOE_TILL && FarmlandColour.RAINBOW.containsKey(this.getColor())) {
+  public BlockState getToolModifiedState(BlockState dirtState, UseOnContext context, ItemAbility itemAbility, boolean simulate) {
+    if (itemAbility == ItemAbilities.HOE_TILL && FarmlandColour.RAINBOW.containsKey(this.getColor())) {
       var block = FarmlandColour.RAINBOW.get(this.getColor());
       return block.defaultBlockState();
     }
-    if (toolAction == ToolActions.SHOVEL_FLATTEN && PathColour.RAINBOW.containsKey(this.getColor())) {
+    if (itemAbility == ItemAbilities.SHOVEL_FLATTEN && PathColour.RAINBOW.containsKey(this.getColor())) {
       var block = PathColour.RAINBOW.get(this.getColor());
       return block.defaultBlockState();
     }
-    return super.getToolModifiedState(dirtState, context, toolAction, simulate);
+    return super.getToolModifiedState(dirtState, context, itemAbility, simulate);
   }
 }

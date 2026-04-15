@@ -143,7 +143,7 @@ configurations {
 dependencies {
 
     // for other mods depending on THIS FLIB library, use
-    //     implementation "local.mods:flib:${minecraft_version}-${flib_version}"
+  implementation "local.mods:flib:${minecraft_version}-${flib_version}"
 
 
   //these mods have API jars for compile as well as the full mod for local

@@ -15,7 +15,7 @@ public class BrickStair extends StairBlock implements IHasColor {
 
   //pass in the base block
   public BrickStair(java.util.function.Supplier<BlockState> state, Properties p, DyeColorless color) {
-    super(state, p);
+    super(state.get(), p);
     RAINBOW.put(color, this);
     this.color = color;
   }

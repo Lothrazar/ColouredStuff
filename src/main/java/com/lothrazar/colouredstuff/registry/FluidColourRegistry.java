@@ -19,15 +19,16 @@ import com.lothrazar.colouredstuff.fluid.water.PurpleFluidHolder;
 import com.lothrazar.colouredstuff.fluid.water.RedFluidHolder;
 import com.lothrazar.colouredstuff.fluid.water.WhiteFluidHolder;
 import com.lothrazar.colouredstuff.fluid.water.YellowFluidHolder;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.material.Fluid;
-import net.minecraftforge.fluids.FluidType;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
+import net.neoforged.neoforge.fluids.FluidType;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 public class FluidColourRegistry {
 
-  public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(ForgeRegistries.FLUIDS, ModColourable.MODID);
-  public static final DeferredRegister<FluidType> FLUID_TYPES = DeferredRegister.create(ForgeRegistries.Keys.FLUID_TYPES, ModColourable.MODID);
+  public static final DeferredRegister<Fluid> FLUIDS = DeferredRegister.create(Registries.FLUID, ModColourable.MODID);
+  public static final DeferredRegister<FluidType> FLUID_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.FLUID_TYPES, ModColourable.MODID);
   //
   public static final InfiniteFluidHolder BLACK = new BlackFluidHolder();
   public static final InfiniteFluidHolder BLUE = new BlueFluidHolder();

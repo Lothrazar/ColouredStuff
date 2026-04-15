@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:sandstone_red"
+    }
+  },
+  "result": {
+    "count": 6,
+    "id": "colouredstuff:wall_sandstone_red"
+  }
+}

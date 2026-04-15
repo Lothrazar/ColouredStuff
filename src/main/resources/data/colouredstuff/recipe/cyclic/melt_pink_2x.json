@@ -1,0 +1,27 @@
+{
+  "type": "cyclic:melter",
+  "ingredients": [{
+    "tag": "forge:dyes/pink"
+  },{
+    "tag": "forge:dyes/pink"
+  }],
+  "result": {
+    "fluid": "colouredstuff:water_pink",
+    "count": 500
+  },
+	"energy": {
+		"rfpertick": 50,
+		"ticks": 20
+	},
+	"neoforge:conditions": [
+		{
+			"values": [
+				{
+					"modid": "cyclic",
+					"type": "neoforge:mod_loaded"
+				}
+			],
+			"type": "neoforge:and"
+		}
+	]
+}

@@ -15,7 +15,7 @@ public class PlanksGate extends FenceGateBlock implements IHasColor {
 
   //pass in the base block
   public PlanksGate(Properties p, DyeColorless color) {
-    super(p, WoodType.MANGROVE);
+    super(WoodType.MANGROVE, p);
     RAINBOW.put(color, this);
     this.color = color;
   }

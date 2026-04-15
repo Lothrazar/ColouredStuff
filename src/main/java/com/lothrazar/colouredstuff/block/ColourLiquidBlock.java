@@ -14,7 +14,7 @@ public class ColourLiquidBlock extends LiquidBlock implements IHasColor {
   public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public ColourLiquidBlock(Supplier<? extends FlowingFluid> supplier, Block.Properties props, DyeColorless s) {
-    super(supplier, props);
+    super(supplier.get(), props);
     RAINBOW.put(s, this);
     this.color = s;
   }

@@ -2,7 +2,7 @@ package com.lothrazar.colouredstuff.fluid;
 
 import com.lothrazar.colouredstuff.registry.ConfigColourable;
 import com.lothrazar.library.fluid.FluidHolder;
-import net.minecraftforge.fluids.FluidType;
+import net.neoforged.neoforge.fluids.FluidType;
 
 public class InfiniteFluidHolder extends FluidHolder {
 

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "-#-",
+    "-#-"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:planks_black"
+    },
+    "-": {
+      "tag": "forge:rods/wooden"
+    }
+  },
+  "result": {
+    "count": 1,
+    "id": "colouredstuff:gate_planks_black"
+  }
+}

@@ -20,23 +20,23 @@ import net.minecraft.world.entity.vehicle.Boat.Type;
 
 public class ColourBoatRender extends EntityRenderer<Boat> {
 
-  private static final ResourceLocation NONE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_none.png");
-  private static final ResourceLocation BLACK = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_black.png");
-  private static final ResourceLocation BLUE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_blue.png");
-  private static final ResourceLocation BROWN = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_brown.png");
-  private static final ResourceLocation CYAN = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_cyan.png");
-  private static final ResourceLocation GRAY = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_gray.png");
-  private static final ResourceLocation GREEN = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_green.png");
-  private static final ResourceLocation LIGHT_BLUE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_light_blue.png");
-  private static final ResourceLocation LIGHT_GRAY = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_light_gray.png");
-  private static final ResourceLocation LIME = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_lime.png");
-  private static final ResourceLocation MAGENTA = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_magenta.png");
-  private static final ResourceLocation ORANGE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_orange.png");
-  private static final ResourceLocation PINK = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_pink.png");
-  private static final ResourceLocation PURPLE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_purple.png");
-  private static final ResourceLocation RED = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_red.png");
-  private static final ResourceLocation WHITE = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_white.png");
-  private static final ResourceLocation YELLOW = new ResourceLocation(ModColourable.MODID, "textures/entity/boat/boat_yellow.png");
+  private static final ResourceLocation NONE = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_none.png");
+  private static final ResourceLocation BLACK = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_black.png");
+  private static final ResourceLocation BLUE = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_blue.png");
+  private static final ResourceLocation BROWN = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_brown.png");
+  private static final ResourceLocation CYAN = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_cyan.png");
+  private static final ResourceLocation GRAY = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_gray.png");
+  private static final ResourceLocation GREEN = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_green.png");
+  private static final ResourceLocation LIGHT_BLUE = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_light_blue.png");
+  private static final ResourceLocation LIGHT_GRAY = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_light_gray.png");
+  private static final ResourceLocation LIME = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_lime.png");
+  private static final ResourceLocation MAGENTA = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_magenta.png");
+  private static final ResourceLocation ORANGE = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_orange.png");
+  private static final ResourceLocation PINK = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_pink.png");
+  private static final ResourceLocation PURPLE = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_purple.png");
+  private static final ResourceLocation RED = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_red.png");
+  private static final ResourceLocation WHITE = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_white.png");
+  private static final ResourceLocation YELLOW = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "textures/entity/boat/boat_yellow.png");
   protected final BoatModel model;
 
   public ColourBoatRender(EntityRendererProvider.Context context) {
@@ -101,7 +101,7 @@ public class ColourBoatRender extends EntityRenderer<Boat> {
     return BLACK;
   }
 
-  //thank you to mrbyscos cactus mod with the cactus boat for helping make sense of this 
+  //thank you to mrbyscos cactus mod with the cactus boat for helping make sense of this
   @Override
   public void render(Boat entityIn, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource bufferIn, int packedLightIn) {
     poseStack.pushPose();
@@ -123,7 +123,7 @@ public class ColourBoatRender extends EntityRenderer<Boat> {
     poseStack.mulPose(Axis.YP.rotationDegrees(90.0F));
     this.model.setupAnim(entityIn, partialTicks, 0.0F, -0.1F, 0.0F, 0.0F);
     VertexConsumer ivertexbuilder = bufferIn.getBuffer(this.model.renderType(this.getTextureLocation(entityIn)));
-    this.model.renderToBuffer(poseStack, ivertexbuilder, packedLightIn, OverlayTexture.NO_OVERLAY, 1.0F, 1.0F, 1.0F, 1.0F);
+    this.model.renderToBuffer(poseStack, ivertexbuilder, packedLightIn, OverlayTexture.NO_OVERLAY);
     if (!entityIn.isUnderWater()) {
       VertexConsumer ivertexbuilder1 = bufferIn.getBuffer(RenderType.waterMask());
       this.model.waterPatch().render(poseStack, ivertexbuilder1, packedLightIn, OverlayTexture.NO_OVERLAY);

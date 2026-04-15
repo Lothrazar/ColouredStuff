@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#-#"
+  ],
+  "key": {
+    "#": {
+      "tag": "minecraft:saplings"
+    },
+    "-": {
+      "tag": "forge:dyes/magenta"
+    }
+  },
+  "result": {
+    "count": 2,
+    "id": "colouredstuff:sapling_magenta"
+  }
+}

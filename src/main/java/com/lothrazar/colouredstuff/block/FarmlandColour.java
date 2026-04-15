@@ -6,7 +6,6 @@ import com.lothrazar.colouredstuff.color.DyeColorless;
 import com.lothrazar.colouredstuff.color.IHasColor;
 import com.lothrazar.library.block.BlockFlib;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
@@ -19,9 +18,8 @@ import net.minecraft.world.level.block.FarmBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.pathfinder.PathComputationType;
-import net.minecraftforge.common.IPlantable;
-import net.minecraftforge.common.PlantType;
 
 public class FarmlandColour extends BlockFlib implements IHasColor {
 
@@ -76,7 +74,7 @@ public class FarmlandColour extends BlockFlib implements IHasColor {
 
   @Override
   public void fallOn(Level level, BlockState bs, BlockPos pos, Entity entity, float f) {
-    if (!level.isClientSide && net.minecraftforge.common.ForgeHooks.onFarmlandTrample(level, pos, Blocks.DIRT.defaultBlockState(), f, entity)) { // Forge: Move logic to Entity#canTrample
+    if (!level.isClientSide && net.neoforged.neoforge.common.CommonHooks.onFarmlandTrample(level, pos, Blocks.DIRT.defaultBlockState(), f, entity)) { // NeoForge: Move logic to Entity#canTrample
       turnToDirt(entity, bs, level, pos);
     }
     super.fallOn(level, bs, pos, entity, f);
@@ -90,9 +88,7 @@ public class FarmlandColour extends BlockFlib implements IHasColor {
   }
 
   private static boolean shouldMaintainFarmland(BlockGetter level, BlockPos pos) {
-    BlockState plant = level.getBlockState(pos.above());
-    BlockState state = level.getBlockState(pos);
-    return plant.getBlock() instanceof net.minecraftforge.common.IPlantable && state.canSustainPlant(level, pos, Direction.UP, (net.minecraftforge.common.IPlantable) plant.getBlock());
+    return level.getBlockState(pos.above()).is(BlockTags.MAINTAINS_FARMLAND);
   }
 
   private static boolean isNearWater(LevelReader level, BlockPos pos) {
@@ -102,16 +98,7 @@ public class FarmlandColour extends BlockFlib implements IHasColor {
         return true;
       }
     }
-    return net.minecraftforge.common.FarmlandWaterManager.hasBlockWaterTicket(level, pos);
-  }
-
-  @Override
-  public boolean canSustainPlant(BlockState state, BlockGetter level, BlockPos pos, Direction facing, IPlantable plantable) {
-    //    BlockState plant = plantable.getPlant(level, pos.relative(facing));
-    PlantType plantType = plantable.getPlantType(level, pos.relative(facing));
-    // 
-    return (plantType == PlantType.CROP)
-        || super.canSustainPlant(state, level, pos, facing, plantable);
+    return net.neoforged.neoforge.common.FarmlandWaterManager.hasBlockWaterTicket(level, pos);
   }
 
   @Override
@@ -123,7 +110,7 @@ public class FarmlandColour extends BlockFlib implements IHasColor {
   }
 
   @Override
-  public boolean isPathfindable(BlockState p_53267_, BlockGetter p_53268_, BlockPos p_53269_, PathComputationType p_53270_) {
+  public boolean isPathfindable(BlockState p_53267_, PathComputationType p_53270_) {
     return false;
   }
 }

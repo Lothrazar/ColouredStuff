@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:planks_brown"
+    }
+  },
+  "result": {
+    "count": 3,
+    "id": "colouredstuff:door_planks_brown"
+  }
+}
