@@ -5,5 +5,7 @@
   "ingredient": {
     "item": "colouredstuff:sandstone_gray"
   },
-  "result": "colouredstuff:smooth_sandstone_gray"
+  "result": {
+    "id": "colouredstuff:smooth_sandstone_gray"
+  }
 }

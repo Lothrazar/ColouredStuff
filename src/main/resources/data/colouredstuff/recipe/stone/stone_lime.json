@@ -5,5 +5,7 @@
   "ingredient": {
     "item": "colouredstuff:cobblestone_lime"
   },
-  "result": "colouredstuff:stone_lime"
+  "result": {
+    "id": "colouredstuff:stone_lime"
+  }
 }
