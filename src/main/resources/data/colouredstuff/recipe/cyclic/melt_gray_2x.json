@@ -1,9 +1,9 @@
 {
   "type": "cyclic:melter",
   "ingredients": [{
-    "tag": "forge:dyes/gray"
+    "tag": "c:dyes/gray"
   },{
-    "tag": "forge:dyes/gray"
+    "tag": "c:dyes/gray"
   }],
   "result": {
     "fluid": "colouredstuff:water_gray",

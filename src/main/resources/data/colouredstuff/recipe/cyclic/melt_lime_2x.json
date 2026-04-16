@@ -1,9 +1,9 @@
 {
   "type": "cyclic:melter",
   "ingredients": [{
-    "tag": "forge:dyes/lime"
+    "tag": "c:dyes/lime"
   },{
-    "tag": "forge:dyes/lime"
+    "tag": "c:dyes/lime"
   }],
   "result": {
     "fluid": "colouredstuff:water_lime",

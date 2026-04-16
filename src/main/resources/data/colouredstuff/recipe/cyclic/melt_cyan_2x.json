@@ -1,9 +1,9 @@
 {
   "type": "cyclic:melter",
   "ingredients": [{
-    "tag": "forge:dyes/cyan"
+    "tag": "c:dyes/cyan"
   },{
-    "tag": "forge:dyes/cyan"
+    "tag": "c:dyes/cyan"
   }],
   "result": {
     "fluid": "colouredstuff:water_cyan",

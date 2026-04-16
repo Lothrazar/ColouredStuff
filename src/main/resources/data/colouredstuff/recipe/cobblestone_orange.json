@@ -10,7 +10,7 @@
       "item": "minecraft:cobblestone"
     },
     "-": {
-      "tag": "forge:dyes/orange"
+      "tag": "c:dyes/orange"
     }
   },
   "result": {

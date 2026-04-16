@@ -8,7 +8,7 @@
       "tag": "minecraft:saplings"
     },
     "-": {
-      "tag": "forge:dyes/lime"
+      "tag": "c:dyes/lime"
     }
   },
   "result": {

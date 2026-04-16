@@ -2,9 +2,9 @@
   "replace": false,
   "values": [
   
-     "#forge:smooth_sandstone",
-     "#forge:cut_sandstone",
-     "#forge:chiseled_sandstone",
+     "#c:smooth_sandstone",
+     "#c:cut_sandstone",
+     "#c:chiseled_sandstone",
      "minecraft:sandstone",
      
 "colouredstuff:smooth_sandstone_black",

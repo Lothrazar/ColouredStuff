@@ -1,9 +1,9 @@
 {
   "type": "cyclic:melter",
   "ingredients": [{
-    "tag": "forge:dyes/red"
+    "tag": "c:dyes/red"
   },{
-    "tag": "forge:dyes/red"
+    "tag": "c:dyes/red"
   }],
   "result": {
     "fluid": "colouredstuff:water_red",

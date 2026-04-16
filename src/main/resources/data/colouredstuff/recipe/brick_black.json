@@ -10,7 +10,7 @@
       "item": "minecraft:bricks"
     },
     "-": {
-      "tag": "forge:dyes/black"
+      "tag": "c:dyes/black"
     }
   },
   "result": {

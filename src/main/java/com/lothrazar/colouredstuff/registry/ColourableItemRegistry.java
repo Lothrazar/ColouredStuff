@@ -920,6 +920,12 @@ public class ColourableItemRegistry {
   public static final DeferredItem<Item> BOAT_WHITE = ITEMS.register("boat_white", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.WHITE));
   public static final DeferredItem<Item> BOAT_YELLOW = ITEMS.register("boat_yellow", () -> new ColourBoatItem(new Item.Properties(), DyeColorless.YELLOW));
   //
+
+  public static final DeferredItem<Item> RGB =  ITEMS.register("crafting_table_rainbow", () ->
+      new ItemColour(ColourableBlockRegistry.crafting_table_rainbow.get(), new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
+
+  //          new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD)));
+   //
   public static final TagKey<Item> DYES_NONE_ITEMTAG = ItemTags.create(ResourceLocation.fromNamespaceAndPath("neoforge", "dyes/none"));
   public static final TagKey<Item> STATIONERY_ITEMTAG = ItemTags.create(ResourceLocation.fromNamespaceAndPath("neoforge", "tools/stationery"));
   private static final ResourceKey<CreativeModeTab> TAB = ResourceKey.create(Registries.CREATIVE_MODE_TAB, ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "tab"));

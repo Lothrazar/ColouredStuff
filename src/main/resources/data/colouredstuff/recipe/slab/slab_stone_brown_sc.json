@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 2,
   "ingredient": {
     "item": "colouredstuff:stone_brown"
   },
-  "result": "colouredstuff:slab_stone_brown"
+  "result": {
+    "id": "colouredstuff:slab_stone_brown",
+    "count": 2
+  }
 }

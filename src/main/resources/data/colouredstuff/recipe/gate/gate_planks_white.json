@@ -9,7 +9,7 @@
       "item": "colouredstuff:planks_white"
     },
     "-": {
-      "tag": "forge:rods/wooden"
+      "tag": "c:rods/wooden"
     }
   },
   "result": {

@@ -7,7 +7,6 @@ import com.lothrazar.colouredstuff.registry.ClientRegistry;
 import com.lothrazar.colouredstuff.registry.ColourableBlockRegistry;
 import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
 import com.lothrazar.colouredstuff.registry.ConfigColourable;
-import com.lothrazar.colouredstuff.registry.DynamicRegistry;
 import com.lothrazar.colouredstuff.registry.FluidColourRegistry;
 import com.lothrazar.colouredstuff.registry.InteractionRegistry;
 import net.neoforged.api.distmarker.Dist;
@@ -31,7 +30,7 @@ public class ModColourable {
     new PlayerUseEvents();
     modEventBus.addListener(InteractionRegistry::register);
     modEventBus.addListener(ClientRegistry::register);
-    modEventBus.addListener(DynamicRegistry::register);
+//    modEventBus.addListener(DynamicRegistry::register);
     if (FMLEnvironment.dist == Dist.CLIENT) {
       modEventBus.addListener(ClientRegistry::registerEntityRenders);
       modEventBus.addListener(ClientRegistry::registerClientExtensions);

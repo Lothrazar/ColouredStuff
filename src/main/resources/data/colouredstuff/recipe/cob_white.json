@@ -10,7 +10,7 @@
       "item": "minecraft:stone"
     },
     "-": {
-      "tag": "forge:dyes/white"
+      "tag": "c:dyes/white"
     }
   },
   "result": {

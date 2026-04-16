@@ -15,10 +15,4 @@
     "count": 1,
     "id": "colouredstuff:crafting_table_rainbow"
   },
-  "conditions": [
-    {
-      "type": "forge:item_exists",
-      "item": "colouredstuff:crafting_table_rainbow"
-    }
-  ]
 }

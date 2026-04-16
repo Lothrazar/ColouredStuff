@@ -1,7 +1,7 @@
 {
   "type": "cyclic:melter",
   "ingredients": [{
-    "tag": "forge:dyes/black"
+    "tag": "c:dyes/black"
   }],
   "result": {
     "fluid": "colouredstuff:water_black",

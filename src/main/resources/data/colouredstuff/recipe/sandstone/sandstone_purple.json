@@ -7,10 +7,10 @@
   ],
   "key": {
     "#": {
-      "tag": "forge:sandstone"
+      "tag": "c:sandstone"
     },
     "-": {
-      "tag": "forge:dyes/purple"
+      "tag": "c:dyes/purple"
     }
   },
   "result": {

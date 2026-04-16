@@ -1,8 +1,10 @@
 {
   "type": "minecraft:stonecutting",
-  "count": 1,
   "ingredient": {
     "item": "colouredstuff:sandstone_light_gray"
   },
-  "result": "colouredstuff:chiseled_sandstone_light_gray"
+  "result": {
+    "id": "colouredstuff:chiseled_sandstone_light_gray",
+    "count": 1
+  }
 }

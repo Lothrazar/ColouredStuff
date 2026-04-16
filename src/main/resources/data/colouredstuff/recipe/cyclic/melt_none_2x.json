@@ -1,9 +1,9 @@
 {
   "type": "cyclic:melter",
   "ingredients": [{
-    "tag": "forge:dyes/none"
+    "tag": "c:dyes/none"
   },{
-    "tag": "forge:dyes/none"
+    "tag": "c:dyes/none"
   }],
   "result": {
     "fluid": "colouredstuff:water_none",

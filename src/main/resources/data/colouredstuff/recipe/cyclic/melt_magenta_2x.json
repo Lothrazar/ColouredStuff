@@ -1,9 +1,9 @@
 {
   "type": "cyclic:melter",
   "ingredients": [{
-    "tag": "forge:dyes/magenta"
+    "tag": "c:dyes/magenta"
   },{
-    "tag": "forge:dyes/magenta"
+    "tag": "c:dyes/magenta"
   }],
   "result": {
     "fluid": "colouredstuff:water_magenta",

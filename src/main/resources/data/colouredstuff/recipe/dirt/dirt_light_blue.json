@@ -10,7 +10,7 @@
       "tag": "minecraft:dirt"
     },
     "-": {
-      "tag": "forge:dyes/light_blue"
+      "tag": "c:dyes/light_blue"
     }
   },
   "result": {

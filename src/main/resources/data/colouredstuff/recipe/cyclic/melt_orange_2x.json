@@ -1,9 +1,9 @@
 {
   "type": "cyclic:melter",
   "ingredients": [{
-    "tag": "forge:dyes/orange"
+    "tag": "c:dyes/orange"
   },{
-    "tag": "forge:dyes/orange"
+    "tag": "c:dyes/orange"
   }],
   "result": {
     "fluid": "colouredstuff:water_orange",

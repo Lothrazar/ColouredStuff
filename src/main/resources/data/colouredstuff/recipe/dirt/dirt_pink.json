@@ -10,7 +10,7 @@
       "tag": "minecraft:dirt"
     },
     "-": {
-      "tag": "forge:dyes/pink"
+      "tag": "c:dyes/pink"
     }
   },
   "result": {

@@ -33,7 +33,7 @@ public class GreenFluidHolder extends InfiniteFluidHolder {
       blockProps().mapColor(DyeColor.GREEN), DyeColorless.GREEN));
   public static DeferredHolder<Item, Item> BUCKET = ColourableItemRegistry.ITEMS.register(TYPE + "_bucket_" + COLOUR, () -> new BucketItem(STILL.get(), new Item.Properties()
       .craftRemainder(Items.BUCKET).stacksTo(1)));
-  public static DeferredHolder<FluidType, FluidType> FTYPE = FluidColourRegistry.FLUID_TYPES.register(ID, () -> new FluidType(fluidtypeProperties()));
+  public static DeferredHolder<FluidType, FluidType> FTYPE = FluidColourRegistry.FLUID_TYPES.register(ID, () -> InfiniteFluidHolder.createFluidType());
 
   private static BaseFlowingFluid.Properties makeProperties() {
     return new BaseFlowingFluid.Properties(FTYPE, STILL, FLOWING).bucket(BUCKET).block(BLOCK);

@@ -1,7 +1,7 @@
 {
   "type": "cyclic:melter",
   "ingredients": [{
-    "tag": "forge:dyes/yellow"
+    "tag": "c:dyes/yellow"
   }],
   "result": {
     "fluid": "colouredstuff:water_yellow",

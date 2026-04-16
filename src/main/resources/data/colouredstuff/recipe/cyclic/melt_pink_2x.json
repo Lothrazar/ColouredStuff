@@ -1,9 +1,9 @@
 {
   "type": "cyclic:melter",
   "ingredients": [{
-    "tag": "forge:dyes/pink"
+    "tag": "c:dyes/pink"
   },{
-    "tag": "forge:dyes/pink"
+    "tag": "c:dyes/pink"
   }],
   "result": {
     "fluid": "colouredstuff:water_pink",

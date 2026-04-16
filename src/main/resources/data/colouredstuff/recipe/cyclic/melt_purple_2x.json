@@ -1,9 +1,9 @@
 {
   "type": "cyclic:melter",
   "ingredients": [{
-    "tag": "forge:dyes/purple"
+    "tag": "c:dyes/purple"
   },{
-    "tag": "forge:dyes/purple"
+    "tag": "c:dyes/purple"
   }],
   "result": {
     "fluid": "colouredstuff:water_purple",

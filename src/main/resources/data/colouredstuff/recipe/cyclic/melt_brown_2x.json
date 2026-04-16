@@ -1,9 +1,9 @@
 {
   "type": "cyclic:melter",
   "ingredients": [{
-    "tag": "forge:dyes/brown"
+    "tag": "c:dyes/brown"
   },{
-    "tag": "forge:dyes/brown"
+    "tag": "c:dyes/brown"
   }],
   "result": {
     "fluid": "colouredstuff:water_brown",
