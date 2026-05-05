@@ -1,5 +1,7 @@
 package com.lothrazar.colouredstuff;
 
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.config.ModConfig;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import com.lothrazar.colouredstuff.color.PlayerUseEvents;
@@ -20,20 +22,20 @@ public class ModColourable {
   public static final String MODID = "colouredstuff";
   public static final Logger LOGGER = LogManager.getLogger();
 
-  public ModColourable(IEventBus modEventBus) {
-    new ConfigColourable();
-    ColourableBlockRegistry.BLOCKS.register(modEventBus);
-    ColourableItemRegistry.ITEMS.register(modEventBus);
-    ColourableItemRegistry.ENTITIES.register(modEventBus);
-    FluidColourRegistry.FLUID_TYPES.register(modEventBus);
-    FluidColourRegistry.FLUIDS.register(modEventBus);
+  public ModColourable(IEventBus bus, ModContainer modContainer) {
+    modContainer.registerConfig(ModConfig.Type.COMMON, ConfigColourable.CONFIG);
+    ColourableBlockRegistry.BLOCKS.register(bus);
+    ColourableItemRegistry.ITEMS.register(bus);
+    ColourableItemRegistry.ENTITIES.register(bus);
+    FluidColourRegistry.FLUID_TYPES.register(bus);
+    FluidColourRegistry.FLUIDS.register(bus);
     new PlayerUseEvents();
-    modEventBus.addListener(InteractionRegistry::register);
-    modEventBus.addListener(ClientRegistry::register);
+    bus.addListener(InteractionRegistry::register);
+    bus.addListener(ClientRegistry::register);
 //    modEventBus.addListener(DynamicRegistry::register);
     if (FMLEnvironment.dist == Dist.CLIENT) {
-      modEventBus.addListener(ClientRegistry::registerEntityRenders);
-      modEventBus.addListener(ClientRegistry::registerClientExtensions);
+      bus.addListener(ClientRegistry::registerEntityRenders);
+      bus.addListener(ClientRegistry::registerClientExtensions);
     }
   }
 }

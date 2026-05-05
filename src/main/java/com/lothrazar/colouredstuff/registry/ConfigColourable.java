@@ -14,7 +14,7 @@ public class ConfigColourable  {
   public static BooleanValue VANILLA_OVERRIDE;
 //  public static BooleanValue RGB_CRAFTING_TABLE;
   public static BooleanValue CONSUME;
-  private static ModConfigSpec CONFIG;
+  public static ModConfigSpec CONFIG;
   static {
     final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
     BUILDER.comment("Colourable Stuff config.  For modpack devs: also see the datapack for custom recipes and item tags. ").push(ModColourable.MODID);
