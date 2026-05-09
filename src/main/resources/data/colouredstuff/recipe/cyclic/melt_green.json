@@ -1,0 +1,25 @@
+{
+  "type": "cyclic:melter",
+  "ingredients": [{
+    "tag": "c:dyes/green"
+  }],
+  "result": {
+    "fluid": "colouredstuff:water_green",
+    "count": 250
+  },
+	"energy": {
+		"rfpertick": 50,
+		"ticks": 20
+	},
+	"neoforge:conditions": [
+		{
+			"values": [
+				{
+					"modid": "cyclic",
+					"type": "neoforge:mod_loaded"
+				}
+			],
+			"type": "neoforge:and"
+		}
+	]
+}

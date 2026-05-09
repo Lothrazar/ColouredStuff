@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#-#",
+    "#-#"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:planks_cyan"
+    },
+    "-": {
+      "tag": "c:rods/wooden"
+    }
+  },
+  "result": {
+    "count": 6,
+    "id": "colouredstuff:fence_planks_cyan"
+  }
+}

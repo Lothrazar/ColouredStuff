@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "colouredstuff:brick_white"
+  },
+  "result": {
+    "id": "colouredstuff:stairs_brick_white",
+    "count": 1
+  }
+}

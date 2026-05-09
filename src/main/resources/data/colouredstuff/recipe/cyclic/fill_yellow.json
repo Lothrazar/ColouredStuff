@@ -1,0 +1,31 @@
+{
+  "type": "cyclic:solidifier",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    }
+  ],
+  "energy": {
+    "rfpertick": 10,
+    "ticks": 10
+  },
+  "mix": {
+    "fluid": "colouredstuff:water_yellow",
+    "count": 1000
+  },
+  "result": {
+    "count": 1,
+    "id": "colouredstuff:water_bucket_yellow"
+  },
+  "neoforge:conditions": [
+    {
+      "values": [
+        {
+          "modid": "cyclic",
+          "type": "neoforge:mod_loaded"
+        }
+      ],
+      "type": "neoforge:and"
+    }
+  ]
+}

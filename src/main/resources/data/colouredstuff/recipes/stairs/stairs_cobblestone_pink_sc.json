@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "colouredstuff:cobblestone_pink"
-  },
-  "result": "colouredstuff:stairs_cobblestone_pink"
-}

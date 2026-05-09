@@ -1,0 +1,27 @@
+{
+  "type": "cyclic:melter",
+  "ingredients": [{
+    "tag": "c:dyes/magenta"
+  },{
+    "tag": "c:dyes/magenta"
+  }],
+  "result": {
+    "fluid": "colouredstuff:water_magenta",
+    "count": 500
+  },
+	"energy": {
+		"rfpertick": 50,
+		"ticks": 20
+	},
+	"neoforge:conditions": [
+		{
+			"values": [
+				{
+					"modid": "cyclic",
+					"type": "neoforge:mod_loaded"
+				}
+			],
+			"type": "neoforge:and"
+		}
+	]
+}

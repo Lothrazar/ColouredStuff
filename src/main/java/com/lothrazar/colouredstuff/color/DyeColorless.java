@@ -6,7 +6,7 @@ import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
-import net.minecraftforge.common.Tags;
+import net.neoforged.neoforge.common.Tags;
 
 public enum DyeColorless implements StringRepresentable {
 

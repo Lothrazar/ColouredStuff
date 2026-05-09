@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "colouredstuff:log_pink"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "colouredstuff:planks_pink"
+  }
+}

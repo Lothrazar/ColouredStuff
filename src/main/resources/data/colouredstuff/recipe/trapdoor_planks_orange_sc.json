@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "colouredstuff:planks_orange"
+  },
+  "result": {
+    "id": "colouredstuff:trapdoor_planks_orange",
+    "count": 1
+  }
+}

@@ -13,8 +13,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FireBlock;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.ToolAction;
-import net.minecraftforge.common.ToolActions;
+import net.neoforged.neoforge.common.ItemAbility;
+import net.neoforged.neoforge.common.ItemAbilities;
 
 public class LogColour extends BlockAxisPillar implements IHasColor {
 
@@ -49,11 +49,11 @@ public class LogColour extends BlockAxisPillar implements IHasColor {
   }
 
   @Override
-  public BlockState getToolModifiedState(BlockState logState, UseOnContext context, ToolAction toolAction, boolean simulate) {
-    if (toolAction == ToolActions.AXE_STRIP && StrippedLogColour.RAINBOW.containsKey(this.getColor())) {
+  public BlockState getToolModifiedState(BlockState logState, UseOnContext context, ItemAbility itemAbility, boolean simulate) {
+    if (itemAbility == ItemAbilities.AXE_STRIP && StrippedLogColour.RAINBOW.containsKey(this.getColor())) {
       var block = StrippedLogColour.RAINBOW.get(this.getColor());
       return block.defaultBlockState().setValue(AXIS, logState.getValue(AXIS));
     }
-    return super.getToolModifiedState(logState, context, toolAction, simulate);
+    return super.getToolModifiedState(logState, context, itemAbility, simulate);
   }
 }

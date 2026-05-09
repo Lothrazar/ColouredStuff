@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "colouredstuff:sandstone_green"
-  },
-  "result": "colouredstuff:cut_sandstone_green"
-}

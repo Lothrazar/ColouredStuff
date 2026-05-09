@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "colouredstuff:cobblestone_light_blue"
+  },
+  "result": {
+    "id": "colouredstuff:stairs_cobblestone_light_blue",
+    "count": 1
+  }
+}

@@ -15,7 +15,7 @@ public class StoneStair extends StairBlock implements IHasColor {
 
   //pass in the base block
   public StoneStair(java.util.function.Supplier<BlockState> state, Properties p, DyeColorless color) {
-    super(state, p);
+    super(state.get(), p);
     RAINBOW.put(color, this);
     this.color = color;
   }

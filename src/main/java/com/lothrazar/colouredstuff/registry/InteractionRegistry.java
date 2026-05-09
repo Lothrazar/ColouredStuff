@@ -1,24 +1,8 @@
 package com.lothrazar.colouredstuff.registry;
 
-import com.lothrazar.colouredstuff.fluid.water.BlackFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.BlueFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.BrownFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.CyanFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.GrayFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.GreenFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.LightblueFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.LightgrayFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.LimeFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.MagentaFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.NoneFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.OrangeFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.PinkFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.PurpleFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.RedFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.WhiteFluidHolder;
-import com.lothrazar.colouredstuff.fluid.water.YellowFluidHolder;
+import com.lothrazar.colouredstuff.fluid.water.*;
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.BlockSource;
+import net.minecraft.core.dispenser.BlockSource;
 import net.minecraft.core.dispenser.DefaultDispenseItemBehavior;
 import net.minecraft.core.dispenser.DispenseItemBehavior;
 import net.minecraft.world.entity.player.Player;
@@ -30,11 +14,11 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DispenserBlock;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraftforge.common.ForgeMod;
-import net.minecraftforge.fluids.FluidInteractionRegistry;
-import net.minecraftforge.fluids.FluidInteractionRegistry.InteractionInformation;
-import net.minecraftforge.fluids.FluidType;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.common.NeoForgeMod;
+import net.neoforged.neoforge.fluids.FluidInteractionRegistry;
+import net.neoforged.neoforge.fluids.FluidInteractionRegistry.InteractionInformation;
+import net.neoforged.neoforge.fluids.FluidType;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 
 public class InteractionRegistry {
 
@@ -65,9 +49,9 @@ public class InteractionRegistry {
       @Override
       public ItemStack execute(BlockSource lvl, ItemStack stack) {
         DispensibleContainerItem dispensiblecontaineritem = (DispensibleContainerItem) stack.getItem();
-        BlockPos blockpos = lvl.getPos().relative(lvl.getBlockState().getValue(DispenserBlock.FACING));
-        Level level = lvl.getLevel();
-        if (dispensiblecontaineritem.emptyContents((Player) null, level, blockpos, (BlockHitResult) null, stack)) {
+        BlockPos blockpos = lvl.pos().relative(lvl.state().getValue(DispenserBlock.FACING));
+        Level level = lvl.level();
+        if (dispensiblecontaineritem.emptyContents((Player) null, level, blockpos, (BlockHitResult) null)) {
           dispensiblecontaineritem.checkExtraContent((Player) null, level, stack, blockpos);
           return new ItemStack(Items.BUCKET);
         }
@@ -99,14 +83,14 @@ public class InteractionRegistry {
   // Lava + COLOUR-Water = Obsidian (Source Lava) / COLOUR-Cobblestone (Flowing Lava)
   //
   public static void lavaCobblestone(FluidType colouredWater, Block stone, Block cobblestone) {
-    FluidInteractionRegistry.addInteraction(ForgeMod.LAVA_TYPE.get(), new InteractionInformation(
+    FluidInteractionRegistry.addInteraction(NeoForgeMod.LAVA_TYPE.value(), new InteractionInformation(
         colouredWater,
         lavaState -> lavaState.isSource() ? Blocks.OBSIDIAN.defaultBlockState() : cobblestone.defaultBlockState()));
     //
     //   COLOUR-Water + Lava = COLOUR-Smoothstone (Source&flowing water)
     //
     FluidInteractionRegistry.addInteraction(colouredWater, new InteractionInformation(
-        ForgeMod.LAVA_TYPE.get(),
+        NeoForgeMod.LAVA_TYPE.value(),
         lavaState -> lavaState.isSource() ? stone.defaultBlockState() : cobblestone.defaultBlockState()));
   }
 }

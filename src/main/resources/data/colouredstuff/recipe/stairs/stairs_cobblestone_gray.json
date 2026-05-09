@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "colouredstuff:cobblestone_gray"
+    }
+  },
+  "result": {
+    "count": 4,
+    "id": "colouredstuff:stairs_cobblestone_gray"
+  }
+}

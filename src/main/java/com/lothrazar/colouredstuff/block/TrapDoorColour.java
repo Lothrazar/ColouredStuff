@@ -14,7 +14,7 @@ public class TrapDoorColour extends TrapDoorBlock implements IHasColor {
   private final DyeColorless color;
 
   public TrapDoorColour(Properties p, DyeColorless color) {
-    super(p.noOcclusion(), BlockSetType.OAK);
+    super(BlockSetType.OAK, p.noOcclusion());
     RAINBOW.put(color, this);
     this.color = color;
   }

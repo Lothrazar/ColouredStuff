@@ -1,0 +1,27 @@
+{
+  "type": "cyclic:melter",
+  "ingredients": [{
+    "tag": "c:dyes/light_gray"
+  },{
+    "tag": "c:dyes/light_gray"
+  }],
+  "result": {
+    "fluid": "colouredstuff:water_light_gray",
+    "count": 500
+  },
+	"energy": {
+		"rfpertick": 50,
+		"ticks": 20
+	},
+	"neoforge:conditions": [
+		{
+			"values": [
+				{
+					"modid": "cyclic",
+					"type": "neoforge:mod_loaded"
+				}
+			],
+			"type": "neoforge:and"
+		}
+	]
+}

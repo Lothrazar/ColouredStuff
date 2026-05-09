@@ -27,10 +27,10 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
-import net.minecraftforge.common.IForgeShearable;
+import net.neoforged.neoforge.common.IShearable;
 
 @SuppressWarnings("deprecation")
-public class LeavesColour extends BlockFlib implements IHasColor, SimpleWaterloggedBlock, IForgeShearable {
+public class LeavesColour extends BlockFlib implements IHasColor, SimpleWaterloggedBlock, IShearable {
 
   public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
   public static final int DECAY_DISTANCE = 7;

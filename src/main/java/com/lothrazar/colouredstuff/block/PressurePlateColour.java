@@ -13,7 +13,7 @@ public class PressurePlateColour extends PressurePlateBlock implements IHasColor
   public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public PressurePlateColour(Properties p, DyeColorless color) {
-    super(PressurePlateBlock.Sensitivity.EVERYTHING, p.noCollission().strength(0.5F), BlockSetType.OAK); //oak so it has the sound effects of other wood pressure plates
+    super(BlockSetType.OAK, p.noCollission().strength(0.5F)); //oak so it has the sound effects of other wood pressure plates
     RAINBOW.put(color, this);
     this.color = color;
   }

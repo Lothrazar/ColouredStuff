@@ -25,7 +25,7 @@ public class ButtonColour extends ButtonBlock implements SimpleWaterloggedBlock,
   public static Map<DyeColorless, Block> RAINBOW = new HashMap<>();
 
   public ButtonColour(Properties p, DyeColorless color) {
-    super(p.noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY), BlockSetType.STONE, 20, true);
+    super(BlockSetType.STONE, 20, p.noCollission().strength(0.5F).pushReaction(PushReaction.DESTROY));
     // sensitive true false. true is like WOOD ; false is like STONE
     registerDefaultState(defaultBlockState().setValue(WATERLOGGED, false));
     RAINBOW.put(color, this);
