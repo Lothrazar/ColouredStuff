@@ -5,12 +5,8 @@
     "#-#"
   ],
   "key": {
-    "#": {
-      "item": "colouredstuff:planks_white"
-    },
-    "-": {
-      "tag": "c:rods/wooden"
-    }
+    "#": "colouredstuff:planks_white",
+    "-": "#c:rods/wooden"
   },
   "result": {
     "count": 6,

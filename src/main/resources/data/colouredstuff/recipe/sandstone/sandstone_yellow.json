@@ -6,12 +6,8 @@
     "###"
   ],
   "key": {
-    "#": {
-      "tag": "c:sandstone"
-    },
-    "-": {
-      "tag": "c:dyes/yellow"
-    }
+    "#": "#c:sandstone",
+    "-": "#c:dyes/yellow"
   },
   "result": {
     "count": 8,

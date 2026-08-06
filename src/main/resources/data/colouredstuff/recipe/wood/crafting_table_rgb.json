@@ -1,15 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "colouredstuff:crafting_table_red"
-    },
-    {
-      "item": "colouredstuff:crafting_table_green"
-    },
-    {
-      "item": "colouredstuff:crafting_table_blue"
-    }
+    "colouredstuff:crafting_table_red",
+    "colouredstuff:crafting_table_green",
+    "colouredstuff:crafting_table_blue"
   ],
   "result": {
     "count": 1,

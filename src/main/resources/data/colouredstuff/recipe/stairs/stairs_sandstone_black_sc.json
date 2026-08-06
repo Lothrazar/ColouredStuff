@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "colouredstuff:sandstone_black"
-  },
+  "ingredient": "colouredstuff:sandstone_black",
   "result": {
     "id": "colouredstuff:stairs_sandstone_black",
     "count": 1

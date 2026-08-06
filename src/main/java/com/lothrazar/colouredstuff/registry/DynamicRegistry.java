@@ -6,7 +6,7 @@ import com.lothrazar.colouredstuff.registry.ColourableItemRegistry.BurnTime;
 import com.lothrazar.library.item.ItemFlib;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
@@ -24,7 +24,7 @@ public class DynamicRegistry {
 //    // The config value RGB_CRAFTING_TABLE is checked at usage time (e.g. in recipes or block behaviour).
 //    event.register(Registries.ITEM, reg -> {
 //      //  darkosto
-//      reg.register(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "crafting_table_rainbow")),
+//      reg.register(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(ModColourable.MODID, "crafting_table_rainbow")),
 //
 //
 //      new ItemColour(ColourableBlockRegistry.crafting_table_rainbow.get(),          new Item.Properties(), new ItemFlib.Settings().burnTime(BurnTime.WOOD))

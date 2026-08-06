@@ -7,7 +7,7 @@ import com.lothrazar.colouredstuff.ModColourable;
 import com.lothrazar.colouredstuff.color.DyeColorless;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 
@@ -19,7 +19,7 @@ public class RainbowTreeGrower {
     for (DyeColorless color : DyeColorless.values()) {
       String name = color.name().toLowerCase();
       ResourceKey<ConfiguredFeature<?, ?>> key = ResourceKey.create(Registries.CONFIGURED_FEATURE,
-          ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "tree_" + name));
+          Identifier.fromNamespaceAndPath(ModColourable.MODID, "tree_" + name));
       Optional<ResourceKey<ConfiguredFeature<?, ?>>> none = Optional.empty();
       GROWERS.put(color, new TreeGrower("rainbow_" + name, none, Optional.of(key), none));
     }

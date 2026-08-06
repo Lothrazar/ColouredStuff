@@ -7,7 +7,7 @@ import com.lothrazar.colouredstuff.fluid.InfiniteFluidHolder;
 import com.lothrazar.colouredstuff.registry.ColourableBlockRegistry;
 import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
 import com.lothrazar.colouredstuff.registry.FluidColourRegistry;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
@@ -25,8 +25,8 @@ public class OrangeFluidHolder extends InfiniteFluidHolder {
   private static final String COLOUR = "orange";
   private static final String TYPE = "water";
   private static final String ID = TYPE + "_" + COLOUR;
-  public static final ResourceLocation FLUID_FLOWING = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "block/" + TYPE + "/" + TYPE + "_flow_" + COLOUR);
-  public static final ResourceLocation FLUID_STILL = ResourceLocation.fromNamespaceAndPath(ModColourable.MODID, "block/" + TYPE + "/" + TYPE + "_still_" + COLOUR);
+  public static final Identifier FLUID_FLOWING = Identifier.fromNamespaceAndPath(ModColourable.MODID, "block/" + TYPE + "/" + TYPE + "_flow_" + COLOUR);
+  public static final Identifier FLUID_STILL = Identifier.fromNamespaceAndPath(ModColourable.MODID, "block/" + TYPE + "/" + TYPE + "_still_" + COLOUR);
   public static DeferredHolder<Fluid, FlowingFluid> FLOWING = FluidColourRegistry.FLUIDS.register(ID + "_flowing", () -> new BaseFlowingFluid.Flowing(makeProperties()));
   public static DeferredHolder<Fluid, FlowingFluid> STILL = FluidColourRegistry.FLUIDS.register(ID, () -> new BaseFlowingFluid.Source(makeProperties()));
   public static DeferredHolder<Block, LiquidBlock> BLOCK = ColourableBlockRegistry.BLOCKS.register(ID + "_block", () -> new ColourLiquidBlock(STILL,

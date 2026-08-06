@@ -1,25 +1,25 @@
 {
   "type": "cyclic:melter",
-  "ingredients": [{
-    "tag": "c:dyes/light_blue"
-  }],
+  "ingredients": [
+    "#c:dyes/light_blue"
+  ],
   "result": {
-    "fluid": "colouredstuff:water_light_blue",
-    "count": 250
+    "id": "colouredstuff:water_light_blue",
+    "amount": 250
   },
-	"energy": {
-		"rfpertick": 50,
-		"ticks": 20
-	},
-	"neoforge:conditions": [
-		{
-			"values": [
-				{
-					"modid": "cyclic",
-					"type": "neoforge:mod_loaded"
-				}
-			],
-			"type": "neoforge:and"
-		}
-	]
+  "energy": {
+    "rfpertick": 50,
+    "ticks": 20
+  },
+  "neoforge:conditions": [
+    {
+      "values": [
+        {
+          "modid": "cyclic",
+          "type": "neoforge:mod_loaded"
+        }
+      ],
+      "type": "neoforge:and"
+    }
+  ]
 }

@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "colouredstuff:planks_brown"
-    }
+    "#": "colouredstuff:planks_brown"
   },
   "result": {
     "count": 6,

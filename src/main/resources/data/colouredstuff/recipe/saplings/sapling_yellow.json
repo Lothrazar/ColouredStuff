@@ -4,12 +4,8 @@
     "#-#"
   ],
   "key": {
-    "#": {
-      "tag": "minecraft:saplings"
-    },
-    "-": {
-      "tag": "c:dyes/yellow"
-    }
+    "#": "#minecraft:saplings",
+    "-": "#c:dyes/yellow"
   },
   "result": {
     "count": 2,

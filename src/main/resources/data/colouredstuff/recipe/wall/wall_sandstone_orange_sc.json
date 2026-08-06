@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "colouredstuff:sandstone_orange"
-  },
+  "ingredient": "colouredstuff:sandstone_orange",
   "result": {
     "id": "colouredstuff:wall_sandstone_orange",
     "count": 1

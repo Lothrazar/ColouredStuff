@@ -5,9 +5,7 @@
     "#"
   ],
   "key": {
-    "#": {
-      "item": "colouredstuff:slab_sandstone_purple"
-    }
+    "#": "colouredstuff:slab_sandstone_purple"
   },
   "result": {
     "count": 1,

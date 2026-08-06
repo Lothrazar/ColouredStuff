@@ -6,12 +6,8 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:bricks"
-    },
-    "-": {
-      "tag": "c:dyes/light_blue"
-    }
+    "#": "minecraft:bricks",
+    "-": "#c:dyes/light_blue"
   },
   "result": {
     "count": 8,

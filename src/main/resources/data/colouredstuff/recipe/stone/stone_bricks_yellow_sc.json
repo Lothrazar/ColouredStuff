@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "colouredstuff:stone_yellow"
-  },
+  "ingredient": "colouredstuff:stone_yellow",
   "result": {
     "id": "colouredstuff:stone_bricks_yellow",
     "count": 1

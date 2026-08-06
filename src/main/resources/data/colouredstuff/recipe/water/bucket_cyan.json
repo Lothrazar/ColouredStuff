@@ -1,15 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:snow_block"
-    },
-    {
-      "item": "minecraft:bucket"
-    },
-    {
-      "tag": "c:dyes/cyan"
-    }
+    "minecraft:snow_block",
+    "minecraft:bucket",
+    "#c:dyes/cyan"
   ],
   "result": {
     "count": 1,

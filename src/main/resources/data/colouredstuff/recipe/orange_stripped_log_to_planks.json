@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "colouredstuff:log_stripped_orange"
-    }
+    "colouredstuff:log_stripped_orange"
   ],
   "result": {
     "count": 4,

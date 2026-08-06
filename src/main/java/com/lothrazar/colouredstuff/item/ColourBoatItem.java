@@ -22,11 +22,11 @@ import com.lothrazar.colouredstuff.entity.WhiteBoat;
 import com.lothrazar.colouredstuff.entity.YellowBoat;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResultHolder;
+import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntitySelector;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.vehicle.Boat;
+import net.minecraft.world.entity.vehicle.boat.Boat;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ClipContext;
@@ -46,11 +46,11 @@ public class ColourBoatItem extends Item {
   }
 
   @Override
-  public InteractionResultHolder<ItemStack> use(Level level, Player playerIn, InteractionHand handIn) {
+  public InteractionResult use(Level level, Player playerIn, InteractionHand handIn) {
     ItemStack itemstack = playerIn.getItemInHand(handIn);
     HitResult hitResult = getPlayerPOVHitResult(level, playerIn, ClipContext.Fluid.ANY);
     if (hitResult.getType() == HitResult.Type.MISS) {
-      return InteractionResultHolder.pass(itemstack);
+      return InteractionResult.PASS;
     }
     else {
       Vec3 vec = playerIn.getViewVector(1.0F);
@@ -60,7 +60,7 @@ public class ColourBoatItem extends Item {
         for (Entity entity : list) {
           AABB box = entity.getBoundingBox().inflate(entity.getPickRadius());
           if (box.contains(vector3d1)) {
-            return InteractionResultHolder.pass(itemstack);
+            return InteractionResult.PASS;
           }
         }
       }
@@ -123,21 +123,21 @@ public class ColourBoatItem extends Item {
         }
         eboat.setYRot(playerIn.getYRot());
         if (!level.noCollision(eboat, eboat.getBoundingBox().inflate(-0.1D))) {
-          return InteractionResultHolder.fail(itemstack);
+          return InteractionResult.FAIL;
         }
         else {
-          if (!level.isClientSide) {
+          if (!level.isClientSide()) {
             level.addFreshEntity(eboat);
             if (!playerIn.getAbilities().instabuild) {
               itemstack.shrink(1);
             }
           }
           playerIn.awardStat(Stats.ITEM_USED.get(this));
-          return InteractionResultHolder.sidedSuccess(itemstack, level.isClientSide());
+          return level.isClientSide() ? InteractionResult.SUCCESS : InteractionResult.SUCCESS_SERVER;
         }
       }
       else {
-        return InteractionResultHolder.pass(itemstack);
+        return InteractionResult.PASS;
       }
     }
   }

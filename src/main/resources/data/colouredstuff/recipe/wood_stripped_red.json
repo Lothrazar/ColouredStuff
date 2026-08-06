@@ -5,9 +5,7 @@
     "##"
   ],
   "key": {
-    "#": {
-      "item": "colouredstuff:log_stripped_red"
-    }
+    "#": "colouredstuff:log_stripped_red"
   },
   "result": {
     "count": 3,

@@ -1,27 +1,25 @@
 {
   "type": "cyclic:melter",
-  "ingredients": [{
-    "tag": "c:dyes/cyan"
-  },{
-    "tag": "c:dyes/cyan"
-  }],
+  "ingredients": [
+    "#c:dyes/cyan"
+  ],
   "result": {
-    "fluid": "colouredstuff:water_cyan",
-    "count": 500
+    "id": "colouredstuff:water_cyan",
+    "amount": 500
   },
-	"energy": {
-		"rfpertick": 50,
-		"ticks": 20
-	},
-	"neoforge:conditions": [
-		{
-			"values": [
-				{
-					"modid": "cyclic",
-					"type": "neoforge:mod_loaded"
-				}
-			],
-			"type": "neoforge:and"
-		}
-	]
+  "energy": {
+    "rfpertick": 50,
+    "ticks": 20
+  },
+  "neoforge:conditions": [
+    {
+      "values": [
+        {
+          "modid": "cyclic",
+          "type": "neoforge:mod_loaded"
+        }
+      ],
+      "type": "neoforge:and"
+    }
+  ]
 }

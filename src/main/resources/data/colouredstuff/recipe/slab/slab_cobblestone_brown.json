@@ -4,9 +4,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "colouredstuff:cobblestone_brown"
-    }
+    "#": "colouredstuff:cobblestone_brown"
   },
   "result": {
     "count": 6,

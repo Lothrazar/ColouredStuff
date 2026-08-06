@@ -6,12 +6,8 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:bricks"
-    },
-    "-": {
-      "tag": "c:dyes/magenta"
-    }
+    "#": "minecraft:bricks",
+    "-": "#c:dyes/magenta"
   },
   "result": {
     "count": 8,

@@ -1,27 +1,25 @@
 {
   "type": "cyclic:melter",
-  "ingredients": [{
-    "tag": "c:dyes/yellow"
-  },{
-    "tag": "c:dyes/yellow"
-  }],
+  "ingredients": [
+    "#c:dyes/yellow"
+  ],
   "result": {
-    "fluid": "colouredstuff:water_yellow",
-    "count": 500
+    "id": "colouredstuff:water_yellow",
+    "amount": 500
   },
-	"energy": {
-		"rfpertick": 50,
-		"ticks": 20
-	},
-	"neoforge:conditions": [
-		{
-			"values": [
-				{
-					"modid": "cyclic",
-					"type": "neoforge:mod_loaded"
-				}
-			],
-			"type": "neoforge:and"
-		}
-	]
+  "energy": {
+    "rfpertick": 50,
+    "ticks": 20
+  },
+  "neoforge:conditions": [
+    {
+      "values": [
+        {
+          "modid": "cyclic",
+          "type": "neoforge:mod_loaded"
+        }
+      ],
+      "type": "neoforge:and"
+    }
+  ]
 }

@@ -6,12 +6,8 @@
     " # "
   ],
   "key": {
-    "#": {
-      "item": "colouredstuff:planks_pink"
-    },
-    "c": {
-      "item": "minecraft:crafting_table"
-    }
+    "#": "colouredstuff:planks_pink",
+    "c": "minecraft:crafting_table"
   },
   "result": {
     "count": 1,

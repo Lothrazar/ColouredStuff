@@ -6,12 +6,8 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:stone"
-    },
-    "-": {
-      "tag": "c:dyes/gray"
-    }
+    "#": "minecraft:stone",
+    "-": "#c:dyes/gray"
   },
   "result": {
     "count": 8,

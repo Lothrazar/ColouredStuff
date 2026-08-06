@@ -33,9 +33,9 @@ public class ModColourable {
     bus.addListener(InteractionRegistry::register);
     bus.addListener(ClientRegistry::register);
 //    modEventBus.addListener(DynamicRegistry::register);
-    if (FMLEnvironment.dist == Dist.CLIENT) {
+    if (FMLEnvironment.getDist() == Dist.CLIENT) {
       bus.addListener(ClientRegistry::registerEntityRenders);
-      bus.addListener(ClientRegistry::registerClientExtensions);
+      bus.addListener(ClientRegistry::registerFluidModels);
     }
   }
 }

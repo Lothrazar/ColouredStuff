@@ -14,7 +14,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FarmBlock;
+import net.minecraft.world.level.block.FarmlandBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.gameevent.GameEvent;
@@ -29,7 +29,7 @@ public class FarmlandColour extends BlockFlib implements IHasColor {
     super(p.noOcclusion());
     RAINBOW.put(s, this);
     this.color = s;
-    this.registerDefaultState(this.defaultBlockState().setValue(FarmBlock.MOISTURE, 0));
+    this.registerDefaultState(this.defaultBlockState().setValue(FarmlandBlock.MOISTURE, 0));
   }
 
   protected final DyeColorless color;
@@ -46,7 +46,7 @@ public class FarmlandColour extends BlockFlib implements IHasColor {
 
   @Override
   protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-    super.createBlockStateDefinition(builder.add(FarmBlock.MOISTURE));
+    super.createBlockStateDefinition(builder.add(FarmlandBlock.MOISTURE));
   }
 
   @Override
@@ -58,23 +58,24 @@ public class FarmlandColour extends BlockFlib implements IHasColor {
 
   @Override
   public void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource rand) {
-    int i = state.getValue(FarmBlock.MOISTURE);
+    int i = state.getValue(FarmlandBlock.MOISTURE);
     if (!isNearWater(level, pos) && !level.isRainingAt(pos.above())) {
       if (i > 0) {
-        level.setBlock(pos, state.setValue(FarmBlock.MOISTURE, Integer.valueOf(i - 1)), 2);
+        level.setBlock(pos, state.setValue(FarmlandBlock.MOISTURE, Integer.valueOf(i - 1)), 2);
       }
       else if (!shouldMaintainFarmland(level, pos)) {
         turnToDirt((Entity) null, state, level, pos);
       }
     }
     else if (i < 7) {
-      level.setBlock(pos, state.setValue(FarmBlock.MOISTURE, Integer.valueOf(7)), 2);
+      level.setBlock(pos, state.setValue(FarmlandBlock.MOISTURE, Integer.valueOf(7)), 2);
     }
   }
 
   @Override
-  public void fallOn(Level level, BlockState bs, BlockPos pos, Entity entity, float f) {
-    if (!level.isClientSide && net.neoforged.neoforge.common.CommonHooks.onFarmlandTrample(level, pos, Blocks.DIRT.defaultBlockState(), f, entity)) { // NeoForge: Move logic to Entity#canTrample
+  public void fallOn(Level level, BlockState bs, BlockPos pos, Entity entity, double f) {
+    if (level instanceof ServerLevel serverLevel
+        && net.neoforged.neoforge.common.CommonHooks.onFarmlandTrample(serverLevel, pos, Blocks.DIRT.defaultBlockState(), f, entity)) { // NeoForge: Move logic to Entity#canTrample
       turnToDirt(entity, bs, level, pos);
     }
     super.fallOn(level, bs, pos, entity, f);
@@ -82,7 +83,7 @@ public class FarmlandColour extends BlockFlib implements IHasColor {
 
   private void turnToDirt(Entity entity, BlockState farmlandState, Level level, BlockPos pos) {
     var dirt = DirtColour.RAINBOW.get(this.color).defaultBlockState();
-    BlockState modifiedDirt = FarmBlock.pushEntitiesUp(farmlandState, dirt, level, pos);
+    BlockState modifiedDirt = FarmlandBlock.pushEntitiesUp(farmlandState, dirt, level, pos);
     level.setBlockAndUpdate(pos, modifiedDirt);
     level.gameEvent(GameEvent.BLOCK_CHANGE, pos, GameEvent.Context.of(entity, modifiedDirt));
   }
@@ -103,8 +104,8 @@ public class FarmlandColour extends BlockFlib implements IHasColor {
 
   @Override
   public boolean isFertile(BlockState state, BlockGetter level, BlockPos pos) {
-    if (state.hasProperty(FarmBlock.MOISTURE)) {
-      return state.getValue(FarmBlock.MOISTURE) > 0;
+    if (state.hasProperty(FarmlandBlock.MOISTURE)) {
+      return state.getValue(FarmlandBlock.MOISTURE) > 0;
     }
     return false;
   }

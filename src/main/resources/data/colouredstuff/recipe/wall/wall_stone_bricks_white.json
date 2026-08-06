@@ -5,9 +5,7 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "colouredstuff:stone_bricks_white"
-    }
+    "#": "colouredstuff:stone_bricks_white"
   },
   "result": {
     "count": 6,

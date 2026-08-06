@@ -1,17 +1,15 @@
 {
   "type": "cyclic:solidifier",
   "ingredients": [
-    {
-      "item": "minecraft:bucket"
-    }
+    "minecraft:bucket"
   ],
   "energy": {
     "rfpertick": 10,
     "ticks": 10
   },
   "mix": {
-    "fluid": "colouredstuff:water_magenta",
-    "count": 1000
+    "ingredient": "colouredstuff:water_magenta",
+    "amount": 1000
   },
   "result": {
     "count": 1,

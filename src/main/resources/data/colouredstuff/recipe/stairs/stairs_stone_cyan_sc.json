@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "colouredstuff:stone_cyan"
-  },
+  "ingredient": "colouredstuff:stone_cyan",
   "result": {
     "id": "colouredstuff:stairs_stone_cyan",
     "count": 1

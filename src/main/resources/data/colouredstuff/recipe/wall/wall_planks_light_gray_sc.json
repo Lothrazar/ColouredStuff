@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "colouredstuff:planks_light_gray"
-  },
+  "ingredient": "colouredstuff:planks_light_gray",
   "result": {
     "id": "colouredstuff:wall_planks_light_gray",
     "count": 1

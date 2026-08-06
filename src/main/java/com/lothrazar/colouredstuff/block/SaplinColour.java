@@ -12,8 +12,8 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.ScheduledTickAccess;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BonemealableBlock;
@@ -38,7 +38,7 @@ public class SaplinColour extends BlockFlib implements IHasColor, BonemealableBl
   private final TreeGrower treeGrower;
 
   public SaplinColour(TreeGrower g, Properties p, DyeColorless s) {
-    super(p.mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY));
+    super(p.mapColor(MapColor.PLANT).noCollision().randomTicks().instabreak().sound(SoundType.GRASS).pushReaction(PushReaction.DESTROY));
     this.treeGrower = g;
     this.registerDefaultState(this.stateDefinition.any().setValue(STAGE, Integer.valueOf(0)));
     RAINBOW.put(s, this);
@@ -63,8 +63,8 @@ public class SaplinColour extends BlockFlib implements IHasColor, BonemealableBl
   }
 
   @Override
-  public BlockState updateShape(BlockState state, Direction dir, BlockState nbrState, LevelAccessor level, BlockPos pos, BlockPos nbrPos) {
-    return !state.canSurvive(level, pos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, dir, nbrState, level, pos, nbrPos);
+  public BlockState updateShape(BlockState state, LevelReader level, ScheduledTickAccess ticks, BlockPos pos, Direction dir, BlockPos nbrPos, BlockState nbrState, RandomSource random) {
+    return !state.canSurvive(level, pos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, level, ticks, pos, dir, nbrPos, nbrState, random);
   }
 
   @Override
@@ -74,7 +74,7 @@ public class SaplinColour extends BlockFlib implements IHasColor, BonemealableBl
   }
 
   @Override
-  public boolean propagatesSkylightDown(BlockState p_51039_, BlockGetter p_51040_, BlockPos p_51041_) {
+  protected boolean propagatesSkylightDown(BlockState p_51039_) {
     return p_51039_.getFluidState().isEmpty();
   }
 
@@ -90,7 +90,7 @@ public class SaplinColour extends BlockFlib implements IHasColor, BonemealableBl
 
   @Override
   public boolean isBonemealSuccess(Level level, RandomSource rand, BlockPos pos, BlockState state) {
-    return level.random.nextFloat() < 0.45D;
+    return level.getRandom().nextFloat() < 0.45D;
   }
 
   @Override

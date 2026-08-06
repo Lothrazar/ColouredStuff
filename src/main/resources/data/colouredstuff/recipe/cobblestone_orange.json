@@ -6,12 +6,8 @@
     "###"
   ],
   "key": {
-    "#": {
-      "item": "minecraft:cobblestone"
-    },
-    "-": {
-      "tag": "c:dyes/orange"
-    }
+    "#": "minecraft:cobblestone",
+    "-": "#c:dyes/orange"
   },
   "result": {
     "count": 8,

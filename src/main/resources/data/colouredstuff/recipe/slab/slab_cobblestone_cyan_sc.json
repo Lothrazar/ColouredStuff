@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "colouredstuff:cobblestone_cyan"
-  },
+  "ingredient": "colouredstuff:cobblestone_cyan",
   "result": {
     "id": "colouredstuff:slab_cobblestone_cyan",
     "count": 2

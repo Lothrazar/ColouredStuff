@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "colouredstuff:sandstone_magenta"
-  },
+  "ingredient": "colouredstuff:sandstone_magenta",
   "result": {
     "id": "colouredstuff:chiseled_sandstone_magenta",
     "count": 1

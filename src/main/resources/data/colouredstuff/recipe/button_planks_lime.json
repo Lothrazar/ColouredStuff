@@ -1,9 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "colouredstuff:planks_lime"
-    }
+    "colouredstuff:planks_lime"
   ],
   "result": {
     "count": 1,

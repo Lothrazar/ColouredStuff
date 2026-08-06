@@ -2,19 +2,18 @@ package com.lothrazar.colouredstuff.entity;
 
 import com.lothrazar.colouredstuff.registry.ColourableItemRegistry;
 import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.vehicle.Boat;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.vehicle.boat.Boat;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
 public class PinkBoat extends Boat {
 
   public PinkBoat(EntityType<? extends Boat> type, Level world) {
-    super(type, world);
+    super(type, world, ColourableItemRegistry.BOAT_PINK);
   }
 
   public PinkBoat(Level level, double x, double y, double z) {
-    super(ColourableItemRegistry.BOAT_ENTITY_PINK.get(), level);
+    super(ColourableItemRegistry.BOAT_ENTITY_PINK.get(), level, ColourableItemRegistry.BOAT_PINK);
     this.setPos(x, y, z);
     this.setDeltaMovement(Vec3.ZERO);
     this.xo = x;
@@ -22,8 +21,4 @@ public class PinkBoat extends Boat {
     this.zo = z;
   }
 
-  @Override
-  public Item getDropItem() {
-    return ColourableItemRegistry.BOAT_PINK.get();
-  }
 }

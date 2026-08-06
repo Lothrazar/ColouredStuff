@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "colouredstuff:planks_cyan"
-  },
+  "ingredient": "colouredstuff:planks_cyan",
   "result": {
     "id": "colouredstuff:pressure_plate_planks_cyan",
     "count": 2

@@ -1,8 +1,6 @@
 {
   "type": "minecraft:stonecutting",
-  "ingredient": {
-    "item": "colouredstuff:planks_white"
-  },
+  "ingredient": "colouredstuff:planks_white",
   "result": {
     "id": "colouredstuff:trapdoor_planks_white",
     "count": 1

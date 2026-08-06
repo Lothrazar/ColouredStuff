@@ -1,25 +1,25 @@
 {
   "type": "cyclic:melter",
-  "ingredients": [{
-    "tag": "c:dyes/brown"
-  }],
+  "ingredients": [
+    "#c:dyes/brown"
+  ],
   "result": {
-    "fluid": "colouredstuff:water_brown",
-    "count": 250
+    "id": "colouredstuff:water_brown",
+    "amount": 250
   },
-	"energy": {
-		"rfpertick": 50,
-		"ticks": 20
-	},
-	"neoforge:conditions": [
-		{
-			"values": [
-				{
-					"modid": "cyclic",
-					"type": "neoforge:mod_loaded"
-				}
-			],
-			"type": "neoforge:and"
-		}
-	]
+  "energy": {
+    "rfpertick": 50,
+    "ticks": 20
+  },
+  "neoforge:conditions": [
+    {
+      "values": [
+        {
+          "modid": "cyclic",
+          "type": "neoforge:mod_loaded"
+        }
+      ],
+      "type": "neoforge:and"
+    }
+  ]
 }

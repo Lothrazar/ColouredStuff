@@ -1,15 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    {
-      "item": "minecraft:snow_block"
-    },
-    {
-      "item": "minecraft:bucket"
-    },
-    {
-      "tag": "c:dyes/magenta"
-    }
+    "minecraft:snow_block",
+    "minecraft:bucket",
+    "#c:dyes/magenta"
   ],
   "result": {
     "count": 1,

@@ -6,12 +6,8 @@
     "###"
   ],
   "key": {
-    "#": {
-      "tag": "minecraft:dirt"
-    },
-    "-": {
-      "tag": "c:dyes/none"
-    }
+    "#": "#minecraft:dirt",
+    "-": "#c:dyes/none"
   },
   "result": {
     "count": 8,
