@@ -111,9 +111,12 @@ public class SaplinColour extends BlockFlib implements IHasColor, BonemealableBl
     }
   }
 
-  //  @Override extends from BushBlock.class 
+  //  @Override extends from BushBlock.class
+  // 26.1: vanilla SaplingBlock/BushBlock now extend VegetationBlock, whose mayPlaceOn checks
+  // BlockTags.SUPPORTS_VEGETATION (dirt/mud/moss/grass blocks + farmland) instead of BlockTags.DIRT -
+  // BlockTags.DIRT itself no longer includes grass_block in 26.1, which broke placing on grass.
   public boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
-    return state.is(BlockTags.DIRT) || state.is(Blocks.FARMLAND);
+    return state.is(BlockTags.SUPPORTS_VEGETATION);
   }
 
   //  @Override extends from SaplingBlock.class

@@ -1,6 +1,10 @@
 {
   "model": {
-    "type": "minecraft:model",
-    "model": "colouredstuff:item/water_bucket_blue"
+    "type": "neoforge:fluid_container",
+    "fluid": "colouredstuff:water_blue",
+    "textures": {
+      "base": "item/bucket",
+      "fluid": "neoforge:item/mask/bucket_fluid_drip"
+    }
   }
 }

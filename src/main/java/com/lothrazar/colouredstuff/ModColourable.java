@@ -31,9 +31,12 @@ public class ModColourable {
     FluidColourRegistry.FLUIDS.register(bus);
     new PlayerUseEvents();
     bus.addListener(InteractionRegistry::register);
-    bus.addListener(ClientRegistry::register);
 //    modEventBus.addListener(DynamicRegistry::register);
+    // 26.1: registering any listener referencing ClientRegistry forces the JVM to load/verify the
+    // whole class, which transitively pulls in the client-only ColourBoatRender/EntityRenderer -
+    // must stay behind this Dist.CLIENT gate or it NoClassDefFoundErrors on a dedicated server.
     if (FMLEnvironment.getDist() == Dist.CLIENT) {
+      bus.addListener(ClientRegistry::register);
       bus.addListener(ClientRegistry::registerEntityRenders);
       bus.addListener(ClientRegistry::registerFluidModels);
     }

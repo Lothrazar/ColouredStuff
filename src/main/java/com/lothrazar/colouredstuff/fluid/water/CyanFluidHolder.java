@@ -29,9 +29,9 @@ public class CyanFluidHolder extends InfiniteFluidHolder {
   public static final Identifier FLUID_STILL = Identifier.fromNamespaceAndPath(ModColourable.MODID, "block/" + TYPE + "/" + TYPE + "_still_" + COLOUR);
   public static DeferredHolder<Fluid, FlowingFluid> FLOWING = FluidColourRegistry.FLUIDS.register(ID + "_flowing", () -> new BaseFlowingFluid.Flowing(makeProperties()));
   public static DeferredHolder<Fluid, FlowingFluid> STILL = FluidColourRegistry.FLUIDS.register(ID, () -> new BaseFlowingFluid.Source(makeProperties()));
-  public static DeferredHolder<Block, LiquidBlock> BLOCK = ColourableBlockRegistry.BLOCKS.register(ID + "_block", () -> new ColourLiquidBlock(STILL,
-      blockProps().mapColor(DyeColor.CYAN), DyeColorless.CYAN));
-  public static DeferredHolder<Item, Item> BUCKET = ColourableItemRegistry.ITEMS.register(TYPE + "_bucket_" + COLOUR, () -> new BucketItem(STILL.get(), new Item.Properties()
+  public static DeferredHolder<Block, LiquidBlock> BLOCK = ColourableBlockRegistry.BLOCKS.registerBlock(ID + "_block", props -> new ColourLiquidBlock(STILL,
+      props.mapColor(DyeColor.CYAN), DyeColorless.CYAN), InfiniteFluidHolder::blockProps);
+  public static DeferredHolder<Item, Item> BUCKET = ColourableItemRegistry.ITEMS.registerItem(TYPE + "_bucket_" + COLOUR, props -> new BucketItem(STILL.get(), props
       .craftRemainder(Items.BUCKET).stacksTo(1)));
   public static DeferredHolder<FluidType, FluidType> FTYPE = FluidColourRegistry.FLUID_TYPES.register(ID, () -> InfiniteFluidHolder.createFluidType());
 
