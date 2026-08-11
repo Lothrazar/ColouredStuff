@@ -130,8 +130,14 @@ tasks.register('publishModrinth') {
 // --- Combined tasks ---
 // Resolved at configuration time (not inside doFirst) so this stays compatible with the
 // configuration cache - Task.project is unavailable at execution time.
-def releaseRepoDir  = rootProject.projectDir
-def releaseRepoName = rootProject.name
+//
+// Uses 'project' (this mod's own project), not 'rootProject': this workspace's settings.gradle
+// includes every mod as a subproject of an aggregating 'mc261-mods' root (see the
+// `if (project == rootProject)` guard around the wrapper task in build.gradle for the same
+// distinction), so when a mod is built via a ':ModName:release' task path, 'rootProject' means
+// the whole workspace folder, not this mod's own git repo.
+def releaseRepoDir  = project.projectDir
+def releaseRepoName = project.name
 def releaseTag      = "v${minecraft_version}-${mod_version}"
 
 // Refuse to publish unless HEAD is tagged with the exact version this release would build,
